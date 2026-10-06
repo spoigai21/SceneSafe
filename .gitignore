@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Datasets, decoded frames and run outputs (large, re-derivable)
+data/
+frames/
+*.parquet
+*.npy
+
+.DS_Store
