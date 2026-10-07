@@ -1,0 +1,71 @@
+{
+  "phase": 0,
+  "name": "embed",
+  "lane": "gpu-apple-m5",
+  "seed": 0,
+  "timestamp": "2026-10-07T00:55:56+00:00",
+  "git_commit": "506d1e430f98c41a8fba924ddd8b62fa1344aaec-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "video": "data/raw/notld_1968_1024x768.mp4",
+    "video_meta": {
+      "codec": "h264",
+      "width": 1024,
+      "height": 768,
+      "fps": 29.957261847018394,
+      "duration_s": 5738.626032
+    },
+    "window_start_s": 600.0,
+    "window_duration_s": 600.0,
+    "repeats": 5,
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "runtime": "pytorch-eager",
+    "precision": "fp32",
+    "batch_size": 32,
+    "device": "mps",
+    "torch_version": "2.14.1",
+    "preprocess_device": "cpu"
+  },
+  "frames": 600,
+  "preprocess_fps": {
+    "runs": [
+      148.0970165743722,
+      284.933409830511,
+      285.20899045345124,
+      260.66063540446146,
+      328.98695110663385
+    ],
+    "median": 284.933409830511,
+    "min": 148.0970165743722,
+    "max": 328.98695110663385
+  },
+  "model_fps": {
+    "runs": [
+      205.6485104835543,
+      248.2750487890696,
+      224.2965499453588,
+      240.25347943372017,
+      254.7880062572035
+    ],
+    "median": 240.25347943372017,
+    "min": 205.6485104835543,
+    "max": 254.7880062572035
+  },
+  "load_avg_before": [
+    7.87109375,
+    6.09912109375,
+    5.44970703125
+  ],
+  "load_avg_after": [
+    6.6875,
+    5.9287109375,
+    5.39990234375
+  ]
+}

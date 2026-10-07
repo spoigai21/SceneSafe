@@ -1,329 +1,370 @@
-# SceneSafe — contextual ad targeting and brand safety from video
+# SceneSafe — build spec
 
-**One line:** watch a catalogue of video, understand each scene, and decide which ads are safe
-and relevant to play next to it — built as a GPU pipeline with a measured cost per hour of
-catalogue analysed.
+SceneSafe watches a catalogue of video, understands each scene, and decides which ads are **safe**
+and **relevant** to play next to it. It then turns those decisions into priced ad inventory and
+counts the resulting ad events correctly on a streaming pipeline. Every stage is measured, and
+the whole pipeline has a stated cost per hour of video analysed.
 
-Move this file into its own public repo before starting. Keep any "why this company" note
-gitignored, the way `WHY-NETFLIX.md` is for AdFill.
+This file is the implementation contract: what to build, in what order, what to measure, and
+when each phase is done.
 
 ---
 
-## Why it exists
+## 1. Why it exists
 
-Third-party cookies are going away, so ad targeting is moving back to **context**: what is on
-screen, rather than who is watching. A streaming service owns its catalogue, so it is the only
-party that can do this properly for its own inventory.
-
-Two commercial jobs, both real:
+Ad targeting is moving away from *who is watching* (third-party cookies are going away) and back
+to *what is on screen*. A video owner is the only party that can do this properly for its own
+inventory. Two commercial jobs:
 
 - **Relevance** — a cooking scene is worth more to a food brand than a car chase is.
-- **Brand safety** — a car ad immediately after a crash scene is how an advertiser stops
-  returning your calls.
+- **Brand safety** — a car ad straight after a crash scene loses the advertiser.
 
-Both require actually watching the content at scale, which is a throughput problem before it is
-a machine-learning problem. That is the project.
-
-**Where it sits next to the others.** AdFill decides *who gets the slot* once candidates exist.
-SceneSafe produces the signal that says which ads are even eligible, and what they are worth.
-Fusion Bench is one kernel made as fast as possible; SceneSafe is a whole pipeline made fast
-enough to afford. Do not let the two GPU projects blur — they answer different questions.
+Both require actually watching the content at scale. That is a **throughput problem before it is
+a machine-learning problem**, and that is the project.
 
 ---
 
-## Honest limits, written before any results
+## 2. Honest limits (copy these into the README, not a footnote)
 
-State these in the README, not in a footnote.
-
-1. **This is not a streaming service's catalogue.** It is public video. Nothing here is a claim
-   about how any company's ads perform.
-2. **The ad side is simulated.** There is no public corpus of real video ad creatives with
-   outcomes. Ad categories and constraints are constructed, and that is stated wherever a result
-   depends on them — exactly as AdFill says its viewers are simulated.
-3. **Every number carries its hardware.** Laptop numbers and rented-GPU numbers are two lanes and
-   are never blended into one figure. ClickRank gets this right and it is worth copying.
-4. **Quality is measured against exact search on the same embeddings**, never against a
-   leaderboard. The question is "what did the fast path cost me", not "am I state of the art".
+1. **The video is public-domain / research video**, not any streaming service's catalogue.
+   Nothing here is a claim about how any company's ads perform.
+2. **The ad catalogue and ad demand are simulated.** There is no public corpus of video ad
+   creatives with outcomes. Say so wherever a result depends on them.
+3. **Every number names its hardware.** Laptop (CPU) and rented-GPU numbers are separate lanes
+   and are never blended into one figure.
+4. **Quality is measured against exact fp32 search on the same embeddings**, never an external
+   leaderboard. The question is "what did the fast path cost", not "is this state of the art".
 
 ---
 
-## Phase 0 — predict before renting
+## 3. Ground rules for every phase
 
-Before any GPU is rented:
-
-- Process **ten minutes of video on the laptop**. Record frames/sec for decode and frames/sec for
-  the vision model separately. The ratio tells you whether the pipeline is decode-bound or
-  inference-bound, which decides whether hardware decode matters at all.
-- **Write down the predicted speedup and the predicted full-run cost, and commit it to git.**
-  Then measure against it.
-
-This is the `cu-predict` discipline from Fusion Bench and it is the single cheapest thing that
-makes the whole project credible. A prediction that turns out wrong, kept in the repo, is worth
-more than a right one written afterwards.
-
-**Done when:** a committed `PREDICTION.md` with the measured laptop rates and the extrapolated
-cost of the full run.
+| Rule | What it means in practice |
+|---|---|
+| Results files | Every measured run writes a JSON file to `results/phase<N>/`. It records the git commit, hardware, machine load, seed, config and raw timings. |
+| Ledger | `NUMBERS.md` lists every figure used anywhere, with the results file and seed that produced it. **No file means the number doesn't go in the README.** |
+| Two lanes | Each results row is tagged `lane: cpu-laptop` or `lane: gpu-<model>`. The lanes are never averaged together. |
+| Repeats | Anything timed runs at least 3 times. Report the median and the range. |
+| Baselines first | Each phase builds its baseline before its fast path. |
+| Bug log | `BUGS.md`: what broke, how it was caught, what fixed it. |
+| Count data yourself | Never trust a dataset's README for row counts or sizes. Count them, and record the counts in `NUMBERS.md`. |
+| Losses count | If a phase loses to its baseline, that is the result. Write it up as one. |
+| Reproducible | `make phase<N>` (or the equivalent script) re-runs a phase from a fresh clone. |
 
 ---
 
-## Phase 1 — decode and sample
+## 4. Repo layout
+
+```
+scenesafe/              Python package (phases 1-7)
+  decode/               ffmpeg + NVDEC backends, sampling policies
+  embed/                model export, PyTorch / ONNX Runtime / TensorRT runners
+  index/                exact / IVF / IVF-PQ index build + query
+  match/                ad brief -> scenes retrieval, baselines
+  safety/               rule engine, adjacency checks, exclusion lists
+  segments/             segment builder, simulated demand, fill/yield
+  cost/                 $/1,000 h calculator
+  common/               results-file writer, timing, hardware detection, seeds
+events/                 Phase 8 streaming pipeline (Java, Gradle)
+kernels/                Phase 9 optional CUDA kernel
+scripts/                one entrypoint per phase (run_phase1.py, ...)
+configs/                YAML configs per phase and run
+results/phase<N>/       committed JSON results (small); large artefacts go in data/ (ignored)
+tests/
+README.md  PREDICTION.md  NUMBERS.md  BUGS.md  EVAL-PROTOCOL.md
+```
+
+The `data/` and `frames/` directories and the `*.npy` / `*.parquet` files are gitignored. Keep the
+embeddings and throw the decoded frames away, because storage is the hidden cost.
+
+---
+
+## 5. Phases
+
+Do them in order. Phases 7 and 8 matter most, and Phases 1–6 are the infrastructure they need.
+
+### Phase 0 — Predict before renting a GPU
+
+**Build:** a script that runs **10 minutes of video on the laptop** through decode and then the
+vision model. It times each stage on its own.
+
+**Measure:**
+- frames/sec for decode
+- frames/sec for the vision model
+- the ratio between them, which shows whether the pipeline is **decode-bound or
+  inference-bound** and so whether hardware decode is worth anything
+
+**Deliverable:** commit `PREDICTION.md` **before renting anything**. It holds the measured laptop
+rates, the predicted GPU speedup, and the predicted cost of the full run. Never edit it
+afterwards. Later phases compare against it, and a wrong prediction stays in the repo.
+
+**Done when:** `PREDICTION.md` is committed.
+
+---
+
+### Phase 1 — Decode and sample
 
 **Question:** how fast can frames be got off disk and onto the GPU, and how many are needed?
 
-**Build:** a decode path with two backends — CPU (ffmpeg) and **NVDEC** hardware decode — and a
-sampling policy. A two-hour film is roughly 172,000 frames, most of which are near-identical, so
-the sampling policy matters more than the decoder for total work.
+**Build:**
+- a decoder interface with backends:
+  - `cpu` (ffmpeg)
+  - `videotoolbox` (the laptop's hardware decoder)
+  - `nvdec` (NVIDIA hardware decoder, measured only in the GPU session)
+- a parallel mode that decodes several titles at once, one process per title
+- sampling policies:
+  - `all` (every frame)
+  - `uniform@k` for several values of k, e.g. 0.25, 0.5, 1 and 2 fps
+  - `keyframes` (decode only the self-contained frames and skip the rest without decoding
+    them; about one every 1.5 s in the Phase 0 film)
+  - `scene-change` (sample when the content changes, e.g. with PySceneDetect or a histogram
+    difference)
+
+A two-hour film is about 172,000 frames, mostly near-duplicates. **The sampling policy matters
+more than the decoder** for total work.
 
 **Measure:**
-- frames/sec for each decode backend, same clips, same machine
-- total wall-clock for a fixed corpus under each
-- how much can be dropped before downstream quality moves: uniform sampling at several rates
-  against scene-change-triggered sampling
+- frames/sec per backend, on the same clips and the same machine
+- total wall-clock for the fixed corpus under each backend
+- a curve of sampling policy against downstream retrieval quality: recall@k against the `all`
+  frames index, using the Phase 2 fp32 embeddings
 
-**Baseline:** decode every frame, CPU only.
+**Baseline:** decode every frame on the CPU.
 
-**Done when:** a table of decode throughput per backend, and a curve of sampling rate against
-downstream retrieval quality showing where it starts to hurt.
+**Done when:** there's a decode-throughput table per backend, and a sampling curve showing where
+quality starts to drop.
 
 ---
 
-## Phase 2 — embed
+### Phase 2 — Embed
 
-**Question:** what does making inference fast cost in quality?
+**Question:** what does fast inference cost in quality?
 
-**Build:** batched vision-model inference over the sampled frames, exported once and swept across
-runtimes and precisions — PyTorch eager, ONNX Runtime, TensorRT at fp32 / fp16 / int8 with a
-calibration set for int8.
+**Build:**
+- one vision model (pick a CLIP-style image/text model so Phase 4 can embed the text of ad
+  briefs into the same space)
+- export it once and run it on the laptop under:
+  - PyTorch eager on CPU and MPS (Apple GPU), at fp32 and fp16
+  - ONNX Runtime at fp32 and int8 (int8 calibrated on a held-out set)
+- in the GPU session only: TensorRT at fp32, fp16 and int8
 
 **Measure:**
-- latency and throughput per backend and precision, at several batch sizes
-- **retrieval quality of each precision against exact fp32 embeddings on the same frames** —
-  recall of the exact top-k, not an external benchmark
-- where the bottleneck sits at each batch size (transfer vs compute)
+- latency and throughput per runtime × precision × batch size (e.g. 1, 8, 32, 128)
+- **recall@k against exact fp32 top-k on the same frames**, for every precision
+- the bottleneck at each batch size: host→device transfer or compute
 
 **Baseline:** PyTorch eager, fp32.
 
-**Done when:** a speed/quality frontier where each point names its hardware, and a clear statement
-of which precision is worth using and why.
+**Trap:** int8 that is faster but quietly worse. **Don't publish an int8 row without its quality
+number.**
 
-**Trap:** int8 that is faster and quietly worse is the easiest mistake here. Measure the quality
-cost or do not ship the int8 row.
-
----
-
-## Phase 3 — index
-
-**Question:** can the catalogue be searched at all, and at what memory cost?
-
-**Build:** a vector index over the scene embeddings — exact, IVF, and IVF-PQ, with a GPU build.
-
-**Measure:** recall of exact top-k, query latency, and index size in MB for each configuration.
-
-**Done when:** a memory/recall/latency table, with the configuration chosen for the rest of the
-project named and justified.
+**Done when:** there's a speed/quality frontier where every point names its hardware, plus a
+written choice of precision with the reason.
 
 ---
 
-## Phase 4 — contextual matching
+### Phase 3 — Index
+
+**Question:** can the catalogue be searched, and at what memory cost?
+
+**Build:** FAISS indexes over the scene embeddings: exact (flat), IVF and IVF-PQ, on the CPU. At
+this corpus size a GPU build isn't needed.
+
+**Measure:** recall of the exact top-k, query latency (p50/p99) and index size in MB for each
+configuration.
+
+**Done when:** there's a memory/recall/latency table, and the configuration used from here on is
+named and justified.
+
+---
+
+### Phase 4 — Contextual matching
 
 **Question:** is the signal real, or is this an expensive way to do nothing?
 
-**Build:** given an ad described by category and a short text brief, retrieve the scenes it fits.
+**Build:**
+- a simulated ad catalogue in `configs/ads.yaml`. Each ad has a category, a short text brief
+  and constraints.
+- retrieval: embed the brief, then query the index for matching scenes
+- two baselines:
+  - **random scenes** (the floor)
+  - **genre-only matching** (the honest competitor, because genre metadata is free and already
+    exists)
 
-**Measure:** matching quality against two baselines that must be beaten:
-- **random scenes** — the floor
-- **genre-only matching** — the honest competitor, because genre metadata is free and already
-  exists. If scene-level understanding cannot beat genre-level metadata, say so plainly; that is
-  a real finding and a more interesting one than a win.
+**Before generating any numbers:** commit `EVAL-PROTOCOL.md`. It defines the held-out titles, how
+the relevance labels are made (e.g. hand-labelled scene/category pairs, with the sample size
+stated), and the metrics, e.g. precision@k and nDCG@k.
 
-**Done when:** a quantified comparison against both baselines on a held-out set of titles, with
-the evaluation protocol written down before the numbers are generated.
+**Measure:** scene matching against both baselines, on the held-out titles.
+
+**Done when:** there's a quantified comparison against both baselines. If scene understanding
+does **not** beat genre metadata, report that plainly. It's a real finding.
 
 ---
 
-## Phase 5 — brand safety
+### Phase 5 — Brand safety
 
-**Question:** what does safety cost in inventory?
+**Question:** what does safety cost in sellable inventory?
 
-**Build:** rules over detected scene content — categories to avoid, adjacency constraints (no car
-ad after a crash), and a per-advertiser exclusion list.
+**Build:** a rule engine over the detected scene content, with three kinds of rule:
+- **category avoidance** (e.g. violence, accidents, alcohol)
+- **adjacency constraints** (e.g. no car ad straight after a crash scene)
+- **per-advertiser exclusion lists**
+
+Define the rule sets as data in `configs/safety/*.yaml`, e.g. `lenient`, `standard` and `strict`.
 
 **Measure:**
-- **what fraction of inventory each rule set removes.** AdFill's framing carries over: removal is
-  harmless on a slack book and expensive on a tight one, so report both.
-- false positives: scenes wrongly excluded, sampled and hand-checked, with the sample size stated
+- **the fraction of inventory each rule set removes**, reported under a slack book (supply far
+  above demand) and a tight one. The same removal is cheap on the first and costly on the second.
+- **the false-positive rate**: a random sample of excluded scenes, hand-checked, with the sample
+  size and a confidence interval stated
 
-**Done when:** an inventory-loss figure per rule set, and an honest error rate from a hand-checked
-sample rather than an assumed one.
+**Done when:** there's an inventory-loss figure per rule set, and a false-positive rate taken
+from a hand-checked sample.
 
 ---
 
-## Phase 6 — cost
+### Phase 6 — Cost
 
 **Question:** would anyone actually run this?
 
-**Build:** nothing new. Combine the measured throughput with real rented-GPU pricing.
+**Build:** nothing new. Combine the measured throughput with real pricing, and record the price
+source and the date.
 
-**Measure:** **dollars per 1,000 hours of catalogue analysed**, stated with the hardware, the
-sampling policy and the precision that produced it, plus what the same figure would be on the
-naive path from Phase 1's baseline.
+**Measure:** for each lane:
+- **machine-hours per 1,000 hours of video analysed**, on the laptop and on the rented GPU
+- **dollars per 1,000 hours of video analysed**, using the rented GPU's price and the price of a
+  comparable cloud CPU instance
 
-**Done when:** one number an engineer could put in a planning document, with its derivation in the
-numbers ledger.
+State the hardware, sampling policy and precision behind each figure, plus the same figures for
+the naive Phase 1 baseline. Compare them with `PREDICTION.md`.
 
-This is the headline. Most projects cannot answer it.
+**Done when:** there's one figure someone could put in a planning document, with its derivation
+in `NUMBERS.md`.
 
 ---
 
-## Phase 7 — scene signals become priced inventory
+### Phase 7 — Scene signals become priced inventory
 
-**Why it was added:** four of the ten open Netflix Ads SWE roles are Pricing & Packaging or
-Forecasting & Simulation, and they all ask for the same things — **inventory segmentation, yield
-optimization, sell-through and fill rates, rate cards, inventory valuation**. Scene understanding
-is upstream of exactly that: once you know which breaks are safe and contextually relevant, you
-know which inventory is premium.
+**Question:** does scene-level understanding change what the inventory is worth?
 
-**Question:** does scene-level understanding actually change what the inventory is worth?
-
-**Build:** turn the Phase 4 and 5 outputs into **segments** — buckets of ad breaks grouped by
-safety class and contextual category — and attach a simple valuation to each. Not a pricing model;
-a defensible ordering plus the evidence for it.
+**Build:**
+- **ad breaks**: positions in each title where an ad can play, e.g. at scene boundaries
+- **segments**: breaks grouped by **safety class** (Phase 5) × **contextual category** (Phase 4).
+  One bucket is **restricted**: breaks that are safe for almost no advertiser.
+- a simple **valuation per segment**. This is not a pricing model. It's a defensible ordering of
+  the segments plus the evidence for it.
+- **simulated demand**: advertisers with budgets, target categories and safety requirements,
+  seeded and reproducible
 
 **Measure:**
-- **fill rate per segment** — what share of each segment's breaks can actually be sold given the
-  brand-safety exclusions from Phase 5
-- **the segmentation's effect on yield** against one flat undifferentiated pool, on the same
-  simulated demand
-- **how much inventory lands in the restricted bucket**, which is the number that decides whether
-  segmentation helps or just shrinks the sellable pool
+- **fill rate per segment**: the share of each segment's breaks that can actually be sold under
+  the Phase 5 exclusions
+- **yield**: the segmented book against **one flat, undifferentiated pool priced flat**, on the
+  same simulated demand
+- **the restricted share**: how much inventory ends up in the restricted bucket. This decides
+  whether segmentation helps or only shrinks the sellable pool.
 
-**Baseline:** one undifferentiated pool priced flat. If segmentation does not beat it, say so —
-that is a real finding, and AdFill already demonstrated that brand safety is harmless on a slack
-book and costly on a tight one.
+**Scope limit:** produce the segments and their numbers, then stop. Don't build an auction or an
+allocator here.
 
-**Done when:** a fill-rate and yield table per segment, with the restricted-inventory share named.
-
-**Connects to:** AdFill's allocator consumes exactly this. Do not rebuild AdFill's auction here —
-produce the segments and stop.
+**Done when:** there's a fill-rate and yield table per segment, with the restricted share named.
 
 ---
 
-## Phase 8 — the event spine
+### Phase 8 — The event spine
 
-**Why it was added:** three of the ten roles — Ads Eventing and both Conversions API roles — are
-about streaming. They name **Kafka and Flink**, *"billions of ad events daily"*, **deduplicated
-"gold" datasets**, and monitoring that guarantees **accuracy, timeliness and completeness**. That
-is the single largest gap in the portfolio: AdFill is batch simulation, Cine-Infer is Airflow,
-and nothing anywhere is streaming.
+**Question:** when ads play against these segments, can the events be counted correctly?
 
-**Vocabulary warning, because it inverts.** The Meta research says to avoid streaming-tool nouns
-entirely — Kafka, Flink, Spark appear in none of Meta's ads reqs. **At Netflix they are
-everywhere.** Same domain, opposite dialect. Never carry the Meta framing into a Netflix
-application or the reverse.
+**Build (in `events/`, Java):**
+- an **event generator** driven by the Phase 7 segments. It emits `impression`, `completion` and
+  `abandonment` events, each with an `event_id`, `break_id`, `scene_id`, `segment_id` and event
+  time.
+- **damage injection**, configurable per run:
+  - duplicates (5–20%)
+  - out-of-order arrival
+  - late events past the window
+  - dropped events
+- **Kafka** for ingestion
+- a **stream processor** (Flink, or Kafka Streams) for deduplication by `event_id` and windowed
+  aggregation per segment
+- a **queryable rollup store**, e.g. Postgres, ClickHouse or Druid
+- an **audit job** that compares the rollups with the generator's ground-truth log and **fails
+  loudly** (non-zero exit, alert line) when completeness drops below a threshold
 
-**Question:** when ads play against these scenes, can the events be counted correctly?
+Java is a deliberate choice here. It's the native language of the Kafka and Flink ecosystems.
+Run everything locally through `docker compose`.
 
-**Build:** a streaming path that ingests ad events — impression, completion, abandonment, each
-with an event ID, a break ID and a scene ID — deduplicates them, and aggregates into rollups.
-Kafka for ingestion, a stream processor for windowed aggregation, and a queryable rollup store.
+**Measure:**
+- **accuracy**: counted impressions against ground truth, at each duplication level
+- **completeness**: the fraction of emitted events that reach the rollup, and where the missing
+  ones went (dropped, late, filtered)
+- **timeliness**: the lag from emit to queryable, at several input rates
+- **sustained events/sec on one machine**, with the hardware named and the bottleneck identified
 
-Generate the event stream from the Phase 7 segments, with deliberate real-world damage injected:
-duplicates, out-of-order arrival, late events past the window, and dropped events.
+**Baselines:**
+- naive counting with no deduplication
+- a batch job doing the same aggregation
 
-**Measure, in their three words:**
-- **accuracy** — counted impressions against ground truth under 5-20% duplication. AdFill already
-  found naive counting overbills about 5%; this rebuilds that as a real system rather than a
-  simulation, so the comparison is the point.
-- **completeness** — what fraction of emitted events survive to the rollup, and where the rest go
-- **timeliness** — lag from emit to queryable, at several throughput levels
+Together these make the cost of streaming visible rather than assumed.
 
-Plus **sustained events/sec on one machine**, with the hardware named. Not billions; the honest
-figure and what the bottleneck was.
-
-**Baseline:** naive counting with no deduplication, and a batch job doing the same aggregation —
-so the cost of streaming is visible, not assumed.
-
-**Done when:** an accuracy/completeness/timeliness table under injected damage, a throughput
-figure with its bottleneck, and an auditing check that *fails loudly* when completeness drops.
-
-**Stack note:** the Eventing role asks for a **JVM language or C++**. His Java is current (Adorus:
-Spring Boot, 24 modules, 590 tests), so writing this half in Java rather than Python is a
-deliberate, defensible choice and worth stating in the README.
+**Done when:** there's an accuracy/completeness/timeliness table under injected damage, a
+throughput figure with its bottleneck, and the failing audit check demonstrated.
 
 ---
 
-## Phase 9 — optional: fused preprocessing kernel
+### Phase 9 — Optional: fused preprocessing kernel
 
-Only if Phases 1-8 are finished and measured.
+Only after Phases 1–8 are finished and measured, and only if a second GPU session is worth it.
+Otherwise skip it. The project is complete without it.
 
-Decode produces frames in one colour format; the model wants another size, another layout,
-normalised. Done naively that is three passes with memory traffic between each. Fused into one
-CUDA kernel it is one pass. NVIDIA built DALI because this is a real bottleneck.
+Decode outputs one colour format, while the model wants a different size, layout and
+normalisation. Done naively that's three passes with memory traffic between them. Fused into
+one CUDA kernel it's a single pass. NVIDIA built DALI for this reason.
 
-**Measure:** the fused kernel against the naive path, same frames, same output verified
+**Measure:** the fused kernel against the naive path on the same frames. The output must match
 bit-for-bit or within a stated tolerance.
 
-**Note:** this is the only hand-written CUDA in the project, and it is optional because Fusion
-Bench already carries the kernel-authorship story. The skill on display in Phases 1-8 is systems
-integration — keeping data resident on the GPU, choosing precision, sizing batches, finding the
-real bottleneck — which is a different and more widely useful skill.
+---
+
+## 6. Data
+
+- **Video:** about **50 hours (roughly 35 films)** of public-domain feature films from the
+  Internet Archive, which have genre tags for the Phase 4 baseline. Record every item ID, file and
+  byte size in a manifest, and never mix corpora inside one figure. Add more films only if
+  Phase 4 needs them. Delete each video once its embeddings are saved.
+- **Scene tags:** the MovieLens tag genome can supply a controlled vocabulary for categories.
+- **Genre metadata** (for the Phase 4 baseline): from the corpus's own metadata. Record the
+  source.
+- **Ad catalogue and demand:** constructed and seeded. Say so.
 
 ---
 
-## Data
+## 7. Stack and hardware
 
-- **Video:** public-domain film, or a research corpus such as Condensed Movies / MovieNet. Pick
-  one, state the exact version and size, and do not mix corpora inside a single figure.
-- **Scene labels / tags:** the MovieLens tag genome is already familiar from AdFill and can
-  provide a controlled vocabulary.
-- **Ad catalogue:** constructed. Say so.
+**Phases 1–7:** Python · PyTorch (CPU / MPS) · ONNX Runtime · PyAV/ffmpeg with VideoToolbox ·
+FAISS (CPU). Only in the GPU session: TensorRT · NVDEC.
+**Phase 8:** Java · Gradle · Kafka · Flink or Kafka Streams · a rollup store · docker compose.
+**Phase 9:** CUDA C++.
 
-**Verify every dataset's own documentation by counting rows yourself.** Criteo's README was wrong
-by roughly 10x during AdFill — the real figures were 435,810 conversions and 675 campaigns, not
-what the docs claimed. Assume nothing until measured.
+**Hardware: laptop first, one short GPU session.**
 
----
-
-## Measurement discipline
-
-- A `NUMBERS.md` ledger where **every figure traces to the results file and seed that produced
-  it**, as AdFill does. A number without a file does not go in the README.
-- Every row carries its hardware and, if the machine was shared, its load.
-- Repeats, not single runs, for anything timed. Report the range.
-- Re-runnable from a fresh clone.
-- A bug log: what broke and what caught it. AdFill logged 11; that log is one of the most
-  convincing things in the repo.
+- **The laptop runs everything:** all development, every phase, and the full corpus.
+- **One rented NVIDIA GPU session, budget ≤ 3 hours** (a cheap card such as an L4 or A10; check
+  the price when renting). It adds the NVIDIA lane:
+  - NVDEC decode vs CPU decode (Phase 1)
+  - TensorRT fp32 / fp16 / int8 (Phase 2)
+  - the rented-GPU cost figure (Phase 6)
+- **No debugging on rented time.** The session runs one script that has already been tested on
+  the laptop, then copies `results/` back.
+- If one session isn't enough, ask before renting more.
 
 ---
 
-## Stack
+## 8. Definition of done (whole project)
 
-Python · PyTorch · CUDA via NVDEC / TensorRT / cuDNN · ONNX · FAISS (GPU) · ffmpeg ·
-optionally one hand-written CUDA kernel in Phase 7.
-
-**Hardware:** develop on laptop or a cheap consumer GPU; rent an A100 only for the measured runs.
-Checkpoint per shard so a preempted spot instance costs minutes, not hours. Keep embeddings, not
-decoded frames — storage is the hidden cost.
-
----
-
-## How it goes on a résumé
-
-**Not until Phase 6 has a committed results file.** Same rule AdFill lives under. A half-built GPU
-pipeline is worse than no project, because the first question asked will be "what did you
-measure?"
-
-Phases 7 and 8 are what make this a Netflix Ads project rather than a video-ML project. They map
-onto seven of the ten open Ads SWE roles: segmentation and yield (four roles) and streaming
-events (three). Phases 1-6 alone map onto none of them directly — they are the infrastructure
-that earns the right to do 7 and 8.
-
-Lead differently by audience:
-
-- **Streaming / ads reqs** — lead with brand safety and contextual relevance, the inventory-loss
-  figure, and the finding from Phase 4. The GPU work is how it was made affordable.
-- **Systems / GPU reqs** (NVIDIA, Marvell, Tesla, cloud infra) — lead with the throughput table,
-  the precision frontier and the cost figure. The ads framing is why the pipeline exists.
-
-Bullets go through `VOICE.md` like everything else: plain first clause, at most three numbers,
-tool names kept.
+- [ ] Phases 0–8 meet their "done when" lines
+- [ ] `NUMBERS.md` traces every figure to a results file and seed
+- [ ] `BUGS.md` logs what broke and what caught it
+- [ ] the README states the honest limits (section 2) up front
+- [ ] everything re-runs from a fresh clone

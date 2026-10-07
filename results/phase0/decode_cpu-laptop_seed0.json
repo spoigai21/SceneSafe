@@ -1,0 +1,54 @@
+{
+  "phase": 0,
+  "name": "decode",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-07T00:54:32+00:00",
+  "git_commit": "506d1e430f98c41a8fba924ddd8b62fa1344aaec-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "video": "data/raw/notld_1968_1024x768.mp4",
+    "video_meta": {
+      "codec": "h264",
+      "width": 1024,
+      "height": 768,
+      "fps": 29.957261847018394,
+      "duration_s": 5738.626032
+    },
+    "window_start_s": 600.0,
+    "window_duration_s": 600.0,
+    "repeats": 5,
+    "backend": "pyav-ffmpeg",
+    "threads": "AUTO",
+    "av_version": "18.1.0"
+  },
+  "frames_per_run": 17983,
+  "fps": {
+    "runs": [
+      2191.714429460544,
+      1930.0597165146492,
+      2107.4123450848947,
+      2044.5375130221717,
+      1837.5254648113041
+    ],
+    "median": 2044.5375130221717,
+    "min": 1837.5254648113041,
+    "max": 2191.714429460544
+  },
+  "load_avg_before": [
+    4.28369140625,
+    5.2392578125,
+    5.10302734375
+  ],
+  "load_avg_after": [
+    6.6845703125,
+    5.7470703125,
+    5.29541015625
+  ]
+}
