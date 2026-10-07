@@ -10,6 +10,8 @@ dependencies = [
     "numpy",
     "pillow",
     "pyyaml",
+    "truststore",
+    "matplotlib",
 ]
 
 [project.optional-dependencies]

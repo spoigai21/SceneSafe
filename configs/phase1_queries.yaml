@@ -1,0 +1,23 @@
+# Text searches used to score sampling policies in Phase 1.
+# Chosen to resemble what an ad or brand-safety system would look for. Written before any results.
+queries:
+  - people eating a meal at a table
+  - a car driving on a road
+  - a man holding a gun
+  - two people fighting
+  - horses and riders in open country
+  - a kitchen
+  - people dancing
+  - a city street at night
+  - the sea or a beach
+  - a person talking on the telephone
+  - a man smoking a cigarette
+  - people drinking alcohol at a bar
+  - a wedding
+  - children playing
+  - a hospital or a doctor
+  - an airplane
+  - a large crowd
+  - a forest
+  - a frightening monster
+  - two people kissing

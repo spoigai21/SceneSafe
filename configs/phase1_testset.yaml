@@ -1,0 +1,14 @@
+# Phase 1 test set: one title per genre, minutes 10-25 of each (7 x 15 min = 1.75 h).
+# Rule: the first title of each genre in corpus/manifest.json order. One exception: the western
+# (cco_thegunandthepulpit) could not be downloaded while archive.org was returning HTTP 503 on
+# 2026-10-06, so the next western in manifest order that was available is used instead.
+start_s: 600
+duration_s: 900
+titles:
+  - charlie_chaplin_film_fest        # comedy
+  - VoyagetothePlanetofPrehistoricWomen  # scifi
+  - house_on_haunted_hill_ipod       # horror
+  - JungleBook                       # adventure
+  - dressed_to_kill                  # crime
+  - Cyrano_DeBergerac                # drama
+  - TheOvertheHillGang               # western (substitute, see above)

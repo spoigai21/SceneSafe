@@ -1,0 +1,421 @@
+{
+  "phase": 1,
+  "name": "decode",
+  "lane": "hwdec-apple-m5",
+  "seed": 0,
+  "timestamp": "2026-10-07T04:02:14+00:00",
+  "git_commit": "e24fe4acc8ce70ca65e20c81e592a51b4817e7e9-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "backend": "videotoolbox",
+    "windows": [
+      {
+        "id": "charlie_chaplin_film_fest",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      },
+      {
+        "id": "VoyagetothePlanetofPrehistoricWomen",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      },
+      {
+        "id": "house_on_haunted_hill_ipod",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      },
+      {
+        "id": "JungleBook",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      },
+      {
+        "id": "dressed_to_kill",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      },
+      {
+        "id": "Cyrano_DeBergerac",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      },
+      {
+        "id": "TheOvertheHillGang",
+        "start_s": 600.0,
+        "duration_s": 900.0
+      }
+    ],
+    "hours": 1.75,
+    "repeats": 3,
+    "rgb_conversion": "kept frames only",
+    "av_version": "18.1.0"
+  },
+  "cases": [
+    {
+      "policy": "all",
+      "workers": 1,
+      "runs": [
+        {
+          "wall_s": 172.28154754199932,
+          "decoded": 188811,
+          "kept": 188811,
+          "x_realtime": 36.56804858027043,
+          "s_per_video_hour": 98.44659859542818
+        },
+        {
+          "wall_s": 167.89609595899674,
+          "decoded": 188811,
+          "kept": 188811,
+          "x_realtime": 37.52320721941369,
+          "s_per_video_hour": 95.94062626228386
+        },
+        {
+          "wall_s": 169.2644124169965,
+          "decoded": 188811,
+          "kept": 188811,
+          "x_realtime": 37.219873392402434,
+          "s_per_video_hour": 96.72252138114085
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 96.72252138114085,
+        "min": 95.94062626228386,
+        "max": 98.44659859542818
+      },
+      "decoded_fps_median": 1115.479605570301,
+      "decoded": 188811,
+      "kept": 188811
+    },
+    {
+      "policy": "uniform@1",
+      "workers": 1,
+      "runs": [
+        {
+          "wall_s": 106.25789533300122,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 59.28971188688101,
+          "s_per_video_hour": 60.71879733314355
+        },
+        {
+          "wall_s": 106.82495475000178,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 58.97498402637886,
+          "s_per_video_hour": 61.0428312857153
+        },
+        {
+          "wall_s": 107.96404058400367,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 58.352762326435474,
+          "s_per_video_hour": 61.693737476573524
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 61.0428312857153,
+        "min": 60.71879733314355,
+        "max": 61.693737476573524
+      },
+      "decoded_fps_median": 1767.4802712705746,
+      "decoded": 188811,
+      "kept": 6300
+    },
+    {
+      "policy": "keyframes",
+      "workers": 1,
+      "runs": [
+        {
+          "wall_s": 3.3409440409959643,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 1885.6945589911513,
+          "s_per_video_hour": 1.9091108805691224
+        },
+        {
+          "wall_s": 3.6251244579980266,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 1737.8713677265503,
+          "s_per_video_hour": 2.0714996902845866
+        },
+        {
+          "wall_s": 3.5459164580024662,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 1776.6916041640195,
+          "s_per_video_hour": 2.026237976001409
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 2.026237976001409,
+        "min": 1.9091108805691224,
+        "max": 2.0714996902845866
+      },
+      "decoded_fps_median": 379.309556762001,
+      "decoded": 1345,
+      "kept": 1345
+    },
+    {
+      "policy": "scene@0.05",
+      "workers": 1,
+      "runs": [
+        {
+          "wall_s": 229.72765091699694,
+          "decoded": 188811,
+          "kept": 9025,
+          "x_realtime": 27.423777568144192,
+          "s_per_video_hour": 131.27294338114112
+        },
+        {
+          "wall_s": 250.76418883300357,
+          "decoded": 188811,
+          "kept": 9025,
+          "x_realtime": 25.12320451065477,
+          "s_per_video_hour": 143.29382219028776
+        },
+        {
+          "wall_s": 233.49743850000232,
+          "decoded": 188811,
+          "kept": 9025,
+          "x_realtime": 26.981024033803,
+          "s_per_video_hour": 133.42710771428705
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 133.42710771428705,
+        "min": 131.27294338114112,
+        "max": 143.29382219028776
+      },
+      "decoded_fps_median": 808.6212902930758,
+      "decoded": 188811,
+      "kept": 9025
+    },
+    {
+      "policy": "uniform@1",
+      "workers": 2,
+      "runs": [
+        {
+          "wall_s": 70.03803079199861,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 89.95112981845477,
+          "s_per_video_hour": 40.02173188114206
+        },
+        {
+          "wall_s": 69.92025066600036,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 90.10265180675987,
+          "s_per_video_hour": 39.95442895200021
+        },
+        {
+          "wall_s": 69.80614233300003,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 90.24993774826818,
+          "s_per_video_hour": 39.88922419028573
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 39.95442895200021,
+        "min": 39.88922419028573,
+        "max": 40.02173188114206
+      },
+      "decoded_fps_median": 2700.376474648593,
+      "decoded": 188811,
+      "kept": 6300
+    },
+    {
+      "policy": "uniform@1",
+      "workers": 4,
+      "runs": [
+        {
+          "wall_s": 43.38945925000007,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 145.19655485220156,
+          "s_per_video_hour": 24.793976714285755
+        },
+        {
+          "wall_s": 43.953210832994955,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 143.3342384004104,
+          "s_per_video_hour": 25.116120475997118
+        },
+        {
+          "wall_s": 44.44728133299941,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 141.74095267605563,
+          "s_per_video_hour": 25.398446475999663
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 25.116120475997118,
+        "min": 24.793976714285755,
+        "max": 25.398446475999663
+      },
+      "decoded_fps_median": 4295.7271248603,
+      "decoded": 188811,
+      "kept": 6300
+    },
+    {
+      "policy": "uniform@1",
+      "workers": 7,
+      "runs": [
+        {
+          "wall_s": 37.08879987499677,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 169.86260060269876,
+          "s_per_video_hour": 21.19359992856958
+        },
+        {
+          "wall_s": 37.005276874995616,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 170.24599008626512,
+          "s_per_video_hour": 21.145872499997495
+        },
+        {
+          "wall_s": 35.742552707997675,
+          "decoded": 188811,
+          "kept": 6300,
+          "x_realtime": 176.2604940802207,
+          "s_per_video_hour": 20.424315833141527
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 21.145872499997495,
+        "min": 20.424315833141527,
+        "max": 21.19359992856958
+      },
+      "decoded_fps_median": 5102.272322885366,
+      "decoded": 188811,
+      "kept": 6300
+    },
+    {
+      "policy": "keyframes",
+      "workers": 2,
+      "runs": [
+        {
+          "wall_s": 2.559230999999272,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 2461.676964682669,
+          "s_per_video_hour": 1.4624177142852983
+        },
+        {
+          "wall_s": 2.2918075420020614,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 2748.921924960806,
+          "s_per_video_hour": 1.3096043097154637
+        },
+        {
+          "wall_s": 2.398321375003434,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 2626.8372811341765,
+          "s_per_video_hour": 1.3704693571448192
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 1.3704693571448192,
+        "min": 1.3096043097154637,
+        "max": 1.4624177142852983
+      },
+      "decoded_fps_median": 560.808911607217,
+      "decoded": 1345,
+      "kept": 1345
+    },
+    {
+      "policy": "keyframes",
+      "workers": 4,
+      "runs": [
+        {
+          "wall_s": 1.9257547079978394,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 3271.4446828744653,
+          "s_per_video_hour": 1.1004312617130512
+        },
+        {
+          "wall_s": 1.6724780410004314,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 3766.8656003588003,
+          "s_per_video_hour": 0.9557017377145323
+        },
+        {
+          "wall_s": 2.026123000003281,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 3109.386745024758,
+          "s_per_video_hour": 1.1577845714304462
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 1.1004312617130512,
+        "min": 0.9557017377145323,
+        "max": 1.1577845714304462
+      },
+      "decoded_fps_median": 698.4274759470088,
+      "decoded": 1345,
+      "kept": 1345
+    },
+    {
+      "policy": "keyframes",
+      "workers": 7,
+      "runs": [
+        {
+          "wall_s": 1.6089912079987698,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 3915.496845899991,
+          "s_per_video_hour": 0.9194235474278685
+        },
+        {
+          "wall_s": 1.6530315420022816,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 3811.179544928069,
+          "s_per_video_hour": 0.9445894525727324
+        },
+        {
+          "wall_s": 1.660231333997217,
+          "decoded": 1345,
+          "kept": 1345,
+          "x_realtime": 3794.651908437334,
+          "s_per_video_hour": 0.9487036194269811
+        }
+      ],
+      "s_per_video_hour": {
+        "median": 0.9445894525727324,
+        "min": 0.9194235474278685,
+        "max": 0.9487036194269811
+      },
+      "decoded_fps_median": 813.656585385437,
+      "decoded": 1345,
+      "kept": 1345
+    }
+  ],
+  "load_avg_before": [
+    15.9716796875,
+    12.72900390625,
+    10.32470703125
+  ],
+  "load_avg_after": [
+    10.130859375,
+    7.634765625,
+    6.58837890625
+  ]
+}
