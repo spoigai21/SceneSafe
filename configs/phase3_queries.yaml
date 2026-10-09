@@ -1,0 +1,106 @@
+# Text searches for Phase 3 (index and unit comparison). The first 20 are the Phase 1 queries, unchanged;
+# 80 more were added for steadier statistics, in the same spirit: things an ad or brand-safety system would
+# look for, plus general scene content. Written before any Phase 3 results.
+queries:
+  # Phase 1
+  - people eating a meal at a table
+  - a car driving on a road
+  - a man holding a gun
+  - two people fighting
+  - horses and riders in open country
+  - a kitchen
+  - people dancing
+  - a city street at night
+  - the sea or a beach
+  - a person talking on the telephone
+  - a man smoking a cigarette
+  - people drinking alcohol at a bar
+  - a wedding
+  - children playing
+  - a hospital or a doctor
+  - an airplane
+  - a large crowd
+  - a forest
+  - a frightening monster
+  - two people kissing
+  # added for Phase 3
+  - a car crash
+  - a train at a station
+  - a ship at sea
+  - a man in a suit at an office desk
+  - a woman in an evening dress
+  - a soldier in uniform
+  - a battle with explosions
+  - a dead body on the floor
+  - a person lying in a hospital bed
+  - a police officer
+  - a courtroom
+  - a church interior
+  - a horse-drawn carriage
+  - cowboys in a saloon
+  - a gunfight in a western town
+  - a desert landscape
+  - snow and mountains
+  - a river or a lake
+  - rain falling
+  - a fire burning
+  - a house at night
+  - a dark staircase
+  - a skeleton or a skull
+  - a woman screaming
+  - a man being chased
+  - a jungle with wild animals
+  - an elephant
+  - a dog
+  - a cat
+  - a horse running
+  - a rocket or a spaceship
+  - a laboratory with scientific equipment
+  - a robot or a machine
+  - a stage performance with an audience
+  - a band playing music
+  - a piano
+  - people singing
+  - a party with many guests
+  - a restaurant with waiters
+  - people drinking coffee
+  - a bottle of wine
+  - food on a plate
+  - a fruit market
+  - a shop or a store counter
+  - money or banknotes
+  - a newspaper headline
+  - a letter being read
+  - a close-up of a woman's face
+  - a close-up of a man's face
+  - an old man with a beard
+  - a baby
+  - a family at home
+  - a bedroom
+  - a living room with a sofa
+  - a bathroom
+  - a garden with flowers
+  - a farm with animals
+  - a small town main street
+  - a big city skyline
+  - a bridge
+  - a boat on a river
+  - a swimming pool
+  - people playing sports
+  - a boxing match
+  - a sword fight
+  - a person on horseback with a rifle
+  - a prison cell
+  - handcuffs or an arrest
+  - a knife
+  - blood
+  - a person drinking from a flask
+  - a group of men playing cards
+  - a nightclub
+  - a telephone booth
+  - a typewriter
+  - opening titles or credits text
+  - a map
+  - an animated cartoon character
+  - a black and white silent film comedy scene
+  - a person falling down

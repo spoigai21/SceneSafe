@@ -1,0 +1,151 @@
+{
+  "phase": 3,
+  "name": "units",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-09T04:47:25+00:00",
+  "git_commit": "63dd5809e01deb2683b8efa4fb07441cb8a0e4b4-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "faiss_version": "1.15.1",
+    "text_queries": 100,
+    "query_file": "configs/phase3_queries.yaml",
+    "corpus_seconds": 179545,
+    "titles": 35,
+    "k": 10,
+    "gap_s": 30.0,
+    "overfetch": 1000,
+    "thresholds": [
+      0.75,
+      0.8,
+      0.85
+    ],
+    "scene_min_len_s": 3
+  },
+  "units": {
+    "ceiling_peak@10": 0.289495587348938,
+    "second": {
+      "units": 179545,
+      "length_s_median": 1.0,
+      "length_s_p90": 1.0,
+      "length_s_max": 1,
+      "flat_index_mb": 367.70816,
+      "search": "unit vectors (mean of seconds)",
+      "distinct@10": 5.67,
+      "peak@10": 0.2949333764612675,
+      "best_moments_found@10": 5.68,
+      "latency_ms_p50": 4.7254999954020604,
+      "latency_ms_p99": 5.585720093222338
+    },
+    "fixed10": {
+      "units": 17972,
+      "length_s_median": 10.0,
+      "length_s_p90": 10.0,
+      "length_s_max": 10,
+      "flat_index_mb": 36.806656,
+      "search": "unit vectors (mean of seconds)",
+      "distinct@10": 7.78,
+      "peak@10": 0.27594792410731317,
+      "best_moments_found@10": 2.89,
+      "latency_ms_p50": 0.4926670080749318,
+      "latency_ms_p99": 1.546379932842683
+    },
+    "scene@0.75": {
+      "units": 10241,
+      "length_s_median": 7.0,
+      "length_s_p90": 41.0,
+      "length_s_max": 634,
+      "flat_index_mb": 20.973568,
+      "search": "unit vectors (mean of seconds)",
+      "distinct@10": 8.73,
+      "peak@10": 0.2749141691625118,
+      "best_moments_found@10": 3.3,
+      "latency_ms_p50": 0.24904098245315254,
+      "latency_ms_p99": 0.27070824115071446
+    },
+    "second\u2192scene@0.75": {
+      "units": 179545,
+      "length_s_median": 7.0,
+      "length_s_p90": 41.0,
+      "length_s_max": 634,
+      "flat_index_mb": 367.70816,
+      "search": "every second, top 1000, collapsed to scenes",
+      "scenes": 10241,
+      "distinct@10": 8.66,
+      "peak@10": 0.290147872120142,
+      "best_moments_found@10": 9.26,
+      "queries_with_fewer_than_10": 0,
+      "latency_ms_p50": 4.940062499372289,
+      "latency_ms_p99": 5.220179570897017
+    },
+    "scene@0.80": {
+      "units": 16143,
+      "length_s_median": 6.0,
+      "length_s_p90": 24.0,
+      "length_s_max": 334,
+      "flat_index_mb": 33.060864,
+      "search": "unit vectors (mean of seconds)",
+      "distinct@10": 8.57,
+      "peak@10": 0.279343573898077,
+      "best_moments_found@10": 4.15,
+      "latency_ms_p50": 0.3989995166193694,
+      "latency_ms_p99": 0.44591957004740834
+    },
+    "second\u2192scene@0.80": {
+      "units": 179545,
+      "length_s_median": 6.0,
+      "length_s_p90": 24.0,
+      "length_s_max": 334,
+      "flat_index_mb": 367.70816,
+      "search": "every second, top 1000, collapsed to scenes",
+      "scenes": 16143,
+      "distinct@10": 8.56,
+      "peak@10": 0.29056097820401194,
+      "best_moments_found@10": 8.93,
+      "queries_with_fewer_than_10": 0,
+      "latency_ms_p50": 4.924770997604355,
+      "latency_ms_p99": 5.142002741631586
+    },
+    "scene@0.85": {
+      "units": 22738,
+      "length_s_median": 5.0,
+      "length_s_p90": 16.0,
+      "length_s_max": 196,
+      "flat_index_mb": 46.567424,
+      "search": "unit vectors (mean of seconds)",
+      "distinct@10": 8.34,
+      "peak@10": 0.28120979756116865,
+      "best_moments_found@10": 4.43,
+      "latency_ms_p50": 0.5640210001729429,
+      "latency_ms_p99": 0.596092263585888
+    },
+    "second\u2192scene@0.85": {
+      "units": 179545,
+      "length_s_median": 5.0,
+      "length_s_p90": 16.0,
+      "length_s_max": 196,
+      "flat_index_mb": 367.70816,
+      "search": "every second, top 1000, collapsed to scenes",
+      "scenes": 22738,
+      "distinct@10": 8.44,
+      "peak@10": 0.2908174595236778,
+      "best_moments_found@10": 8.69,
+      "queries_with_fewer_than_10": 0,
+      "latency_ms_p50": 4.936896002618596,
+      "latency_ms_p99": 5.256061243708246
+    }
+  },
+  "load_avg": [
+    2.95361328125,
+    2.42919921875,
+    2.22412109375
+  ]
+}

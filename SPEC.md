@@ -167,11 +167,17 @@ written choice of precision with the reason.
 
 **Question:** can the catalogue be searched, and at what memory cost?
 
-**Build:** FAISS indexes over the scene embeddings: exact (flat), IVF and IVF-PQ, on the CPU. At
-this corpus size a GPU build isn't needed.
+**Build:**
+- **what one searchable entry is:** every second, fixed 10-second chunks, or scenes detected from
+  the embeddings themselves (cut where the content changes). Scenes are either pooled into one vector
+  or used to group per-second hits, so each scene appears once in the results.
+- FAISS indexes over the chosen vectors: exact (flat), IVF and IVF-PQ, on the CPU. At this corpus
+  size a GPU build isn't needed.
 
-**Measure:** recall of the exact top-k, query latency (p50/p99) and index size in MB for each
-configuration.
+**Measure:**
+- for the entry type: duplicates in the top k, and how many of the best moments are found
+- for the index: recall of the exact top-k (text queries and image queries reported separately),
+  query latency (p50/p99) and index size in MB for each configuration
 
 **Done when:** there's a memory/recall/latency table, and the configuration used from here on is
 named and justified.

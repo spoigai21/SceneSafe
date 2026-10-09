@@ -6,8 +6,8 @@ import torch
 import torch.nn.functional as F
 from PIL import Image
 
-DEFAULT_MODEL = "ViT-B-32"
-DEFAULT_PRETRAINED = "laion2b_s34b_b79k"
+from scenesafe.embed.model import DEFAULT_MODEL, DEFAULT_PRETRAINED
+
 CLIP_MEAN = (0.48145466, 0.4578275, 0.40821073)
 CLIP_STD = (0.26862954, 0.26130258, 0.27577711)
 

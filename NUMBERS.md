@@ -72,5 +72,23 @@ Accuracy is measured against `pytorch-fp32-mps` on 6,300 test frames (20 searche
 | Full corpus end to end (decode 1 fps + fp16 MPS) | 49.9 video-hours in 8.5 min = 10.2 s per video-hour (8.2–11.2 per title) | cpu-laptop decode + gpu-apple-m5 model, one machine | `results/phase2/corpus_embed_gpu-apple-m5_seed0.json` |
 | fp16 vs fp32 spot check, 3 titles × 512 frames | cosine mean ≥ 0.99999, min 0.99938 | gpu-apple-m5 | same |
 
+## Phase 3
+
+CPU only, FAISS 1.15.1, load average 2.2–3.0 on 10 cores. 100 text queries (`configs/phase3_queries.yaml`),
+1,000 image queries (random corpus seconds, seed 0). Latency on 1 thread, throughput on 10.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| Detected scenes, threshold 0.75 / 0.80 / 0.85 (min 3 s) | 10,241 / 16,143 / 22,738; median length 7 / 6 / 5 s | (not hardware-dependent) | `results/phase3/units_cpu-laptop_seed0.json` |
+| Separate moments in top 10: every second / fixed 10 s / pooled scene@0.75 / second→scene@0.75 | 5.67 / 7.78 / 8.73 / 8.66 | — | same |
+| 10 best moments found: every second / fixed 10 s / pooled scenes / second→scene@0.75 | 5.68 / 2.89 / 3.30–4.43 / 9.26 | — | same |
+| second→scene@0.75 latency (exact, top 1,000 then grouped) | 4.94 ms p50, 5.22 ms p99 | cpu-laptop | same |
+| Exact (flat) search, 179,545 vectors | 368 MB; 4.72 ms p50, 5.09 ms p99; 7,451 queries/s batched | cpu-laptop | `results/phase3/index_cpu-laptop_seed0.json` |
+| IVF2048, nprobe 8 / 32 / 64 / 128: recall@10 text | 0.683 / 0.856 / 0.915 / 0.961 (image queries: 0.970 / 0.995 / 0.999 / 1.000) | cpu-laptop | same |
+| IVF2048, nprobe 64: latency, size | 0.251 ms p50; 373 MB | cpu-laptop | same |
+| IVF2048-PQ64 / PQ32: size, best text recall@10 (nprobe 128) | 17.7 MB, 0.453 / 11.9 MB, 0.320 | cpu-laptop | same |
+| Exact search latency vs size (1 thread, p50) | 17,954: 0.44 ms; 44,886: 1.15; 89,772: 2.33; 179,545: 4.72 | cpu-laptop | same, `flat_scaling` |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
-not measurements.
+not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
+`results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.
