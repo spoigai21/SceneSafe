@@ -1,0 +1,308 @@
+{
+  "phase": 2,
+  "name": "corpus_embed",
+  "lane": "gpu-apple-m5",
+  "seed": 0,
+  "timestamp": "2026-10-08T23:15:50+00:00",
+  "git_commit": "9be0b54825ec82e3102557e6d3c2d2c259927a78-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "decode": "cpu, uniform 1 fps, background thread",
+    "preprocess": "on-device (MPS)",
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "inference": "pytorch-fp16-mps",
+    "batch": 128,
+    "torch_version": "2.14.1"
+  },
+  "summary": {
+    "titles_embedded_this_run": 35,
+    "video_hours": 49.86882222222223,
+    "wall_s": 508.18472300007124,
+    "s_per_video_hour": 10.190429618239856
+  },
+  "titles": [
+    {
+      "title": "charlie_chaplin_film_fest",
+      "video_s": 4646.42,
+      "frames": 4647,
+      "wall_s": 12.06158029200742,
+      "s_per_video_hour": 9.34519243874353
+    },
+    {
+      "title": "his_girl_friday",
+      "video_s": 5504.57,
+      "frames": 5505,
+      "wall_s": 15.637420415994711,
+      "s_per_video_hour": 10.226904825913916
+    },
+    {
+      "title": "VoyagetothePlanetofPrehistoricWomen",
+      "video_s": 4775.14,
+      "frames": 4776,
+      "wall_s": 13.619739459012635,
+      "s_per_video_hour": 10.267984195739912
+    },
+    {
+      "title": "house_on_haunted_hill_ipod",
+      "video_s": 4483.21,
+      "frames": 4484,
+      "wall_s": 10.213370916986605,
+      "s_per_video_hour": 8.201296682767879
+    },
+    {
+      "title": "JungleBook",
+      "video_s": 6294.7,
+      "frames": 6295,
+      "wall_s": 17.63853187498171,
+      "s_per_video_hour": 10.087647505033464
+    },
+    {
+      "title": "BloodyPitOfHorror",
+      "video_s": 4943.95,
+      "frames": 4944,
+      "wall_s": 13.617210833996069,
+      "s_per_video_hour": 9.91554506060657
+    },
+    {
+      "title": "dressed_to_kill",
+      "video_s": 4290.5,
+      "frames": 4291,
+      "wall_s": 12.33045595799922,
+      "s_per_video_hour": 10.346029937955295
+    },
+    {
+      "title": "suddenly",
+      "video_s": 4533.5,
+      "frames": 4534,
+      "wall_s": 13.043037041992648,
+      "s_per_video_hour": 10.357325102277166
+    },
+    {
+      "title": "TheStranger_0",
+      "video_s": 5472.94,
+      "frames": 5473,
+      "wall_s": 14.879695708019426,
+      "s_per_video_hour": 9.787592144052363
+    },
+    {
+      "title": "tarzans_revenge",
+      "video_s": 4201.18,
+      "frames": 4202,
+      "wall_s": 12.805037958023604,
+      "s_per_video_hour": 10.972664025079851
+    },
+    {
+      "title": "my_favorite_brunette",
+      "video_s": 5212.49,
+      "frames": 5213,
+      "wall_s": 15.56514099999913,
+      "s_per_video_hour": 10.750046062437889
+    },
+    {
+      "title": "InvasionOfTheBeeGirls",
+      "video_s": 5188.43,
+      "frames": 5189,
+      "wall_s": 14.76962058400386,
+      "s_per_video_hour": 10.247923572721207
+    },
+    {
+      "title": "lost_world",
+      "video_s": 4085.33,
+      "frames": 4086,
+      "wall_s": 11.431701082998188,
+      "s_per_video_hour": 10.073635152801238
+    },
+    {
+      "title": "Grave_of_the_Vampire_movie",
+      "video_s": 5380.21,
+      "frames": 5381,
+      "wall_s": 14.384472375008045,
+      "s_per_video_hour": 9.624921806031542
+    },
+    {
+      "title": "Killers_from_space",
+      "video_s": 4254.62,
+      "frames": 4255,
+      "wall_s": 12.145882416021777,
+      "s_per_video_hour": 10.27710505231452
+    },
+    {
+      "title": "AsYouLikeIt1936",
+      "video_s": 5783.65,
+      "frames": 5784,
+      "wall_s": 17.020011000015074,
+      "s_per_video_hour": 10.594008904420958
+    },
+    {
+      "title": "royal_wedding",
+      "video_s": 5497.4,
+      "frames": 5498,
+      "wall_s": 16.303109750006115,
+      "s_per_video_hour": 10.67617330010951
+    },
+    {
+      "title": "ScarletStreet",
+      "video_s": 6086.48,
+      "frames": 6087,
+      "wall_s": 16.870912916987436,
+      "s_per_video_hour": 9.978721116499976
+    },
+    {
+      "title": "Cyrano_DeBergerac",
+      "video_s": 6773.17,
+      "frames": 6774,
+      "wall_s": 19.953418249991955,
+      "s_per_video_hour": 10.6054189840165
+    },
+    {
+      "title": "Cosmos_War_of_the_Planets",
+      "video_s": 5343.21,
+      "frames": 5344,
+      "wall_s": 15.660351458995137,
+      "s_per_video_hour": 10.55119773551526
+    },
+    {
+      "title": "Horror_Express",
+      "video_s": 5286.82,
+      "frames": 5287,
+      "wall_s": 14.3388621659833,
+      "s_per_video_hour": 9.763885246242522
+    },
+    {
+      "title": "tarzan_and_the_green_goddess",
+      "video_s": 4045.66,
+      "frames": 4046,
+      "wall_s": 12.608584000001429,
+      "s_per_video_hour": 11.219653258060525
+    },
+    {
+      "title": "cco_thegunandthepulpit",
+      "video_s": 4432.13,
+      "frames": 4433,
+      "wall_s": 12.26434487500228,
+      "s_per_video_hour": 9.961720786621377
+    },
+    {
+      "title": "Quicksand_clear",
+      "video_s": 4742.44,
+      "frames": 4743,
+      "wall_s": 14.006770415988285,
+      "s_per_video_hour": 10.632580169186712
+    },
+    {
+      "title": "shame_",
+      "video_s": 4919.04,
+      "frames": 4920,
+      "wall_s": 12.128300999989733,
+      "s_per_video_hour": 8.876098507018247
+    },
+    {
+      "title": "iron_mask",
+      "video_s": 4337.38,
+      "frames": 4338,
+      "wall_s": 13.195890541013796,
+      "s_per_video_hour": 10.952511872985458
+    },
+    {
+      "title": "Santa_Fe_Trail_movie",
+      "video_s": 6575.77,
+      "frames": 6576,
+      "wall_s": 19.83397187499213,
+      "s_per_video_hour": 10.858393579758973
+    },
+    {
+      "title": "OnlytheValaint",
+      "video_s": 6291.7,
+      "frames": 6292,
+      "wall_s": 17.51586304200464,
+      "s_per_video_hour": 10.022268536519018
+    },
+    {
+      "title": "WarOfTheWildcats-JohnWayne1943",
+      "video_s": 5863.28,
+      "frames": 5864,
+      "wall_s": 16.59012975002406,
+      "s_per_video_hour": 10.186187100067986
+    },
+    {
+      "title": "TheOvertheHillGang",
+      "video_s": 4208.38,
+      "frames": 4208,
+      "wall_s": 12.670781624998199,
+      "s_per_video_hour": 10.8390434917934
+    },
+    {
+      "title": "WarOfTheRobots",
+      "video_s": 5999.73,
+      "frames": 6000,
+      "wall_s": 14.277651874988806,
+      "s_per_video_hour": 8.566976638942036
+    },
+    {
+      "title": "Assignment_Outer_Space",
+      "video_s": 4354.1,
+      "frames": 4355,
+      "wall_s": 13.435972583014518,
+      "s_per_video_hour": 11.108955076560543
+    },
+    {
+      "title": "AStarIsBorn",
+      "video_s": 6653.12,
+      "frames": 6653,
+      "wall_s": 19.570465166994836,
+      "s_per_video_hour": 10.589569194781006
+    },
+    {
+      "title": "TheMagicSword",
+      "video_s": 4812.58,
+      "frames": 4813,
+      "wall_s": 12.636527000024216,
+      "s_per_video_hour": 9.452621504491807
+    },
+    {
+      "title": "oliver_twist",
+      "video_s": 4254.53,
+      "frames": 4255,
+      "wall_s": 13.15990579201025,
+      "s_per_video_hour": 11.135345349835799
+    }
+  ],
+  "total_frames_stored": 179545,
+  "spot_check_fp16_vs_fp32": [
+    {
+      "title": "AStarIsBorn",
+      "frames": 512,
+      "cosine_mean": 0.9999960064888,
+      "cosine_min": 0.9998852610588074
+    },
+    {
+      "title": "TheMagicSword",
+      "frames": 512,
+      "cosine_mean": 0.9999880194664001,
+      "cosine_min": 0.9993785619735718
+    },
+    {
+      "title": "oliver_twist",
+      "frames": 512,
+      "cosine_mean": 0.9999951124191284,
+      "cosine_min": 0.9998996257781982
+    }
+  ],
+  "load_avg_before": [
+    2.74951171875,
+    3.06884765625,
+    3.900390625
+  ],
+  "load_avg_after": [
+    9.89892578125,
+    9.04833984375,
+    6.890625
+  ]
+}

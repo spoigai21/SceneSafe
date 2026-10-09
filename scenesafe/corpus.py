@@ -29,6 +29,12 @@ def video_path(title_id: str) -> Path:
     return VIDEO_DIR / f"{title_id}.mp4"
 
 
+def is_downloaded(title: dict) -> bool:
+    """File present and complete (byte size matches the manifest). fetch_corpus.py also checks MD5."""
+    path = video_path(title["id"])
+    return path.exists() and path.stat().st_size == title["bytes"]
+
+
 def test_windows() -> list[Window]:
     """Phase 1 test set, as listed in configs/phase1_testset.yaml."""
     cfg = yaml.safe_load(TESTSET.read_text())

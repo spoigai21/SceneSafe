@@ -12,6 +12,8 @@ dependencies = [
     "pyyaml",
     "truststore",
     "matplotlib",
+    "onnx",
+    "onnxruntime",
 ]
 
 [project.optional-dependencies]

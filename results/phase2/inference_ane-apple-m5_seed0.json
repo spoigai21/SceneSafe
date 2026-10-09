@@ -1,0 +1,122 @@
+{
+  "phase": 2,
+  "name": "inference",
+  "lane": "ane-apple-m5",
+  "seed": 0,
+  "timestamp": "2026-10-08T23:06:47+00:00",
+  "git_commit": "9be0b54825ec82e3102557e6d3c2d2c259927a78-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "reference": "pytorch-fp32-mps",
+    "test_frames": 6300,
+    "calibration_frames": 336,
+    "calibration_titles": [
+      "his_girl_friday",
+      "BloodyPitOfHorror",
+      "suddenly",
+      "tarzans_revenge",
+      "Killers_from_space",
+      "cco_thegunandthepulpit",
+      "shame_"
+    ],
+    "input": "Phase 1 test windows, uniform 1 fps, preprocess_on_device, stored float16, fed as float32",
+    "timing_frames": 1024,
+    "repeats": 3,
+    "batches": [
+      1,
+      8,
+      32,
+      128
+    ],
+    "accuracy_batch": 32,
+    "segment_s": 10.0,
+    "torch_version": "2.14.1",
+    "onnxruntime_version": "1.30.0"
+  },
+  "configs": {
+    "coreml-fp32-ane": {
+      "runtime": "onnxruntime-coreml",
+      "precision": "fp32",
+      "device": "coreml-ane",
+      "accuracy": {
+        "cosine_mean": 1.0,
+        "cosine_p1": 0.9999998807907104,
+        "cosine_min": 0.9999997615814209,
+        "recall@10": 1.0,
+        "recall@50": 1.0
+      },
+      "speed": {
+        "1": {
+          "fps": {
+            "runs": [
+              90.3061921148932,
+              93.7062435597228,
+              95.98741664955091
+            ],
+            "median": 93.7062435597228,
+            "min": 90.3061921148932,
+            "max": 95.98741664955091
+          },
+          "transfer_share": null
+        },
+        "8": {
+          "fps": {
+            "runs": [
+              151.52263789989155,
+              152.60867977680238,
+              154.65354538044872
+            ],
+            "median": 152.60867977680238,
+            "min": 151.52263789989155,
+            "max": 154.65354538044872
+          },
+          "transfer_share": null
+        },
+        "32": {
+          "fps": {
+            "runs": [
+              153.6701350494525,
+              153.6188759193698,
+              154.0840019253454
+            ],
+            "median": 153.6701350494525,
+            "min": 153.6188759193698,
+            "max": 154.0840019253454
+          },
+          "transfer_share": null
+        },
+        "128": {
+          "fps": {
+            "runs": [
+              143.10302881798484,
+              142.94867282484242,
+              143.39337099043007
+            ],
+            "median": 143.10302881798484,
+            "min": 142.94867282484242,
+            "max": 143.39337099043007
+          },
+          "transfer_share": null
+        }
+      }
+    }
+  },
+  "load_avg_before": [
+    4.3525390625,
+    5.17236328125,
+    4.39111328125
+  ],
+  "load_avg_after": [
+    3.58740234375,
+    3.234375,
+    3.982421875
+  ]
+}

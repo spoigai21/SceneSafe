@@ -1,0 +1,320 @@
+{
+  "phase": 2,
+  "name": "inference",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-08T23:06:47+00:00",
+  "git_commit": "9be0b54825ec82e3102557e6d3c2d2c259927a78-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "model": "ViT-B-32",
+    "pretrained": "laion2b_s34b_b79k",
+    "reference": "pytorch-fp32-mps",
+    "test_frames": 6300,
+    "calibration_frames": 336,
+    "calibration_titles": [
+      "his_girl_friday",
+      "BloodyPitOfHorror",
+      "suddenly",
+      "tarzans_revenge",
+      "Killers_from_space",
+      "cco_thegunandthepulpit",
+      "shame_"
+    ],
+    "input": "Phase 1 test windows, uniform 1 fps, preprocess_on_device, stored float16, fed as float32",
+    "timing_frames": 1024,
+    "repeats": 3,
+    "batches": [
+      1,
+      8,
+      32,
+      128
+    ],
+    "accuracy_batch": 32,
+    "segment_s": 10.0,
+    "torch_version": "2.14.1",
+    "onnxruntime_version": "1.30.0"
+  },
+  "configs": {
+    "pytorch-fp32-cpu": {
+      "runtime": "pytorch",
+      "precision": "fp32",
+      "device": "cpu",
+      "accuracy": {
+        "cosine_mean": 1.0,
+        "cosine_p1": 0.9999998807907104,
+        "cosine_min": 0.9999997615814209,
+        "recall@10": 1.0,
+        "recall@50": 1.0
+      },
+      "speed": {
+        "1": {
+          "fps": {
+            "runs": [
+              50.44451043216063,
+              50.71980789333024,
+              52.310581767850884
+            ],
+            "median": 50.71980789333024,
+            "min": 50.44451043216063,
+            "max": 52.310581767850884
+          },
+          "transfer_share": null
+        },
+        "8": {
+          "fps": {
+            "runs": [
+              94.04634262583085,
+              95.38808247593184,
+              95.76740678116116
+            ],
+            "median": 95.38808247593184,
+            "min": 94.04634262583085,
+            "max": 95.76740678116116
+          },
+          "transfer_share": null
+        },
+        "32": {
+          "fps": {
+            "runs": [
+              125.33747111062456,
+              125.43476370490998,
+              122.865649287162
+            ],
+            "median": 125.33747111062456,
+            "min": 122.865649287162,
+            "max": 125.43476370490998
+          },
+          "transfer_share": null
+        },
+        "128": {
+          "fps": {
+            "runs": [
+              130.08854862265463,
+              125.48377642987842,
+              130.11402766492483
+            ],
+            "median": 130.08854862265463,
+            "min": 125.48377642987842,
+            "max": 130.11402766492483
+          },
+          "transfer_share": null
+        }
+      }
+    },
+    "onnxruntime-fp32-cpu": {
+      "runtime": "onnxruntime",
+      "precision": "fp32",
+      "device": "cpu",
+      "accuracy": {
+        "cosine_mean": 1.0,
+        "cosine_p1": 0.9999998807907104,
+        "cosine_min": 0.9999997615814209,
+        "recall@10": 1.0,
+        "recall@50": 1.0
+      },
+      "speed": {
+        "1": {
+          "fps": {
+            "runs": [
+              71.62696974598497,
+              72.22160734711348,
+              77.3016514830751
+            ],
+            "median": 72.22160734711348,
+            "min": 71.62696974598497,
+            "max": 77.3016514830751
+          },
+          "transfer_share": null
+        },
+        "8": {
+          "fps": {
+            "runs": [
+              126.75914678960407,
+              124.95587571897698,
+              125.44300826191221
+            ],
+            "median": 125.44300826191221,
+            "min": 124.95587571897698,
+            "max": 126.75914678960407
+          },
+          "transfer_share": null
+        },
+        "32": {
+          "fps": {
+            "runs": [
+              102.16027155460662,
+              109.54040206251074,
+              110.96931647899629
+            ],
+            "median": 109.54040206251074,
+            "min": 102.16027155460662,
+            "max": 110.96931647899629
+          },
+          "transfer_share": null
+        },
+        "128": {
+          "fps": {
+            "runs": [
+              106.90375870243156,
+              106.98732262835708,
+              114.02286306790874
+            ],
+            "median": 106.98732262835708,
+            "min": 106.90375870243156,
+            "max": 114.02286306790874
+          },
+          "transfer_share": null
+        }
+      }
+    },
+    "onnxruntime-int8static-cpu": {
+      "runtime": "onnxruntime",
+      "precision": "int8-static",
+      "device": "cpu",
+      "accuracy": {
+        "cosine_mean": 0.6348023414611816,
+        "cosine_p1": 0.459608256816864,
+        "cosine_min": 0.35355955362319946,
+        "recall@10": 0.215,
+        "recall@50": 0.373
+      },
+      "speed": {
+        "1": {
+          "fps": {
+            "runs": [
+              76.91974746289236,
+              77.39359801137063,
+              75.51702172884332
+            ],
+            "median": 76.91974746289236,
+            "min": 75.51702172884332,
+            "max": 77.39359801137063
+          },
+          "transfer_share": null
+        },
+        "8": {
+          "fps": {
+            "runs": [
+              101.96264948662831,
+              98.65408823827589,
+              100.72688447594842
+            ],
+            "median": 100.72688447594842,
+            "min": 98.65408823827589,
+            "max": 101.96264948662831
+          },
+          "transfer_share": null
+        },
+        "32": {
+          "fps": {
+            "runs": [
+              104.44799363577357,
+              104.23864593075918,
+              105.12378755892529
+            ],
+            "median": 104.44799363577357,
+            "min": 104.23864593075918,
+            "max": 105.12378755892529
+          },
+          "transfer_share": null
+        },
+        "128": {
+          "fps": {
+            "runs": [
+              104.268874028393,
+              107.12132976042744,
+              105.27047406300052
+            ],
+            "median": 105.27047406300052,
+            "min": 104.268874028393,
+            "max": 107.12132976042744
+          },
+          "transfer_share": null
+        }
+      }
+    },
+    "onnxruntime-int8dynamic-cpu": {
+      "runtime": "onnxruntime",
+      "precision": "int8-dynamic",
+      "device": "cpu",
+      "accuracy": {
+        "cosine_mean": 0.9597505331039429,
+        "cosine_p1": 0.9009901881217957,
+        "cosine_min": 0.853907585144043,
+        "recall@10": 0.72,
+        "recall@50": 0.808
+      },
+      "speed": {
+        "1": {
+          "fps": {
+            "runs": [
+              105.37040805118541,
+              109.30918733793476,
+              107.44623574535346
+            ],
+            "median": 107.44623574535346,
+            "min": 105.37040805118541,
+            "max": 109.30918733793476
+          },
+          "transfer_share": null
+        },
+        "8": {
+          "fps": {
+            "runs": [
+              133.8222433855962,
+              127.01604308884193,
+              130.4472460529991
+            ],
+            "median": 130.4472460529991,
+            "min": 127.01604308884193,
+            "max": 133.8222433855962
+          },
+          "transfer_share": null
+        },
+        "32": {
+          "fps": {
+            "runs": [
+              128.67609906340323,
+              122.98176556648221,
+              121.23484857015848
+            ],
+            "median": 122.98176556648221,
+            "min": 121.23484857015848,
+            "max": 128.67609906340323
+          },
+          "transfer_share": null
+        },
+        "128": {
+          "fps": {
+            "runs": [
+              128.33461513578015,
+              129.98366445522984,
+              129.6111462095661
+            ],
+            "median": 129.6111462095661,
+            "min": 128.33461513578015,
+            "max": 129.98366445522984
+          },
+          "transfer_share": null
+        }
+      }
+    }
+  },
+  "load_avg_before": [
+    4.3525390625,
+    5.17236328125,
+    4.39111328125
+  ],
+  "load_avg_after": [
+    3.58740234375,
+    3.234375,
+    3.982421875
+  ]
+}
