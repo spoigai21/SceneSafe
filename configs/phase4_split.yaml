@@ -1,0 +1,13 @@
+# Phase 4 split. Test films are untouched until the final measurement; practice films may be used to
+# check the pipeline. Chosen with numpy default_rng(4): 2 per genre, drawn from that genre's 5 films in
+# manifest order. Written before any Phase 4 results.
+seed: 4
+test:
+  comedy: [my_favorite_brunette, royal_wedding]
+  scifi: [Assignment_Outer_Space, Cosmos_War_of_the_Planets]
+  horror: [Grave_of_the_Vampire_movie, house_on_haunted_hill_ipod]
+  adventure: [lost_world, tarzans_revenge]
+  crime: [Quicksand_clear, TheStranger_0]
+  drama: [Cyrano_DeBergerac, TheMagicSword]
+  western: [OnlytheValaint, cco_thegunandthepulpit]
+# practice: every other title in corpus/manifest.json

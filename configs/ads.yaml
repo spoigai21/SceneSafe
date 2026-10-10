@@ -1,0 +1,128 @@
+# Simulated ad catalogue for Phase 4 (and Phase 5 constraints). These are not real ads or real advertisers.
+# Written once, before any Phase 4 results, and frozen for the test measurement.
+#
+# brief:       the text that CLIP embeds to find matching scenes
+# genres:      what the genre-only baseline uses. The genres a media planner would pick for this ad if all they
+#              knew about each film was its genre label. Chosen from the ad's subject, not from looking at films.
+# avoid:       content this advertiser refuses to appear next to. Recorded here, enforced in Phase 5, not Phase 4.
+#              Vocabulary: violence, weapons, accidents, death, horror, alcohol, smoking.
+ads:
+  - id: car
+    category: automotive
+    brief: a car driving on an open road
+    genres: [crime, drama]
+    avoid: [accidents, violence]
+
+  - id: airline
+    category: travel
+    brief: an airplane in the sky or at an airport
+    genres: [adventure, scifi]
+    avoid: [accidents, death]
+
+  - id: cruise
+    category: travel
+    brief: a ship sailing on the open sea
+    genres: [adventure]
+    avoid: [accidents, death]
+
+  - id: beach_resort
+    category: travel
+    brief: a sunny beach by the sea
+    genres: [comedy, adventure]
+    avoid: [violence, death]
+
+  - id: beer
+    category: alcohol
+    brief: people drinking at a bar
+    genres: [western, crime]
+    avoid: [violence, accidents]
+
+  - id: wine
+    category: alcohol
+    brief: a glass of wine at an elegant dinner
+    genres: [drama, comedy]
+    avoid: [violence, death]
+
+  - id: coffee
+    category: food_drink
+    brief: people drinking coffee or tea together
+    genres: [drama, comedy]
+    avoid: [violence, death, horror]
+
+  - id: restaurant
+    category: food_drink
+    brief: people enjoying a meal at a table
+    genres: [drama, comedy]
+    avoid: [violence, death, horror]
+
+  - id: fashion
+    category: fashion
+    brief: an elegant woman in a beautiful dress
+    genres: [drama, comedy]
+    avoid: [violence, horror]
+
+  - id: jewelry
+    category: fashion
+    brief: a romantic couple embracing or kissing
+    genres: [drama, comedy]
+    avoid: [violence, death, horror]
+
+  - id: pet_food
+    category: pets
+    brief: a dog
+    genres: [comedy, adventure]
+    avoid: [violence, death, horror]
+
+  - id: outdoor_gear
+    category: outdoors
+    brief: people hiking through forests or mountains
+    genres: [adventure, western]
+    avoid: [death]
+
+  - id: phone
+    category: telecom
+    brief: a person talking on the telephone
+    genres: [crime, drama]
+    avoid: [violence]
+
+  - id: music
+    category: entertainment
+    brief: people dancing to music
+    genres: [comedy]
+    avoid: [violence, horror]
+
+  - id: furniture
+    category: home
+    brief: a comfortable living room interior
+    genres: [drama, comedy]
+    avoid: [violence, horror, death]
+
+  - id: toys
+    category: kids
+    brief: children playing
+    genres: [comedy, adventure]
+    avoid: [violence, weapons, accidents, death, horror, alcohol, smoking]
+
+  - id: western_wear
+    category: fashion
+    brief: cowboys riding horses
+    genres: [western]
+    avoid: [death]
+
+  - id: bank
+    category: finance
+    brief: money and banknotes being counted
+    genres: [crime]
+    avoid: [violence, weapons]
+
+  - id: pharmacy
+    category: health
+    brief: a doctor or nurse caring for a patient
+    genres: [drama]
+    avoid: [death, horror]
+
+  - id: sci_fi_game
+    category: gaming
+    brief: a rocket or a spaceship
+    genres: [scifi]
+    avoid: [death]
