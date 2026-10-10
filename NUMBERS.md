@@ -104,6 +104,20 @@ the project author. Means over 20 ads, 95% bootstrap intervals over ads.
 | Sensitivity (author labels where present) | CLIP 0.46, Genre 0.09; CLIP − Genre +0.37 [+0.26, +0.49] | — | computed from `labels_*.json`; in `results/phase4/SUMMARY.md` |
 | Near-black scenes in the labelling pool | 29 of 466 scenes (35 of 589 pairs) | — | mean brightness < 20 of the 4-frame strips |
 
+## Phase 4b
+
+Rules: Phase 4b amendment in `EVAL-PROTOCOL.md`, frozen in commit `eebe7a5`. Same 14 test films and 20 ads as
+Phase 4. Cut-off tau = 0.146 from 300 labelled practice-film pairs (`results/phase4b/calibration.json`).
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| precision@10, v1 → v2 | 0.440 → 0.450; v2 − v1 +0.010 [−0.055, +0.085]; 4 ads better, 10 same, 6 worse | (not hardware-dependent) | `results/phase4b/match_v2_cpu-laptop_seed0.json` |
+| nDCG@10, v1 → v2 | 0.644 → 0.712; +0.068 [−0.018, +0.164] | — | same |
+| Precision of returned scenes, v1 → v2 | 0.44 (88/200) → 0.52 (90/174) | — | same |
+| Ads with nothing returned (v2) | 1 (beach), correct | — | same |
+| Label agreement, 50 new pairs | 84%, κ 0.69 (47 undiscussed pairs: 83%, κ 0.67) | — | same; `results/phase4b/SUMMARY.md` |
+| Junk seconds (pixel rule), practice films | 3,030 of 108,454 (2.8%) | — | `scripts/run_phase4b.py practice-pool` output |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.

@@ -1,0 +1,765 @@
+{
+ "films": "test",
+ "titles": [
+  "Assignment_Outer_Space",
+  "Cosmos_War_of_the_Planets",
+  "Cyrano_DeBergerac",
+  "Grave_of_the_Vampire_movie",
+  "OnlytheValaint",
+  "Quicksand_clear",
+  "TheMagicSword",
+  "TheStranger_0",
+  "cco_thegunandthepulpit",
+  "house_on_haunted_hill_ipod",
+  "lost_world",
+  "my_favorite_brunette",
+  "royal_wedding",
+  "tarzans_revenge"
+ ],
+ "tau": 0.14592120796442032,
+ "scene_threshold": 0.75,
+ "junk_seconds": 2860,
+ "seconds": 71091,
+ "model": "ViT-B-32",
+ "pretrained": "laion2b_s34b_b79k",
+ "templates": [
+  "{}",
+  "a photo of {}.",
+  "a still from a film showing {}.",
+  "a black and white film still of {}.",
+  "a movie scene of {}."
+ ],
+ "neutral": [
+  "people talking in a room",
+  "a close-up of a person's face",
+  "a landscape",
+  "a group of people standing",
+  "an indoor scene"
+ ],
+ "junk_rule": {
+  "max_mean": 0.05,
+  "max_std": 0.03
+ },
+ "pairs": [
+  {
+   "pair": "R001",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2443",
+   "title": "tarzans_revenge",
+   "start_s": 2443.01,
+   "end_s": 2447.01
+  },
+  {
+   "pair": "R002",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@2317",
+   "title": "TheStranger_0",
+   "start_s": 2317.01,
+   "end_s": 2502.03
+  },
+  {
+   "pair": "R003",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "lost_world@1583",
+   "title": "lost_world",
+   "start_s": 1583.01,
+   "end_s": 1610.01
+  },
+  {
+   "pair": "R004",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@840",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 840.03,
+   "end_s": 844.04
+  },
+  {
+   "pair": "R005",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "royal_wedding@3683",
+   "title": "royal_wedding",
+   "start_s": 3683.01,
+   "end_s": 3710.01
+  },
+  {
+   "pair": "R006",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@1989",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1989.02,
+   "end_s": 2054.02
+  },
+  {
+   "pair": "R007",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@301",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 301.0,
+   "end_s": 325.02
+  },
+  {
+   "pair": "R008",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Quicksand_clear@4358",
+   "title": "Quicksand_clear",
+   "start_s": 4358.02,
+   "end_s": 4376.0
+  },
+  {
+   "pair": "R009",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "my_favorite_brunette@11",
+   "title": "my_favorite_brunette",
+   "start_s": 11.01,
+   "end_s": 16.02
+  },
+  {
+   "pair": "R010",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@1888",
+   "title": "royal_wedding",
+   "start_s": 1888.02,
+   "end_s": 1928.03
+  },
+  {
+   "pair": "R011",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@1027",
+   "title": "Quicksand_clear",
+   "start_s": 1027.03,
+   "end_s": 1049.01
+  },
+  {
+   "pair": "R012",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheStranger_0@4607",
+   "title": "TheStranger_0",
+   "start_s": 4607.0,
+   "end_s": 4621.02
+  },
+  {
+   "pair": "R013",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@3543",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3543.01,
+   "end_s": 3575.0
+  },
+  {
+   "pair": "R014",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@2720",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2720.02,
+   "end_s": 2750.01
+  },
+  {
+   "pair": "R015",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@253",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 253.0,
+   "end_s": 258.01
+  },
+  {
+   "pair": "R016",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@869",
+   "title": "tarzans_revenge",
+   "start_s": 869.0,
+   "end_s": 874.01
+  },
+  {
+   "pair": "R017",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Grave_of_the_Vampire_movie@4643",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 4643.01,
+   "end_s": 4651.02
+  },
+  {
+   "pair": "R018",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@3156",
+   "title": "tarzans_revenge",
+   "start_s": 3156.02,
+   "end_s": 3168.03
+  },
+  {
+   "pair": "R019",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "royal_wedding@3719",
+   "title": "royal_wedding",
+   "start_s": 3719.02,
+   "end_s": 3808.0
+  },
+  {
+   "pair": "R020",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "royal_wedding@2116",
+   "title": "royal_wedding",
+   "start_s": 2116.01,
+   "end_s": 2169.03
+  },
+  {
+   "pair": "R021",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Assignment_Outer_Space@3101",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3101.03,
+   "end_s": 3111.01
+  },
+  {
+   "pair": "R022",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "tarzans_revenge@513",
+   "title": "tarzans_revenge",
+   "start_s": 513.01,
+   "end_s": 535.0
+  },
+  {
+   "pair": "R023",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@3387",
+   "title": "my_favorite_brunette",
+   "start_s": 3387.02,
+   "end_s": 3407.0
+  },
+  {
+   "pair": "R024",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@1958",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1958.02,
+   "end_s": 1968.03
+  },
+  {
+   "pair": "R025",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3246",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3246.01,
+   "end_s": 3249.01
+  },
+  {
+   "pair": "R026",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Cosmos_War_of_the_Planets@3998",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 3998.03,
+   "end_s": 4012.01
+  },
+  {
+   "pair": "R027",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@4162",
+   "title": "tarzans_revenge",
+   "start_s": 4162.02,
+   "end_s": 4166.03
+  },
+  {
+   "pair": "R028",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "my_favorite_brunette@4120",
+   "title": "my_favorite_brunette",
+   "start_s": 4120.02,
+   "end_s": 4130.02
+  },
+  {
+   "pair": "R029",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "tarzans_revenge@3728",
+   "title": "tarzans_revenge",
+   "start_s": 3728.02,
+   "end_s": 3741.0
+  },
+  {
+   "pair": "R030",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "my_favorite_brunette@3724",
+   "title": "my_favorite_brunette",
+   "start_s": 3724.02,
+   "end_s": 3762.02
+  },
+  {
+   "pair": "R031",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@384",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 384.03,
+   "end_s": 402.0
+  },
+  {
+   "pair": "R032",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@4739",
+   "title": "TheStranger_0",
+   "start_s": 4739.0,
+   "end_s": 4811.01
+  },
+  {
+   "pair": "R033",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@3442",
+   "title": "tarzans_revenge",
+   "start_s": 3442.01,
+   "end_s": 3454.02
+  },
+  {
+   "pair": "R034",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@2978",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2978.01,
+   "end_s": 3101.03
+  },
+  {
+   "pair": "R035",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@2381",
+   "title": "my_favorite_brunette",
+   "start_s": 2381.01,
+   "end_s": 2388.02
+  },
+  {
+   "pair": "R036",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2772",
+   "title": "tarzans_revenge",
+   "start_s": 2772.0,
+   "end_s": 2826.02
+  },
+  {
+   "pair": "R037",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Grave_of_the_Vampire_movie@4633",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 4633.0,
+   "end_s": 4637.01
+  },
+  {
+   "pair": "R038",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Cyrano_DeBergerac@4141",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4141.0,
+   "end_s": 4231.03
+  },
+  {
+   "pair": "R039",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "house_on_haunted_hill_ipod@204",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 204.0,
+   "end_s": 207.01
+  },
+  {
+   "pair": "R040",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@956",
+   "title": "Assignment_Outer_Space",
+   "start_s": 956.02,
+   "end_s": 964.03
+  },
+  {
+   "pair": "R041",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Grave_of_the_Vampire_movie@3441",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3441.02,
+   "end_s": 3449.03
+  },
+  {
+   "pair": "R042",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "my_favorite_brunette@2882",
+   "title": "my_favorite_brunette",
+   "start_s": 2882.01,
+   "end_s": 2904.0
+  },
+  {
+   "pair": "R043",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "TheStranger_0@1373",
+   "title": "TheStranger_0",
+   "start_s": 1373.0,
+   "end_s": 1400.03
+  },
+  {
+   "pair": "R044",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3266",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3266.03,
+   "end_s": 3269.03
+  },
+  {
+   "pair": "R045",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "Grave_of_the_Vampire_movie@1872",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1872.04,
+   "end_s": 1912.03
+  },
+  {
+   "pair": "R046",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "tarzans_revenge@759",
+   "title": "tarzans_revenge",
+   "start_s": 759.02,
+   "end_s": 763.03
+  },
+  {
+   "pair": "R047",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@4685",
+   "title": "OnlytheValaint",
+   "start_s": 4685.03,
+   "end_s": 4744.04
+  },
+  {
+   "pair": "R048",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "my_favorite_brunette@306",
+   "title": "my_favorite_brunette",
+   "start_s": 306.01,
+   "end_s": 331.03
+  },
+  {
+   "pair": "R049",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@2809",
+   "title": "TheStranger_0",
+   "start_s": 2809.01,
+   "end_s": 2869.03
+  },
+  {
+   "pair": "R050",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@1481",
+   "title": "royal_wedding",
+   "start_s": 1481.01,
+   "end_s": 1543.01
+  },
+  {
+   "pair": "R051",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "TheStranger_0@3648",
+   "title": "TheStranger_0",
+   "start_s": 3648.01,
+   "end_s": 3795.02
+  },
+  {
+   "pair": "R052",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "house_on_haunted_hill_ipod@3857",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 3857.02,
+   "end_s": 3868.0
+  },
+  {
+   "pair": "R053",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "OnlytheValaint@5383",
+   "title": "OnlytheValaint",
+   "start_s": 5383.03,
+   "end_s": 5433.03
+  },
+  {
+   "pair": "R054",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "royal_wedding@1267",
+   "title": "royal_wedding",
+   "start_s": 1267.03,
+   "end_s": 1270.0
+  },
+  {
+   "pair": "R055",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Assignment_Outer_Space@3184",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3184.01,
+   "end_s": 3191.02
+  },
+  {
+   "pair": "R056",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@2897",
+   "title": "tarzans_revenge",
+   "start_s": 2897.03,
+   "end_s": 2931.03
+  },
+  {
+   "pair": "R057",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "my_favorite_brunette@2483",
+   "title": "my_favorite_brunette",
+   "start_s": 2483.01,
+   "end_s": 2650.01
+  },
+  {
+   "pair": "R058",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "tarzans_revenge@3600",
+   "title": "tarzans_revenge",
+   "start_s": 3600.03,
+   "end_s": 3698.03
+  },
+  {
+   "pair": "R059",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "royal_wedding@3520",
+   "title": "royal_wedding",
+   "start_s": 3520.02,
+   "end_s": 3668.03
+  },
+  {
+   "pair": "R060",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "my_favorite_brunette@433",
+   "title": "my_favorite_brunette",
+   "start_s": 433.03,
+   "end_s": 554.02
+  },
+  {
+   "pair": "R061",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@2327",
+   "title": "tarzans_revenge",
+   "start_s": 2327.02,
+   "end_s": 2428.02
+  },
+  {
+   "pair": "R062",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@95",
+   "title": "royal_wedding",
+   "start_s": 95.03,
+   "end_s": 289.02
+  },
+  {
+   "pair": "R063",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Quicksand_clear@4467",
+   "title": "Quicksand_clear",
+   "start_s": 4467.03,
+   "end_s": 4475.0
+  },
+  {
+   "pair": "R064",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Quicksand_clear@4284",
+   "title": "Quicksand_clear",
+   "start_s": 4284.01,
+   "end_s": 4289.02
+  },
+  {
+   "pair": "R065",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@48",
+   "title": "Assignment_Outer_Space",
+   "start_s": 48.01,
+   "end_s": 88.02
+  },
+  {
+   "pair": "R066",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@1148",
+   "title": "Quicksand_clear",
+   "start_s": 1148.01,
+   "end_s": 1159.02
+  },
+  {
+   "pair": "R067",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@860",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 860.01,
+   "end_s": 865.01
+  },
+  {
+   "pair": "R068",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@423",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 423.02,
+   "end_s": 489.03
+  },
+  {
+   "pair": "R069",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@3630",
+   "title": "my_favorite_brunette",
+   "start_s": 3630.03,
+   "end_s": 3685.01
+  },
+  {
+   "pair": "R070",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@3600",
+   "title": "tarzans_revenge",
+   "start_s": 3600.03,
+   "end_s": 3698.03
+  },
+  {
+   "pair": "R071",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@649",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 649.04,
+   "end_s": 661.01
+  },
+  {
+   "pair": "R072",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2122",
+   "title": "tarzans_revenge",
+   "start_s": 2122.02,
+   "end_s": 2125.02
+  }
+ ]
+}
