@@ -1,0 +1,5918 @@
+{
+ "films": "test",
+ "titles": [
+  "Assignment_Outer_Space",
+  "Cosmos_War_of_the_Planets",
+  "Cyrano_DeBergerac",
+  "Grave_of_the_Vampire_movie",
+  "OnlytheValaint",
+  "Quicksand_clear",
+  "TheMagicSword",
+  "TheStranger_0",
+  "cco_thegunandthepulpit",
+  "house_on_haunted_hill_ipod",
+  "lost_world",
+  "my_favorite_brunette",
+  "royal_wedding",
+  "tarzans_revenge"
+ ],
+ "scene_threshold": 0.75,
+ "overfetch": 1000,
+ "seconds": 71091,
+ "scenes": 3911,
+ "faiss_version": "1.15.1",
+ "model": "ViT-B-32",
+ "pretrained": "laion2b_s34b_b79k",
+ "pairs": [
+  {
+   "pair": "P001",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@3327",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3327.02,
+   "end_s": 3482.01
+  },
+  {
+   "pair": "P002",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@3756",
+   "title": "OnlytheValaint",
+   "start_s": 3756.01,
+   "end_s": 3936.03
+  },
+  {
+   "pair": "P003",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheMagicSword@0",
+   "title": "TheMagicSword",
+   "start_s": 0.0,
+   "end_s": 4.0
+  },
+  {
+   "pair": "P004",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "TheMagicSword@105",
+   "title": "TheMagicSword",
+   "start_s": 105.01,
+   "end_s": 109.01
+  },
+  {
+   "pair": "P005",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "OnlytheValaint@3424",
+   "title": "OnlytheValaint",
+   "start_s": 3424.02,
+   "end_s": 3712.01
+  },
+  {
+   "pair": "P006",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cosmos_War_of_the_Planets@1286",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1286.02,
+   "end_s": 1302.03
+  },
+  {
+   "pair": "P007",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "OnlytheValaint@2045",
+   "title": "OnlytheValaint",
+   "start_s": 2045.04,
+   "end_s": 2162.01
+  },
+  {
+   "pair": "P008",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Cosmos_War_of_the_Planets@4148",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4148.01,
+   "end_s": 4154.02
+  },
+  {
+   "pair": "P009",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "royal_wedding@1287",
+   "title": "royal_wedding",
+   "start_s": 1287.02,
+   "end_s": 1403.0
+  },
+  {
+   "pair": "P010",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "OnlytheValaint@5165",
+   "title": "OnlytheValaint",
+   "start_s": 5165.01,
+   "end_s": 5211.01
+  },
+  {
+   "pair": "P011",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "TheMagicSword@3437",
+   "title": "TheMagicSword",
+   "start_s": 3437.0,
+   "end_s": 3443.01
+  },
+  {
+   "pair": "P012",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@3336",
+   "title": "TheMagicSword",
+   "start_s": 3336.0,
+   "end_s": 3344.01
+  },
+  {
+   "pair": "P013",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "TheMagicSword@295",
+   "title": "TheMagicSword",
+   "start_s": 295.03,
+   "end_s": 317.02
+  },
+  {
+   "pair": "P014",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "royal_wedding@2313",
+   "title": "royal_wedding",
+   "start_s": 2313.01,
+   "end_s": 2337.0
+  },
+  {
+   "pair": "P015",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "cco_thegunandthepulpit@4431",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 4431.03,
+   "end_s": 4433.03
+  },
+  {
+   "pair": "P016",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@372",
+   "title": "TheStranger_0",
+   "start_s": 372.0,
+   "end_s": 476.01
+  },
+  {
+   "pair": "P017",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@672",
+   "title": "Quicksand_clear",
+   "start_s": 672.0,
+   "end_s": 709.01
+  },
+  {
+   "pair": "P018",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "Grave_of_the_Vampire_movie@2053",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 2053.01,
+   "end_s": 2073.03
+  },
+  {
+   "pair": "P019",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@3454",
+   "title": "tarzans_revenge",
+   "start_s": 3454.02,
+   "end_s": 3546.01
+  },
+  {
+   "pair": "P020",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@821",
+   "title": "Quicksand_clear",
+   "start_s": 821.02,
+   "end_s": 903.0
+  },
+  {
+   "pair": "P021",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@4811",
+   "title": "TheMagicSword",
+   "start_s": 4811.01,
+   "end_s": 4813.01
+  },
+  {
+   "pair": "P022",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Cosmos_War_of_the_Planets@5169",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 5169.03,
+   "end_s": 5196.02
+  },
+  {
+   "pair": "P023",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "royal_wedding@2210",
+   "title": "royal_wedding",
+   "start_s": 2210.01,
+   "end_s": 2301.03
+  },
+  {
+   "pair": "P024",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "my_favorite_brunette@2738",
+   "title": "my_favorite_brunette",
+   "start_s": 2738.0,
+   "end_s": 2882.01
+  },
+  {
+   "pair": "P025",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "cco_thegunandthepulpit@1371",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1371.02,
+   "end_s": 1376.02
+  },
+  {
+   "pair": "P026",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "TheStranger_0@1001",
+   "title": "TheStranger_0",
+   "start_s": 1001.0,
+   "end_s": 1073.0
+  },
+  {
+   "pair": "P027",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Cyrano_DeBergerac@4719",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4719.01,
+   "end_s": 4778.01
+  },
+  {
+   "pair": "P028",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3290",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3290.02,
+   "end_s": 3327.02
+  },
+  {
+   "pair": "P029",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "lost_world@3198",
+   "title": "lost_world",
+   "start_s": 3198.03,
+   "end_s": 3240.0
+  },
+  {
+   "pair": "P030",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "house_on_haunted_hill_ipod@2981",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 2981.01,
+   "end_s": 3099.03
+  },
+  {
+   "pair": "P031",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@4571",
+   "title": "royal_wedding",
+   "start_s": 4571.03,
+   "end_s": 4614.01
+  },
+  {
+   "pair": "P032",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@2317",
+   "title": "TheStranger_0",
+   "start_s": 2317.01,
+   "end_s": 2502.03
+  },
+  {
+   "pair": "P033",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "Cosmos_War_of_the_Planets@2390",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2390.02,
+   "end_s": 2454.02
+  },
+  {
+   "pair": "P034",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "OnlytheValaint@2266",
+   "title": "OnlytheValaint",
+   "start_s": 2266.01,
+   "end_s": 2326.02
+  },
+  {
+   "pair": "P035",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Assignment_Outer_Space@3128",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3128.02,
+   "end_s": 3136.03
+  },
+  {
+   "pair": "P036",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "tarzans_revenge@1665",
+   "title": "tarzans_revenge",
+   "start_s": 1665.03,
+   "end_s": 1673.0
+  },
+  {
+   "pair": "P037",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Cyrano_DeBergerac@6361",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 6361.02,
+   "end_s": 6450.01
+  },
+  {
+   "pair": "P038",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@763",
+   "title": "tarzans_revenge",
+   "start_s": 763.03,
+   "end_s": 821.02
+  },
+  {
+   "pair": "P039",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "my_favorite_brunette@1635",
+   "title": "my_favorite_brunette",
+   "start_s": 1635.0,
+   "end_s": 1697.03
+  },
+  {
+   "pair": "P040",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@4709",
+   "title": "royal_wedding",
+   "start_s": 4709.0,
+   "end_s": 4828.02
+  },
+  {
+   "pair": "P041",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@4744",
+   "title": "OnlytheValaint",
+   "start_s": 4744.04,
+   "end_s": 4870.02
+  },
+  {
+   "pair": "P042",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@3712",
+   "title": "OnlytheValaint",
+   "start_s": 3712.01,
+   "end_s": 3756.0
+  },
+  {
+   "pair": "P043",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "my_favorite_brunette@1980",
+   "title": "my_favorite_brunette",
+   "start_s": 1980.01,
+   "end_s": 2054.02
+  },
+  {
+   "pair": "P044",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheStranger_0@2164",
+   "title": "TheStranger_0",
+   "start_s": 2164.03,
+   "end_s": 2177.01
+  },
+  {
+   "pair": "P045",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Quicksand_clear@4158",
+   "title": "Quicksand_clear",
+   "start_s": 4158.02,
+   "end_s": 4232.03
+  },
+  {
+   "pair": "P046",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2987",
+   "title": "tarzans_revenge",
+   "start_s": 2987.02,
+   "end_s": 3021.02
+  },
+  {
+   "pair": "P047",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "my_favorite_brunette@2738",
+   "title": "my_favorite_brunette",
+   "start_s": 2738.0,
+   "end_s": 2882.01
+  },
+  {
+   "pair": "P048",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Cosmos_War_of_the_Planets@2390",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2390.02,
+   "end_s": 2454.02
+  },
+  {
+   "pair": "P049",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@4662",
+   "title": "TheMagicSword",
+   "start_s": 4662.03,
+   "end_s": 4665.03
+  },
+  {
+   "pair": "P050",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cyrano_DeBergerac@2200",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 2200.03,
+   "end_s": 2298.03
+  },
+  {
+   "pair": "P051",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@2046",
+   "title": "Quicksand_clear",
+   "start_s": 2046.01,
+   "end_s": 2063.03
+  },
+  {
+   "pair": "P052",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "house_on_haunted_hill_ipod@3893",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 3893.03,
+   "end_s": 3981.01
+  },
+  {
+   "pair": "P053",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@3274",
+   "title": "OnlytheValaint",
+   "start_s": 3274.02,
+   "end_s": 3382.03
+  },
+  {
+   "pair": "P054",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "TheMagicSword@1080",
+   "title": "TheMagicSword",
+   "start_s": 1080.01,
+   "end_s": 1107.01
+  },
+  {
+   "pair": "P055",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@3396",
+   "title": "tarzans_revenge",
+   "start_s": 3396.03,
+   "end_s": 3428.02
+  },
+  {
+   "pair": "P056",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@5383",
+   "title": "OnlytheValaint",
+   "start_s": 5383.03,
+   "end_s": 5433.03
+  },
+  {
+   "pair": "P057",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Cyrano_DeBergerac@2534",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 2534.03,
+   "end_s": 3168.03
+  },
+  {
+   "pair": "P058",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "my_favorite_brunette@4299",
+   "title": "my_favorite_brunette",
+   "start_s": 4299.03,
+   "end_s": 4308.0
+  },
+  {
+   "pair": "P059",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheStranger_0@4435",
+   "title": "TheStranger_0",
+   "start_s": 4435.03,
+   "end_s": 4607.0
+  },
+  {
+   "pair": "P060",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "TheMagicSword@3192",
+   "title": "TheMagicSword",
+   "start_s": 3192.03,
+   "end_s": 3331.03
+  },
+  {
+   "pair": "P061",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Cosmos_War_of_the_Planets@1464",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1464.03,
+   "end_s": 1489.02
+  },
+  {
+   "pair": "P062",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "cco_thegunandthepulpit@1409",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1409.01,
+   "end_s": 1417.01
+  },
+  {
+   "pair": "P063",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "Grave_of_the_Vampire_movie@4624",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 4624.04,
+   "end_s": 4633.0
+  },
+  {
+   "pair": "P064",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "OnlytheValaint@5215",
+   "title": "OnlytheValaint",
+   "start_s": 5215.01,
+   "end_s": 5261.01
+  },
+  {
+   "pair": "P065",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "tarzans_revenge@1221",
+   "title": "tarzans_revenge",
+   "start_s": 1221.02,
+   "end_s": 1349.01
+  },
+  {
+   "pair": "P066",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "royal_wedding@1814",
+   "title": "royal_wedding",
+   "start_s": 1814.01,
+   "end_s": 1828.03
+  },
+  {
+   "pair": "P067",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@2656",
+   "title": "tarzans_revenge",
+   "start_s": 2656.02,
+   "end_s": 2665.03
+  },
+  {
+   "pair": "P068",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "TheMagicSword@1145",
+   "title": "TheMagicSword",
+   "start_s": 1145.01,
+   "end_s": 1164.03
+  },
+  {
+   "pair": "P069",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@2337",
+   "title": "royal_wedding",
+   "start_s": 2337.0,
+   "end_s": 2428.02
+  },
+  {
+   "pair": "P070",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cyrano_DeBergerac@949",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 949.01,
+   "end_s": 1374.0
+  },
+  {
+   "pair": "P071",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "my_favorite_brunette@2738",
+   "title": "my_favorite_brunette",
+   "start_s": 2738.0,
+   "end_s": 2882.01
+  },
+  {
+   "pair": "P072",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@5059",
+   "title": "TheStranger_0",
+   "start_s": 5059.02,
+   "end_s": 5241.0
+  },
+  {
+   "pair": "P073",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "my_favorite_brunette@3166",
+   "title": "my_favorite_brunette",
+   "start_s": 3166.03,
+   "end_s": 3215.01
+  },
+  {
+   "pair": "P074",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheStranger_0@3648",
+   "title": "TheStranger_0",
+   "start_s": 3648.01,
+   "end_s": 3795.02
+  },
+  {
+   "pair": "P075",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "cco_thegunandthepulpit@4417",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 4417.01,
+   "end_s": 4423.02
+  },
+  {
+   "pair": "P076",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cosmos_War_of_the_Planets@278",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 278.01,
+   "end_s": 283.02
+  },
+  {
+   "pair": "P077",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "lost_world@575",
+   "title": "lost_world",
+   "start_s": 575.01,
+   "end_s": 593.02
+  },
+  {
+   "pair": "P078",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@1753",
+   "title": "my_favorite_brunette",
+   "start_s": 1753.02,
+   "end_s": 1761.02
+  },
+  {
+   "pair": "P079",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Cyrano_DeBergerac@6266",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 6266.03,
+   "end_s": 6323.02
+  },
+  {
+   "pair": "P080",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheMagicSword@105",
+   "title": "TheMagicSword",
+   "start_s": 105.01,
+   "end_s": 109.01
+  },
+  {
+   "pair": "P081",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "tarzans_revenge@1221",
+   "title": "tarzans_revenge",
+   "start_s": 1221.02,
+   "end_s": 1349.01
+  },
+  {
+   "pair": "P082",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Assignment_Outer_Space@967",
+   "title": "Assignment_Outer_Space",
+   "start_s": 967.03,
+   "end_s": 973.0
+  },
+  {
+   "pair": "P083",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@4449",
+   "title": "OnlytheValaint",
+   "start_s": 4449.04,
+   "end_s": 4457.01
+  },
+  {
+   "pair": "P084",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "tarzans_revenge@2209",
+   "title": "tarzans_revenge",
+   "start_s": 2209.01,
+   "end_s": 2277.01
+  },
+  {
+   "pair": "P085",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "tarzans_revenge@1854",
+   "title": "tarzans_revenge",
+   "start_s": 1854.02,
+   "end_s": 1882.01
+  },
+  {
+   "pair": "P086",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "cco_thegunandthepulpit@301",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 301.0,
+   "end_s": 325.02
+  },
+  {
+   "pair": "P087",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Grave_of_the_Vampire_movie@5209",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 5209.04,
+   "end_s": 5362.02
+  },
+  {
+   "pair": "P088",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@4427",
+   "title": "TheMagicSword",
+   "start_s": 4427.03,
+   "end_s": 4450.02
+  },
+  {
+   "pair": "P089",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Grave_of_the_Vampire_movie@444",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 444.03,
+   "end_s": 499.04
+  },
+  {
+   "pair": "P090",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@1980",
+   "title": "royal_wedding",
+   "start_s": 1980.01,
+   "end_s": 2056.02
+  },
+  {
+   "pair": "P091",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "tarzans_revenge@18",
+   "title": "tarzans_revenge",
+   "start_s": 18.02,
+   "end_s": 28.03
+  },
+  {
+   "pair": "P092",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "lost_world@1309",
+   "title": "lost_world",
+   "start_s": 1309.01,
+   "end_s": 1340.0
+  },
+  {
+   "pair": "P093",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cyrano_DeBergerac@1766",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 1766.03,
+   "end_s": 2200.03
+  },
+  {
+   "pair": "P094",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "my_favorite_brunette@859",
+   "title": "my_favorite_brunette",
+   "start_s": 859.02,
+   "end_s": 914.01
+  },
+  {
+   "pair": "P095",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Quicksand_clear@2498",
+   "title": "Quicksand_clear",
+   "start_s": 2498.03,
+   "end_s": 2545.01
+  },
+  {
+   "pair": "P096",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3658",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3658.02,
+   "end_s": 3844.01
+  },
+  {
+   "pair": "P097",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "lost_world@132",
+   "title": "lost_world",
+   "start_s": 132.03,
+   "end_s": 142.01
+  },
+  {
+   "pair": "P098",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "tarzans_revenge@3265",
+   "title": "tarzans_revenge",
+   "start_s": 3265.03,
+   "end_s": 3278.01
+  },
+  {
+   "pair": "P099",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Cyrano_DeBergerac@3971",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3971.0,
+   "end_s": 4130.02
+  },
+  {
+   "pair": "P100",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@2795",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2795.04,
+   "end_s": 2812.01
+  },
+  {
+   "pair": "P101",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "TheStranger_0@1078",
+   "title": "TheStranger_0",
+   "start_s": 1078.01,
+   "end_s": 1091.02
+  },
+  {
+   "pair": "P102",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "royal_wedding@1656",
+   "title": "royal_wedding",
+   "start_s": 1656.02,
+   "end_s": 1659.02
+  },
+  {
+   "pair": "P103",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Cyrano_DeBergerac@2534",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 2534.03,
+   "end_s": 3168.03
+  },
+  {
+   "pair": "P104",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "TheMagicSword@1474",
+   "title": "TheMagicSword",
+   "start_s": 1474.01,
+   "end_s": 1481.01
+  },
+  {
+   "pair": "P105",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@5318",
+   "title": "TheStranger_0",
+   "start_s": 5318.01,
+   "end_s": 5364.02
+  },
+  {
+   "pair": "P106",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "Assignment_Outer_Space@2121",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2121.02,
+   "end_s": 2182.01
+  },
+  {
+   "pair": "P107",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@169",
+   "title": "OnlytheValaint",
+   "start_s": 169.02,
+   "end_s": 187.03
+  },
+  {
+   "pair": "P108",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@3980",
+   "title": "Quicksand_clear",
+   "start_s": 3980.01,
+   "end_s": 4014.01
+  },
+  {
+   "pair": "P109",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "tarzans_revenge@2656",
+   "title": "tarzans_revenge",
+   "start_s": 2656.02,
+   "end_s": 2665.03
+  },
+  {
+   "pair": "P110",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Cyrano_DeBergerac@4778",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4778.01,
+   "end_s": 5191.02
+  },
+  {
+   "pair": "P111",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "my_favorite_brunette@1883",
+   "title": "my_favorite_brunette",
+   "start_s": 1883.01,
+   "end_s": 1967.03
+  },
+  {
+   "pair": "P112",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@5047",
+   "title": "royal_wedding",
+   "start_s": 5047.01,
+   "end_s": 5078.01
+  },
+  {
+   "pair": "P113",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@4614",
+   "title": "royal_wedding",
+   "start_s": 4614.01,
+   "end_s": 4709.0
+  },
+  {
+   "pair": "P114",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Grave_of_the_Vampire_movie@1082",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1082.04,
+   "end_s": 1123.04
+  },
+  {
+   "pair": "P115",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@1938",
+   "title": "TheStranger_0",
+   "start_s": 1938.0,
+   "end_s": 2006.0
+  },
+  {
+   "pair": "P116",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "house_on_haunted_hill_ipod@4173",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 4173.01,
+   "end_s": 4183.02
+  },
+  {
+   "pair": "P117",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheMagicSword@3472",
+   "title": "TheMagicSword",
+   "start_s": 3472.01,
+   "end_s": 3501.0
+  },
+  {
+   "pair": "P118",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@1345",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1345.01,
+   "end_s": 1382.01
+  },
+  {
+   "pair": "P119",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheMagicSword@2860",
+   "title": "TheMagicSword",
+   "start_s": 2860.03,
+   "end_s": 2883.02
+  },
+  {
+   "pair": "P120",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "OnlytheValaint@4913",
+   "title": "OnlytheValaint",
+   "start_s": 4913.01,
+   "end_s": 4930.02
+  },
+  {
+   "pair": "P121",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "Quicksand_clear@1343",
+   "title": "Quicksand_clear",
+   "start_s": 1343.01,
+   "end_s": 1390.02
+  },
+  {
+   "pair": "P122",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@4035",
+   "title": "OnlytheValaint",
+   "start_s": 4035.03,
+   "end_s": 4080.02
+  },
+  {
+   "pair": "P123",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@3727",
+   "title": "TheMagicSword",
+   "start_s": 3727.03,
+   "end_s": 3766.03
+  },
+  {
+   "pair": "P124",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@1373",
+   "title": "TheStranger_0",
+   "start_s": 1373.0,
+   "end_s": 1400.03
+  },
+  {
+   "pair": "P125",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@1309",
+   "title": "OnlytheValaint",
+   "start_s": 1309.01,
+   "end_s": 1330.02
+  },
+  {
+   "pair": "P126",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "TheMagicSword@449",
+   "title": "TheMagicSword",
+   "start_s": 449.02,
+   "end_s": 536.0
+  },
+  {
+   "pair": "P127",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "lost_world@3105",
+   "title": "lost_world",
+   "start_s": 3105.0,
+   "end_s": 3198.03
+  },
+  {
+   "pair": "P128",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "my_favorite_brunette@1181",
+   "title": "my_favorite_brunette",
+   "start_s": 1181.01,
+   "end_s": 1635.03
+  },
+  {
+   "pair": "P129",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Cyrano_DeBergerac@3971",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3971.0,
+   "end_s": 4130.02
+  },
+  {
+   "pair": "P130",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cyrano_DeBergerac@5315",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5315.01,
+   "end_s": 5437.03
+  },
+  {
+   "pair": "P131",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@5215",
+   "title": "OnlytheValaint",
+   "start_s": 5215.01,
+   "end_s": 5261.01
+  },
+  {
+   "pair": "P132",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@1793",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1793.04,
+   "end_s": 1796.04
+  },
+  {
+   "pair": "P133",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "my_favorite_brunette@299",
+   "title": "my_favorite_brunette",
+   "start_s": 299.03,
+   "end_s": 306.0
+  },
+  {
+   "pair": "P134",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@1119",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1119.02,
+   "end_s": 1287.02
+  },
+  {
+   "pair": "P135",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@1933",
+   "title": "tarzans_revenge",
+   "start_s": 1933.03,
+   "end_s": 1997.03
+  },
+  {
+   "pair": "P136",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "house_on_haunted_hill_ipod@1542",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 1542.01,
+   "end_s": 1708.01
+  },
+  {
+   "pair": "P137",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "royal_wedding@832",
+   "title": "royal_wedding",
+   "start_s": 832.03,
+   "end_s": 941.01
+  },
+  {
+   "pair": "P138",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "royal_wedding@3862",
+   "title": "royal_wedding",
+   "start_s": 3862.02,
+   "end_s": 4150.01
+  },
+  {
+   "pair": "P139",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Cyrano_DeBergerac@4426",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4426.02,
+   "end_s": 4437.03
+  },
+  {
+   "pair": "P140",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Cyrano_DeBergerac@6361",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 6361.02,
+   "end_s": 6450.01
+  },
+  {
+   "pair": "P141",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "my_favorite_brunette@2063",
+   "title": "my_favorite_brunette",
+   "start_s": 2063.03,
+   "end_s": 2142.01
+  },
+  {
+   "pair": "P142",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "my_favorite_brunette@1829",
+   "title": "my_favorite_brunette",
+   "start_s": 1829.03,
+   "end_s": 1865.03
+  },
+  {
+   "pair": "P143",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@4744",
+   "title": "OnlytheValaint",
+   "start_s": 4744.04,
+   "end_s": 4870.02
+  },
+  {
+   "pair": "P144",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheMagicSword@4665",
+   "title": "TheMagicSword",
+   "start_s": 4665.03,
+   "end_s": 4673.01
+  },
+  {
+   "pair": "P145",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "lost_world@2789",
+   "title": "lost_world",
+   "start_s": 2789.02,
+   "end_s": 2816.01
+  },
+  {
+   "pair": "P146",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "my_favorite_brunette@2912",
+   "title": "my_favorite_brunette",
+   "start_s": 2912.01,
+   "end_s": 3166.03
+  },
+  {
+   "pair": "P147",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Cyrano_DeBergerac@790",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 790.02,
+   "end_s": 932.03
+  },
+  {
+   "pair": "P148",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "TheStranger_0@2697",
+   "title": "TheStranger_0",
+   "start_s": 2697.03,
+   "end_s": 2778.01
+  },
+  {
+   "pair": "P149",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Quicksand_clear@3488",
+   "title": "Quicksand_clear",
+   "start_s": 3488.02,
+   "end_s": 3564.03
+  },
+  {
+   "pair": "P150",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "TheMagicSword@1837",
+   "title": "TheMagicSword",
+   "start_s": 1837.0,
+   "end_s": 1859.02
+  },
+  {
+   "pair": "P151",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheStranger_0@3931",
+   "title": "TheStranger_0",
+   "start_s": 3931.03,
+   "end_s": 3940.0
+  },
+  {
+   "pair": "P152",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@5173",
+   "title": "my_favorite_brunette",
+   "start_s": 5173.0,
+   "end_s": 5187.01
+  },
+  {
+   "pair": "P153",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Quicksand_clear@1873",
+   "title": "Quicksand_clear",
+   "start_s": 1873.0,
+   "end_s": 2032.03
+  },
+  {
+   "pair": "P154",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@5431",
+   "title": "royal_wedding",
+   "start_s": 5431.03,
+   "end_s": 5445.01
+  },
+  {
+   "pair": "P155",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "royal_wedding@2210",
+   "title": "royal_wedding",
+   "start_s": 2210.01,
+   "end_s": 2301.03
+  },
+  {
+   "pair": "P156",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Cyrano_DeBergerac@3537",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3537.0,
+   "end_s": 3763.02
+  },
+  {
+   "pair": "P157",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "tarzans_revenge@1349",
+   "title": "tarzans_revenge",
+   "start_s": 1349.01,
+   "end_s": 1372.0
+  },
+  {
+   "pair": "P158",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Grave_of_the_Vampire_movie@951",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 951.03,
+   "end_s": 972.01
+  },
+  {
+   "pair": "P159",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "OnlytheValaint@1351",
+   "title": "OnlytheValaint",
+   "start_s": 1351.0,
+   "end_s": 1406.0
+  },
+  {
+   "pair": "P160",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "house_on_haunted_hill_ipod@1247",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 1247.01,
+   "end_s": 1345.01
+  },
+  {
+   "pair": "P161",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@2110",
+   "title": "tarzans_revenge",
+   "start_s": 2110.01,
+   "end_s": 2117.01
+  },
+  {
+   "pair": "P162",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "OnlytheValaint@2893",
+   "title": "OnlytheValaint",
+   "start_s": 2893.04,
+   "end_s": 2954.0
+  },
+  {
+   "pair": "P163",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "my_favorite_brunette@1181",
+   "title": "my_favorite_brunette",
+   "start_s": 1181.01,
+   "end_s": 1635.03
+  },
+  {
+   "pair": "P164",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@5009",
+   "title": "TheStranger_0",
+   "start_s": 5009.0,
+   "end_s": 5017.01
+  },
+  {
+   "pair": "P165",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "royal_wedding@1264",
+   "title": "royal_wedding",
+   "start_s": 1264.03,
+   "end_s": 1267.03
+  },
+  {
+   "pair": "P166",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "my_favorite_brunette@4898",
+   "title": "my_favorite_brunette",
+   "start_s": 4898.03,
+   "end_s": 4929.02
+  },
+  {
+   "pair": "P167",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "royal_wedding@513",
+   "title": "royal_wedding",
+   "start_s": 513.01,
+   "end_s": 621.02
+  },
+  {
+   "pair": "P168",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cosmos_War_of_the_Planets@1602",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1602.0,
+   "end_s": 1615.01
+  },
+  {
+   "pair": "P169",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "house_on_haunted_hill_ipod@902",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 902.0,
+   "end_s": 906.01
+  },
+  {
+   "pair": "P170",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Cosmos_War_of_the_Planets@1076",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1076.01,
+   "end_s": 1079.01
+  },
+  {
+   "pair": "P171",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "OnlytheValaint@5819",
+   "title": "OnlytheValaint",
+   "start_s": 5819.02,
+   "end_s": 5845.04
+  },
+  {
+   "pair": "P172",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2874",
+   "title": "tarzans_revenge",
+   "start_s": 2874.0,
+   "end_s": 2897.03
+  },
+  {
+   "pair": "P173",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@2605",
+   "title": "TheMagicSword",
+   "start_s": 2605.01,
+   "end_s": 2650.02
+  },
+  {
+   "pair": "P174",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@105",
+   "title": "TheMagicSword",
+   "start_s": 105.01,
+   "end_s": 109.01
+  },
+  {
+   "pair": "P175",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "royal_wedding@1631",
+   "title": "royal_wedding",
+   "start_s": 1631.03,
+   "end_s": 1656.02
+  },
+  {
+   "pair": "P176",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@2934",
+   "title": "TheMagicSword",
+   "start_s": 2934.0,
+   "end_s": 2938.0
+  },
+  {
+   "pair": "P177",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Cyrano_DeBergerac@3381",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3381.01,
+   "end_s": 3537.03
+  },
+  {
+   "pair": "P178",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "my_favorite_brunette@1883",
+   "title": "my_favorite_brunette",
+   "start_s": 1883.01,
+   "end_s": 1967.03
+  },
+  {
+   "pair": "P179",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Cosmos_War_of_the_Planets@1326",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1326.02,
+   "end_s": 1329.03
+  },
+  {
+   "pair": "P180",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@2537",
+   "title": "TheStranger_0",
+   "start_s": 2537.0,
+   "end_s": 2560.02
+  },
+  {
+   "pair": "P181",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "my_favorite_brunette@4130",
+   "title": "my_favorite_brunette",
+   "start_s": 4130.03,
+   "end_s": 4133.03
+  },
+  {
+   "pair": "P182",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@5441",
+   "title": "OnlytheValaint",
+   "start_s": 5441.03,
+   "end_s": 5460.01
+  },
+  {
+   "pair": "P183",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2033",
+   "title": "tarzans_revenge",
+   "start_s": 2033.03,
+   "end_s": 2110.01
+  },
+  {
+   "pair": "P184",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Cyrano_DeBergerac@6639",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 6639.03,
+   "end_s": 6733.03
+  },
+  {
+   "pair": "P185",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "royal_wedding@5095",
+   "title": "royal_wedding",
+   "start_s": 5095.02,
+   "end_s": 5163.02
+  },
+  {
+   "pair": "P186",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@1837",
+   "title": "TheMagicSword",
+   "start_s": 1837.0,
+   "end_s": 1859.02
+  },
+  {
+   "pair": "P187",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@2720",
+   "title": "OnlytheValaint",
+   "start_s": 2720.02,
+   "end_s": 2893.04
+  },
+  {
+   "pair": "P188",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "tarzans_revenge@127",
+   "title": "tarzans_revenge",
+   "start_s": 127.03,
+   "end_s": 170.0
+  },
+  {
+   "pair": "P189",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Cyrano_DeBergerac@1503",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 1503.0,
+   "end_s": 1763.03
+  },
+  {
+   "pair": "P190",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "lost_world@637",
+   "title": "lost_world",
+   "start_s": 637.0,
+   "end_s": 683.01
+  },
+  {
+   "pair": "P191",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@2697",
+   "title": "TheStranger_0",
+   "start_s": 2697.03,
+   "end_s": 2778.01
+  },
+  {
+   "pair": "P192",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "lost_world@1369",
+   "title": "lost_world",
+   "start_s": 1369.0,
+   "end_s": 1378.01
+  },
+  {
+   "pair": "P193",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@4338",
+   "title": "TheStranger_0",
+   "start_s": 4338.0,
+   "end_s": 4351.01
+  },
+  {
+   "pair": "P194",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "royal_wedding@5331",
+   "title": "royal_wedding",
+   "start_s": 5331.03,
+   "end_s": 5385.01
+  },
+  {
+   "pair": "P195",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "royal_wedding@2116",
+   "title": "royal_wedding",
+   "start_s": 2116.01,
+   "end_s": 2169.03
+  },
+  {
+   "pair": "P196",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@6139",
+   "title": "OnlytheValaint",
+   "start_s": 6139.03,
+   "end_s": 6218.01
+  },
+  {
+   "pair": "P197",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "my_favorite_brunette@1708",
+   "title": "my_favorite_brunette",
+   "start_s": 1708.01,
+   "end_s": 1726.02
+  },
+  {
+   "pair": "P198",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@1150",
+   "title": "TheStranger_0",
+   "start_s": 1150.02,
+   "end_s": 1246.01
+  },
+  {
+   "pair": "P199",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "lost_world@1034",
+   "title": "lost_world",
+   "start_s": 1034.03,
+   "end_s": 1059.02
+  },
+  {
+   "pair": "P200",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Quicksand_clear@2398",
+   "title": "Quicksand_clear",
+   "start_s": 2398.03,
+   "end_s": 2490.02
+  },
+  {
+   "pair": "P201",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2474",
+   "title": "tarzans_revenge",
+   "start_s": 2474.0,
+   "end_s": 2481.01
+  },
+  {
+   "pair": "P202",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "lost_world@2193",
+   "title": "lost_world",
+   "start_s": 2193.02,
+   "end_s": 2199.03
+  },
+  {
+   "pair": "P203",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Quicksand_clear@3649",
+   "title": "Quicksand_clear",
+   "start_s": 3649.01,
+   "end_s": 3675.0
+  },
+  {
+   "pair": "P204",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Cosmos_War_of_the_Planets@4774",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4774.0,
+   "end_s": 4794.02
+  },
+  {
+   "pair": "P205",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@1943",
+   "title": "OnlytheValaint",
+   "start_s": 1943.04,
+   "end_s": 1959.01
+  },
+  {
+   "pair": "P206",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Quicksand_clear@1873",
+   "title": "Quicksand_clear",
+   "start_s": 1873.0,
+   "end_s": 2032.03
+  },
+  {
+   "pair": "P207",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "royal_wedding@3007",
+   "title": "royal_wedding",
+   "start_s": 3007.0,
+   "end_s": 3373.0
+  },
+  {
+   "pair": "P208",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@3034",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 3034.03,
+   "end_s": 3096.04
+  },
+  {
+   "pair": "P209",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "lost_world@39",
+   "title": "lost_world",
+   "start_s": 39.01,
+   "end_s": 52.02
+  },
+  {
+   "pair": "P210",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "OnlytheValaint@2045",
+   "title": "OnlytheValaint",
+   "start_s": 2045.04,
+   "end_s": 2162.01
+  },
+  {
+   "pair": "P211",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "Cosmos_War_of_the_Planets@4418",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4418.01,
+   "end_s": 4433.03
+  },
+  {
+   "pair": "P212",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@924",
+   "title": "tarzans_revenge",
+   "start_s": 924.02,
+   "end_s": 929.03
+  },
+  {
+   "pair": "P213",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Quicksand_clear@903",
+   "title": "Quicksand_clear",
+   "start_s": 903.0,
+   "end_s": 1021.02
+  },
+  {
+   "pair": "P214",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "tarzans_revenge@3600",
+   "title": "tarzans_revenge",
+   "start_s": 3600.03,
+   "end_s": 3698.03
+  },
+  {
+   "pair": "P215",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@339",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 339.03,
+   "end_s": 350.04
+  },
+  {
+   "pair": "P216",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "my_favorite_brunette@3724",
+   "title": "my_favorite_brunette",
+   "start_s": 3724.02,
+   "end_s": 3762.02
+  },
+  {
+   "pair": "P217",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@1980",
+   "title": "my_favorite_brunette",
+   "start_s": 1980.01,
+   "end_s": 2054.02
+  },
+  {
+   "pair": "P218",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Cyrano_DeBergerac@4231",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4231.03,
+   "end_s": 4423.02
+  },
+  {
+   "pair": "P219",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "royal_wedding@2210",
+   "title": "royal_wedding",
+   "start_s": 2210.01,
+   "end_s": 2301.03
+  },
+  {
+   "pair": "P220",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheMagicSword@11",
+   "title": "TheMagicSword",
+   "start_s": 11.01,
+   "end_s": 18.02
+  },
+  {
+   "pair": "P221",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@1938",
+   "title": "TheStranger_0",
+   "start_s": 1938.0,
+   "end_s": 2006.0
+  },
+  {
+   "pair": "P222",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "royal_wedding@4571",
+   "title": "royal_wedding",
+   "start_s": 4571.03,
+   "end_s": 4614.01
+  },
+  {
+   "pair": "P223",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "royal_wedding@3846",
+   "title": "royal_wedding",
+   "start_s": 3846.01,
+   "end_s": 3852.01
+  },
+  {
+   "pair": "P224",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Grave_of_the_Vampire_movie@435",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 435.02,
+   "end_s": 444.03
+  },
+  {
+   "pair": "P225",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "tarzans_revenge@377",
+   "title": "tarzans_revenge",
+   "start_s": 377.01,
+   "end_s": 420.02
+  },
+  {
+   "pair": "P226",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@3560",
+   "title": "TheMagicSword",
+   "start_s": 3560.03,
+   "end_s": 3566.03
+  },
+  {
+   "pair": "P227",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cyrano_DeBergerac@4231",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4231.03,
+   "end_s": 4423.02
+  },
+  {
+   "pair": "P228",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "my_favorite_brunette@665",
+   "title": "my_favorite_brunette",
+   "start_s": 665.03,
+   "end_s": 690.02
+  },
+  {
+   "pair": "P229",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cyrano_DeBergerac@1766",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 1766.03,
+   "end_s": 2200.03
+  },
+  {
+   "pair": "P230",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@2036",
+   "title": "TheMagicSword",
+   "start_s": 2036.0,
+   "end_s": 2178.01
+  },
+  {
+   "pair": "P231",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "royal_wedding@3007",
+   "title": "royal_wedding",
+   "start_s": 3007.0,
+   "end_s": 3373.0
+  },
+  {
+   "pair": "P232",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "my_favorite_brunette@3766",
+   "title": "my_favorite_brunette",
+   "start_s": 3766.03,
+   "end_s": 3928.02
+  },
+  {
+   "pair": "P233",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "tarzans_revenge@1583",
+   "title": "tarzans_revenge",
+   "start_s": 1583.01,
+   "end_s": 1665.03
+  },
+  {
+   "pair": "P234",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@2068",
+   "title": "Quicksand_clear",
+   "start_s": 2068.03,
+   "end_s": 2077.01
+  },
+  {
+   "pair": "P235",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@2567",
+   "title": "tarzans_revenge",
+   "start_s": 2567.03,
+   "end_s": 2656.02
+  },
+  {
+   "pair": "P236",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "Grave_of_the_Vampire_movie@1177",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1177.01,
+   "end_s": 1252.04
+  },
+  {
+   "pair": "P237",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cyrano_DeBergerac@3537",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3537.0,
+   "end_s": 3763.02
+  },
+  {
+   "pair": "P238",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cosmos_War_of_the_Planets@706",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 706.01,
+   "end_s": 711.01
+  },
+  {
+   "pair": "P239",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Cosmos_War_of_the_Planets@2507",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2507.0,
+   "end_s": 2585.01
+  },
+  {
+   "pair": "P240",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "royal_wedding@1760",
+   "title": "royal_wedding",
+   "start_s": 1760.02,
+   "end_s": 1788.02
+  },
+  {
+   "pair": "P241",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@1642",
+   "title": "Quicksand_clear",
+   "start_s": 1642.01,
+   "end_s": 1738.0
+  },
+  {
+   "pair": "P242",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@1766",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1766.01,
+   "end_s": 1775.02
+  },
+  {
+   "pair": "P243",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "tarzans_revenge@3281",
+   "title": "tarzans_revenge",
+   "start_s": 3281.01,
+   "end_s": 3311.01
+  },
+  {
+   "pair": "P244",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "royal_wedding@95",
+   "title": "royal_wedding",
+   "start_s": 95.03,
+   "end_s": 289.02
+  },
+  {
+   "pair": "P245",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "cco_thegunandthepulpit@2524",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2524.02,
+   "end_s": 2603.0
+  },
+  {
+   "pair": "P246",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "my_favorite_brunette@1181",
+   "title": "my_favorite_brunette",
+   "start_s": 1181.01,
+   "end_s": 1635.03
+  },
+  {
+   "pair": "P247",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3184",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3184.01,
+   "end_s": 3191.02
+  },
+  {
+   "pair": "P248",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "cco_thegunandthepulpit@225",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 225.02,
+   "end_s": 232.03
+  },
+  {
+   "pair": "P249",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@1947",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1947.01,
+   "end_s": 1951.01
+  },
+  {
+   "pair": "P250",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "lost_world@2466",
+   "title": "lost_world",
+   "start_s": 2466.03,
+   "end_s": 2470.03
+  },
+  {
+   "pair": "P251",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "my_favorite_brunette@2650",
+   "title": "my_favorite_brunette",
+   "start_s": 2650.01,
+   "end_s": 2669.03
+  },
+  {
+   "pair": "P252",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "lost_world@3245",
+   "title": "lost_world",
+   "start_s": 3245.01,
+   "end_s": 3539.0
+  },
+  {
+   "pair": "P253",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "TheStranger_0@2317",
+   "title": "TheStranger_0",
+   "start_s": 2317.01,
+   "end_s": 2502.03
+  },
+  {
+   "pair": "P254",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "cco_thegunandthepulpit@2524",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2524.02,
+   "end_s": 2603.0
+  },
+  {
+   "pair": "P255",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "my_favorite_brunette@665",
+   "title": "my_favorite_brunette",
+   "start_s": 665.03,
+   "end_s": 690.02
+  },
+  {
+   "pair": "P256",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@115",
+   "title": "TheMagicSword",
+   "start_s": 115.02,
+   "end_s": 132.03
+  },
+  {
+   "pair": "P257",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@3488",
+   "title": "Quicksand_clear",
+   "start_s": 3488.02,
+   "end_s": 3564.03
+  },
+  {
+   "pair": "P258",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@1106",
+   "title": "Quicksand_clear",
+   "start_s": 1106.0,
+   "end_s": 1111.01
+  },
+  {
+   "pair": "P259",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@4164",
+   "title": "TheStranger_0",
+   "start_s": 4164.03,
+   "end_s": 4197.03
+  },
+  {
+   "pair": "P260",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@859",
+   "title": "my_favorite_brunette",
+   "start_s": 859.02,
+   "end_s": 914.01
+  },
+  {
+   "pair": "P261",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "OnlytheValaint@2481",
+   "title": "OnlytheValaint",
+   "start_s": 2481.03,
+   "end_s": 2491.03
+  },
+  {
+   "pair": "P262",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cyrano_DeBergerac@4581",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4581.01,
+   "end_s": 4602.03
+  },
+  {
+   "pair": "P263",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "my_favorite_brunette@1181",
+   "title": "my_favorite_brunette",
+   "start_s": 1181.01,
+   "end_s": 1635.03
+  },
+  {
+   "pair": "P264",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Cyrano_DeBergerac@5191",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5191.02,
+   "end_s": 5245.01
+  },
+  {
+   "pair": "P265",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "house_on_haunted_hill_ipod@2810",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 2810.01,
+   "end_s": 2922.02
+  },
+  {
+   "pair": "P266",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "house_on_haunted_hill_ipod@207",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 207.01,
+   "end_s": 219.02
+  },
+  {
+   "pair": "P267",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "my_favorite_brunette@3294",
+   "title": "my_favorite_brunette",
+   "start_s": 3294.02,
+   "end_s": 3370.03
+  },
+  {
+   "pair": "P268",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Grave_of_the_Vampire_movie@191",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 191.02,
+   "end_s": 278.03
+  },
+  {
+   "pair": "P269",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "my_favorite_brunette@4152",
+   "title": "my_favorite_brunette",
+   "start_s": 4152.01,
+   "end_s": 4156.02
+  },
+  {
+   "pair": "P270",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Cosmos_War_of_the_Planets@4924",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4924.02,
+   "end_s": 4938.03
+  },
+  {
+   "pair": "P271",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "my_favorite_brunette@791",
+   "title": "my_favorite_brunette",
+   "start_s": 791.02,
+   "end_s": 852.02
+  },
+  {
+   "pair": "P272",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@563",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 563.01,
+   "end_s": 607.01
+  },
+  {
+   "pair": "P273",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "house_on_haunted_hill_ipod@1542",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 1542.01,
+   "end_s": 1708.01
+  },
+  {
+   "pair": "P274",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Grave_of_the_Vampire_movie@972",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 972.01,
+   "end_s": 977.02
+  },
+  {
+   "pair": "P275",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "TheStranger_0@372",
+   "title": "TheStranger_0",
+   "start_s": 372.0,
+   "end_s": 476.01
+  },
+  {
+   "pair": "P276",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@2658",
+   "title": "TheMagicSword",
+   "start_s": 2658.02,
+   "end_s": 2665.03
+  },
+  {
+   "pair": "P277",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Grave_of_the_Vampire_movie@4674",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 4674.0,
+   "end_s": 4705.03
+  },
+  {
+   "pair": "P278",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "my_favorite_brunette@4789",
+   "title": "my_favorite_brunette",
+   "start_s": 4789.02,
+   "end_s": 4794.02
+  },
+  {
+   "pair": "P279",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "tarzans_revenge@1375",
+   "title": "tarzans_revenge",
+   "start_s": 1375.01,
+   "end_s": 1457.02
+  },
+  {
+   "pair": "P280",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "TheMagicSword@3446",
+   "title": "TheMagicSword",
+   "start_s": 3446.01,
+   "end_s": 3451.02
+  },
+  {
+   "pair": "P281",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@1177",
+   "title": "Quicksand_clear",
+   "start_s": 1177.01,
+   "end_s": 1255.02
+  },
+  {
+   "pair": "P282",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Grave_of_the_Vampire_movie@3048",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3048.0,
+   "end_s": 3172.0
+  },
+  {
+   "pair": "P283",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@2486",
+   "title": "tarzans_revenge",
+   "start_s": 2486.02,
+   "end_s": 2555.02
+  },
+  {
+   "pair": "P284",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "TheStranger_0@1478",
+   "title": "TheStranger_0",
+   "start_s": 1478.01,
+   "end_s": 1869.03
+  },
+  {
+   "pair": "P285",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@222",
+   "title": "Assignment_Outer_Space",
+   "start_s": 222.02,
+   "end_s": 314.01
+  },
+  {
+   "pair": "P286",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cyrano_DeBergerac@5681",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5681.01,
+   "end_s": 5895.02
+  },
+  {
+   "pair": "P287",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cosmos_War_of_the_Planets@171",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 171.0,
+   "end_s": 179.01
+  },
+  {
+   "pair": "P288",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@4304",
+   "title": "Quicksand_clear",
+   "start_s": 4304.03,
+   "end_s": 4334.03
+  },
+  {
+   "pair": "P289",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "lost_world@1173",
+   "title": "lost_world",
+   "start_s": 1173.01,
+   "end_s": 1184.02
+  },
+  {
+   "pair": "P290",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "royal_wedding@4470",
+   "title": "royal_wedding",
+   "start_s": 4470.03,
+   "end_s": 4571.03
+  },
+  {
+   "pair": "P291",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "my_favorite_brunette@1028",
+   "title": "my_favorite_brunette",
+   "start_s": 1028.03,
+   "end_s": 1144.01
+  },
+  {
+   "pair": "P292",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@1150",
+   "title": "TheStranger_0",
+   "start_s": 1150.02,
+   "end_s": 1246.01
+  },
+  {
+   "pair": "P293",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "royal_wedding@975",
+   "title": "royal_wedding",
+   "start_s": 975.01,
+   "end_s": 1147.01
+  },
+  {
+   "pair": "P294",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "my_favorite_brunette@2912",
+   "title": "my_favorite_brunette",
+   "start_s": 2912.01,
+   "end_s": 3166.03
+  },
+  {
+   "pair": "P295",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "TheMagicSword@348",
+   "title": "TheMagicSword",
+   "start_s": 348.01,
+   "end_s": 351.02
+  },
+  {
+   "pair": "P296",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "house_on_haunted_hill_ipod@124",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 124.02,
+   "end_s": 147.01
+  },
+  {
+   "pair": "P297",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Quicksand_clear@89",
+   "title": "Quicksand_clear",
+   "start_s": 89.02,
+   "end_s": 174.01
+  },
+  {
+   "pair": "P298",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "tarzans_revenge@2209",
+   "title": "tarzans_revenge",
+   "start_s": 2209.01,
+   "end_s": 2277.01
+  },
+  {
+   "pair": "P299",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Cyrano_DeBergerac@4437",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4437.03,
+   "end_s": 4451.01
+  },
+  {
+   "pair": "P300",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "OnlytheValaint@690",
+   "title": "OnlytheValaint",
+   "start_s": 690.03,
+   "end_s": 704.0
+  },
+  {
+   "pair": "P301",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@1534",
+   "title": "OnlytheValaint",
+   "start_s": 1534.03,
+   "end_s": 1723.02
+  },
+  {
+   "pair": "P302",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "tarzans_revenge@1536",
+   "title": "tarzans_revenge",
+   "start_s": 1536.0,
+   "end_s": 1579.01
+  },
+  {
+   "pair": "P303",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@1221",
+   "title": "tarzans_revenge",
+   "start_s": 1221.02,
+   "end_s": 1349.01
+  },
+  {
+   "pair": "P304",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "royal_wedding@1403",
+   "title": "royal_wedding",
+   "start_s": 1403.0,
+   "end_s": 1452.02
+  },
+  {
+   "pair": "P305",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "royal_wedding@4957",
+   "title": "royal_wedding",
+   "start_s": 4957.02,
+   "end_s": 5010.0
+  },
+  {
+   "pair": "P306",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@1844",
+   "title": "Quicksand_clear",
+   "start_s": 1844.01,
+   "end_s": 1873.0
+  },
+  {
+   "pair": "P307",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "tarzans_revenge@2209",
+   "title": "tarzans_revenge",
+   "start_s": 2209.01,
+   "end_s": 2277.01
+  },
+  {
+   "pair": "P308",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "royal_wedding@1693",
+   "title": "royal_wedding",
+   "start_s": 1693.02,
+   "end_s": 1700.03
+  },
+  {
+   "pair": "P309",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Cosmos_War_of_the_Planets@4896",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4896.02,
+   "end_s": 4899.03
+  },
+  {
+   "pair": "P310",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3582",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3582.01,
+   "end_s": 3593.02
+  },
+  {
+   "pair": "P311",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "my_favorite_brunette@1181",
+   "title": "my_favorite_brunette",
+   "start_s": 1181.01,
+   "end_s": 1635.03
+  },
+  {
+   "pair": "P312",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Cosmos_War_of_the_Planets@0",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 0.0,
+   "end_s": 10.01
+  },
+  {
+   "pair": "P313",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@433",
+   "title": "Quicksand_clear",
+   "start_s": 433.03,
+   "end_s": 471.0
+  },
+  {
+   "pair": "P314",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@956",
+   "title": "Assignment_Outer_Space",
+   "start_s": 956.02,
+   "end_s": 964.03
+  },
+  {
+   "pair": "P315",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "TheMagicSword@2673",
+   "title": "TheMagicSword",
+   "start_s": 2673.01,
+   "end_s": 2747.01
+  },
+  {
+   "pair": "P316",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "royal_wedding@3399",
+   "title": "royal_wedding",
+   "start_s": 3399.03,
+   "end_s": 3520.02
+  },
+  {
+   "pair": "P317",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Cyrano_DeBergerac@1458",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 1458.02,
+   "end_s": 1503.0
+  },
+  {
+   "pair": "P318",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "TheMagicSword@3437",
+   "title": "TheMagicSword",
+   "start_s": 3437.0,
+   "end_s": 3443.01
+  },
+  {
+   "pair": "P319",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "Grave_of_the_Vampire_movie@2239",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 2239.03,
+   "end_s": 2267.01
+  },
+  {
+   "pair": "P320",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@4581",
+   "title": "TheMagicSword",
+   "start_s": 4581.01,
+   "end_s": 4638.0
+  },
+  {
+   "pair": "P321",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@5456",
+   "title": "royal_wedding",
+   "start_s": 5456.02,
+   "end_s": 5481.01
+  },
+  {
+   "pair": "P322",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "tarzans_revenge@1215",
+   "title": "tarzans_revenge",
+   "start_s": 1215.01,
+   "end_s": 1221.02
+  },
+  {
+   "pair": "P323",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheMagicSword@2275",
+   "title": "TheMagicSword",
+   "start_s": 2275.01,
+   "end_s": 2279.01
+  },
+  {
+   "pair": "P324",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Cosmos_War_of_the_Planets@1217",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1217.02,
+   "end_s": 1275.01
+  },
+  {
+   "pair": "P325",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@2399",
+   "title": "TheMagicSword",
+   "start_s": 2399.03,
+   "end_s": 2412.01
+  },
+  {
+   "pair": "P326",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@2483",
+   "title": "my_favorite_brunette",
+   "start_s": 2483.01,
+   "end_s": 2650.01
+  },
+  {
+   "pair": "P327",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "cco_thegunandthepulpit@2524",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2524.02,
+   "end_s": 2603.0
+  },
+  {
+   "pair": "P328",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "lost_world@1872",
+   "title": "lost_world",
+   "start_s": 1872.0,
+   "end_s": 1881.01
+  },
+  {
+   "pair": "P329",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Cosmos_War_of_the_Planets@1464",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1464.03,
+   "end_s": 1489.02
+  },
+  {
+   "pair": "P330",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Cosmos_War_of_the_Planets@1062",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1062.03,
+   "end_s": 1065.03
+  },
+  {
+   "pair": "P331",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@1883",
+   "title": "my_favorite_brunette",
+   "start_s": 1883.01,
+   "end_s": 1967.03
+  },
+  {
+   "pair": "P332",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Cosmos_War_of_the_Planets@1489",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1489.02,
+   "end_s": 1492.02
+  },
+  {
+   "pair": "P333",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Cyrano_DeBergerac@2534",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 2534.03,
+   "end_s": 3168.03
+  },
+  {
+   "pair": "P334",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Cyrano_DeBergerac@5315",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5315.01,
+   "end_s": 5437.03
+  },
+  {
+   "pair": "P335",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "royal_wedding@1576",
+   "title": "royal_wedding",
+   "start_s": 1576.01,
+   "end_s": 1594.02
+  },
+  {
+   "pair": "P336",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Grave_of_the_Vampire_movie@977",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 977.02,
+   "end_s": 987.03
+  },
+  {
+   "pair": "P337",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@4241",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 4241.03,
+   "end_s": 4274.02
+  },
+  {
+   "pair": "P338",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "tarzans_revenge@2987",
+   "title": "tarzans_revenge",
+   "start_s": 2987.02,
+   "end_s": 3021.02
+  },
+  {
+   "pair": "P339",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "cco_thegunandthepulpit@2362",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2362.01,
+   "end_s": 2440.03
+  },
+  {
+   "pair": "P340",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "tarzans_revenge@953",
+   "title": "tarzans_revenge",
+   "start_s": 953.02,
+   "end_s": 1005.0
+  },
+  {
+   "pair": "P341",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "cco_thegunandthepulpit@1399",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1399.04,
+   "end_s": 1402.0
+  },
+  {
+   "pair": "P342",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Cyrano_DeBergerac@416",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 416.02,
+   "end_s": 642.01
+  },
+  {
+   "pair": "P343",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Grave_of_the_Vampire_movie@858",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 858.02,
+   "end_s": 939.02
+  },
+  {
+   "pair": "P344",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@1054",
+   "title": "OnlytheValaint",
+   "start_s": 1054.0,
+   "end_s": 1156.0
+  },
+  {
+   "pair": "P345",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@2327",
+   "title": "tarzans_revenge",
+   "start_s": 2327.02,
+   "end_s": 2428.02
+  },
+  {
+   "pair": "P346",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@3324",
+   "title": "tarzans_revenge",
+   "start_s": 3324.02,
+   "end_s": 3330.03
+  },
+  {
+   "pair": "P347",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Cosmos_War_of_the_Planets@4533",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4533.03,
+   "end_s": 4536.03
+  },
+  {
+   "pair": "P348",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@1744",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1744.04,
+   "end_s": 1757.01
+  },
+  {
+   "pair": "P349",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "TheMagicSword@3192",
+   "title": "TheMagicSword",
+   "start_s": 3192.03,
+   "end_s": 3331.03
+  },
+  {
+   "pair": "P350",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@2829",
+   "title": "TheMagicSword",
+   "start_s": 2829.03,
+   "end_s": 2836.0
+  },
+  {
+   "pair": "P351",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "my_favorite_brunette@4156",
+   "title": "my_favorite_brunette",
+   "start_s": 4156.02,
+   "end_s": 4169.03
+  },
+  {
+   "pair": "P352",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Quicksand_clear@0",
+   "title": "Quicksand_clear",
+   "start_s": 0.0,
+   "end_s": 6.0
+  },
+  {
+   "pair": "P353",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@3174",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 3174.02,
+   "end_s": 3216.01
+  },
+  {
+   "pair": "P354",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@1081",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1081.01,
+   "end_s": 1119.02
+  },
+  {
+   "pair": "P355",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Grave_of_the_Vampire_movie@414",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 414.04,
+   "end_s": 435.02
+  },
+  {
+   "pair": "P356",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2567",
+   "title": "tarzans_revenge",
+   "start_s": 2567.03,
+   "end_s": 2656.02
+  },
+  {
+   "pair": "P357",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheMagicSword@587",
+   "title": "TheMagicSword",
+   "start_s": 587.02,
+   "end_s": 600.03
+  },
+  {
+   "pair": "P358",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "my_favorite_brunette@1807",
+   "title": "my_favorite_brunette",
+   "start_s": 1807.01,
+   "end_s": 1815.01
+  },
+  {
+   "pair": "P359",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Quicksand_clear@4140",
+   "title": "Quicksand_clear",
+   "start_s": 4140.0,
+   "end_s": 4158.02
+  },
+  {
+   "pair": "P360",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@2054",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2054.02,
+   "end_s": 2069.03
+  },
+  {
+   "pair": "P361",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Cosmos_War_of_the_Planets@3446",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 3446.01,
+   "end_s": 3476.0
+  },
+  {
+   "pair": "P362",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "royal_wedding@2210",
+   "title": "royal_wedding",
+   "start_s": 2210.01,
+   "end_s": 2301.03
+  },
+  {
+   "pair": "P363",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "TheMagicSword@4642",
+   "title": "TheMagicSword",
+   "start_s": 4642.01,
+   "end_s": 4662.03
+  },
+  {
+   "pair": "P364",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Grave_of_the_Vampire_movie@3609",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3609.02,
+   "end_s": 3614.03
+  },
+  {
+   "pair": "P365",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@4284",
+   "title": "Quicksand_clear",
+   "start_s": 4284.01,
+   "end_s": 4289.02
+  },
+  {
+   "pair": "P366",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Cyrano_DeBergerac@2534",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 2534.03,
+   "end_s": 3168.03
+  },
+  {
+   "pair": "P367",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Cyrano_DeBergerac@949",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 949.01,
+   "end_s": 1374.0
+  },
+  {
+   "pair": "P368",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "TheStranger_0@4154",
+   "title": "TheStranger_0",
+   "start_s": 4154.02,
+   "end_s": 4164.03
+  },
+  {
+   "pair": "P369",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@2720",
+   "title": "OnlytheValaint",
+   "start_s": 2720.02,
+   "end_s": 2893.04
+  },
+  {
+   "pair": "P370",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Quicksand_clear@4501",
+   "title": "Quicksand_clear",
+   "start_s": 4501.03,
+   "end_s": 4541.0
+  },
+  {
+   "pair": "P371",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Grave_of_the_Vampire_movie@2149",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 2149.02,
+   "end_s": 2205.04
+  },
+  {
+   "pair": "P372",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@3013",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 3013.01,
+   "end_s": 3034.03
+  },
+  {
+   "pair": "P373",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "TheStranger_0@1001",
+   "title": "TheStranger_0",
+   "start_s": 1001.0,
+   "end_s": 1073.0
+  },
+  {
+   "pair": "P374",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheMagicSword@2204",
+   "title": "TheMagicSword",
+   "start_s": 2204.0,
+   "end_s": 2215.01
+  },
+  {
+   "pair": "P375",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@1750",
+   "title": "my_favorite_brunette",
+   "start_s": 1750.01,
+   "end_s": 1753.02
+  },
+  {
+   "pair": "P376",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Cosmos_War_of_the_Planets@2942",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2942.01,
+   "end_s": 2973.0
+  },
+  {
+   "pair": "P377",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Assignment_Outer_Space@3543",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3543.01,
+   "end_s": 3575.0
+  },
+  {
+   "pair": "P378",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@1873",
+   "title": "Quicksand_clear",
+   "start_s": 1873.0,
+   "end_s": 2032.03
+  },
+  {
+   "pair": "P379",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Assignment_Outer_Space@2720",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2720.02,
+   "end_s": 2750.01
+  },
+  {
+   "pair": "P380",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@2125",
+   "title": "tarzans_revenge",
+   "start_s": 2125.02,
+   "end_s": 2206.0
+  },
+  {
+   "pair": "P381",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheStranger_0@4415",
+   "title": "TheStranger_0",
+   "start_s": 4415.01,
+   "end_s": 4432.03
+  },
+  {
+   "pair": "P382",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "cco_thegunandthepulpit@3129",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 3129.02,
+   "end_s": 3139.03
+  },
+  {
+   "pair": "P383",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "royal_wedding@3862",
+   "title": "royal_wedding",
+   "start_s": 3862.02,
+   "end_s": 4150.01
+  },
+  {
+   "pair": "P384",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "royal_wedding@2827",
+   "title": "royal_wedding",
+   "start_s": 2827.02,
+   "end_s": 2904.0
+  },
+  {
+   "pair": "P385",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@3629",
+   "title": "TheStranger_0",
+   "start_s": 3629.03,
+   "end_s": 3648.01
+  },
+  {
+   "pair": "P386",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@4638",
+   "title": "TheStranger_0",
+   "start_s": 4638.0,
+   "end_s": 4641.0
+  },
+  {
+   "pair": "P387",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Cyrano_DeBergerac@5990",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5990.02,
+   "end_s": 6266.03
+  },
+  {
+   "pair": "P388",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheMagicSword@1597",
+   "title": "TheMagicSword",
+   "start_s": 1597.03,
+   "end_s": 1650.02
+  },
+  {
+   "pair": "P389",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheMagicSword@3766",
+   "title": "TheMagicSword",
+   "start_s": 3766.03,
+   "end_s": 3769.0
+  },
+  {
+   "pair": "P390",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "TheStranger_0@4833",
+   "title": "TheStranger_0",
+   "start_s": 4833.03,
+   "end_s": 4975.0
+  },
+  {
+   "pair": "P391",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "my_favorite_brunette@709",
+   "title": "my_favorite_brunette",
+   "start_s": 709.01,
+   "end_s": 775.01
+  },
+  {
+   "pair": "P392",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "TheStranger_0@5454",
+   "title": "TheStranger_0",
+   "start_s": 5454.02,
+   "end_s": 5466.03
+  },
+  {
+   "pair": "P393",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "OnlytheValaint@363",
+   "title": "OnlytheValaint",
+   "start_s": 363.01,
+   "end_s": 461.01
+  },
+  {
+   "pair": "P394",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "OnlytheValaint@4035",
+   "title": "OnlytheValaint",
+   "start_s": 4035.03,
+   "end_s": 4080.02
+  },
+  {
+   "pair": "P395",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Cyrano_DeBergerac@1766",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 1766.03,
+   "end_s": 2200.03
+  },
+  {
+   "pair": "P396",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Quicksand_clear@1873",
+   "title": "Quicksand_clear",
+   "start_s": 1873.0,
+   "end_s": 2032.03
+  },
+  {
+   "pair": "P397",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "house_on_haunted_hill_ipod@4213",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 4213.01,
+   "end_s": 4217.02
+  },
+  {
+   "pair": "P398",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Quicksand_clear@1441",
+   "title": "Quicksand_clear",
+   "start_s": 1441.01,
+   "end_s": 1560.02
+  },
+  {
+   "pair": "P399",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheStranger_0@4435",
+   "title": "TheStranger_0",
+   "start_s": 4435.03,
+   "end_s": 4607.0
+  },
+  {
+   "pair": "P400",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "OnlytheValaint@2495",
+   "title": "OnlytheValaint",
+   "start_s": 2495.04,
+   "end_s": 2528.02
+  },
+  {
+   "pair": "P401",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@2413",
+   "title": "OnlytheValaint",
+   "start_s": 2413.01,
+   "end_s": 2476.02
+  },
+  {
+   "pair": "P402",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "cco_thegunandthepulpit@423",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 423.02,
+   "end_s": 489.03
+  },
+  {
+   "pair": "P403",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "TheStranger_0@2317",
+   "title": "TheStranger_0",
+   "start_s": 2317.01,
+   "end_s": 2502.03
+  },
+  {
+   "pair": "P404",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "tarzans_revenge@2874",
+   "title": "tarzans_revenge",
+   "start_s": 2874.0,
+   "end_s": 2897.03
+  },
+  {
+   "pair": "P405",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@380",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 380.03,
+   "end_s": 384.03
+  },
+  {
+   "pair": "P406",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "royal_wedding@1980",
+   "title": "royal_wedding",
+   "start_s": 1980.01,
+   "end_s": 2056.02
+  },
+  {
+   "pair": "P407",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Grave_of_the_Vampire_movie@1690",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1690.02,
+   "end_s": 1841.0
+  },
+  {
+   "pair": "P408",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@4081",
+   "title": "Assignment_Outer_Space",
+   "start_s": 4081.01,
+   "end_s": 4095.02
+  },
+  {
+   "pair": "P409",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheMagicSword@4673",
+   "title": "TheMagicSword",
+   "start_s": 4673.01,
+   "end_s": 4727.03
+  },
+  {
+   "pair": "P410",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@3186",
+   "title": "TheMagicSword",
+   "start_s": 3186.02,
+   "end_s": 3192.02
+  },
+  {
+   "pair": "P411",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@1747",
+   "title": "my_favorite_brunette",
+   "start_s": 1747.01,
+   "end_s": 1750.01
+  },
+  {
+   "pair": "P412",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cyrano_DeBergerac@5681",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5681.01,
+   "end_s": 5895.02
+  },
+  {
+   "pair": "P413",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "my_favorite_brunette@2912",
+   "title": "my_favorite_brunette",
+   "start_s": 2912.01,
+   "end_s": 3166.03
+  },
+  {
+   "pair": "P414",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheStranger_0@3278",
+   "title": "TheStranger_0",
+   "start_s": 3278.01,
+   "end_s": 3288.02
+  },
+  {
+   "pair": "P415",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@2063",
+   "title": "Quicksand_clear",
+   "start_s": 2063.03,
+   "end_s": 2068.03
+  },
+  {
+   "pair": "P416",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@1773",
+   "title": "my_favorite_brunette",
+   "start_s": 1773.0,
+   "end_s": 1799.03
+  },
+  {
+   "pair": "P417",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@3848",
+   "title": "tarzans_revenge",
+   "start_s": 3848.01,
+   "end_s": 3858.02
+  },
+  {
+   "pair": "P418",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheStranger_0@2317",
+   "title": "TheStranger_0",
+   "start_s": 2317.01,
+   "end_s": 2502.03
+  },
+  {
+   "pair": "P419",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@3191",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3191.02,
+   "end_s": 3246.01
+  },
+  {
+   "pair": "P420",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@2069",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2069.0,
+   "end_s": 2110.01
+  },
+  {
+   "pair": "P421",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "cco_thegunandthepulpit@3139",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 3139.03,
+   "end_s": 3148.04
+  },
+  {
+   "pair": "P422",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "cco_thegunandthepulpit@1337",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 1337.03,
+   "end_s": 1362.01
+  },
+  {
+   "pair": "P423",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "Cyrano_DeBergerac@642",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 642.01,
+   "end_s": 790.02
+  },
+  {
+   "pair": "P424",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "lost_world@423",
+   "title": "lost_world",
+   "start_s": 423.02,
+   "end_s": 428.03
+  },
+  {
+   "pair": "P425",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Quicksand_clear@2878",
+   "title": "Quicksand_clear",
+   "start_s": 2878.01,
+   "end_s": 2917.01
+  },
+  {
+   "pair": "P426",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "lost_world@1755",
+   "title": "lost_world",
+   "start_s": 1755.02,
+   "end_s": 1782.01
+  },
+  {
+   "pair": "P427",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@1721",
+   "title": "TheMagicSword",
+   "start_s": 1721.02,
+   "end_s": 1758.02
+  },
+  {
+   "pair": "P428",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@3451",
+   "title": "TheMagicSword",
+   "start_s": 3451.02,
+   "end_s": 3467.03
+  },
+  {
+   "pair": "P429",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "Assignment_Outer_Space@2319",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2319.02,
+   "end_s": 2335.03
+  },
+  {
+   "pair": "P430",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheMagicSword@3832",
+   "title": "TheMagicSword",
+   "start_s": 3832.03,
+   "end_s": 3859.02
+  },
+  {
+   "pair": "P431",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Grave_of_the_Vampire_movie@4674",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 4674.0,
+   "end_s": 4705.03
+  },
+  {
+   "pair": "P432",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Assignment_Outer_Space@3848",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3848.01,
+   "end_s": 3870.03
+  },
+  {
+   "pair": "P433",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "TheMagicSword@2297",
+   "title": "TheMagicSword",
+   "start_s": 2297.03,
+   "end_s": 2300.03
+  },
+  {
+   "pair": "P434",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "cco_thegunandthepulpit@2207",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2207.01,
+   "end_s": 2257.01
+  },
+  {
+   "pair": "P435",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "my_favorite_brunette@791",
+   "title": "my_favorite_brunette",
+   "start_s": 791.02,
+   "end_s": 852.02
+  },
+  {
+   "pair": "P436",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@4435",
+   "title": "TheStranger_0",
+   "start_s": 4435.03,
+   "end_s": 4607.0
+  },
+  {
+   "pair": "P437",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "OnlytheValaint@3424",
+   "title": "OnlytheValaint",
+   "start_s": 3424.02,
+   "end_s": 3712.01
+  },
+  {
+   "pair": "P438",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheStranger_0@4222",
+   "title": "TheStranger_0",
+   "start_s": 4222.02,
+   "end_s": 4230.02
+  },
+  {
+   "pair": "P439",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "royal_wedding@2827",
+   "title": "royal_wedding",
+   "start_s": 2827.02,
+   "end_s": 2904.0
+  },
+  {
+   "pair": "P440",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "house_on_haunted_hill_ipod@4051",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 4051.02,
+   "end_s": 4095.03
+  },
+  {
+   "pair": "P441",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheMagicSword@4737",
+   "title": "TheMagicSword",
+   "start_s": 4737.0,
+   "end_s": 4748.01
+  },
+  {
+   "pair": "P442",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@4205",
+   "title": "Assignment_Outer_Space",
+   "start_s": 4205.0,
+   "end_s": 4229.02
+  },
+  {
+   "pair": "P443",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "Assignment_Outer_Space@1119",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1119.02,
+   "end_s": 1287.02
+  },
+  {
+   "pair": "P444",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "royal_wedding@2116",
+   "title": "royal_wedding",
+   "start_s": 2116.01,
+   "end_s": 2169.03
+  },
+  {
+   "pair": "P445",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "Assignment_Outer_Space@912",
+   "title": "Assignment_Outer_Space",
+   "start_s": 912.01,
+   "end_s": 946.01
+  },
+  {
+   "pair": "P446",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "my_favorite_brunette@4970",
+   "title": "my_favorite_brunette",
+   "start_s": 4970.03,
+   "end_s": 5000.03
+  },
+  {
+   "pair": "P447",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "cco_thegunandthepulpit@10",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 10.01,
+   "end_s": 98.04
+  },
+  {
+   "pair": "P448",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "house_on_haunted_hill_ipod@1350",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 1350.02,
+   "end_s": 1441.01
+  },
+  {
+   "pair": "P449",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "TheMagicSword@2836",
+   "title": "TheMagicSword",
+   "start_s": 2836.0,
+   "end_s": 2857.02
+  },
+  {
+   "pair": "P450",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheStranger_0@1478",
+   "title": "TheStranger_0",
+   "start_s": 1478.01,
+   "end_s": 1869.03
+  },
+  {
+   "pair": "P451",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheStranger_0@5059",
+   "title": "TheStranger_0",
+   "start_s": 5059.02,
+   "end_s": 5241.0
+  },
+  {
+   "pair": "P452",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "royal_wedding@1287",
+   "title": "royal_wedding",
+   "start_s": 1287.02,
+   "end_s": 1403.0
+  },
+  {
+   "pair": "P453",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@4045",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 4045.04,
+   "end_s": 4063.01
+  },
+  {
+   "pair": "P454",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Assignment_Outer_Space@48",
+   "title": "Assignment_Outer_Space",
+   "start_s": 48.01,
+   "end_s": 88.02
+  },
+  {
+   "pair": "P455",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "TheMagicSword@3977",
+   "title": "TheMagicSword",
+   "start_s": 3977.01,
+   "end_s": 4028.03
+  },
+  {
+   "pair": "P456",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@4439",
+   "title": "my_favorite_brunette",
+   "start_s": 4439.0,
+   "end_s": 4702.03
+  },
+  {
+   "pair": "P457",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "TheMagicSword@101",
+   "title": "TheMagicSword",
+   "start_s": 101.0,
+   "end_s": 105.0
+  },
+  {
+   "pair": "P458",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cyrano_DeBergerac@4778",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4778.01,
+   "end_s": 5191.02
+  },
+  {
+   "pair": "P459",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Quicksand_clear@1873",
+   "title": "Quicksand_clear",
+   "start_s": 1873.0,
+   "end_s": 2032.03
+  },
+  {
+   "pair": "P460",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "cco_thegunandthepulpit@2440",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2440.03,
+   "end_s": 2447.04
+  },
+  {
+   "pair": "P461",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "TheStranger_0@5292",
+   "title": "TheStranger_0",
+   "start_s": 5292.02,
+   "end_s": 5311.0
+  },
+  {
+   "pair": "P462",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "royal_wedding@4709",
+   "title": "royal_wedding",
+   "start_s": 4709.0,
+   "end_s": 4828.02
+  },
+  {
+   "pair": "P463",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@1672",
+   "title": "royal_wedding",
+   "start_s": 1672.0,
+   "end_s": 1680.01
+  },
+  {
+   "pair": "P464",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Cyrano_DeBergerac@5681",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5681.01,
+   "end_s": 5895.02
+  },
+  {
+   "pair": "P465",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "my_favorite_brunette@2210",
+   "title": "my_favorite_brunette",
+   "start_s": 2210.01,
+   "end_s": 2215.01
+  },
+  {
+   "pair": "P466",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Grave_of_the_Vampire_movie@3725",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3725.01,
+   "end_s": 3730.02
+  },
+  {
+   "pair": "P467",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "tarzans_revenge@1095",
+   "title": "tarzans_revenge",
+   "start_s": 1095.03,
+   "end_s": 1139.0
+  },
+  {
+   "pair": "P468",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "TheStranger_0@3038",
+   "title": "TheStranger_0",
+   "start_s": 3038.0,
+   "end_s": 3158.02
+  },
+  {
+   "pair": "P469",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "lost_world@3563",
+   "title": "lost_world",
+   "start_s": 3563.03,
+   "end_s": 3586.01
+  },
+  {
+   "pair": "P470",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "royal_wedding@3862",
+   "title": "royal_wedding",
+   "start_s": 3862.02,
+   "end_s": 4150.01
+  },
+  {
+   "pair": "P471",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "TheMagicSword@4811",
+   "title": "TheMagicSword",
+   "start_s": 4811.01,
+   "end_s": 4813.01
+  },
+  {
+   "pair": "P472",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "Cosmos_War_of_the_Planets@0",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 0.0,
+   "end_s": 10.01
+  },
+  {
+   "pair": "P473",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "lost_world@1126",
+   "title": "lost_world",
+   "start_s": 1126.02,
+   "end_s": 1129.03
+  },
+  {
+   "pair": "P474",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Grave_of_the_Vampire_movie@3517",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3517.01,
+   "end_s": 3533.03
+  },
+  {
+   "pair": "P475",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "lost_world@2756",
+   "title": "lost_world",
+   "start_s": 2756.02,
+   "end_s": 2764.03
+  },
+  {
+   "pair": "P476",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "lost_world@2269",
+   "title": "lost_world",
+   "start_s": 2269.0,
+   "end_s": 2360.02
+  },
+  {
+   "pair": "P477",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Cosmos_War_of_the_Planets@4804",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4804.03,
+   "end_s": 4818.01
+  },
+  {
+   "pair": "P478",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "my_favorite_brunette@4314",
+   "title": "my_favorite_brunette",
+   "start_s": 4314.01,
+   "end_s": 4431.03
+  },
+  {
+   "pair": "P479",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@949",
+   "title": "Assignment_Outer_Space",
+   "start_s": 949.01,
+   "end_s": 952.02
+  },
+  {
+   "pair": "P480",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "TheStranger_0@1478",
+   "title": "TheStranger_0",
+   "start_s": 1478.01,
+   "end_s": 1869.03
+  },
+  {
+   "pair": "P481",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "TheMagicSword@295",
+   "title": "TheMagicSword",
+   "start_s": 295.03,
+   "end_s": 317.02
+  },
+  {
+   "pair": "P482",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@3417",
+   "title": "TheMagicSword",
+   "start_s": 3417.02,
+   "end_s": 3437.0
+  },
+  {
+   "pair": "P483",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Grave_of_the_Vampire_movie@1690",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1690.02,
+   "end_s": 1841.0
+  },
+  {
+   "pair": "P484",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "OnlytheValaint@2720",
+   "title": "OnlytheValaint",
+   "start_s": 2720.02,
+   "end_s": 2893.04
+  },
+  {
+   "pair": "P485",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@105",
+   "title": "TheMagicSword",
+   "start_s": 105.01,
+   "end_s": 109.01
+  },
+  {
+   "pair": "P486",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Cyrano_DeBergerac@4514",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 4514.01,
+   "end_s": 4570.03
+  },
+  {
+   "pair": "P487",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "my_favorite_brunette@4439",
+   "title": "my_favorite_brunette",
+   "start_s": 4439.0,
+   "end_s": 4702.03
+  },
+  {
+   "pair": "P488",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "royal_wedding@3007",
+   "title": "royal_wedding",
+   "start_s": 3007.0,
+   "end_s": 3373.0
+  },
+  {
+   "pair": "P489",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Cyrano_DeBergerac@3763",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3763.03,
+   "end_s": 3928.02
+  },
+  {
+   "pair": "P490",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@4581",
+   "title": "TheMagicSword",
+   "start_s": 4581.01,
+   "end_s": 4638.0
+  },
+  {
+   "pair": "P491",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Cosmos_War_of_the_Planets@502",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 502.0,
+   "end_s": 523.02
+  },
+  {
+   "pair": "P492",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Cyrano_DeBergerac@5250",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5250.01,
+   "end_s": 5299.03
+  },
+  {
+   "pair": "P493",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Cyrano_DeBergerac@6639",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 6639.03,
+   "end_s": 6733.03
+  },
+  {
+   "pair": "P494",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "OnlytheValaint@1406",
+   "title": "OnlytheValaint",
+   "start_s": 1406.01,
+   "end_s": 1534.03
+  },
+  {
+   "pair": "P495",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "Cyrano_DeBergerac@3537",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3537.0,
+   "end_s": 3763.02
+  },
+  {
+   "pair": "P496",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "Quicksand_clear@4158",
+   "title": "Quicksand_clear",
+   "start_s": 4158.02,
+   "end_s": 4232.03
+  },
+  {
+   "pair": "P497",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "Grave_of_the_Vampire_movie@3622",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3622.04,
+   "end_s": 3706.03
+  },
+  {
+   "pair": "P498",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "cco_thegunandthepulpit@0",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 0.0,
+   "end_s": 3.0
+  },
+  {
+   "pair": "P499",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Quicksand_clear@4095",
+   "title": "Quicksand_clear",
+   "start_s": 4095.02,
+   "end_s": 4098.03
+  },
+  {
+   "pair": "P500",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Cyrano_DeBergerac@5250",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5250.01,
+   "end_s": 5299.03
+  },
+  {
+   "pair": "P501",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "OnlytheValaint@17",
+   "title": "OnlytheValaint",
+   "start_s": 17.01,
+   "end_s": 23.02
+  },
+  {
+   "pair": "P502",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "TheStranger_0@3648",
+   "title": "TheStranger_0",
+   "start_s": 3648.01,
+   "end_s": 3795.02
+  },
+  {
+   "pair": "P503",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Grave_of_the_Vampire_movie@3940",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3940.02,
+   "end_s": 4005.0
+  },
+  {
+   "pair": "P504",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cosmos_War_of_the_Planets@3671",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 3671.0,
+   "end_s": 3702.03
+  },
+  {
+   "pair": "P505",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cosmos_War_of_the_Planets@2122",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2122.02,
+   "end_s": 2134.03
+  },
+  {
+   "pair": "P506",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "tarzans_revenge@821",
+   "title": "tarzans_revenge",
+   "start_s": 821.02,
+   "end_s": 863.03
+  },
+  {
+   "pair": "P507",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "tarzans_revenge@3045",
+   "title": "tarzans_revenge",
+   "start_s": 3045.01,
+   "end_s": 3064.03
+  },
+  {
+   "pair": "P508",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheStranger_0@4435",
+   "title": "TheStranger_0",
+   "start_s": 4435.03,
+   "end_s": 4607.0
+  },
+  {
+   "pair": "P509",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "house_on_haunted_hill_ipod@1542",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 1542.01,
+   "end_s": 1708.01
+  },
+  {
+   "pair": "P510",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@1290",
+   "title": "TheStranger_0",
+   "start_s": 1290.02,
+   "end_s": 1355.02
+  },
+  {
+   "pair": "P511",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Cyrano_DeBergerac@2534",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 2534.03,
+   "end_s": 3168.03
+  },
+  {
+   "pair": "P512",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "Grave_of_the_Vampire_movie@1690",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1690.02,
+   "end_s": 1841.0
+  },
+  {
+   "pair": "P513",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Quicksand_clear@4592",
+   "title": "Quicksand_clear",
+   "start_s": 4592.02,
+   "end_s": 4595.02
+  },
+  {
+   "pair": "P514",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheStranger_0@4053",
+   "title": "TheStranger_0",
+   "start_s": 4053.02,
+   "end_s": 4117.01
+  },
+  {
+   "pair": "P515",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "cco_thegunandthepulpit@372",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 372.02,
+   "end_s": 380.02
+  },
+  {
+   "pair": "P516",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Quicksand_clear@1642",
+   "title": "Quicksand_clear",
+   "start_s": 1642.01,
+   "end_s": 1738.0
+  },
+  {
+   "pair": "P517",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "royal_wedding@1612",
+   "title": "royal_wedding",
+   "start_s": 1612.01,
+   "end_s": 1622.02
+  },
+  {
+   "pair": "P518",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "Quicksand_clear@3308",
+   "title": "Quicksand_clear",
+   "start_s": 3308.0,
+   "end_s": 3373.0
+  },
+  {
+   "pair": "P519",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "tarzans_revenge@2455",
+   "title": "tarzans_revenge",
+   "start_s": 2455.02,
+   "end_s": 2474.0
+  },
+  {
+   "pair": "P520",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "house_on_haunted_hill_ipod@3437",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 3437.0,
+   "end_s": 3447.01
+  },
+  {
+   "pair": "P521",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "royal_wedding@2428",
+   "title": "royal_wedding",
+   "start_s": 2428.03,
+   "end_s": 2455.02
+  },
+  {
+   "pair": "P522",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@2713",
+   "title": "my_favorite_brunette",
+   "start_s": 2713.01,
+   "end_s": 2738.0
+  },
+  {
+   "pair": "P523",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "my_favorite_brunette@4970",
+   "title": "my_favorite_brunette",
+   "start_s": 4970.03,
+   "end_s": 5000.03
+  },
+  {
+   "pair": "P524",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "royal_wedding@2771",
+   "title": "royal_wedding",
+   "start_s": 2771.0,
+   "end_s": 2814.01
+  },
+  {
+   "pair": "P525",
+   "ad": "airline",
+   "category": "travel",
+   "brief": "an airplane in the sky or at an airport",
+   "scene": "my_favorite_brunette@4807",
+   "title": "my_favorite_brunette",
+   "start_s": 4807.0,
+   "end_s": 4898.03
+  },
+  {
+   "pair": "P526",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@2319",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2319.02,
+   "end_s": 2335.03
+  },
+  {
+   "pair": "P527",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Grave_of_the_Vampire_movie@1841",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 1841.01,
+   "end_s": 1872.04
+  },
+  {
+   "pair": "P528",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "Grave_of_the_Vampire_movie@3472",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3472.01,
+   "end_s": 3517.01
+  },
+  {
+   "pair": "P529",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "royal_wedding@3007",
+   "title": "royal_wedding",
+   "start_s": 3007.0,
+   "end_s": 3373.0
+  },
+  {
+   "pair": "P530",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheStranger_0@572",
+   "title": "TheStranger_0",
+   "start_s": 572.0,
+   "end_s": 692.02
+  },
+  {
+   "pair": "P531",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@757",
+   "title": "Assignment_Outer_Space",
+   "start_s": 757.02,
+   "end_s": 878.01
+  },
+  {
+   "pair": "P532",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Quicksand_clear@89",
+   "title": "Quicksand_clear",
+   "start_s": 89.02,
+   "end_s": 174.01
+  },
+  {
+   "pair": "P533",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@4133",
+   "title": "my_favorite_brunette",
+   "start_s": 4133.03,
+   "end_s": 4152.01
+  },
+  {
+   "pair": "P534",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "OnlytheValaint@6050",
+   "title": "OnlytheValaint",
+   "start_s": 6050.0,
+   "end_s": 6122.02
+  },
+  {
+   "pair": "P535",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "TheStranger_0@4833",
+   "title": "TheStranger_0",
+   "start_s": 4833.03,
+   "end_s": 4975.0
+  },
+  {
+   "pair": "P536",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Quicksand_clear@2791",
+   "title": "Quicksand_clear",
+   "start_s": 2791.02,
+   "end_s": 2878.01
+  },
+  {
+   "pair": "P537",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "cco_thegunandthepulpit@942",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 942.04,
+   "end_s": 961.01
+  },
+  {
+   "pair": "P538",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "my_favorite_brunette@4789",
+   "title": "my_favorite_brunette",
+   "start_s": 4789.02,
+   "end_s": 4794.02
+  },
+  {
+   "pair": "P539",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Cosmos_War_of_the_Planets@2507",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2507.0,
+   "end_s": 2585.01
+  },
+  {
+   "pair": "P540",
+   "ad": "restaurant",
+   "category": "food_drink",
+   "brief": "people enjoying a meal at a table",
+   "scene": "Cyrano_DeBergerac@1503",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 1503.0,
+   "end_s": 1763.03
+  },
+  {
+   "pair": "P541",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@3064",
+   "title": "Quicksand_clear",
+   "start_s": 3064.03,
+   "end_s": 3152.01
+  },
+  {
+   "pair": "P542",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheMagicSword@734",
+   "title": "TheMagicSword",
+   "start_s": 734.0,
+   "end_s": 744.01
+  },
+  {
+   "pair": "P543",
+   "ad": "outdoor_gear",
+   "category": "outdoors",
+   "brief": "people hiking through forests or mountains",
+   "scene": "Grave_of_the_Vampire_movie@3877",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3877.04,
+   "end_s": 3896.02
+  },
+  {
+   "pair": "P544",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "my_favorite_brunette@1708",
+   "title": "my_favorite_brunette",
+   "start_s": 1708.01,
+   "end_s": 1726.02
+  },
+  {
+   "pair": "P545",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@3269",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3269.03,
+   "end_s": 3276.01
+  },
+  {
+   "pair": "P546",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "Cyrano_DeBergerac@6450",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 6450.01,
+   "end_s": 6639.03
+  },
+  {
+   "pair": "P547",
+   "ad": "beer",
+   "category": "alcohol",
+   "brief": "people drinking at a bar",
+   "scene": "Cyrano_DeBergerac@137",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 137.0,
+   "end_s": 231.03
+  },
+  {
+   "pair": "P548",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "TheMagicSword@3336",
+   "title": "TheMagicSword",
+   "start_s": 3336.0,
+   "end_s": 3344.01
+  },
+  {
+   "pair": "P549",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "royal_wedding@773",
+   "title": "royal_wedding",
+   "start_s": 773.01,
+   "end_s": 778.01
+  },
+  {
+   "pair": "P550",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@953",
+   "title": "tarzans_revenge",
+   "start_s": 953.02,
+   "end_s": 1005.0
+  },
+  {
+   "pair": "P551",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@5215",
+   "title": "OnlytheValaint",
+   "start_s": 5215.01,
+   "end_s": 5261.01
+  },
+  {
+   "pair": "P552",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "house_on_haunted_hill_ipod@764",
+   "title": "house_on_haunted_hill_ipod",
+   "start_s": 764.03,
+   "end_s": 902.0
+  },
+  {
+   "pair": "P553",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "Cosmos_War_of_the_Planets@2229",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 2229.03,
+   "end_s": 2260.02
+  },
+  {
+   "pair": "P554",
+   "ad": "music",
+   "category": "entertainment",
+   "brief": "people dancing to music",
+   "scene": "TheMagicSword@4328",
+   "title": "TheMagicSword",
+   "start_s": 4328.03,
+   "end_s": 4376.01
+  },
+  {
+   "pair": "P555",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "TheMagicSword@2036",
+   "title": "TheMagicSword",
+   "start_s": 2036.0,
+   "end_s": 2178.01
+  },
+  {
+   "pair": "P556",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "my_favorite_brunette@1980",
+   "title": "my_favorite_brunette",
+   "start_s": 1980.01,
+   "end_s": 2054.02
+  },
+  {
+   "pair": "P557",
+   "ad": "pharmacy",
+   "category": "health",
+   "brief": "a doctor or nurse caring for a patient",
+   "scene": "tarzans_revenge@535",
+   "title": "tarzans_revenge",
+   "start_s": 535.0,
+   "end_s": 562.03
+  },
+  {
+   "pair": "P558",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "tarzans_revenge@3168",
+   "title": "tarzans_revenge",
+   "start_s": 3168.03,
+   "end_s": 3181.01
+  },
+  {
+   "pair": "P559",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "TheMagicSword@4174",
+   "title": "TheMagicSword",
+   "start_s": 4174.01,
+   "end_s": 4186.02
+  },
+  {
+   "pair": "P560",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Quicksand_clear@4334",
+   "title": "Quicksand_clear",
+   "start_s": 4334.03,
+   "end_s": 4358.02
+  },
+  {
+   "pair": "P561",
+   "ad": "toys",
+   "category": "kids",
+   "brief": "children playing",
+   "scene": "OnlytheValaint@5992",
+   "title": "OnlytheValaint",
+   "start_s": 5992.04,
+   "end_s": 6042.03
+  },
+  {
+   "pair": "P562",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Quicksand_clear@471",
+   "title": "Quicksand_clear",
+   "start_s": 471.0,
+   "end_s": 474.01
+  },
+  {
+   "pair": "P563",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "royal_wedding@3852",
+   "title": "royal_wedding",
+   "start_s": 3852.01,
+   "end_s": 3862.02
+  },
+  {
+   "pair": "P564",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "my_favorite_brunette@3215",
+   "title": "my_favorite_brunette",
+   "start_s": 3215.01,
+   "end_s": 3294.02
+  },
+  {
+   "pair": "P565",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "Assignment_Outer_Space@3949",
+   "title": "Assignment_Outer_Space",
+   "start_s": 3949.01,
+   "end_s": 4081.01
+  },
+  {
+   "pair": "P566",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "lost_world@2199",
+   "title": "lost_world",
+   "start_s": 2199.03,
+   "end_s": 2269.03
+  },
+  {
+   "pair": "P567",
+   "ad": "fashion",
+   "category": "fashion",
+   "brief": "an elegant woman in a beautiful dress",
+   "scene": "Cyrano_DeBergerac@3971",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 3971.0,
+   "end_s": 4130.02
+  },
+  {
+   "pair": "P568",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@48",
+   "title": "Assignment_Outer_Space",
+   "start_s": 48.01,
+   "end_s": 88.02
+  },
+  {
+   "pair": "P569",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "Cosmos_War_of_the_Planets@4050",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 4050.01,
+   "end_s": 4055.02
+  },
+  {
+   "pair": "P570",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Assignment_Outer_Space@2670",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2670.0,
+   "end_s": 2680.01
+  },
+  {
+   "pair": "P571",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "lost_world@1804",
+   "title": "lost_world",
+   "start_s": 1804.0,
+   "end_s": 1807.0
+  },
+  {
+   "pair": "P572",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "lost_world@2958",
+   "title": "lost_world",
+   "start_s": 2958.02,
+   "end_s": 2962.02
+  },
+  {
+   "pair": "P573",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "cco_thegunandthepulpit@3792",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 3792.04,
+   "end_s": 3802.0
+  },
+  {
+   "pair": "P574",
+   "ad": "jewelry",
+   "category": "fashion",
+   "brief": "a romantic couple embracing or kissing",
+   "scene": "cco_thegunandthepulpit@2454",
+   "title": "cco_thegunandthepulpit",
+   "start_s": 2454.0,
+   "end_s": 2458.01
+  },
+  {
+   "pair": "P575",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "my_favorite_brunette@3724",
+   "title": "my_favorite_brunette",
+   "start_s": 3724.02,
+   "end_s": 3762.02
+  },
+  {
+   "pair": "P576",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "TheStranger_0@3506",
+   "title": "TheStranger_0",
+   "start_s": 3506.0,
+   "end_s": 3510.01
+  },
+  {
+   "pair": "P577",
+   "ad": "beach_resort",
+   "category": "travel",
+   "brief": "a sunny beach by the sea",
+   "scene": "tarzans_revenge@1673",
+   "title": "tarzans_revenge",
+   "start_s": 1673.0,
+   "end_s": 1715.01
+  },
+  {
+   "pair": "P578",
+   "ad": "wine",
+   "category": "alcohol",
+   "brief": "a glass of wine at an elegant dinner",
+   "scene": "my_favorite_brunette@3166",
+   "title": "my_favorite_brunette",
+   "start_s": 3166.03,
+   "end_s": 3215.01
+  },
+  {
+   "pair": "P579",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Quicksand_clear@4264",
+   "title": "Quicksand_clear",
+   "start_s": 4264.03,
+   "end_s": 4274.0
+  },
+  {
+   "pair": "P580",
+   "ad": "western_wear",
+   "category": "fashion",
+   "brief": "cowboys riding horses",
+   "scene": "OnlytheValaint@2587",
+   "title": "OnlytheValaint",
+   "start_s": 2587.03,
+   "end_s": 2720.02
+  },
+  {
+   "pair": "P581",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "Quicksand_clear@309",
+   "title": "Quicksand_clear",
+   "start_s": 309.01,
+   "end_s": 360.03
+  },
+  {
+   "pair": "P582",
+   "ad": "sci_fi_game",
+   "category": "gaming",
+   "brief": "a rocket or a spaceship",
+   "scene": "Cosmos_War_of_the_Planets@1422",
+   "title": "Cosmos_War_of_the_Planets",
+   "start_s": 1422.02,
+   "end_s": 1464.03
+  },
+  {
+   "pair": "P583",
+   "ad": "phone",
+   "category": "telecom",
+   "brief": "a person talking on the telephone",
+   "scene": "TheMagicSword@672",
+   "title": "TheMagicSword",
+   "start_s": 672.01,
+   "end_s": 687.02
+  },
+  {
+   "pair": "P584",
+   "ad": "cruise",
+   "category": "travel",
+   "brief": "a ship sailing on the open sea",
+   "scene": "tarzans_revenge@2209",
+   "title": "tarzans_revenge",
+   "start_s": 2209.01,
+   "end_s": 2277.01
+  },
+  {
+   "pair": "P585",
+   "ad": "pet_food",
+   "category": "pets",
+   "brief": "a dog",
+   "scene": "Assignment_Outer_Space@1496",
+   "title": "Assignment_Outer_Space",
+   "start_s": 1496.03,
+   "end_s": 1622.02
+  },
+  {
+   "pair": "P586",
+   "ad": "car",
+   "category": "automotive",
+   "brief": "a car driving on an open road",
+   "scene": "Grave_of_the_Vampire_movie@4597",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 4597.01,
+   "end_s": 4618.03
+  },
+  {
+   "pair": "P587",
+   "ad": "furniture",
+   "category": "home",
+   "brief": "a comfortable living room interior",
+   "scene": "Cyrano_DeBergerac@5191",
+   "title": "Cyrano_DeBergerac",
+   "start_s": 5191.02,
+   "end_s": 5245.01
+  },
+  {
+   "pair": "P588",
+   "ad": "coffee",
+   "category": "food_drink",
+   "brief": "people drinking coffee or tea together",
+   "scene": "Grave_of_the_Vampire_movie@3538",
+   "title": "Grave_of_the_Vampire_movie",
+   "start_s": 3538.03,
+   "end_s": 3574.03
+  },
+  {
+   "pair": "P589",
+   "ad": "bank",
+   "category": "finance",
+   "brief": "money and banknotes being counted",
+   "scene": "Assignment_Outer_Space@2563",
+   "title": "Assignment_Outer_Space",
+   "start_s": 2563.03,
+   "end_s": 2568.03
+  }
+ ]
+}

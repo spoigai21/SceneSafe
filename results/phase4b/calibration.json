@@ -1,0 +1,10 @@
+{
+ "tau": 0.14592120796442032,
+ "f1": 0.7142857142857143,
+ "pairs": 300,
+ "fits": 152,
+ "kept": 268,
+ "precision_kept": 0.5597014925373134,
+ "recall_kept": 0.9868421052631579,
+ "rule": "maximise F1 of (score > tau) vs fits over practice pairs; ties to the lower tau"
+}

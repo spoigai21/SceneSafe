@@ -1,0 +1,1161 @@
+{
+  "phase": 4,
+  "name": "match",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-10T19:55:19+00:00",
+  "git_commit": "553418dce9c979849ded8dd2f99cece4adba62de-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "protocol": "EVAL-PROTOCOL.md",
+    "k": 10,
+    "methods": [
+      "clip",
+      "genre",
+      "random"
+    ],
+    "bootstrap_resamples": 10000,
+    "labels_primary": "results/phase4/labels_primary.json",
+    "labels_author": "results/phase4/labels_author.json"
+  },
+  "summary": {
+    "precision@10": {
+      "clip": {
+        "mean": 0.44000000000000006,
+        "ci95": [
+          0.31487500000000007,
+          0.575
+        ]
+      },
+      "genre": {
+        "mean": 0.075,
+        "ci95": [
+          0.02,
+          0.14500000000000002
+        ]
+      },
+      "random": {
+        "mean": 0.02,
+        "ci95": [
+          0.005,
+          0.039999999999999994
+        ]
+      },
+      "clip-genre": {
+        "mean": 0.36500000000000005,
+        "ci95": [
+          0.255,
+          0.48500000000000004
+        ],
+        "clip_beats": true,
+        "ads_clip_wins": 18,
+        "ads_tied": 2,
+        "ads_clip_loses": 0
+      },
+      "clip-random": {
+        "mean": 0.42000000000000004,
+        "ci95": [
+          0.29500000000000004,
+          0.55
+        ],
+        "clip_beats": true,
+        "ads_clip_wins": 18,
+        "ads_tied": 2,
+        "ads_clip_loses": 0
+      }
+    },
+    "ndcg@10": {
+      "clip": {
+        "mean": 0.7022925187316104,
+        "ci95": [
+          0.5649641133685869,
+          0.8216165904848975
+        ]
+      },
+      "genre": {
+        "mean": 0.1019628815746495,
+        "ci95": [
+          0.026944284609140324,
+          0.19670404593107516
+        ]
+      },
+      "random": {
+        "mean": 0.02659804519124732,
+        "ci95": [
+          0.005043373558313557,
+          0.05362380638214192
+        ]
+      },
+      "clip-genre": {
+        "mean": 0.6003296371569606,
+        "ci95": [
+          0.44986023923130486,
+          0.739551036906068
+        ],
+        "clip_beats": true,
+        "ads_clip_wins": 18,
+        "ads_tied": 2,
+        "ads_clip_loses": 0
+      },
+      "clip-random": {
+        "mean": 0.675694473540363,
+        "ci95": [
+          0.5361682441460832,
+          0.7976474663496007
+        ],
+        "clip_beats": true,
+        "ads_clip_wins": 18,
+        "ads_tied": 2,
+        "ads_clip_loses": 0
+      }
+    }
+  },
+  "per_ad": {
+    "car": {
+      "fitting_scenes_in_pool": 9,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9504206262110481
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "airline": {
+      "fitting_scenes_in_pool": 2,
+      "clip": {
+        "relevant": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.6509209298071326
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "cruise": {
+      "fitting_scenes_in_pool": 3,
+      "clip": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.5051284895111403
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "beach_resort": {
+      "fitting_scenes_in_pool": 0,
+      "clip": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "beer": {
+      "fitting_scenes_in_pool": 4,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.867043684838194
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "wine": {
+      "fitting_scenes_in_pool": 4,
+      "clip": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.7438924904678291
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "coffee": {
+      "fitting_scenes_in_pool": 6,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.8480740740411332
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.10086747116627115
+      }
+    },
+    "restaurant": {
+      "fitting_scenes_in_pool": 7,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "precision@10": 0.7,
+        "ndcg@10": 0.9726647310833559
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "fashion": {
+      "fitting_scenes_in_pool": 6,
+      "clip": {
+        "relevant": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.6807008352001337
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.31866295117805
+      },
+      "random": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.19092086617893467
+      }
+    },
+    "jewelry": {
+      "fitting_scenes_in_pool": 4,
+      "clip": {
+        "relevant": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.7045057227504283
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "pet_food": {
+      "fitting_scenes_in_pool": 0,
+      "clip": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "outdoor_gear": {
+      "fitting_scenes_in_pool": 4,
+      "clip": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.7979719524871096
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "phone": {
+      "fitting_scenes_in_pool": 10,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 1.0,
+        "ndcg@10": 1.0
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "music": {
+      "fitting_scenes_in_pool": 4,
+      "clip": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.5363781864793108
+      },
+      "genre": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.3764290720714305
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.13012668333070054
+      }
+    },
+    "furniture": {
+      "fitting_scenes_in_pool": 4,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.8048099750039491
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.16812753627111746
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "toys": {
+      "fitting_scenes_in_pool": 1,
+      "clip": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.2890648263178879
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "western_wear": {
+      "fitting_scenes_in_pool": 13,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.8899541168509599
+      },
+      "genre": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.5388856921828065
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "bank": {
+      "fitting_scenes_in_pool": 1,
+      "clip": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 1.0
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "pharmacy": {
+      "fitting_scenes_in_pool": 5,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.9143656167316339
+      },
+      "genre": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "sci_fi_game": {
+      "fitting_scenes_in_pool": 15,
+      "clip": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.8899541168509599
+      },
+      "genre": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.6371523797895856
+      },
+      "random": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.11004588314904008
+      }
+    }
+  },
+  "pairs_labelled": 589,
+  "fits_rate_primary": 0.1731748726655348,
+  "agreement": {
+    "n": 100,
+    "agreement": 0.91,
+    "cohen_kappa": 0.6762589928057554,
+    "fits_rate_a": 0.13,
+    "fits_rate_b": 0.2,
+    "disagreements": [
+      "P002",
+      "P003",
+      "P029",
+      "P038",
+      "P154",
+      "P185",
+      "P208",
+      "P291",
+      "P313"
+    ]
+  }
+}

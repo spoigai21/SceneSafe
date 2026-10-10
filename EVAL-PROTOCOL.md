@@ -81,3 +81,93 @@ All metrics use the primary labels, the top 10 per ad, and an average over the 2
   ("a car driving on a road", "a person talking on the telephone"). No ad, brief or setting was chosen
   by looking at test-film results.
 - The ads, genres lists and advertisers are simulated. The films are public domain.
+
+---
+
+# Phase 4b amendment: general improvements to CLIP matching
+
+Written and committed **after** the Phase 4 results and **before** any Phase 4b result on the test films.
+
+## Question
+
+Do general changes, applied the same way to every ad, make CLIP's picks fit more often than v1 (the
+Phase 4 method)?
+
+## What changes
+
+The model doesn't change (ViT-B/32, the same embeddings). There's no re-ranking with a second model, and
+no ad gets hand-written wording, exclusions or settings.
+
+1. **Template ensemble.** Each brief is embedded in these 5 fixed templates. The 5 unit vectors are
+   averaged and re-normalised:
+   - `{brief}`
+   - `a photo of {brief}.`
+   - `a still from a film showing {brief}.`
+   - `a black and white film still of {brief}.`
+   - `a movie scene of {brief}.`
+2. **Score relative to ordinary footage.** A second's score for an ad is its similarity to the ad minus
+   its mean similarity to 5 fixed neutral descriptions:
+   - "people talking in a room"
+   - "a close-up of a person's face"
+   - "a landscape"
+   - "a group of people standing"
+   - "an indoor scene"
+3. **Junk filter.** A second is junk if its frame is nearly black (mean grey level < 0.05 on a 0–1 scale)
+   or nearly blank (standard deviation of grey level < 0.03). Grey level is measured on every 8th pixel
+   of the same 1 fps frames the embeddings came from.
+
+   Junk seconds are never returned, and a scene is ranked by its best non-junk second.
+
+   - **How it was chosen:** the thresholds were chosen by eye on practice-film frames. A first version
+     used CLIP descriptions ("a completely black screen", "film credits", …), but it flagged 44% of
+     practice seconds, mostly ordinary scenes, and was dropped before any labelling.
+   - **Not caught:** title cards and credits on a visible background.
+4. **Cut-off.** A scene is returned only if its score is above one threshold τ, the same for every ad.
+   The method returns up to 10 scenes per ad, possibly fewer, possibly none.
+
+Everything else is as in v1: exact search over every second of the test films, grouped by the Phase 3
+scenes (threshold 0.75).
+
+## Choosing τ (practice films only)
+
+- **Labels:** on the 21 practice films, v2's top 15 scenes per ad (without the cut-off) are pooled,
+  shuffled and labelled by the primary labeller. The rules and display are the same as Phase 4, and the
+  judge is blind to the scores.
+- **The rule:** τ is the value that maximises F1 between "score > τ" and "fits" over those pairs. A tie
+  goes to the lower τ.
+- **Freeze:** τ and the code are frozen before any v2 run on the test films.
+
+## Evaluation (test films, once)
+
+- **Run:** v2 runs once on the 14 test films.
+- **Labelling:**
+  - New (ad, scene) pairs not labelled in Phase 4 are labelled blind by the primary labeller.
+  - Pairs already labelled in Phase 4 reuse their primary labels (same labeller, same rule).
+  - The project author labels a random 50 of the new pairs (`default_rng(1)`). Agreement is reported as
+    in Phase 4.
+- **Metrics:** means over the 20 ads, 95% bootstrap over ads (10,000 resamples, `default_rng(0)`), for
+  v1, v2 and the paired difference v2 − v1:
+  - **precision@10:** as in Phase 4. A scene not returned counts as not fitting, so abstaining is
+    penalised.
+  - **precision of returned scenes:** fitting returned scenes ÷ returned scenes, over all ads, with the
+    number of scenes returned.
+  - **correct abstentions:** ads where v2 returns nothing and no labelled pair for that ad fits.
+  - **nDCG@10:** as in Phase 4, with the ideal ranking taken from every labelled pair for the ad
+    (v1, v2 and the baselines).
+
+## Decision rule
+
+- **v2 improves on v1** if the 95% interval of the paired precision@10 difference (v2 − v1) is entirely
+  above 0.
+- If it isn't, the result is reported as "no measurable improvement", along with the
+  precision-of-returned trade-off if there is one.
+- A per-ad table is reported, including every ad where v2 does worse.
+
+## Disclosures
+
+- **The test films are reused.** They were the Phase 4 test films, and their v1 results were seen before
+  this amendment was written. The changes are general rules chosen in response to failure types seen in
+  v1 (scenes that vaguely match everything, black scenes and credits, no "nothing here" signal), not
+  fixes for specific ads or scenes.
+- **Previously seen pairs.** Some pairs may already have been seen by the primary labeller. Their earlier
+  labels are reused unchanged.

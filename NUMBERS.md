@@ -89,6 +89,21 @@ CPU only, FAISS 1.15.1, load average 2.2–3.0 on 10 cores. 100 text queries (`c
 | IVF2048-PQ64 / PQ32: size, best text recall@10 (nprobe 128) | 17.7 MB, 0.453 / 11.9 MB, 0.320 | cpu-laptop | same |
 | Exact search latency vs size (1 thread, p50) | 17,954: 0.44 ms; 44,886: 1.15; 89,772: 2.33; 179,545: 4.72 | cpu-laptop | same, `flat_scaling` |
 
+## Phase 4
+
+Rules: `EVAL-PROTOCOL.md` (commit `553418d`). 14 held-out films (71,091 s, 3,911 scenes), 20 simulated ads,
+589 pooled (ad, scene) pairs. Primary labels by an AI assistant (Claude) blind to method; 100 re-labelled by
+the project author. Means over 20 ads, 95% bootstrap intervals over ads.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| precision@10: CLIP / Genre / Random | 0.440 [0.315, 0.575] / 0.075 [0.020, 0.145] / 0.020 [0.005, 0.040] | (not hardware-dependent) | `results/phase4/match_cpu-laptop_seed0.json` |
+| nDCG@10: CLIP / Genre / Random | 0.702 / 0.102 / 0.027 | — | same |
+| CLIP − Genre, precision@10 | +0.365 [+0.255, +0.485]; 18 ads won, 2 tied, 0 lost | — | same |
+| Label agreement (100 pairs) | 91%, Cohen's kappa 0.68; fit rate 13% (primary) vs 20% (author) | — | same, `agreement` |
+| Sensitivity (author labels where present) | CLIP 0.46, Genre 0.09; CLIP − Genre +0.37 [+0.26, +0.49] | — | computed from `labels_*.json`; in `results/phase4/SUMMARY.md` |
+| Near-black scenes in the labelling pool | 29 of 466 scenes (35 of 589 pairs) | — | mean brightness < 20 of the 4-frame strips |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.
