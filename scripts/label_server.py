@@ -3,9 +3,9 @@
     PYTHONPATH=. .venv/bin/python scripts/label_server.py [--phase 4b]      then open http://localhost:8765
 
 Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2);
-Phase 4d: 100, default_rng(3); Phase 4e: 100, default_rng(4)) one at a time: the ad's category and brief (in 4d and
-4e, also its label-guide line; in 4e, its theme line and a third button for a thematic fit), and 4 frames from the
-scene. Nothing on the page says which method
+Phase 4d: 100, default_rng(3); Phase 4e and 4f: 100, default_rng(4) and (5)) one at a time: the ad's category and
+brief (from 4d, also its label-guide line; from 4e, its theme line and a third button for a thematic fit), 4 frames
+from the scene and, in 4f, the scene's dialogue. Nothing on the page says which method
 found the scene, and the primary labels are never sent to the browser. Every click is saved straight to
 results/<phase>/labels_author.json, so you can stop and come back.
 """
@@ -26,8 +26,9 @@ _P4_FRAMES = REPO_ROOT / "data" / "phase4" / "test" / "frames"
 PHASES = {"4": ("phase4", 100, 0, _P4_FRAMES, False), "4b": ("phase4b", 50, 1, _P4_FRAMES, False),
           "4c": ("phase4c", 50, 2, _P4_FRAMES, False),
           "4d": ("phase4d", 100, 3, REPO_ROOT / "data" / "phase4d" / "frames", True),
-          "4e": ("phase4e", 100, 4, REPO_ROOT / "data" / "phase4d" / "frames", True)}
-LEVELS = {"4e"}    # three labels: 2 literal fit, 1 thematic fit, 0 doesn't fit
+          "4e": ("phase4e", 100, 4, REPO_ROOT / "data" / "phase4d" / "frames", True),
+          "4f": ("phase4f", 100, 5, REPO_ROOT / "data" / "phase4d" / "frames", True)}
+LEVELS = {"4e", "4f"}    # three labels: 2 literal fit, 1 thematic fit, 0 doesn't fit
 PORT = 8765
 
 PAGE = """<!doctype html>
@@ -43,6 +44,8 @@ PAGE = """<!doctype html>
   img { width: 100%; border-radius: 6px; background: #000; }
   .guide { font-size: 14px; color: #444; background: #fff; border: 1px solid #ddd; border-radius: 6px;
            padding: 8px 12px; margin: -6px 0 14px; }
+  .dialogue { font-size: 14px; color: #5a3a00; background: #fffaf0; border: 1px solid #e8d9b5; border-radius: 6px;
+              padding: 8px 12px; margin-top: 10px; max-height: 160px; overflow-y: auto; }
   .q { margin: 18px 0 12px; font-size: 15px; color: #444; }
   .buttons { display: flex; gap: 12px; }
   button { flex: 1; font-size: 17px; padding: 14px; border-radius: 8px; border: 1px solid #bbb; background: #fff;
@@ -60,6 +63,7 @@ PAGE = """<!doctype html>
     <h1 id="brief"></h1>
     <div class="guide" id="guide" hidden></div>
     <img id="img" alt="4 frames from the scene">
+    <div class="dialogue" id="dialogue" hidden></div>
     <div class="q">Is this scene a natural place for this ad? (Relevance only. Ignore safety. Unsure = doesn't fit.)</div>
     <div class="buttons">
       <button class="yes" id="yes">Fits (F)</button>
@@ -91,6 +95,8 @@ function show() {
   $("yes").textContent = it.theme ? "Literal fit (F)" : "Fits (F)";
   $("theme").classList.toggle("chosen", labels[it.pair] === 1);
   $("img").src = "/frames/" + encodeURIComponent(it.scene) + ".jpg";
+  $("dialogue").hidden = !("dialogue" in it);
+  if ("dialogue" in it) $("dialogue").textContent = "Dialogue: " + (it.dialogue || "(no speech)");
   $("yes").classList.toggle("chosen", labels[it.pair] === (it.theme ? 2 : 1));
   $("no").classList.toggle("chosen", labels[it.pair] === 0);
 }
@@ -142,7 +148,8 @@ def save_labels(labels: dict):
 
 def items(size: int, seed: int, with_guide: bool, with_themes: bool = False) -> list[dict]:
     pool = json.loads(POOL.read_text())["pairs"]
-    out = [{k: pool[i][k] for k in ("pair", "ad", "category", "brief", "scene")} for i in author_sample(len(pool), size, seed)]
+    keys = ("pair", "ad", "category", "brief", "scene", "dialogue")
+    out = [{k: pool[i][k] for k in keys if k in pool[i]} for i in author_sample(len(pool), size, seed)]
     if with_guide:
         from scenesafe.match.catalogue import label_guide
         guide = label_guide()

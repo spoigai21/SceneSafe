@@ -1,0 +1,4349 @@
+{
+ "films": [
+  "BloodontheSun",
+  "CaptainKidd_",
+  "CarnivalofSouls",
+  "EndoftheWorld",
+  "Hitchcock_Secret_Agent",
+  "TheFlyingDeuces",
+  "TheGhoul",
+  "TheOver-the-HillGangRidesAgain",
+  "ThePhantomCreeps",
+  "amazing_adventure",
+  "angel_and_the_badman",
+  "calvary",
+  "heartbeat",
+  "secret_weapon"
+ ],
+ "ads": 60,
+ "scene_threshold": 0.75,
+ "model": "ViT-B-32",
+ "pretrained": "laion2b_s34b_b79k",
+ "literal_system": "Phase 4d ViT-B/32 picks (reused)",
+ "literal_fits_from_4d": 236,
+ "new_pairs_from_theme_system": 289,
+ "picks": {
+  "theme": {
+   "car": [
+    {
+     "scene": "EndoftheWorld@1499",
+     "title": "EndoftheWorld",
+     "start_s": 1499.0,
+     "end_s": 1527.0,
+     "score": 0.3100474774837494
+    },
+    {
+     "scene": "CarnivalofSouls@1428",
+     "title": "CarnivalofSouls",
+     "start_s": 1428.03,
+     "end_s": 1439.0,
+     "score": 0.3084760308265686
+    },
+    {
+     "scene": "EndoftheWorld@1547",
+     "title": "EndoftheWorld",
+     "start_s": 1547.0,
+     "end_s": 1553.0,
+     "score": 0.30140548944473267
+    },
+    {
+     "scene": "CarnivalofSouls@675",
+     "title": "CarnivalofSouls",
+     "start_s": 675.01,
+     "end_s": 712.01,
+     "score": 0.29568618535995483
+    },
+    {
+     "scene": "CarnivalofSouls@107",
+     "title": "CarnivalofSouls",
+     "start_s": 107.01,
+     "end_s": 123.02,
+     "score": 0.28669026494026184
+    },
+    {
+     "scene": "CarnivalofSouls@48",
+     "title": "CarnivalofSouls",
+     "start_s": 48.01,
+     "end_s": 71.0,
+     "score": 0.28254854679107666
+    },
+    {
+     "scene": "CarnivalofSouls@4561",
+     "title": "CarnivalofSouls",
+     "start_s": 4561.02,
+     "end_s": 4571.03,
+     "score": 0.2810032069683075
+    },
+    {
+     "scene": "CarnivalofSouls@74",
+     "title": "CarnivalofSouls",
+     "start_s": 74.01,
+     "end_s": 78.01,
+     "score": 0.2790015935897827
+    },
+    {
+     "scene": "EndoftheWorld@1527",
+     "title": "EndoftheWorld",
+     "start_s": 1527.0,
+     "end_s": 1547.0,
+     "score": 0.2784210741519928
+    },
+    {
+     "scene": "ThePhantomCreeps@1086",
+     "title": "ThePhantomCreeps",
+     "start_s": 1086.02,
+     "end_s": 1115.01,
+     "score": 0.27766236662864685
+    }
+   ],
+   "airline": [
+    {
+     "scene": "ThePhantomCreeps@1027",
+     "title": "ThePhantomCreeps",
+     "start_s": 1027.03,
+     "end_s": 1031.03,
+     "score": 0.27095726132392883
+    },
+    {
+     "scene": "CarnivalofSouls@2888",
+     "title": "CarnivalofSouls",
+     "start_s": 2888.02,
+     "end_s": 2934.03,
+     "score": 0.2689599096775055
+    },
+    {
+     "scene": "TheFlyingDeuces@2440",
+     "title": "TheFlyingDeuces",
+     "start_s": 2440.0,
+     "end_s": 2475.0,
+     "score": 0.26717114448547363
+    },
+    {
+     "scene": "ThePhantomCreeps@1008",
+     "title": "ThePhantomCreeps",
+     "start_s": 1008.01,
+     "end_s": 1016.02,
+     "score": 0.2641720473766327
+    },
+    {
+     "scene": "ThePhantomCreeps@4438",
+     "title": "ThePhantomCreeps",
+     "start_s": 4438.0,
+     "end_s": 4471.0,
+     "score": 0.2619215250015259
+    },
+    {
+     "scene": "ThePhantomCreeps@4485",
+     "title": "ThePhantomCreeps",
+     "start_s": 4485.02,
+     "end_s": 4489.02,
+     "score": 0.2617245018482208
+    },
+    {
+     "scene": "TheFlyingDeuces@2416",
+     "title": "TheFlyingDeuces",
+     "start_s": 2416.01,
+     "end_s": 2432.03,
+     "score": 0.26024115085601807
+    },
+    {
+     "scene": "ThePhantomCreeps@1049",
+     "title": "ThePhantomCreeps",
+     "start_s": 1049.02,
+     "end_s": 1054.02,
+     "score": 0.2596834897994995
+    },
+    {
+     "scene": "TheFlyingDeuces@2478",
+     "title": "TheFlyingDeuces",
+     "start_s": 2478.01,
+     "end_s": 2487.02,
+     "score": 0.25944504141807556
+    },
+    {
+     "scene": "ThePhantomCreeps@4560",
+     "title": "ThePhantomCreeps",
+     "start_s": 4560.03,
+     "end_s": 4564.03,
+     "score": 0.2587924301624298
+    }
+   ],
+   "cruise": [
+    {
+     "scene": "CaptainKidd_@2131",
+     "title": "CaptainKidd_",
+     "start_s": 2131.03,
+     "end_s": 2150.02,
+     "score": 0.30571863055229187
+    },
+    {
+     "scene": "CaptainKidd_@2153",
+     "title": "CaptainKidd_",
+     "start_s": 2153.02,
+     "end_s": 2161.03,
+     "score": 0.2963922917842865
+    },
+    {
+     "scene": "CaptainKidd_@3509",
+     "title": "CaptainKidd_",
+     "start_s": 3509.01,
+     "end_s": 3554.02,
+     "score": 0.29384860396385193
+    },
+    {
+     "scene": "CaptainKidd_@3579",
+     "title": "CaptainKidd_",
+     "start_s": 3579.01,
+     "end_s": 3591.02,
+     "score": 0.2924380600452423
+    },
+    {
+     "scene": "CaptainKidd_@2532",
+     "title": "CaptainKidd_",
+     "start_s": 2532.03,
+     "end_s": 2546.01,
+     "score": 0.2859521210193634
+    },
+    {
+     "scene": "CaptainKidd_@4744",
+     "title": "CaptainKidd_",
+     "start_s": 4744.01,
+     "end_s": 4879.01,
+     "score": 0.2852957546710968
+    },
+    {
+     "scene": "CaptainKidd_@3042",
+     "title": "CaptainKidd_",
+     "start_s": 3042.01,
+     "end_s": 3109.01,
+     "score": 0.2851317822933197
+    },
+    {
+     "scene": "CaptainKidd_@3591",
+     "title": "CaptainKidd_",
+     "start_s": 3591.02,
+     "end_s": 3597.03,
+     "score": 0.2848929166793823
+    },
+    {
+     "scene": "CaptainKidd_@2992",
+     "title": "CaptainKidd_",
+     "start_s": 2992.03,
+     "end_s": 3029.03,
+     "score": 0.2803388237953186
+    },
+    {
+     "scene": "CaptainKidd_@3600",
+     "title": "CaptainKidd_",
+     "start_s": 3600.0,
+     "end_s": 3607.01,
+     "score": 0.27996131777763367
+    }
+   ],
+   "beach_resort": [
+    {
+     "scene": "angel_and_the_badman@5800",
+     "title": "angel_and_the_badman",
+     "start_s": 5800.03,
+     "end_s": 5812.01,
+     "score": 0.2784063518047333
+    },
+    {
+     "scene": "angel_and_the_badman@3004",
+     "title": "angel_and_the_badman",
+     "start_s": 3004.0,
+     "end_s": 3264.03,
+     "score": 0.25557470321655273
+    },
+    {
+     "scene": "amazing_adventure@250",
+     "title": "amazing_adventure",
+     "start_s": 250.0,
+     "end_s": 254.0,
+     "score": 0.2554631233215332
+    },
+    {
+     "scene": "BloodontheSun@0",
+     "title": "BloodontheSun",
+     "start_s": 0.0,
+     "end_s": 4.0,
+     "score": 0.2534104287624359
+    },
+    {
+     "scene": "BloodontheSun@1436",
+     "title": "BloodontheSun",
+     "start_s": 1436.0,
+     "end_s": 1439.0,
+     "score": 0.2534104287624359
+    },
+    {
+     "scene": "BloodontheSun@4935",
+     "title": "BloodontheSun",
+     "start_s": 4935.0,
+     "end_s": 4938.0,
+     "score": 0.2534104287624359
+    },
+    {
+     "scene": "BloodontheSun@5611",
+     "title": "BloodontheSun",
+     "start_s": 5611.0,
+     "end_s": 5614.0,
+     "score": 0.2534104287624359
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@0",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 0.0,
+     "end_s": 4.0,
+     "score": 0.2534104287624359
+    },
+    {
+     "scene": "ThePhantomCreeps@0",
+     "title": "ThePhantomCreeps",
+     "start_s": 0.0,
+     "end_s": 7.01,
+     "score": 0.2534104287624359
+    },
+    {
+     "scene": "ThePhantomCreeps@4700",
+     "title": "ThePhantomCreeps",
+     "start_s": 4700.0,
+     "end_s": 4701.0,
+     "score": 0.2534104287624359
+    }
+   ],
+   "beer": [
+    {
+     "scene": "calvary@2689",
+     "title": "calvary",
+     "start_s": 2689.02,
+     "end_s": 2749.01,
+     "score": 0.31410279870033264
+    },
+    {
+     "scene": "calvary@2526",
+     "title": "calvary",
+     "start_s": 2526.02,
+     "end_s": 2634.03,
+     "score": 0.3120601773262024
+    },
+    {
+     "scene": "angel_and_the_badman@5494",
+     "title": "angel_and_the_badman",
+     "start_s": 5494.02,
+     "end_s": 5705.03,
+     "score": 0.31084170937538147
+    },
+    {
+     "scene": "angel_and_the_badman@2573",
+     "title": "angel_and_the_badman",
+     "start_s": 2573.0,
+     "end_s": 2604.0,
+     "score": 0.309291809797287
+    },
+    {
+     "scene": "BloodontheSun@3268",
+     "title": "BloodontheSun",
+     "start_s": 3268.0,
+     "end_s": 3288.0,
+     "score": 0.3076704740524292
+    },
+    {
+     "scene": "CarnivalofSouls@3452",
+     "title": "CarnivalofSouls",
+     "start_s": 3452.02,
+     "end_s": 3573.0,
+     "score": 0.30715635418891907
+    },
+    {
+     "scene": "BloodontheSun@2383",
+     "title": "BloodontheSun",
+     "start_s": 2383.0,
+     "end_s": 2432.0,
+     "score": 0.3062021732330322
+    },
+    {
+     "scene": "BloodontheSun@492",
+     "title": "BloodontheSun",
+     "start_s": 492.0,
+     "end_s": 769.0,
+     "score": 0.30414465069770813
+    },
+    {
+     "scene": "CaptainKidd_@1700",
+     "title": "CaptainKidd_",
+     "start_s": 1700.0,
+     "end_s": 1787.02,
+     "score": 0.30388110876083374
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@2889",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 2889.0,
+     "end_s": 2914.0,
+     "score": 0.301304429769516
+    }
+   ],
+   "wine": [
+    {
+     "scene": "amazing_adventure@3545",
+     "title": "amazing_adventure",
+     "start_s": 3545.0,
+     "end_s": 3706.0,
+     "score": 0.31460288166999817
+    },
+    {
+     "scene": "amazing_adventure@132",
+     "title": "amazing_adventure",
+     "start_s": 132.0,
+     "end_s": 250.0,
+     "score": 0.3064929246902466
+    },
+    {
+     "scene": "amazing_adventure@1759",
+     "title": "amazing_adventure",
+     "start_s": 1759.0,
+     "end_s": 1872.0,
+     "score": 0.3003465533256531
+    },
+    {
+     "scene": "angel_and_the_badman@3781",
+     "title": "angel_and_the_badman",
+     "start_s": 3781.01,
+     "end_s": 3864.03,
+     "score": 0.29838791489601135
+    },
+    {
+     "scene": "CaptainKidd_@4659",
+     "title": "CaptainKidd_",
+     "start_s": 4659.03,
+     "end_s": 4694.03,
+     "score": 0.298026442527771
+    },
+    {
+     "scene": "CaptainKidd_@4602",
+     "title": "CaptainKidd_",
+     "start_s": 4602.0,
+     "end_s": 4652.02,
+     "score": 0.2977789044380188
+    },
+    {
+     "scene": "CaptainKidd_@1829",
+     "title": "CaptainKidd_",
+     "start_s": 1829.03,
+     "end_s": 1847.01,
+     "score": 0.29169291257858276
+    },
+    {
+     "scene": "CaptainKidd_@1684",
+     "title": "CaptainKidd_",
+     "start_s": 1684.02,
+     "end_s": 1696.03,
+     "score": 0.2915317714214325
+    },
+    {
+     "scene": "amazing_adventure@2782",
+     "title": "amazing_adventure",
+     "start_s": 2782.0,
+     "end_s": 2963.0,
+     "score": 0.2906959652900696
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1879",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1879.0,
+     "end_s": 2035.03,
+     "score": 0.2902432680130005
+    }
+   ],
+   "coffee": [
+    {
+     "scene": "angel_and_the_badman@1180",
+     "title": "angel_and_the_badman",
+     "start_s": 1180.01,
+     "end_s": 1211.01,
+     "score": 0.3084319531917572
+    },
+    {
+     "scene": "EndoftheWorld@3820",
+     "title": "EndoftheWorld",
+     "start_s": 3820.0,
+     "end_s": 3828.0,
+     "score": 0.30836376547813416
+    },
+    {
+     "scene": "EndoftheWorld@3831",
+     "title": "EndoftheWorld",
+     "start_s": 3831.0,
+     "end_s": 3913.0,
+     "score": 0.29728198051452637
+    },
+    {
+     "scene": "angel_and_the_badman@1117",
+     "title": "angel_and_the_badman",
+     "start_s": 1117.02,
+     "end_s": 1174.01,
+     "score": 0.29348689317703247
+    },
+    {
+     "scene": "angel_and_the_badman@819",
+     "title": "angel_and_the_badman",
+     "start_s": 819.02,
+     "end_s": 955.02,
+     "score": 0.28869107365608215
+    },
+    {
+     "scene": "CarnivalofSouls@1844",
+     "title": "CarnivalofSouls",
+     "start_s": 1844.01,
+     "end_s": 1892.02,
+     "score": 0.2861178517341614
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.28527238965034485
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2256",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2256.0,
+     "end_s": 2264.01,
+     "score": 0.285177618265152
+    },
+    {
+     "scene": "CarnivalofSouls@1808",
+     "title": "CarnivalofSouls",
+     "start_s": 1808.01,
+     "end_s": 1844.01,
+     "score": 0.28436365723609924
+    },
+    {
+     "scene": "CaptainKidd_@414",
+     "title": "CaptainKidd_",
+     "start_s": 414.01,
+     "end_s": 440.01,
+     "score": 0.2841176390647888
+    }
+   ],
+   "restaurant": [
+    {
+     "scene": "CaptainKidd_@4602",
+     "title": "CaptainKidd_",
+     "start_s": 4602.0,
+     "end_s": 4652.02,
+     "score": 0.31917333602905273
+    },
+    {
+     "scene": "CaptainKidd_@1829",
+     "title": "CaptainKidd_",
+     "start_s": 1829.03,
+     "end_s": 1847.01,
+     "score": 0.3163142502307892
+    },
+    {
+     "scene": "CaptainKidd_@1700",
+     "title": "CaptainKidd_",
+     "start_s": 1700.0,
+     "end_s": 1787.02,
+     "score": 0.31485527753829956
+    },
+    {
+     "scene": "amazing_adventure@132",
+     "title": "amazing_adventure",
+     "start_s": 132.0,
+     "end_s": 250.0,
+     "score": 0.30848783254623413
+    },
+    {
+     "scene": "CaptainKidd_@1684",
+     "title": "CaptainKidd_",
+     "start_s": 1684.02,
+     "end_s": 1696.03,
+     "score": 0.30657947063446045
+    },
+    {
+     "scene": "angel_and_the_badman@2573",
+     "title": "angel_and_the_badman",
+     "start_s": 2573.0,
+     "end_s": 2604.0,
+     "score": 0.30173295736312866
+    },
+    {
+     "scene": "secret_weapon@72",
+     "title": "secret_weapon",
+     "start_s": 72.01,
+     "end_s": 253.02,
+     "score": 0.301479697227478
+    },
+    {
+     "scene": "BloodontheSun@2808",
+     "title": "BloodontheSun",
+     "start_s": 2808.0,
+     "end_s": 2970.0,
+     "score": 0.3003479838371277
+    },
+    {
+     "scene": "CaptainKidd_@1847",
+     "title": "CaptainKidd_",
+     "start_s": 1847.01,
+     "end_s": 1990.02,
+     "score": 0.2989291250705719
+    },
+    {
+     "scene": "CaptainKidd_@4659",
+     "title": "CaptainKidd_",
+     "start_s": 4659.03,
+     "end_s": 4694.03,
+     "score": 0.2979098856449127
+    }
+   ],
+   "fashion": [
+    {
+     "scene": "heartbeat@1560",
+     "title": "heartbeat",
+     "start_s": 1560.03,
+     "end_s": 1771.0,
+     "score": 0.28660574555397034
+    },
+    {
+     "scene": "heartbeat@2000",
+     "title": "heartbeat",
+     "start_s": 2000.03,
+     "end_s": 2208.0,
+     "score": 0.27280542254447937
+    },
+    {
+     "scene": "heartbeat@1842",
+     "title": "heartbeat",
+     "start_s": 1842.01,
+     "end_s": 2000.03,
+     "score": 0.27020981907844543
+    },
+    {
+     "scene": "heartbeat@5141",
+     "title": "heartbeat",
+     "start_s": 5141.0,
+     "end_s": 5390.02,
+     "score": 0.26907700300216675
+    },
+    {
+     "scene": "heartbeat@2353",
+     "title": "heartbeat",
+     "start_s": 2353.02,
+     "end_s": 2469.03,
+     "score": 0.26866593956947327
+    },
+    {
+     "scene": "amazing_adventure@1001",
+     "title": "amazing_adventure",
+     "start_s": 1001.0,
+     "end_s": 1009.0,
+     "score": 0.2662912905216217
+    },
+    {
+     "scene": "heartbeat@2236",
+     "title": "heartbeat",
+     "start_s": 2236.0,
+     "end_s": 2280.01,
+     "score": 0.2659699022769928
+    },
+    {
+     "scene": "heartbeat@1780",
+     "title": "heartbeat",
+     "start_s": 1780.01,
+     "end_s": 1833.03,
+     "score": 0.2652312219142914
+    },
+    {
+     "scene": "heartbeat@5504",
+     "title": "heartbeat",
+     "start_s": 5504.03,
+     "end_s": 5742.0,
+     "score": 0.2645554840564728
+    },
+    {
+     "scene": "heartbeat@2878",
+     "title": "heartbeat",
+     "start_s": 2878.01,
+     "end_s": 2964.03,
+     "score": 0.26339834928512573
+    }
+   ],
+   "jewelry": [
+    {
+     "scene": "amazing_adventure@3413",
+     "title": "amazing_adventure",
+     "start_s": 3413.0,
+     "end_s": 3525.0,
+     "score": 0.28880172967910767
+    },
+    {
+     "scene": "CarnivalofSouls@4333",
+     "title": "CarnivalofSouls",
+     "start_s": 4333.03,
+     "end_s": 4362.02,
+     "score": 0.28623902797698975
+    },
+    {
+     "scene": "amazing_adventure@3046",
+     "title": "amazing_adventure",
+     "start_s": 3046.0,
+     "end_s": 3051.0,
+     "score": 0.28301945328712463
+    },
+    {
+     "scene": "heartbeat@5390",
+     "title": "heartbeat",
+     "start_s": 5390.02,
+     "end_s": 5445.01,
+     "score": 0.28096604347229004
+    },
+    {
+     "scene": "angel_and_the_badman@4434",
+     "title": "angel_and_the_badman",
+     "start_s": 4434.03,
+     "end_s": 4559.02,
+     "score": 0.27907809615135193
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@3074",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 3074.03,
+     "end_s": 3121.03,
+     "score": 0.2776595652103424
+    },
+    {
+     "scene": "TheFlyingDeuces@2416",
+     "title": "TheFlyingDeuces",
+     "start_s": 2416.01,
+     "end_s": 2432.03,
+     "score": 0.2771488428115845
+    },
+    {
+     "scene": "TheFlyingDeuces@222",
+     "title": "TheFlyingDeuces",
+     "start_s": 222.02,
+     "end_s": 557.02,
+     "score": 0.2768102288246155
+    },
+    {
+     "scene": "CarnivalofSouls@3669",
+     "title": "CarnivalofSouls",
+     "start_s": 3669.03,
+     "end_s": 3706.0,
+     "score": 0.27572858333587646
+    },
+    {
+     "scene": "calvary@773",
+     "title": "calvary",
+     "start_s": 773.01,
+     "end_s": 782.01,
+     "score": 0.27496036887168884
+    }
+   ],
+   "pet_food": [
+    {
+     "scene": "heartbeat@4767",
+     "title": "heartbeat",
+     "start_s": 4767.03,
+     "end_s": 4771.03,
+     "score": 0.2730097472667694
+    },
+    {
+     "scene": "TheFlyingDeuces@3863",
+     "title": "TheFlyingDeuces",
+     "start_s": 3863.03,
+     "end_s": 3951.01,
+     "score": 0.27061015367507935
+    },
+    {
+     "scene": "heartbeat@4814",
+     "title": "heartbeat",
+     "start_s": 4814.01,
+     "end_s": 4817.01,
+     "score": 0.26808613538742065
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1766",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1766.01,
+     "end_s": 1776.02,
+     "score": 0.26699885725975037
+    },
+    {
+     "scene": "heartbeat@4785",
+     "title": "heartbeat",
+     "start_s": 4785.01,
+     "end_s": 4788.02,
+     "score": 0.2641306519508362
+    },
+    {
+     "scene": "heartbeat@4771",
+     "title": "heartbeat",
+     "start_s": 4771.03,
+     "end_s": 4774.0,
+     "score": 0.26215052604675293
+    },
+    {
+     "scene": "heartbeat@4795",
+     "title": "heartbeat",
+     "start_s": 4795.02,
+     "end_s": 4798.03,
+     "score": 0.2620723247528076
+    },
+    {
+     "scene": "heartbeat@4801",
+     "title": "heartbeat",
+     "start_s": 4801.03,
+     "end_s": 4804.03,
+     "score": 0.2589760720729828
+    },
+    {
+     "scene": "heartbeat@4892",
+     "title": "heartbeat",
+     "start_s": 4892.02,
+     "end_s": 4955.02,
+     "score": 0.25870683789253235
+    },
+    {
+     "scene": "heartbeat@3487",
+     "title": "heartbeat",
+     "start_s": 3487.02,
+     "end_s": 3492.02,
+     "score": 0.2582963705062866
+    }
+   ],
+   "outdoor_gear": [
+    {
+     "scene": "angel_and_the_badman@3511",
+     "title": "angel_and_the_badman",
+     "start_s": 3511.01,
+     "end_s": 3674.0,
+     "score": 0.2861805558204651
+    },
+    {
+     "scene": "angel_and_the_badman@5055",
+     "title": "angel_and_the_badman",
+     "start_s": 5055.02,
+     "end_s": 5089.02,
+     "score": 0.28305763006210327
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2561",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2561.02,
+     "end_s": 2565.02,
+     "score": 0.28012147545814514
+    },
+    {
+     "scene": "angel_and_the_badman@3004",
+     "title": "angel_and_the_badman",
+     "start_s": 3004.0,
+     "end_s": 3264.03,
+     "score": 0.2768256366252899
+    },
+    {
+     "scene": "calvary@935",
+     "title": "calvary",
+     "start_s": 935.0,
+     "end_s": 1049.01,
+     "score": 0.27680903673171997
+    },
+    {
+     "scene": "angel_and_the_badman@5195",
+     "title": "angel_and_the_badman",
+     "start_s": 5195.02,
+     "end_s": 5200.03,
+     "score": 0.2755151689052582
+    },
+    {
+     "scene": "angel_and_the_badman@2355",
+     "title": "angel_and_the_badman",
+     "start_s": 2355.02,
+     "end_s": 2403.03,
+     "score": 0.2752872109413147
+    },
+    {
+     "scene": "calvary@786",
+     "title": "calvary",
+     "start_s": 786.02,
+     "end_s": 907.01,
+     "score": 0.2732931971549988
+    },
+    {
+     "scene": "angel_and_the_badman@5096",
+     "title": "angel_and_the_badman",
+     "start_s": 5096.02,
+     "end_s": 5169.03,
+     "score": 0.2716326117515564
+    },
+    {
+     "scene": "calvary@1424",
+     "title": "calvary",
+     "start_s": 1424.02,
+     "end_s": 1569.03,
+     "score": 0.2706233561038971
+    }
+   ],
+   "phone": [
+    {
+     "scene": "EndoftheWorld@1397",
+     "title": "EndoftheWorld",
+     "start_s": 1397.0,
+     "end_s": 1413.0,
+     "score": 0.2622094452381134
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@272",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 272.02,
+     "end_s": 275.02,
+     "score": 0.2614051103591919
+    },
+    {
+     "scene": "angel_and_the_badman@3264",
+     "title": "angel_and_the_badman",
+     "start_s": 3264.03,
+     "end_s": 3269.03,
+     "score": 0.25892606377601624
+    },
+    {
+     "scene": "heartbeat@3395",
+     "title": "heartbeat",
+     "start_s": 3395.02,
+     "end_s": 3415.01,
+     "score": 0.258238285779953
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@523",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 523.0,
+     "end_s": 526.0,
+     "score": 0.25770729780197144
+    },
+    {
+     "scene": "BloodontheSun@4935",
+     "title": "BloodontheSun",
+     "start_s": 4935.0,
+     "end_s": 4938.0,
+     "score": 0.25739046931266785
+    },
+    {
+     "scene": "ThePhantomCreeps@561",
+     "title": "ThePhantomCreeps",
+     "start_s": 561.03,
+     "end_s": 604.0,
+     "score": 0.2566337287425995
+    },
+    {
+     "scene": "EndoftheWorld@783",
+     "title": "EndoftheWorld",
+     "start_s": 783.0,
+     "end_s": 787.0,
+     "score": 0.2548845708370209
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@67",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 67.03,
+     "end_s": 70.03,
+     "score": 0.2540004253387451
+    },
+    {
+     "scene": "CaptainKidd_@2519",
+     "title": "CaptainKidd_",
+     "start_s": 2519.02,
+     "end_s": 2532.03,
+     "score": 0.25354939699172974
+    }
+   ],
+   "music": [
+    {
+     "scene": "ThePhantomCreeps@4278",
+     "title": "ThePhantomCreeps",
+     "start_s": 4278.01,
+     "end_s": 4303.0,
+     "score": 0.2911159098148346
+    },
+    {
+     "scene": "ThePhantomCreeps@4171",
+     "title": "ThePhantomCreeps",
+     "start_s": 4171.0,
+     "end_s": 4278.01,
+     "score": 0.2887937128543854
+    },
+    {
+     "scene": "calvary@1991",
+     "title": "calvary",
+     "start_s": 1991.02,
+     "end_s": 2119.02,
+     "score": 0.28764525055885315
+    },
+    {
+     "scene": "amazing_adventure@132",
+     "title": "amazing_adventure",
+     "start_s": 132.0,
+     "end_s": 250.0,
+     "score": 0.28686973452568054
+    },
+    {
+     "scene": "angel_and_the_badman@3864",
+     "title": "angel_and_the_badman",
+     "start_s": 3864.03,
+     "end_s": 3927.02,
+     "score": 0.2797738313674927
+    },
+    {
+     "scene": "CaptainKidd_@3400",
+     "title": "CaptainKidd_",
+     "start_s": 3400.0,
+     "end_s": 3443.01,
+     "score": 0.2769911289215088
+    },
+    {
+     "scene": "CaptainKidd_@1058",
+     "title": "CaptainKidd_",
+     "start_s": 1058.02,
+     "end_s": 1118.02,
+     "score": 0.2761954665184021
+    },
+    {
+     "scene": "heartbeat@1524",
+     "title": "heartbeat",
+     "start_s": 1524.02,
+     "end_s": 1553.02,
+     "score": 0.2760738134384155
+    },
+    {
+     "scene": "heartbeat@1236",
+     "title": "heartbeat",
+     "start_s": 1236.0,
+     "end_s": 1257.02,
+     "score": 0.2748264670372009
+    },
+    {
+     "scene": "ThePhantomCreeps@2852",
+     "title": "ThePhantomCreeps",
+     "start_s": 2852.02,
+     "end_s": 2866.03,
+     "score": 0.27385029196739197
+    }
+   ],
+   "furniture": [
+    {
+     "scene": "ThePhantomCreeps@1741",
+     "title": "ThePhantomCreeps",
+     "start_s": 1741.01,
+     "end_s": 1800.03,
+     "score": 0.254513144493103
+    },
+    {
+     "scene": "EndoftheWorld@2213",
+     "title": "EndoftheWorld",
+     "start_s": 2213.0,
+     "end_s": 2259.0,
+     "score": 0.24462594091892242
+    },
+    {
+     "scene": "calvary@3617",
+     "title": "calvary",
+     "start_s": 3617.01,
+     "end_s": 3649.01,
+     "score": 0.24010048806667328
+    },
+    {
+     "scene": "calvary@3504",
+     "title": "calvary",
+     "start_s": 3504.0,
+     "end_s": 3509.0,
+     "score": 0.23968830704689026
+    },
+    {
+     "scene": "secret_weapon@3326",
+     "title": "secret_weapon",
+     "start_s": 3326.02,
+     "end_s": 3441.0,
+     "score": 0.23556461930274963
+    },
+    {
+     "scene": "BloodontheSun@3045",
+     "title": "BloodontheSun",
+     "start_s": 3045.0,
+     "end_s": 3089.0,
+     "score": 0.23262351751327515
+    },
+    {
+     "scene": "secret_weapon@791",
+     "title": "secret_weapon",
+     "start_s": 791.02,
+     "end_s": 933.03,
+     "score": 0.23212575912475586
+    },
+    {
+     "scene": "angel_and_the_badman@437",
+     "title": "angel_and_the_badman",
+     "start_s": 437.0,
+     "end_s": 819.02,
+     "score": 0.23190301656723022
+    },
+    {
+     "scene": "EndoftheWorld@3831",
+     "title": "EndoftheWorld",
+     "start_s": 3831.0,
+     "end_s": 3913.0,
+     "score": 0.23162463307380676
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@229",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 229.02,
+     "end_s": 248.04,
+     "score": 0.23154249787330627
+    }
+   ],
+   "toys": [
+    {
+     "scene": "CarnivalofSouls@4189",
+     "title": "CarnivalofSouls",
+     "start_s": 4189.02,
+     "end_s": 4202.03,
+     "score": 0.26048898696899414
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2270",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2270.02,
+     "end_s": 2294.04,
+     "score": 0.2577662169933319
+    },
+    {
+     "scene": "amazing_adventure@250",
+     "title": "amazing_adventure",
+     "start_s": 250.0,
+     "end_s": 254.0,
+     "score": 0.2520565092563629
+    },
+    {
+     "scene": "amazing_adventure@3226",
+     "title": "amazing_adventure",
+     "start_s": 3226.0,
+     "end_s": 3229.0,
+     "score": 0.2502296566963196
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@4317",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 4317.02,
+     "end_s": 4320.02,
+     "score": 0.25022655725479126
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@5101",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 5101.01,
+     "end_s": 5104.01,
+     "score": 0.2501966059207916
+    },
+    {
+     "scene": "amazing_adventure@3712",
+     "title": "amazing_adventure",
+     "start_s": 3712.0,
+     "end_s": 3713.0,
+     "score": 0.25019389390945435
+    },
+    {
+     "scene": "BloodontheSun@0",
+     "title": "BloodontheSun",
+     "start_s": 0.0,
+     "end_s": 4.0,
+     "score": 0.25019383430480957
+    },
+    {
+     "scene": "BloodontheSun@1436",
+     "title": "BloodontheSun",
+     "start_s": 1436.0,
+     "end_s": 1439.0,
+     "score": 0.25019383430480957
+    },
+    {
+     "scene": "BloodontheSun@4935",
+     "title": "BloodontheSun",
+     "start_s": 4935.0,
+     "end_s": 4938.0,
+     "score": 0.25019383430480957
+    }
+   ],
+   "western_wear": [
+    {
+     "scene": "calvary@2168",
+     "title": "calvary",
+     "start_s": 2168.03,
+     "end_s": 2300.03,
+     "score": 0.3283793032169342
+    },
+    {
+     "scene": "calvary@2124",
+     "title": "calvary",
+     "start_s": 2124.02,
+     "end_s": 2165.03,
+     "score": 0.3252635598182678
+    },
+    {
+     "scene": "calvary@3530",
+     "title": "calvary",
+     "start_s": 3530.03,
+     "end_s": 3533.03,
+     "score": 0.32303810119628906
+    },
+    {
+     "scene": "calvary@1961",
+     "title": "calvary",
+     "start_s": 1961.03,
+     "end_s": 1981.01,
+     "score": 0.31953108310699463
+    },
+    {
+     "scene": "calvary@786",
+     "title": "calvary",
+     "start_s": 786.02,
+     "end_s": 907.01,
+     "score": 0.319004088640213
+    },
+    {
+     "scene": "calvary@1572",
+     "title": "calvary",
+     "start_s": 1572.0,
+     "end_s": 1661.03,
+     "score": 0.31599974632263184
+    },
+    {
+     "scene": "calvary@1113",
+     "title": "calvary",
+     "start_s": 1113.01,
+     "end_s": 1129.03,
+     "score": 0.3149043619632721
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@598",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 598.0,
+     "end_s": 608.0,
+     "score": 0.3148488998413086
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@2284",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 2284.0,
+     "end_s": 2299.0,
+     "score": 0.3143184781074524
+    },
+    {
+     "scene": "angel_and_the_badman@5494",
+     "title": "angel_and_the_badman",
+     "start_s": 5494.02,
+     "end_s": 5705.03,
+     "score": 0.31421685218811035
+    }
+   ],
+   "bank": [
+    {
+     "scene": "secret_weapon@1594",
+     "title": "secret_weapon",
+     "start_s": 1594.03,
+     "end_s": 1637.0,
+     "score": 0.29902705550193787
+    },
+    {
+     "scene": "secret_weapon@3326",
+     "title": "secret_weapon",
+     "start_s": 3326.02,
+     "end_s": 3441.0,
+     "score": 0.2934137284755707
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@40",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 40.0,
+     "end_s": 43.0,
+     "score": 0.2838550806045532
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@46",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 46.0,
+     "end_s": 50.0,
+     "score": 0.2752183973789215
+    },
+    {
+     "scene": "EndoftheWorld@2747",
+     "title": "EndoftheWorld",
+     "start_s": 2747.0,
+     "end_s": 2758.0,
+     "score": 0.2704264521598816
+    },
+    {
+     "scene": "amazing_adventure@3525",
+     "title": "amazing_adventure",
+     "start_s": 3525.0,
+     "end_s": 3530.0,
+     "score": 0.26169055700302124
+    },
+    {
+     "scene": "CarnivalofSouls@4189",
+     "title": "CarnivalofSouls",
+     "start_s": 4189.02,
+     "end_s": 4202.03,
+     "score": 0.26087260246276855
+    },
+    {
+     "scene": "secret_weapon@3188",
+     "title": "secret_weapon",
+     "start_s": 3188.02,
+     "end_s": 3198.03,
+     "score": 0.26037922501564026
+    },
+    {
+     "scene": "CaptainKidd_@4965",
+     "title": "CaptainKidd_",
+     "start_s": 4965.03,
+     "end_s": 4986.02,
+     "score": 0.25897201895713806
+    },
+    {
+     "scene": "CaptainKidd_@2519",
+     "title": "CaptainKidd_",
+     "start_s": 2519.02,
+     "end_s": 2532.03,
+     "score": 0.25812217593193054
+    }
+   ],
+   "pharmacy": [
+    {
+     "scene": "secret_weapon@3836",
+     "title": "secret_weapon",
+     "start_s": 3836.03,
+     "end_s": 3839.0,
+     "score": 0.29896989464759827
+    },
+    {
+     "scene": "ThePhantomCreeps@1517",
+     "title": "ThePhantomCreeps",
+     "start_s": 1517.02,
+     "end_s": 1554.02,
+     "score": 0.29519718885421753
+    },
+    {
+     "scene": "secret_weapon@3839",
+     "title": "secret_weapon",
+     "start_s": 3839.0,
+     "end_s": 3896.02,
+     "score": 0.2900683581829071
+    },
+    {
+     "scene": "secret_weapon@3039",
+     "title": "secret_weapon",
+     "start_s": 3039.0,
+     "end_s": 3045.01,
+     "score": 0.28991374373435974
+    },
+    {
+     "scene": "EndoftheWorld@354",
+     "title": "EndoftheWorld",
+     "start_s": 354.0,
+     "end_s": 423.0,
+     "score": 0.28662654757499695
+    },
+    {
+     "scene": "secret_weapon@3746",
+     "title": "secret_weapon",
+     "start_s": 3746.01,
+     "end_s": 3783.01,
+     "score": 0.28199803829193115
+    },
+    {
+     "scene": "TheFlyingDeuces@2573",
+     "title": "TheFlyingDeuces",
+     "start_s": 2573.0,
+     "end_s": 2641.0,
+     "score": 0.2753143310546875
+    },
+    {
+     "scene": "EndoftheWorld@2677",
+     "title": "EndoftheWorld",
+     "start_s": 2677.0,
+     "end_s": 2708.0,
+     "score": 0.27510374784469604
+    },
+    {
+     "scene": "secret_weapon@3045",
+     "title": "secret_weapon",
+     "start_s": 3045.01,
+     "end_s": 3113.01,
+     "score": 0.2745943069458008
+    },
+    {
+     "scene": "secret_weapon@3733",
+     "title": "secret_weapon",
+     "start_s": 3733.03,
+     "end_s": 3746.01,
+     "score": 0.27200204133987427
+    }
+   ],
+   "sci_fi_game": [
+    {
+     "scene": "EndoftheWorld@4149",
+     "title": "EndoftheWorld",
+     "start_s": 4149.0,
+     "end_s": 4174.0,
+     "score": 0.28370675444602966
+    },
+    {
+     "scene": "ThePhantomCreeps@1656",
+     "title": "ThePhantomCreeps",
+     "start_s": 1656.02,
+     "end_s": 1683.02,
+     "score": 0.280812531709671
+    },
+    {
+     "scene": "ThePhantomCreeps@1732",
+     "title": "ThePhantomCreeps",
+     "start_s": 1732.03,
+     "end_s": 1736.0,
+     "score": 0.27935919165611267
+    },
+    {
+     "scene": "ThePhantomCreeps@4095",
+     "title": "ThePhantomCreeps",
+     "start_s": 4095.03,
+     "end_s": 4098.03,
+     "score": 0.2774409353733063
+    },
+    {
+     "scene": "ThePhantomCreeps@4098",
+     "title": "ThePhantomCreeps",
+     "start_s": 4098.03,
+     "end_s": 4104.0,
+     "score": 0.27623847126960754
+    },
+    {
+     "scene": "ThePhantomCreeps@1650",
+     "title": "ThePhantomCreeps",
+     "start_s": 1650.02,
+     "end_s": 1656.02,
+     "score": 0.27494776248931885
+    },
+    {
+     "scene": "EndoftheWorld@4475",
+     "title": "EndoftheWorld",
+     "start_s": 4475.0,
+     "end_s": 4498.0,
+     "score": 0.2718869745731354
+    },
+    {
+     "scene": "CaptainKidd_@2444",
+     "title": "CaptainKidd_",
+     "start_s": 2444.01,
+     "end_s": 2515.01,
+     "score": 0.2694433629512787
+    },
+    {
+     "scene": "ThePhantomCreeps@113",
+     "title": "ThePhantomCreeps",
+     "start_s": 113.01,
+     "end_s": 123.02,
+     "score": 0.26915425062179565
+    },
+    {
+     "scene": "ThePhantomCreeps@2484",
+     "title": "ThePhantomCreeps",
+     "start_s": 2484.02,
+     "end_s": 2511.01,
+     "score": 0.2688193917274475
+    }
+   ],
+   "bicycle": [
+    {
+     "scene": "calvary@101",
+     "title": "calvary",
+     "start_s": 101.0,
+     "end_s": 143.01,
+     "score": 0.27270078659057617
+    },
+    {
+     "scene": "angel_and_the_badman@3004",
+     "title": "angel_and_the_badman",
+     "start_s": 3004.0,
+     "end_s": 3264.03,
+     "score": 0.2698206305503845
+    },
+    {
+     "scene": "CarnivalofSouls@2401",
+     "title": "CarnivalofSouls",
+     "start_s": 2401.03,
+     "end_s": 2410.01,
+     "score": 0.2697904407978058
+    },
+    {
+     "scene": "ThePhantomCreeps@4134",
+     "title": "ThePhantomCreeps",
+     "start_s": 4134.0,
+     "end_s": 4166.03,
+     "score": 0.262502521276474
+    },
+    {
+     "scene": "EndoftheWorld@3624",
+     "title": "EndoftheWorld",
+     "start_s": 3624.0,
+     "end_s": 3709.0,
+     "score": 0.2621860206127167
+    },
+    {
+     "scene": "EndoftheWorld@3587",
+     "title": "EndoftheWorld",
+     "start_s": 3587.0,
+     "end_s": 3624.0,
+     "score": 0.25862395763397217
+    },
+    {
+     "scene": "angel_and_the_badman@3303",
+     "title": "angel_and_the_badman",
+     "start_s": 3303.03,
+     "end_s": 3427.02,
+     "score": 0.2561247646808624
+    },
+    {
+     "scene": "EndoftheWorld@1558",
+     "title": "EndoftheWorld",
+     "start_s": 1558.0,
+     "end_s": 1604.0,
+     "score": 0.25523167848587036
+    },
+    {
+     "scene": "CarnivalofSouls@359",
+     "title": "CarnivalofSouls",
+     "start_s": 359.03,
+     "end_s": 371.0,
+     "score": 0.25443267822265625
+    },
+    {
+     "scene": "CarnivalofSouls@2752",
+     "title": "CarnivalofSouls",
+     "start_s": 2752.02,
+     "end_s": 2814.01,
+     "score": 0.25428321957588196
+    }
+   ],
+   "rail_travel": [
+    {
+     "scene": "Hitchcock_Secret_Agent@2270",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2270.02,
+     "end_s": 2294.04,
+     "score": 0.3042324185371399
+    },
+    {
+     "scene": "BloodontheSun@4512",
+     "title": "BloodontheSun",
+     "start_s": 4512.0,
+     "end_s": 4554.0,
+     "score": 0.2935078740119934
+    },
+    {
+     "scene": "CarnivalofSouls@4245",
+     "title": "CarnivalofSouls",
+     "start_s": 4245.01,
+     "end_s": 4269.03,
+     "score": 0.2867017388343811
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.2864809036254883
+    },
+    {
+     "scene": "BloodontheSun@146",
+     "title": "BloodontheSun",
+     "start_s": 146.0,
+     "end_s": 193.0,
+     "score": 0.2859683334827423
+    },
+    {
+     "scene": "CaptainKidd_@1620",
+     "title": "CaptainKidd_",
+     "start_s": 1620.02,
+     "end_s": 1684.02,
+     "score": 0.285714715719223
+    },
+    {
+     "scene": "heartbeat@3230",
+     "title": "heartbeat",
+     "start_s": 3230.03,
+     "end_s": 3253.02,
+     "score": 0.2856878638267517
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@4635",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 4635.01,
+     "end_s": 4639.01,
+     "score": 0.2833379805088043
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@4392",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 4392.01,
+     "end_s": 4440.02,
+     "score": 0.2821509838104248
+    },
+    {
+     "scene": "CaptainKidd_@4744",
+     "title": "CaptainKidd_",
+     "start_s": 4744.01,
+     "end_s": 4879.01,
+     "score": 0.28069525957107544
+    }
+   ],
+   "hotel": [
+    {
+     "scene": "BloodontheSun@3045",
+     "title": "BloodontheSun",
+     "start_s": 3045.0,
+     "end_s": 3089.0,
+     "score": 0.2853589653968811
+    },
+    {
+     "scene": "secret_weapon@1012",
+     "title": "secret_weapon",
+     "start_s": 1012.01,
+     "end_s": 1061.03,
+     "score": 0.28375810384750366
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@1484",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 1484.0,
+     "end_s": 1489.0,
+     "score": 0.27989697456359863
+    },
+    {
+     "scene": "ThePhantomCreeps@2542",
+     "title": "ThePhantomCreeps",
+     "start_s": 2542.01,
+     "end_s": 2593.03,
+     "score": 0.2785365581512451
+    },
+    {
+     "scene": "ThePhantomCreeps@3427",
+     "title": "ThePhantomCreeps",
+     "start_s": 3427.03,
+     "end_s": 3438.0,
+     "score": 0.27437278628349304
+    },
+    {
+     "scene": "BloodontheSun@4272",
+     "title": "BloodontheSun",
+     "start_s": 4272.0,
+     "end_s": 4297.0,
+     "score": 0.27286839485168457
+    },
+    {
+     "scene": "BloodontheSun@3436",
+     "title": "BloodontheSun",
+     "start_s": 3436.0,
+     "end_s": 3479.0,
+     "score": 0.2717045545578003
+    },
+    {
+     "scene": "secret_weapon@3326",
+     "title": "secret_weapon",
+     "start_s": 3326.02,
+     "end_s": 3441.0,
+     "score": 0.2687548100948334
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@755",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 755.0,
+     "end_s": 808.01,
+     "score": 0.2675977051258087
+    },
+    {
+     "scene": "angel_and_the_badman@4104",
+     "title": "angel_and_the_badman",
+     "start_s": 4104.03,
+     "end_s": 4149.01,
+     "score": 0.2673805058002472
+    }
+   ],
+   "city_tourism": [
+    {
+     "scene": "amazing_adventure@250",
+     "title": "amazing_adventure",
+     "start_s": 250.0,
+     "end_s": 254.0,
+     "score": 0.2619572877883911
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@4317",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 4317.02,
+     "end_s": 4320.02,
+     "score": 0.2606965899467468
+    },
+    {
+     "scene": "amazing_adventure@3712",
+     "title": "amazing_adventure",
+     "start_s": 3712.0,
+     "end_s": 3713.0,
+     "score": 0.2606389820575714
+    },
+    {
+     "scene": "BloodontheSun@0",
+     "title": "BloodontheSun",
+     "start_s": 0.0,
+     "end_s": 4.0,
+     "score": 0.26063892245292664
+    },
+    {
+     "scene": "BloodontheSun@1436",
+     "title": "BloodontheSun",
+     "start_s": 1436.0,
+     "end_s": 1439.0,
+     "score": 0.26063892245292664
+    },
+    {
+     "scene": "BloodontheSun@4935",
+     "title": "BloodontheSun",
+     "start_s": 4935.0,
+     "end_s": 4938.0,
+     "score": 0.26063892245292664
+    },
+    {
+     "scene": "BloodontheSun@5611",
+     "title": "BloodontheSun",
+     "start_s": 5611.0,
+     "end_s": 5614.0,
+     "score": 0.26063892245292664
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@0",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 0.0,
+     "end_s": 4.0,
+     "score": 0.26063892245292664
+    },
+    {
+     "scene": "ThePhantomCreeps@0",
+     "title": "ThePhantomCreeps",
+     "start_s": 0.0,
+     "end_s": 7.01,
+     "score": 0.26063892245292664
+    },
+    {
+     "scene": "ThePhantomCreeps@4700",
+     "title": "ThePhantomCreeps",
+     "start_s": 4700.0,
+     "end_s": 4701.0,
+     "score": 0.26063892245292664
+    }
+   ],
+   "motorcycle": [
+    {
+     "scene": "CarnivalofSouls@675",
+     "title": "CarnivalofSouls",
+     "start_s": 675.01,
+     "end_s": 712.01,
+     "score": 0.3139767348766327
+    },
+    {
+     "scene": "EndoftheWorld@3624",
+     "title": "EndoftheWorld",
+     "start_s": 3624.0,
+     "end_s": 3709.0,
+     "score": 0.288180410861969
+    },
+    {
+     "scene": "EndoftheWorld@2824",
+     "title": "EndoftheWorld",
+     "start_s": 2824.0,
+     "end_s": 2880.0,
+     "score": 0.2863142192363739
+    },
+    {
+     "scene": "EndoftheWorld@4393",
+     "title": "EndoftheWorld",
+     "start_s": 4393.0,
+     "end_s": 4412.0,
+     "score": 0.28529077768325806
+    },
+    {
+     "scene": "CarnivalofSouls@48",
+     "title": "CarnivalofSouls",
+     "start_s": 48.01,
+     "end_s": 71.0,
+     "score": 0.2837364077568054
+    },
+    {
+     "scene": "ThePhantomCreeps@2349",
+     "title": "ThePhantomCreeps",
+     "start_s": 2349.02,
+     "end_s": 2353.02,
+     "score": 0.28361010551452637
+    },
+    {
+     "scene": "ThePhantomCreeps@3659",
+     "title": "ThePhantomCreeps",
+     "start_s": 3659.03,
+     "end_s": 3668.0,
+     "score": 0.2832949757575989
+    },
+    {
+     "scene": "EndoftheWorld@1547",
+     "title": "EndoftheWorld",
+     "start_s": 1547.0,
+     "end_s": 1553.0,
+     "score": 0.28116318583488464
+    },
+    {
+     "scene": "CarnivalofSouls@1428",
+     "title": "CarnivalofSouls",
+     "start_s": 1428.03,
+     "end_s": 1439.0,
+     "score": 0.28113341331481934
+    },
+    {
+     "scene": "EndoftheWorld@1499",
+     "title": "EndoftheWorld",
+     "start_s": 1499.0,
+     "end_s": 1527.0,
+     "score": 0.28038495779037476
+    }
+   ],
+   "boating": [
+    {
+     "scene": "calvary@542",
+     "title": "calvary",
+     "start_s": 542.01,
+     "end_s": 592.02,
+     "score": 0.2930174767971039
+    },
+    {
+     "scene": "CaptainKidd_@4891",
+     "title": "CaptainKidd_",
+     "start_s": 4891.02,
+     "end_s": 4954.02,
+     "score": 0.28293901681900024
+    },
+    {
+     "scene": "CarnivalofSouls@4924",
+     "title": "CarnivalofSouls",
+     "start_s": 4924.02,
+     "end_s": 4932.03,
+     "score": 0.28052908182144165
+    },
+    {
+     "scene": "CarnivalofSouls@371",
+     "title": "CarnivalofSouls",
+     "start_s": 371.0,
+     "end_s": 375.01,
+     "score": 0.27674350142478943
+    },
+    {
+     "scene": "CarnivalofSouls@167",
+     "title": "CarnivalofSouls",
+     "start_s": 167.0,
+     "end_s": 181.01,
+     "score": 0.27526840567588806
+    },
+    {
+     "scene": "CarnivalofSouls@331",
+     "title": "CarnivalofSouls",
+     "start_s": 331.03,
+     "end_s": 341.01,
+     "score": 0.27274176478385925
+    },
+    {
+     "scene": "CarnivalofSouls@352",
+     "title": "CarnivalofSouls",
+     "start_s": 352.02,
+     "end_s": 359.02,
+     "score": 0.2709354758262634
+    },
+    {
+     "scene": "CarnivalofSouls@379",
+     "title": "CarnivalofSouls",
+     "start_s": 379.01,
+     "end_s": 383.01,
+     "score": 0.2656727135181427
+    },
+    {
+     "scene": "calvary@3203",
+     "title": "calvary",
+     "start_s": 3203.03,
+     "end_s": 3219.01,
+     "score": 0.263929158449173
+    },
+    {
+     "scene": "CaptainKidd_@2126",
+     "title": "CaptainKidd_",
+     "start_s": 2126.03,
+     "end_s": 2131.03,
+     "score": 0.26372796297073364
+    }
+   ],
+   "fishing": [
+    {
+     "scene": "calvary@542",
+     "title": "calvary",
+     "start_s": 542.01,
+     "end_s": 592.02,
+     "score": 0.3212797939777374
+    },
+    {
+     "scene": "CarnivalofSouls@352",
+     "title": "CarnivalofSouls",
+     "start_s": 352.02,
+     "end_s": 359.02,
+     "score": 0.2710811495780945
+    },
+    {
+     "scene": "calvary@3203",
+     "title": "calvary",
+     "start_s": 3203.03,
+     "end_s": 3219.01,
+     "score": 0.2641042470932007
+    },
+    {
+     "scene": "CarnivalofSouls@371",
+     "title": "CarnivalofSouls",
+     "start_s": 371.0,
+     "end_s": 375.01,
+     "score": 0.26288285851478577
+    },
+    {
+     "scene": "CarnivalofSouls@167",
+     "title": "CarnivalofSouls",
+     "start_s": 167.0,
+     "end_s": 181.01,
+     "score": 0.26150617003440857
+    },
+    {
+     "scene": "angel_and_the_badman@2162",
+     "title": "angel_and_the_badman",
+     "start_s": 2162.03,
+     "end_s": 2271.0,
+     "score": 0.26057326793670654
+    },
+    {
+     "scene": "EndoftheWorld@3624",
+     "title": "EndoftheWorld",
+     "start_s": 3624.0,
+     "end_s": 3709.0,
+     "score": 0.2571130692958832
+    },
+    {
+     "scene": "CarnivalofSouls@331",
+     "title": "CarnivalofSouls",
+     "start_s": 331.03,
+     "end_s": 341.01,
+     "score": 0.2550099790096283
+    },
+    {
+     "scene": "EndoftheWorld@1670",
+     "title": "EndoftheWorld",
+     "start_s": 1670.0,
+     "end_s": 1676.0,
+     "score": 0.2539331614971161
+    },
+    {
+     "scene": "EndoftheWorld@3587",
+     "title": "EndoftheWorld",
+     "start_s": 3587.0,
+     "end_s": 3624.0,
+     "score": 0.2518414556980133
+    }
+   ],
+   "camping": [
+    {
+     "scene": "CaptainKidd_@4891",
+     "title": "CaptainKidd_",
+     "start_s": 4891.02,
+     "end_s": 4954.02,
+     "score": 0.3031550943851471
+    },
+    {
+     "scene": "EndoftheWorld@3624",
+     "title": "EndoftheWorld",
+     "start_s": 3624.0,
+     "end_s": 3709.0,
+     "score": 0.29807838797569275
+    },
+    {
+     "scene": "CaptainKidd_@116",
+     "title": "CaptainKidd_",
+     "start_s": 116.02,
+     "end_s": 223.02,
+     "score": 0.2892235517501831
+    },
+    {
+     "scene": "EndoftheWorld@1947",
+     "title": "EndoftheWorld",
+     "start_s": 1947.0,
+     "end_s": 1973.0,
+     "score": 0.2817310690879822
+    },
+    {
+     "scene": "EndoftheWorld@3587",
+     "title": "EndoftheWorld",
+     "start_s": 3587.0,
+     "end_s": 3624.0,
+     "score": 0.280536413192749
+    },
+    {
+     "scene": "calvary@786",
+     "title": "calvary",
+     "start_s": 786.02,
+     "end_s": 907.01,
+     "score": 0.2775033414363861
+    },
+    {
+     "scene": "calvary@3238",
+     "title": "calvary",
+     "start_s": 3238.0,
+     "end_s": 3250.01,
+     "score": 0.27699628472328186
+    },
+    {
+     "scene": "calvary@2522",
+     "title": "calvary",
+     "start_s": 2522.02,
+     "end_s": 2526.02,
+     "score": 0.2726069390773773
+    },
+    {
+     "scene": "CarnivalofSouls@4852",
+     "title": "CarnivalofSouls",
+     "start_s": 4852.01,
+     "end_s": 4857.02,
+     "score": 0.2697831690311432
+    },
+    {
+     "scene": "calvary@3203",
+     "title": "calvary",
+     "start_s": 3203.03,
+     "end_s": 3219.01,
+     "score": 0.2687189280986786
+    }
+   ],
+   "ski_resort": [
+    {
+     "scene": "Hitchcock_Secret_Agent@2608",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2608.02,
+     "end_s": 2614.03,
+     "score": 0.27302730083465576
+    },
+    {
+     "scene": "CaptainKidd_@1058",
+     "title": "CaptainKidd_",
+     "start_s": 1058.02,
+     "end_s": 1118.02,
+     "score": 0.2718396484851837
+    },
+    {
+     "scene": "angel_and_the_badman@3511",
+     "title": "angel_and_the_badman",
+     "start_s": 3511.01,
+     "end_s": 3674.0,
+     "score": 0.26898303627967834
+    },
+    {
+     "scene": "TheFlyingDeuces@1599",
+     "title": "TheFlyingDeuces",
+     "start_s": 1599.03,
+     "end_s": 1790.02,
+     "score": 0.26636365056037903
+    },
+    {
+     "scene": "angel_and_the_badman@3481",
+     "title": "angel_and_the_badman",
+     "start_s": 3481.01,
+     "end_s": 3511.01,
+     "score": 0.25906673073768616
+    },
+    {
+     "scene": "calvary@3395",
+     "title": "calvary",
+     "start_s": 3395.02,
+     "end_s": 3469.03,
+     "score": 0.2545430362224579
+    },
+    {
+     "scene": "angel_and_the_badman@4876",
+     "title": "angel_and_the_badman",
+     "start_s": 4876.0,
+     "end_s": 5028.02,
+     "score": 0.25084158778190613
+    },
+    {
+     "scene": "calvary@1829",
+     "title": "calvary",
+     "start_s": 1829.03,
+     "end_s": 1841.0,
+     "score": 0.25019338726997375
+    },
+    {
+     "scene": "calvary@1748",
+     "title": "calvary",
+     "start_s": 1748.01,
+     "end_s": 1829.03,
+     "score": 0.24817928671836853
+    },
+    {
+     "scene": "EndoftheWorld@4786",
+     "title": "EndoftheWorld",
+     "start_s": 4786.0,
+     "end_s": 4797.0,
+     "score": 0.24790829420089722
+    }
+   ],
+   "gardening": [
+    {
+     "scene": "CarnivalofSouls@1298",
+     "title": "CarnivalofSouls",
+     "start_s": 1298.03,
+     "end_s": 1312.01,
+     "score": 0.24961423873901367
+    },
+    {
+     "scene": "EndoftheWorld@469",
+     "title": "EndoftheWorld",
+     "start_s": 469.0,
+     "end_s": 503.0,
+     "score": 0.24070659279823303
+    },
+    {
+     "scene": "EndoftheWorld@2289",
+     "title": "EndoftheWorld",
+     "start_s": 2289.0,
+     "end_s": 2337.0,
+     "score": 0.24022233486175537
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1197",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1197.03,
+     "end_s": 1200.03,
+     "score": 0.2396783083677292
+    },
+    {
+     "scene": "EndoftheWorld@3812",
+     "title": "EndoftheWorld",
+     "start_s": 3812.0,
+     "end_s": 3820.0,
+     "score": 0.23879247903823853
+    },
+    {
+     "scene": "calvary@277",
+     "title": "calvary",
+     "start_s": 277.01,
+     "end_s": 296.03,
+     "score": 0.23829300701618195
+    },
+    {
+     "scene": "calvary@101",
+     "title": "calvary",
+     "start_s": 101.0,
+     "end_s": 143.01,
+     "score": 0.23715591430664062
+    },
+    {
+     "scene": "calvary@171",
+     "title": "calvary",
+     "start_s": 171.0,
+     "end_s": 177.01,
+     "score": 0.23479542136192322
+    },
+    {
+     "scene": "amazing_adventure@250",
+     "title": "amazing_adventure",
+     "start_s": 250.0,
+     "end_s": 254.0,
+     "score": 0.23390783369541168
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2658",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2658.03,
+     "end_s": 2661.03,
+     "score": 0.23331275582313538
+    }
+   ],
+   "kitchenware": [
+    {
+     "scene": "EndoftheWorld@2543",
+     "title": "EndoftheWorld",
+     "start_s": 2543.0,
+     "end_s": 2605.0,
+     "score": 0.3116317391395569
+    },
+    {
+     "scene": "angel_and_the_badman@437",
+     "title": "angel_and_the_badman",
+     "start_s": 437.0,
+     "end_s": 819.02,
+     "score": 0.3012304902076721
+    },
+    {
+     "scene": "ThePhantomCreeps@1607",
+     "title": "ThePhantomCreeps",
+     "start_s": 1607.01,
+     "end_s": 1615.01,
+     "score": 0.29882875084877014
+    },
+    {
+     "scene": "TheFlyingDeuces@1599",
+     "title": "TheFlyingDeuces",
+     "start_s": 1599.03,
+     "end_s": 1790.02,
+     "score": 0.29852062463760376
+    },
+    {
+     "scene": "ThePhantomCreeps@2754",
+     "title": "ThePhantomCreeps",
+     "start_s": 2754.02,
+     "end_s": 2811.01,
+     "score": 0.2928520143032074
+    },
+    {
+     "scene": "EndoftheWorld@95",
+     "title": "EndoftheWorld",
+     "start_s": 95.0,
+     "end_s": 102.0,
+     "score": 0.29226529598236084
+    },
+    {
+     "scene": "TheFlyingDeuces@1793",
+     "title": "TheFlyingDeuces",
+     "start_s": 1793.02,
+     "end_s": 1838.0,
+     "score": 0.2916872799396515
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@947",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 947.0,
+     "end_s": 956.0,
+     "score": 0.29086336493492126
+    },
+    {
+     "scene": "ThePhantomCreeps@2542",
+     "title": "ThePhantomCreeps",
+     "start_s": 2542.01,
+     "end_s": 2593.03,
+     "score": 0.2906288206577301
+    },
+    {
+     "scene": "amazing_adventure@1189",
+     "title": "amazing_adventure",
+     "start_s": 1189.0,
+     "end_s": 1253.0,
+     "score": 0.28968068957328796
+    }
+   ],
+   "bedding": [
+    {
+     "scene": "EndoftheWorld@1280",
+     "title": "EndoftheWorld",
+     "start_s": 1280.0,
+     "end_s": 1330.0,
+     "score": 0.30840709805488586
+    },
+    {
+     "scene": "CarnivalofSouls@1892",
+     "title": "CarnivalofSouls",
+     "start_s": 1892.02,
+     "end_s": 1905.0,
+     "score": 0.29592210054397583
+    },
+    {
+     "scene": "secret_weapon@3039",
+     "title": "secret_weapon",
+     "start_s": 3039.0,
+     "end_s": 3045.01,
+     "score": 0.2925676703453064
+    },
+    {
+     "scene": "EndoftheWorld@3490",
+     "title": "EndoftheWorld",
+     "start_s": 3490.0,
+     "end_s": 3541.0,
+     "score": 0.29126042127609253
+    },
+    {
+     "scene": "CarnivalofSouls@2125",
+     "title": "CarnivalofSouls",
+     "start_s": 2125.02,
+     "end_s": 2158.02,
+     "score": 0.284219890832901
+    },
+    {
+     "scene": "EndoftheWorld@2543",
+     "title": "EndoftheWorld",
+     "start_s": 2543.0,
+     "end_s": 2605.0,
+     "score": 0.28272974491119385
+    },
+    {
+     "scene": "EndoftheWorld@2213",
+     "title": "EndoftheWorld",
+     "start_s": 2213.0,
+     "end_s": 2259.0,
+     "score": 0.28056347370147705
+    },
+    {
+     "scene": "BloodontheSun@990",
+     "title": "BloodontheSun",
+     "start_s": 990.0,
+     "end_s": 1017.0,
+     "score": 0.2791178822517395
+    },
+    {
+     "scene": "angel_and_the_badman@437",
+     "title": "angel_and_the_badman",
+     "start_s": 437.0,
+     "end_s": 819.02,
+     "score": 0.2780110239982605
+    },
+    {
+     "scene": "BloodontheSun@1439",
+     "title": "BloodontheSun",
+     "start_s": 1439.0,
+     "end_s": 1447.0,
+     "score": 0.27742189168930054
+    }
+   ],
+   "cleaning": [
+    {
+     "scene": "CarnivalofSouls@1529",
+     "title": "CarnivalofSouls",
+     "start_s": 1529.03,
+     "end_s": 1591.02,
+     "score": 0.29283061623573303
+    },
+    {
+     "scene": "angel_and_the_badman@819",
+     "title": "angel_and_the_badman",
+     "start_s": 819.02,
+     "end_s": 955.02,
+     "score": 0.29088637232780457
+    },
+    {
+     "scene": "CarnivalofSouls@3891",
+     "title": "CarnivalofSouls",
+     "start_s": 3891.02,
+     "end_s": 3913.01,
+     "score": 0.2830909788608551
+    },
+    {
+     "scene": "CaptainKidd_@1420",
+     "title": "CaptainKidd_",
+     "start_s": 1420.02,
+     "end_s": 1544.01,
+     "score": 0.2782254219055176
+    },
+    {
+     "scene": "angel_and_the_badman@437",
+     "title": "angel_and_the_badman",
+     "start_s": 437.0,
+     "end_s": 819.02,
+     "score": 0.276946485042572
+    },
+    {
+     "scene": "EndoftheWorld@2543",
+     "title": "EndoftheWorld",
+     "start_s": 2543.0,
+     "end_s": 2605.0,
+     "score": 0.2757967710494995
+    },
+    {
+     "scene": "CarnivalofSouls@981",
+     "title": "CarnivalofSouls",
+     "start_s": 981.01,
+     "end_s": 1071.0,
+     "score": 0.2741600573062897
+    },
+    {
+     "scene": "TheFlyingDeuces@222",
+     "title": "TheFlyingDeuces",
+     "start_s": 222.02,
+     "end_s": 557.02,
+     "score": 0.27356722950935364
+    },
+    {
+     "scene": "CarnivalofSouls@1948",
+     "title": "CarnivalofSouls",
+     "start_s": 1948.01,
+     "end_s": 1995.03,
+     "score": 0.27211764454841614
+    },
+    {
+     "scene": "CaptainKidd_@4235",
+     "title": "CaptainKidd_",
+     "start_s": 4235.0,
+     "end_s": 4341.01,
+     "score": 0.26938778162002563
+    }
+   ],
+   "baby_care": [
+    {
+     "scene": "CarnivalofSouls@1607",
+     "title": "CarnivalofSouls",
+     "start_s": 1607.01,
+     "end_s": 1665.03,
+     "score": 0.2603370249271393
+    },
+    {
+     "scene": "angel_and_the_badman@3303",
+     "title": "angel_and_the_badman",
+     "start_s": 3303.03,
+     "end_s": 3427.02,
+     "score": 0.25899291038513184
+    },
+    {
+     "scene": "angel_and_the_badman@2403",
+     "title": "angel_and_the_badman",
+     "start_s": 2403.0,
+     "end_s": 2573.0,
+     "score": 0.25879955291748047
+    },
+    {
+     "scene": "angel_and_the_badman@4615",
+     "title": "angel_and_the_badman",
+     "start_s": 4615.01,
+     "end_s": 4622.02,
+     "score": 0.25377732515335083
+    },
+    {
+     "scene": "TheFlyingDeuces@3965",
+     "title": "TheFlyingDeuces",
+     "start_s": 3965.03,
+     "end_s": 4044.01,
+     "score": 0.2504473328590393
+    },
+    {
+     "scene": "TheFlyingDeuces@222",
+     "title": "TheFlyingDeuces",
+     "start_s": 222.02,
+     "end_s": 557.02,
+     "score": 0.24940846860408783
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.2486918866634369
+    },
+    {
+     "scene": "angel_and_the_badman@3004",
+     "title": "angel_and_the_badman",
+     "start_s": 3004.0,
+     "end_s": 3264.03,
+     "score": 0.24856936931610107
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@77",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 77.04,
+     "end_s": 80.04,
+     "score": 0.2477124035358429
+    },
+    {
+     "scene": "angel_and_the_badman@4648",
+     "title": "angel_and_the_badman",
+     "start_s": 4648.01,
+     "end_s": 4680.01,
+     "score": 0.246390700340271
+    }
+   ],
+   "school_supplies": [
+    {
+     "scene": "amazing_adventure@1189",
+     "title": "amazing_adventure",
+     "start_s": 1189.0,
+     "end_s": 1253.0,
+     "score": 0.29292359948158264
+    },
+    {
+     "scene": "heartbeat@97",
+     "title": "heartbeat",
+     "start_s": 97.03,
+     "end_s": 101.03,
+     "score": 0.2630196511745453
+    },
+    {
+     "scene": "CarnivalofSouls@4189",
+     "title": "CarnivalofSouls",
+     "start_s": 4189.02,
+     "end_s": 4202.03,
+     "score": 0.2612777352333069
+    },
+    {
+     "scene": "angel_and_the_badman@5229",
+     "title": "angel_and_the_badman",
+     "start_s": 5229.02,
+     "end_s": 5245.01,
+     "score": 0.26080161333084106
+    },
+    {
+     "scene": "BloodontheSun@229",
+     "title": "BloodontheSun",
+     "start_s": 229.0,
+     "end_s": 249.0,
+     "score": 0.25708454847335815
+    },
+    {
+     "scene": "amazing_adventure@719",
+     "title": "amazing_adventure",
+     "start_s": 719.0,
+     "end_s": 723.0,
+     "score": 0.2564232051372528
+    },
+    {
+     "scene": "CaptainKidd_@1270",
+     "title": "CaptainKidd_",
+     "start_s": 1270.0,
+     "end_s": 1326.03,
+     "score": 0.25355860590934753
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@5047",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 5047.0,
+     "end_s": 5101.01,
+     "score": 0.25334301590919495
+    },
+    {
+     "scene": "angel_and_the_badman@1350",
+     "title": "angel_and_the_badman",
+     "start_s": 1350.02,
+     "end_s": 1354.02,
+     "score": 0.2519572079181671
+    },
+    {
+     "scene": "calvary@1961",
+     "title": "calvary",
+     "start_s": 1961.03,
+     "end_s": 1981.01,
+     "score": 0.2508153021335602
+    }
+   ],
+   "bridal": [
+    {
+     "scene": "heartbeat@5947",
+     "title": "heartbeat",
+     "start_s": 5947.01,
+     "end_s": 5975.0,
+     "score": 0.2801862359046936
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1787",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1787.04,
+     "end_s": 1841.0,
+     "score": 0.27698373794555664
+    },
+    {
+     "scene": "heartbeat@5975",
+     "title": "heartbeat",
+     "start_s": 5975.0,
+     "end_s": 5989.02,
+     "score": 0.26757410168647766
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1879",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1879.0,
+     "end_s": 2035.03,
+     "score": 0.2649328112602234
+    },
+    {
+     "scene": "heartbeat@1560",
+     "title": "heartbeat",
+     "start_s": 1560.03,
+     "end_s": 1771.0,
+     "score": 0.26152780652046204
+    },
+    {
+     "scene": "heartbeat@2000",
+     "title": "heartbeat",
+     "start_s": 2000.03,
+     "end_s": 2208.0,
+     "score": 0.26074087619781494
+    },
+    {
+     "scene": "heartbeat@1842",
+     "title": "heartbeat",
+     "start_s": 1842.01,
+     "end_s": 2000.03,
+     "score": 0.25558042526245117
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1683",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1683.01,
+     "end_s": 1740.03,
+     "score": 0.2554353177547455
+    },
+    {
+     "scene": "heartbeat@1524",
+     "title": "heartbeat",
+     "start_s": 1524.02,
+     "end_s": 1553.02,
+     "score": 0.25519174337387085
+    },
+    {
+     "scene": "heartbeat@5742",
+     "title": "heartbeat",
+     "start_s": 5742.0,
+     "end_s": 5947.01,
+     "score": 0.25516435503959656
+    }
+   ],
+   "party_supplies": [
+    {
+     "scene": "amazing_adventure@132",
+     "title": "amazing_adventure",
+     "start_s": 132.0,
+     "end_s": 250.0,
+     "score": 0.29929402470588684
+    },
+    {
+     "scene": "CarnivalofSouls@3262",
+     "title": "CarnivalofSouls",
+     "start_s": 3262.03,
+     "end_s": 3266.03,
+     "score": 0.29769429564476013
+    },
+    {
+     "scene": "heartbeat@1556",
+     "title": "heartbeat",
+     "start_s": 1556.02,
+     "end_s": 1560.02,
+     "score": 0.29665082693099976
+    },
+    {
+     "scene": "heartbeat@1524",
+     "title": "heartbeat",
+     "start_s": 1524.02,
+     "end_s": 1553.02,
+     "score": 0.29535794258117676
+    },
+    {
+     "scene": "heartbeat@1560",
+     "title": "heartbeat",
+     "start_s": 1560.03,
+     "end_s": 1771.0,
+     "score": 0.2950778007507324
+    },
+    {
+     "scene": "CaptainKidd_@1058",
+     "title": "CaptainKidd_",
+     "start_s": 1058.02,
+     "end_s": 1118.02,
+     "score": 0.28682941198349
+    },
+    {
+     "scene": "angel_and_the_badman@3864",
+     "title": "angel_and_the_badman",
+     "start_s": 3864.03,
+     "end_s": 3927.02,
+     "score": 0.28612464666366577
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2661",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2661.03,
+     "end_s": 2822.03,
+     "score": 0.2858983874320984
+    },
+    {
+     "scene": "CarnivalofSouls@4720",
+     "title": "CarnivalofSouls",
+     "start_s": 4720.02,
+     "end_s": 4726.02,
+     "score": 0.28572311997413635
+    },
+    {
+     "scene": "CarnivalofSouls@4792",
+     "title": "CarnivalofSouls",
+     "start_s": 4792.02,
+     "end_s": 4810.0,
+     "score": 0.2831026613712311
+    }
+   ],
+   "news_media": [
+    {
+     "scene": "BloodontheSun@97",
+     "title": "BloodontheSun",
+     "start_s": 97.0,
+     "end_s": 104.0,
+     "score": 0.310200572013855
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@2207",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 2207.0,
+     "end_s": 2211.0,
+     "score": 0.30363351106643677
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@272",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 272.02,
+     "end_s": 275.02,
+     "score": 0.29963231086730957
+    },
+    {
+     "scene": "heartbeat@78",
+     "title": "heartbeat",
+     "start_s": 78.01,
+     "end_s": 88.02,
+     "score": 0.2995240092277527
+    },
+    {
+     "scene": "amazing_adventure@1009",
+     "title": "amazing_adventure",
+     "start_s": 1009.0,
+     "end_s": 1028.0,
+     "score": 0.29403775930404663
+    },
+    {
+     "scene": "amazing_adventure@732",
+     "title": "amazing_adventure",
+     "start_s": 732.0,
+     "end_s": 740.0,
+     "score": 0.28946757316589355
+    },
+    {
+     "scene": "amazing_adventure@723",
+     "title": "amazing_adventure",
+     "start_s": 723.0,
+     "end_s": 727.0,
+     "score": 0.28639253973960876
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@947",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 947.0,
+     "end_s": 956.0,
+     "score": 0.27854177355766296
+    },
+    {
+     "scene": "CarnivalofSouls@3306",
+     "title": "CarnivalofSouls",
+     "start_s": 3306.0,
+     "end_s": 3342.0,
+     "score": 0.27674341201782227
+    },
+    {
+     "scene": "BloodontheSun@3288",
+     "title": "BloodontheSun",
+     "start_s": 3288.0,
+     "end_s": 3300.0,
+     "score": 0.2744317352771759
+    }
+   ],
+   "bookstore": [
+    {
+     "scene": "Hitchcock_Secret_Agent@1143",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1143.02,
+     "end_s": 1152.02,
+     "score": 0.2702631950378418
+    },
+    {
+     "scene": "secret_weapon@3326",
+     "title": "secret_weapon",
+     "start_s": 3326.02,
+     "end_s": 3441.0,
+     "score": 0.2694638967514038
+    },
+    {
+     "scene": "CarnivalofSouls@2542",
+     "title": "CarnivalofSouls",
+     "start_s": 2542.01,
+     "end_s": 2549.01,
+     "score": 0.25474679470062256
+    },
+    {
+     "scene": "TheGhoul@1170",
+     "title": "TheGhoul",
+     "start_s": 1170.0,
+     "end_s": 1359.0,
+     "score": 0.2515348792076111
+    },
+    {
+     "scene": "amazing_adventure@1648",
+     "title": "amazing_adventure",
+     "start_s": 1648.0,
+     "end_s": 1715.0,
+     "score": 0.24921675026416779
+    },
+    {
+     "scene": "CarnivalofSouls@485",
+     "title": "CarnivalofSouls",
+     "start_s": 485.02,
+     "end_s": 502.0,
+     "score": 0.24837441742420197
+    },
+    {
+     "scene": "heartbeat@318",
+     "title": "heartbeat",
+     "start_s": 318.02,
+     "end_s": 343.01,
+     "score": 0.24835450947284698
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.2476401925086975
+    },
+    {
+     "scene": "secret_weapon@791",
+     "title": "secret_weapon",
+     "start_s": 791.02,
+     "end_s": 933.03,
+     "score": 0.24758325517177582
+    },
+    {
+     "scene": "CaptainKidd_@3468",
+     "title": "CaptainKidd_",
+     "start_s": 3468.0,
+     "end_s": 3501.0,
+     "score": 0.24723948538303375
+    }
+   ],
+   "office_supplies": [
+    {
+     "scene": "EndoftheWorld@300",
+     "title": "EndoftheWorld",
+     "start_s": 300.0,
+     "end_s": 351.0,
+     "score": 0.30900976061820984
+    },
+    {
+     "scene": "EndoftheWorld@697",
+     "title": "EndoftheWorld",
+     "start_s": 697.0,
+     "end_s": 702.0,
+     "score": 0.3075380027294159
+    },
+    {
+     "scene": "EndoftheWorld@702",
+     "title": "EndoftheWorld",
+     "start_s": 702.0,
+     "end_s": 783.0,
+     "score": 0.3058404326438904
+    },
+    {
+     "scene": "EndoftheWorld@423",
+     "title": "EndoftheWorld",
+     "start_s": 423.0,
+     "end_s": 437.0,
+     "score": 0.3000928461551666
+    },
+    {
+     "scene": "EndoftheWorld@354",
+     "title": "EndoftheWorld",
+     "start_s": 354.0,
+     "end_s": 423.0,
+     "score": 0.29764479398727417
+    },
+    {
+     "scene": "EndoftheWorld@2677",
+     "title": "EndoftheWorld",
+     "start_s": 2677.0,
+     "end_s": 2708.0,
+     "score": 0.2967045307159424
+    },
+    {
+     "scene": "EndoftheWorld@1251",
+     "title": "EndoftheWorld",
+     "start_s": 1251.0,
+     "end_s": 1254.0,
+     "score": 0.2880169451236725
+    },
+    {
+     "scene": "ThePhantomCreeps@1289",
+     "title": "ThePhantomCreeps",
+     "start_s": 1289.02,
+     "end_s": 1348.01,
+     "score": 0.28407323360443115
+    },
+    {
+     "scene": "EndoftheWorld@4174",
+     "title": "EndoftheWorld",
+     "start_s": 4174.0,
+     "end_s": 4198.0,
+     "score": 0.28170400857925415
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@947",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 947.0,
+     "end_s": 956.0,
+     "score": 0.28004640340805054
+    }
+   ],
+   "piano_lessons": [
+    {
+     "scene": "CarnivalofSouls@430",
+     "title": "CarnivalofSouls",
+     "start_s": 430.03,
+     "end_s": 439.0,
+     "score": 0.30828657746315
+    },
+    {
+     "scene": "EndoftheWorld@2937",
+     "title": "EndoftheWorld",
+     "start_s": 2937.0,
+     "end_s": 2945.0,
+     "score": 0.30751490592956543
+    },
+    {
+     "scene": "CarnivalofSouls@3162",
+     "title": "CarnivalofSouls",
+     "start_s": 3162.03,
+     "end_s": 3170.03,
+     "score": 0.305747926235199
+    },
+    {
+     "scene": "CarnivalofSouls@3180",
+     "title": "CarnivalofSouls",
+     "start_s": 3180.01,
+     "end_s": 3183.01,
+     "score": 0.30465614795684814
+    },
+    {
+     "scene": "CarnivalofSouls@3257",
+     "title": "CarnivalofSouls",
+     "start_s": 3257.02,
+     "end_s": 3262.02,
+     "score": 0.30433812737464905
+    },
+    {
+     "scene": "CarnivalofSouls@3283",
+     "title": "CarnivalofSouls",
+     "start_s": 3283.01,
+     "end_s": 3288.02,
+     "score": 0.30334925651550293
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1143",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1143.02,
+     "end_s": 1152.02,
+     "score": 0.3024804890155792
+    },
+    {
+     "scene": "CarnivalofSouls@3452",
+     "title": "CarnivalofSouls",
+     "start_s": 3452.02,
+     "end_s": 3573.0,
+     "score": 0.30223312973976135
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.30001896619796753
+    },
+    {
+     "scene": "CaptainKidd_@4409",
+     "title": "CaptainKidd_",
+     "start_s": 4409.01,
+     "end_s": 4452.02,
+     "score": 0.299947053194046
+    }
+   ],
+   "theatre_tickets": [
+    {
+     "scene": "CaptainKidd_@4996",
+     "title": "CaptainKidd_",
+     "start_s": 4996.03,
+     "end_s": 5042.01,
+     "score": 0.2937999665737152
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2661",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2661.03,
+     "end_s": 2822.03,
+     "score": 0.29154011607170105
+    },
+    {
+     "scene": "heartbeat@1134",
+     "title": "heartbeat",
+     "start_s": 1134.03,
+     "end_s": 1147.01,
+     "score": 0.290284126996994
+    },
+    {
+     "scene": "BloodontheSun@5330",
+     "title": "BloodontheSun",
+     "start_s": 5330.0,
+     "end_s": 5595.0,
+     "score": 0.2800074815750122
+    },
+    {
+     "scene": "EndoftheWorld@1413",
+     "title": "EndoftheWorld",
+     "start_s": 1413.0,
+     "end_s": 1499.0,
+     "score": 0.279147744178772
+    },
+    {
+     "scene": "CarnivalofSouls@3245",
+     "title": "CarnivalofSouls",
+     "start_s": 3245.01,
+     "end_s": 3257.02,
+     "score": 0.27877315878868103
+    },
+    {
+     "scene": "calvary@2755",
+     "title": "calvary",
+     "start_s": 2755.02,
+     "end_s": 2905.0,
+     "score": 0.27856820821762085
+    },
+    {
+     "scene": "CarnivalofSouls@4690",
+     "title": "CarnivalofSouls",
+     "start_s": 4690.02,
+     "end_s": 4720.01,
+     "score": 0.27849188446998596
+    },
+    {
+     "scene": "CarnivalofSouls@4720",
+     "title": "CarnivalofSouls",
+     "start_s": 4720.02,
+     "end_s": 4726.02,
+     "score": 0.2781911790370941
+    },
+    {
+     "scene": "angel_and_the_badman@4098",
+     "title": "angel_and_the_badman",
+     "start_s": 4098.03,
+     "end_s": 4104.03,
+     "score": 0.2772600054740906
+    }
+   ],
+   "horse_racing": [
+    {
+     "scene": "calvary@1717",
+     "title": "calvary",
+     "start_s": 1717.02,
+     "end_s": 1724.02,
+     "score": 0.32428932189941406
+    },
+    {
+     "scene": "calvary@1829",
+     "title": "calvary",
+     "start_s": 1829.03,
+     "end_s": 1841.0,
+     "score": 0.3125862777233124
+    },
+    {
+     "scene": "calvary@1748",
+     "title": "calvary",
+     "start_s": 1748.01,
+     "end_s": 1829.03,
+     "score": 0.3080357313156128
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@4072",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 4072.0,
+     "end_s": 4077.0,
+     "score": 0.30034974217414856
+    },
+    {
+     "scene": "calvary@3395",
+     "title": "calvary",
+     "start_s": 3395.02,
+     "end_s": 3469.03,
+     "score": 0.29915812611579895
+    },
+    {
+     "scene": "calvary@1682",
+     "title": "calvary",
+     "start_s": 1682.01,
+     "end_s": 1717.01,
+     "score": 0.29836922883987427
+    },
+    {
+     "scene": "angel_and_the_badman@3511",
+     "title": "angel_and_the_badman",
+     "start_s": 3511.01,
+     "end_s": 3674.0,
+     "score": 0.29651522636413574
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@4401",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 4401.0,
+     "end_s": 4406.0,
+     "score": 0.29338589310646057
+    },
+    {
+     "scene": "calvary@3675",
+     "title": "calvary",
+     "start_s": 3675.0,
+     "end_s": 3731.03,
+     "score": 0.29251450300216675
+    },
+    {
+     "scene": "calvary@1661",
+     "title": "calvary",
+     "start_s": 1661.03,
+     "end_s": 1670.0,
+     "score": 0.29233551025390625
+    }
+   ],
+   "golf": [
+    {
+     "scene": "EndoftheWorld@1558",
+     "title": "EndoftheWorld",
+     "start_s": 1558.0,
+     "end_s": 1604.0,
+     "score": 0.2897660732269287
+    },
+    {
+     "scene": "TheFlyingDeuces@2138",
+     "title": "TheFlyingDeuces",
+     "start_s": 2138.0,
+     "end_s": 2285.02,
+     "score": 0.2639124095439911
+    },
+    {
+     "scene": "CaptainKidd_@3509",
+     "title": "CaptainKidd_",
+     "start_s": 3509.01,
+     "end_s": 3554.02,
+     "score": 0.26202598214149475
+    },
+    {
+     "scene": "TheFlyingDeuces@3389",
+     "title": "TheFlyingDeuces",
+     "start_s": 3389.02,
+     "end_s": 3478.01,
+     "score": 0.25649595260620117
+    },
+    {
+     "scene": "EndoftheWorld@2289",
+     "title": "EndoftheWorld",
+     "start_s": 2289.0,
+     "end_s": 2337.0,
+     "score": 0.25299304723739624
+    },
+    {
+     "scene": "calvary@1682",
+     "title": "calvary",
+     "start_s": 1682.01,
+     "end_s": 1717.01,
+     "score": 0.2454235702753067
+    },
+    {
+     "scene": "calvary@542",
+     "title": "calvary",
+     "start_s": 542.01,
+     "end_s": 592.02,
+     "score": 0.2438138872385025
+    },
+    {
+     "scene": "secret_weapon@1276",
+     "title": "secret_weapon",
+     "start_s": 1276.01,
+     "end_s": 1279.01,
+     "score": 0.23995907604694366
+    },
+    {
+     "scene": "EndoftheWorld@3624",
+     "title": "EndoftheWorld",
+     "start_s": 3624.0,
+     "end_s": 3709.0,
+     "score": 0.23940782248973846
+    },
+    {
+     "scene": "CaptainKidd_@1058",
+     "title": "CaptainKidd_",
+     "start_s": 1058.02,
+     "end_s": 1118.02,
+     "score": 0.23877716064453125
+    }
+   ],
+   "swimwear": [
+    {
+     "scene": "CaptainKidd_@4891",
+     "title": "CaptainKidd_",
+     "start_s": 4891.02,
+     "end_s": 4954.02,
+     "score": 0.2862236201763153
+    },
+    {
+     "scene": "EndoftheWorld@2790",
+     "title": "EndoftheWorld",
+     "start_s": 2790.0,
+     "end_s": 2794.0,
+     "score": 0.28345441818237305
+    },
+    {
+     "scene": "EndoftheWorld@469",
+     "title": "EndoftheWorld",
+     "start_s": 469.0,
+     "end_s": 503.0,
+     "score": 0.2798888087272644
+    },
+    {
+     "scene": "BloodontheSun@305",
+     "title": "BloodontheSun",
+     "start_s": 305.0,
+     "end_s": 411.0,
+     "score": 0.27704206109046936
+    },
+    {
+     "scene": "angel_and_the_badman@3004",
+     "title": "angel_and_the_badman",
+     "start_s": 3004.0,
+     "end_s": 3264.03,
+     "score": 0.27410340309143066
+    },
+    {
+     "scene": "CaptainKidd_@1224",
+     "title": "CaptainKidd_",
+     "start_s": 1224.02,
+     "end_s": 1270.0,
+     "score": 0.2699829339981079
+    },
+    {
+     "scene": "calvary@542",
+     "title": "calvary",
+     "start_s": 542.01,
+     "end_s": 592.02,
+     "score": 0.26915064454078674
+    },
+    {
+     "scene": "TheFlyingDeuces@2302",
+     "title": "TheFlyingDeuces",
+     "start_s": 2302.03,
+     "end_s": 2394.02,
+     "score": 0.26848453283309937
+    },
+    {
+     "scene": "TheFlyingDeuces@1306",
+     "title": "TheFlyingDeuces",
+     "start_s": 1306.0,
+     "end_s": 1336.0,
+     "score": 0.26329439878463745
+    },
+    {
+     "scene": "angel_and_the_badman@5200",
+     "title": "angel_and_the_badman",
+     "start_s": 5200.03,
+     "end_s": 5212.01,
+     "score": 0.26215434074401855
+    }
+   ],
+   "watches": [
+    {
+     "scene": "CarnivalofSouls@1919",
+     "title": "CarnivalofSouls",
+     "start_s": 1919.02,
+     "end_s": 1926.02,
+     "score": 0.3125644326210022
+    },
+    {
+     "scene": "secret_weapon@2064",
+     "title": "secret_weapon",
+     "start_s": 2064.03,
+     "end_s": 2072.0,
+     "score": 0.27665063738822937
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@379",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 379.0,
+     "end_s": 402.03,
+     "score": 0.27260076999664307
+    },
+    {
+     "scene": "TheGhoul@3352",
+     "title": "TheGhoul",
+     "start_s": 3352.0,
+     "end_s": 3555.0,
+     "score": 0.265394389629364
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1847",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1847.01,
+     "end_s": 1854.02,
+     "score": 0.2621683180332184
+    },
+    {
+     "scene": "heartbeat@318",
+     "title": "heartbeat",
+     "start_s": 318.02,
+     "end_s": 343.01,
+     "score": 0.2613897919654846
+    },
+    {
+     "scene": "BloodontheSun@3304",
+     "title": "BloodontheSun",
+     "start_s": 3304.0,
+     "end_s": 3327.0,
+     "score": 0.2552868127822876
+    },
+    {
+     "scene": "CarnivalofSouls@1200",
+     "title": "CarnivalofSouls",
+     "start_s": 1200.03,
+     "end_s": 1214.01,
+     "score": 0.2535764276981354
+    },
+    {
+     "scene": "secret_weapon@1658",
+     "title": "secret_weapon",
+     "start_s": 1658.02,
+     "end_s": 1662.03,
+     "score": 0.25150346755981445
+    },
+    {
+     "scene": "ThePhantomCreeps@2045",
+     "title": "ThePhantomCreeps",
+     "start_s": 2045.01,
+     "end_s": 2189.02,
+     "score": 0.25051411986351013
+    }
+   ],
+   "menswear": [
+    {
+     "scene": "BloodontheSun@411",
+     "title": "BloodontheSun",
+     "start_s": 411.0,
+     "end_s": 461.0,
+     "score": 0.31153857707977295
+    },
+    {
+     "scene": "heartbeat@5504",
+     "title": "heartbeat",
+     "start_s": 5504.03,
+     "end_s": 5742.0,
+     "score": 0.2936473786830902
+    },
+    {
+     "scene": "BloodontheSun@803",
+     "title": "BloodontheSun",
+     "start_s": 803.0,
+     "end_s": 846.0,
+     "score": 0.29354020953178406
+    },
+    {
+     "scene": "heartbeat@1842",
+     "title": "heartbeat",
+     "start_s": 1842.01,
+     "end_s": 2000.03,
+     "score": 0.2931292653083801
+    },
+    {
+     "scene": "BloodontheSun@3761",
+     "title": "BloodontheSun",
+     "start_s": 3761.0,
+     "end_s": 4085.0,
+     "score": 0.2926320731639862
+    },
+    {
+     "scene": "BloodontheSun@775",
+     "title": "BloodontheSun",
+     "start_s": 775.0,
+     "end_s": 778.0,
+     "score": 0.29237350821495056
+    },
+    {
+     "scene": "amazing_adventure@2341",
+     "title": "amazing_adventure",
+     "start_s": 2341.0,
+     "end_s": 2539.0,
+     "score": 0.29179060459136963
+    },
+    {
+     "scene": "heartbeat@1560",
+     "title": "heartbeat",
+     "start_s": 1560.03,
+     "end_s": 1771.0,
+     "score": 0.2908860146999359
+    },
+    {
+     "scene": "heartbeat@5742",
+     "title": "heartbeat",
+     "start_s": 5742.0,
+     "end_s": 5947.01,
+     "score": 0.28679144382476807
+    },
+    {
+     "scene": "BloodontheSun@1696",
+     "title": "BloodontheSun",
+     "start_s": 1696.0,
+     "end_s": 1778.0,
+     "score": 0.2863618731498718
+    }
+   ],
+   "cosmetics": [
+    {
+     "scene": "CarnivalofSouls@4525",
+     "title": "CarnivalofSouls",
+     "start_s": 4525.02,
+     "end_s": 4537.03,
+     "score": 0.28199705481529236
+    },
+    {
+     "scene": "CarnivalofSouls@3891",
+     "title": "CarnivalofSouls",
+     "start_s": 3891.02,
+     "end_s": 3913.01,
+     "score": 0.28043103218078613
+    },
+    {
+     "scene": "ThePhantomCreeps@561",
+     "title": "ThePhantomCreeps",
+     "start_s": 561.03,
+     "end_s": 604.0,
+     "score": 0.2803894579410553
+    },
+    {
+     "scene": "CarnivalofSouls@1598",
+     "title": "CarnivalofSouls",
+     "start_s": 1598.03,
+     "end_s": 1604.0,
+     "score": 0.27901574969291687
+    },
+    {
+     "scene": "CarnivalofSouls@1529",
+     "title": "CarnivalofSouls",
+     "start_s": 1529.03,
+     "end_s": 1591.02,
+     "score": 0.27779749035835266
+    },
+    {
+     "scene": "CarnivalofSouls@981",
+     "title": "CarnivalofSouls",
+     "start_s": 981.01,
+     "end_s": 1071.0,
+     "score": 0.27720504999160767
+    },
+    {
+     "scene": "heartbeat@2353",
+     "title": "heartbeat",
+     "start_s": 2353.02,
+     "end_s": 2469.03,
+     "score": 0.27580690383911133
+    },
+    {
+     "scene": "CarnivalofSouls@1448",
+     "title": "CarnivalofSouls",
+     "start_s": 1448.01,
+     "end_s": 1502.03,
+     "score": 0.2757282853126526
+    },
+    {
+     "scene": "CarnivalofSouls@2258",
+     "title": "CarnivalofSouls",
+     "start_s": 2258.02,
+     "end_s": 2287.02,
+     "score": 0.27533698081970215
+    },
+    {
+     "scene": "heartbeat@5141",
+     "title": "heartbeat",
+     "start_s": 5141.0,
+     "end_s": 5390.02,
+     "score": 0.2752992808818817
+    }
+   ],
+   "hair_salon": [
+    {
+     "scene": "amazing_adventure@257",
+     "title": "amazing_adventure",
+     "start_s": 257.0,
+     "end_s": 542.0,
+     "score": 0.3036124110221863
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.30085015296936035
+    },
+    {
+     "scene": "heartbeat@210",
+     "title": "heartbeat",
+     "start_s": 210.01,
+     "end_s": 215.01,
+     "score": 0.2925068438053131
+    },
+    {
+     "scene": "BloodontheSun@3436",
+     "title": "BloodontheSun",
+     "start_s": 3436.0,
+     "end_s": 3479.0,
+     "score": 0.2909639775753021
+    },
+    {
+     "scene": "ThePhantomCreeps@535",
+     "title": "ThePhantomCreeps",
+     "start_s": 535.0,
+     "end_s": 556.02,
+     "score": 0.29091641306877136
+    },
+    {
+     "scene": "CaptainKidd_@1420",
+     "title": "CaptainKidd_",
+     "start_s": 1420.02,
+     "end_s": 1544.01,
+     "score": 0.2897556722164154
+    },
+    {
+     "scene": "CarnivalofSouls@2360",
+     "title": "CarnivalofSouls",
+     "start_s": 2360.02,
+     "end_s": 2368.03,
+     "score": 0.28843700885772705
+    },
+    {
+     "scene": "CaptainKidd_@4074",
+     "title": "CaptainKidd_",
+     "start_s": 4074.01,
+     "end_s": 4166.03,
+     "score": 0.28346994519233704
+    },
+    {
+     "scene": "heartbeat@4817",
+     "title": "heartbeat",
+     "start_s": 4817.01,
+     "end_s": 4892.02,
+     "score": 0.2831246256828308
+    },
+    {
+     "scene": "CaptainKidd_@3901",
+     "title": "CaptainKidd_",
+     "start_s": 3901.0,
+     "end_s": 4074.01,
+     "score": 0.28254926204681396
+    }
+   ],
+   "bakery": [
+    {
+     "scene": "Hitchcock_Secret_Agent@3732",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 3732.02,
+     "end_s": 3735.02,
+     "score": 0.25654879212379456
+    },
+    {
+     "scene": "secret_weapon@3326",
+     "title": "secret_weapon",
+     "start_s": 3326.02,
+     "end_s": 3441.0,
+     "score": 0.25073540210723877
+    },
+    {
+     "scene": "TheFlyingDeuces@1599",
+     "title": "TheFlyingDeuces",
+     "start_s": 1599.03,
+     "end_s": 1790.02,
+     "score": 0.2500631511211395
+    },
+    {
+     "scene": "EndoftheWorld@2766",
+     "title": "EndoftheWorld",
+     "start_s": 2766.0,
+     "end_s": 2786.0,
+     "score": 0.24955596029758453
+    },
+    {
+     "scene": "CarnivalofSouls@1694",
+     "title": "CarnivalofSouls",
+     "start_s": 1694.03,
+     "end_s": 1804.0,
+     "score": 0.24948522448539734
+    },
+    {
+     "scene": "EndoftheWorld@2543",
+     "title": "EndoftheWorld",
+     "start_s": 2543.0,
+     "end_s": 2605.0,
+     "score": 0.24863678216934204
+    },
+    {
+     "scene": "EndoftheWorld@95",
+     "title": "EndoftheWorld",
+     "start_s": 95.0,
+     "end_s": 102.0,
+     "score": 0.2481561154127121
+    },
+    {
+     "scene": "BloodontheSun@4269",
+     "title": "BloodontheSun",
+     "start_s": 4269.0,
+     "end_s": 4272.0,
+     "score": 0.24793051183223724
+    },
+    {
+     "scene": "angel_and_the_badman@1117",
+     "title": "angel_and_the_badman",
+     "start_s": 1117.02,
+     "end_s": 1174.01,
+     "score": 0.24763713777065277
+    },
+    {
+     "scene": "TheFlyingDeuces@1793",
+     "title": "TheFlyingDeuces",
+     "start_s": 1793.02,
+     "end_s": 1838.0,
+     "score": 0.24757122993469238
+    }
+   ],
+   "grocery": [
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@2496",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 2496.0,
+     "end_s": 2500.0,
+     "score": 0.2787010967731476
+    },
+    {
+     "scene": "TheOver-the-HillGangRidesAgain@2490",
+     "title": "TheOver-the-HillGangRidesAgain",
+     "start_s": 2490.0,
+     "end_s": 2496.0,
+     "score": 0.2782576382160187
+    },
+    {
+     "scene": "CarnivalofSouls@4395",
+     "title": "CarnivalofSouls",
+     "start_s": 4395.02,
+     "end_s": 4404.03,
+     "score": 0.273979514837265
+    },
+    {
+     "scene": "secret_weapon@72",
+     "title": "secret_weapon",
+     "start_s": 72.01,
+     "end_s": 253.02,
+     "score": 0.27222317457199097
+    },
+    {
+     "scene": "ThePhantomCreeps@2390",
+     "title": "ThePhantomCreeps",
+     "start_s": 2390.02,
+     "end_s": 2470.0,
+     "score": 0.26438722014427185
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@3975",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 3975.01,
+     "end_s": 3989.03,
+     "score": 0.26425543427467346
+    },
+    {
+     "scene": "TheFlyingDeuces@1842",
+     "title": "TheFlyingDeuces",
+     "start_s": 1842.01,
+     "end_s": 1969.03,
+     "score": 0.26314088702201843
+    },
+    {
+     "scene": "ThePhantomCreeps@1703",
+     "title": "ThePhantomCreeps",
+     "start_s": 1703.0,
+     "end_s": 1712.01,
+     "score": 0.2617880702018738
+    },
+    {
+     "scene": "calvary@1961",
+     "title": "calvary",
+     "start_s": 1961.03,
+     "end_s": 1981.01,
+     "score": 0.26101449131965637
+    },
+    {
+     "scene": "BloodontheSun@5189",
+     "title": "BloodontheSun",
+     "start_s": 5189.0,
+     "end_s": 5221.0,
+     "score": 0.2607366144657135
+    }
+   ],
+   "department_store": [
+    {
+     "scene": "CarnivalofSouls@4395",
+     "title": "CarnivalofSouls",
+     "start_s": 4395.02,
+     "end_s": 4404.03,
+     "score": 0.2943767011165619
+    },
+    {
+     "scene": "CarnivalofSouls@2301",
+     "title": "CarnivalofSouls",
+     "start_s": 2301.03,
+     "end_s": 2322.02,
+     "score": 0.28642600774765015
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@4089",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 4089.0,
+     "end_s": 4137.01,
+     "score": 0.28386515378952026
+    },
+    {
+     "scene": "CarnivalofSouls@2210",
+     "title": "CarnivalofSouls",
+     "start_s": 2210.01,
+     "end_s": 2231.03,
+     "score": 0.28128954768180847
+    },
+    {
+     "scene": "CarnivalofSouls@2341",
+     "title": "CarnivalofSouls",
+     "start_s": 2341.01,
+     "end_s": 2360.02,
+     "score": 0.2805236876010895
+    },
+    {
+     "scene": "CarnivalofSouls@2371",
+     "title": "CarnivalofSouls",
+     "start_s": 2371.0,
+     "end_s": 2378.01,
+     "score": 0.2782263457775116
+    },
+    {
+     "scene": "ThePhantomCreeps@2390",
+     "title": "ThePhantomCreeps",
+     "start_s": 2390.02,
+     "end_s": 2470.0,
+     "score": 0.27807363867759705
+    },
+    {
+     "scene": "amazing_adventure@732",
+     "title": "amazing_adventure",
+     "start_s": 732.0,
+     "end_s": 740.0,
+     "score": 0.27467337250709534
+    },
+    {
+     "scene": "secret_weapon@72",
+     "title": "secret_weapon",
+     "start_s": 72.01,
+     "end_s": 253.02,
+     "score": 0.27271774411201477
+    },
+    {
+     "scene": "angel_and_the_badman@5900",
+     "title": "angel_and_the_badman",
+     "start_s": 5900.03,
+     "end_s": 5939.03,
+     "score": 0.2722715437412262
+    }
+   ],
+   "dairy": [
+    {
+     "scene": "calvary@3203",
+     "title": "calvary",
+     "start_s": 3203.03,
+     "end_s": 3219.01,
+     "score": 0.27062103152275085
+    },
+    {
+     "scene": "calvary@3226",
+     "title": "calvary",
+     "start_s": 3226.02,
+     "end_s": 3238.0,
+     "score": 0.27031344175338745
+    },
+    {
+     "scene": "calvary@1661",
+     "title": "calvary",
+     "start_s": 1661.03,
+     "end_s": 1670.0,
+     "score": 0.27006542682647705
+    },
+    {
+     "scene": "calvary@1073",
+     "title": "calvary",
+     "start_s": 1073.01,
+     "end_s": 1094.03,
+     "score": 0.26886075735092163
+    },
+    {
+     "scene": "calvary@1670",
+     "title": "calvary",
+     "start_s": 1670.0,
+     "end_s": 1682.01,
+     "score": 0.2678631842136383
+    },
+    {
+     "scene": "EndoftheWorld@2513",
+     "title": "EndoftheWorld",
+     "start_s": 2513.0,
+     "end_s": 2543.0,
+     "score": 0.26303839683532715
+    },
+    {
+     "scene": "ThePhantomCreeps@4089",
+     "title": "ThePhantomCreeps",
+     "start_s": 4089.02,
+     "end_s": 4095.03,
+     "score": 0.2594424784183502
+    },
+    {
+     "scene": "CarnivalofSouls@48",
+     "title": "CarnivalofSouls",
+     "start_s": 48.01,
+     "end_s": 71.0,
+     "score": 0.2579863667488098
+    },
+    {
+     "scene": "calvary@3675",
+     "title": "calvary",
+     "start_s": 3675.0,
+     "end_s": 3731.03,
+     "score": 0.25783294439315796
+    },
+    {
+     "scene": "calvary@3296",
+     "title": "calvary",
+     "start_s": 3296.03,
+     "end_s": 3322.02,
+     "score": 0.25616198778152466
+    }
+   ],
+   "cat_food": [
+    {
+     "scene": "TheFlyingDeuces@222",
+     "title": "TheFlyingDeuces",
+     "start_s": 222.02,
+     "end_s": 557.02,
+     "score": 0.27134281396865845
+    },
+    {
+     "scene": "angel_and_the_badman@4648",
+     "title": "angel_and_the_badman",
+     "start_s": 4648.01,
+     "end_s": 4680.01,
+     "score": 0.2633817791938782
+    },
+    {
+     "scene": "TheFlyingDeuces@3863",
+     "title": "TheFlyingDeuces",
+     "start_s": 3863.03,
+     "end_s": 3951.01,
+     "score": 0.2624693214893341
+    },
+    {
+     "scene": "heartbeat@3371",
+     "title": "heartbeat",
+     "start_s": 3371.0,
+     "end_s": 3381.01,
+     "score": 0.26238754391670227
+    },
+    {
+     "scene": "CaptainKidd_@2678",
+     "title": "CaptainKidd_",
+     "start_s": 2678.01,
+     "end_s": 2967.03,
+     "score": 0.26169875264167786
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1437",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1437.02,
+     "end_s": 1455.04,
+     "score": 0.2612186670303345
+    },
+    {
+     "scene": "heartbeat@4814",
+     "title": "heartbeat",
+     "start_s": 4814.01,
+     "end_s": 4817.01,
+     "score": 0.26068517565727234
+    },
+    {
+     "scene": "angel_and_the_badman@4615",
+     "title": "angel_and_the_badman",
+     "start_s": 4615.01,
+     "end_s": 4622.02,
+     "score": 0.2589644193649292
+    },
+    {
+     "scene": "CaptainKidd_@4744",
+     "title": "CaptainKidd_",
+     "start_s": 4744.01,
+     "end_s": 4879.01,
+     "score": 0.2586120069026947
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2456",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2456.04,
+     "end_s": 2462.0,
+     "score": 0.2577093243598938
+    }
+   ],
+   "bird_feed": [
+    {
+     "scene": "ThePhantomCreeps@4511",
+     "title": "ThePhantomCreeps",
+     "start_s": 4511.01,
+     "end_s": 4514.01,
+     "score": 0.2716391384601593
+    },
+    {
+     "scene": "EndoftheWorld@4393",
+     "title": "EndoftheWorld",
+     "start_s": 4393.0,
+     "end_s": 4412.0,
+     "score": 0.2617206275463104
+    },
+    {
+     "scene": "EndoftheWorld@4603",
+     "title": "EndoftheWorld",
+     "start_s": 4603.0,
+     "end_s": 4630.0,
+     "score": 0.26102614402770996
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@77",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 77.04,
+     "end_s": 80.04,
+     "score": 0.26004472374916077
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@2658",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 2658.03,
+     "end_s": 2661.03,
+     "score": 0.2599586248397827
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@3121",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 3121.03,
+     "end_s": 3124.04,
+     "score": 0.2595825493335724
+    },
+    {
+     "scene": "EndoftheWorld@1753",
+     "title": "EndoftheWorld",
+     "start_s": 1753.0,
+     "end_s": 1756.0,
+     "score": 0.25917601585388184
+    },
+    {
+     "scene": "EndoftheWorld@1670",
+     "title": "EndoftheWorld",
+     "start_s": 1670.0,
+     "end_s": 1676.0,
+     "score": 0.25815457105636597
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@1197",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 1197.03,
+     "end_s": 1200.03,
+     "score": 0.25773388147354126
+    },
+    {
+     "scene": "ThePhantomCreeps@4571",
+     "title": "ThePhantomCreeps",
+     "start_s": 4571.0,
+     "end_s": 4575.01,
+     "score": 0.2569764256477356
+    }
+   ],
+   "home_insurance": [
+    {
+     "scene": "calvary@101",
+     "title": "calvary",
+     "start_s": 101.0,
+     "end_s": 143.01,
+     "score": 0.30422770977020264
+    },
+    {
+     "scene": "CarnivalofSouls@3010",
+     "title": "CarnivalofSouls",
+     "start_s": 3010.01,
+     "end_s": 3016.01,
+     "score": 0.28782275319099426
+    },
+    {
+     "scene": "BloodontheSun@1778",
+     "title": "BloodontheSun",
+     "start_s": 1778.0,
+     "end_s": 1802.0,
+     "score": 0.2863506078720093
+    },
+    {
+     "scene": "CarnivalofSouls@3800",
+     "title": "CarnivalofSouls",
+     "start_s": 3800.03,
+     "end_s": 3804.03,
+     "score": 0.2758103013038635
+    },
+    {
+     "scene": "ThePhantomCreeps@3390",
+     "title": "ThePhantomCreeps",
+     "start_s": 3390.02,
+     "end_s": 3393.03,
+     "score": 0.2710038721561432
+    },
+    {
+     "scene": "calvary@171",
+     "title": "calvary",
+     "start_s": 171.0,
+     "end_s": 177.01,
+     "score": 0.26986971497535706
+    },
+    {
+     "scene": "ThePhantomCreeps@3051",
+     "title": "ThePhantomCreeps",
+     "start_s": 3051.02,
+     "end_s": 3054.02,
+     "score": 0.2691480219364166
+    },
+    {
+     "scene": "calvary@193",
+     "title": "calvary",
+     "start_s": 193.03,
+     "end_s": 209.01,
+     "score": 0.2691154181957245
+    },
+    {
+     "scene": "calvary@3675",
+     "title": "calvary",
+     "start_s": 3675.0,
+     "end_s": 3731.03,
+     "score": 0.26801198720932007
+    },
+    {
+     "scene": "calvary@3655",
+     "title": "calvary",
+     "start_s": 3655.02,
+     "end_s": 3660.02,
+     "score": 0.26690003275871277
+    }
+   ],
+   "stationery": [
+    {
+     "scene": "Hitchcock_Secret_Agent@3643",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 3643.01,
+     "end_s": 3646.02,
+     "score": 0.29815447330474854
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@3157",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 3157.03,
+     "end_s": 3165.04,
+     "score": 0.2979713976383209
+    },
+    {
+     "scene": "ThePhantomCreeps@1712",
+     "title": "ThePhantomCreeps",
+     "start_s": 1712.01,
+     "end_s": 1717.02,
+     "score": 0.2974608242511749
+    },
+    {
+     "scene": "TheFlyingDeuces@2875",
+     "title": "TheFlyingDeuces",
+     "start_s": 2875.01,
+     "end_s": 2884.01,
+     "score": 0.2961292862892151
+    },
+    {
+     "scene": "amazing_adventure@3525",
+     "title": "amazing_adventure",
+     "start_s": 3525.0,
+     "end_s": 3530.0,
+     "score": 0.29507118463516235
+    },
+    {
+     "scene": "ThePhantomCreeps@4333",
+     "title": "ThePhantomCreeps",
+     "start_s": 4333.03,
+     "end_s": 4343.01,
+     "score": 0.2938387393951416
+    },
+    {
+     "scene": "CaptainKidd_@4341",
+     "title": "CaptainKidd_",
+     "start_s": 4341.01,
+     "end_s": 4345.01,
+     "score": 0.2922114431858063
+    },
+    {
+     "scene": "secret_weapon@2778",
+     "title": "secret_weapon",
+     "start_s": 2778.01,
+     "end_s": 2785.01,
+     "score": 0.2915288209915161
+    },
+    {
+     "scene": "CaptainKidd_@2515",
+     "title": "CaptainKidd_",
+     "start_s": 2515.02,
+     "end_s": 2519.02,
+     "score": 0.28830647468566895
+    },
+    {
+     "scene": "amazing_adventure@1042",
+     "title": "amazing_adventure",
+     "start_s": 1042.0,
+     "end_s": 1047.0,
+     "score": 0.28555095195770264
+    }
+   ],
+   "radio": [
+    {
+     "scene": "ThePhantomCreeps@3014",
+     "title": "ThePhantomCreeps",
+     "start_s": 3014.01,
+     "end_s": 3051.02,
+     "score": 0.3078562915325165
+    },
+    {
+     "scene": "CaptainKidd_@4074",
+     "title": "CaptainKidd_",
+     "start_s": 4074.01,
+     "end_s": 4166.03,
+     "score": 0.28922149538993835
+    },
+    {
+     "scene": "secret_weapon@2765",
+     "title": "secret_weapon",
+     "start_s": 2765.03,
+     "end_s": 2771.0,
+     "score": 0.2889692485332489
+    },
+    {
+     "scene": "ThePhantomCreeps@4026",
+     "title": "ThePhantomCreeps",
+     "start_s": 4026.03,
+     "end_s": 4030.03,
+     "score": 0.2847985327243805
+    },
+    {
+     "scene": "CaptainKidd_@3901",
+     "title": "CaptainKidd_",
+     "start_s": 3901.0,
+     "end_s": 4074.01,
+     "score": 0.28355520963668823
+    },
+    {
+     "scene": "ThePhantomCreeps@2754",
+     "title": "ThePhantomCreeps",
+     "start_s": 2754.02,
+     "end_s": 2811.01,
+     "score": 0.28355395793914795
+    },
+    {
+     "scene": "CarnivalofSouls@1113",
+     "title": "CarnivalofSouls",
+     "start_s": 1113.01,
+     "end_s": 1151.02,
+     "score": 0.28292372822761536
+    },
+    {
+     "scene": "ThePhantomCreeps@3441",
+     "title": "ThePhantomCreeps",
+     "start_s": 3441.01,
+     "end_s": 3496.03,
+     "score": 0.2823493182659149
+    },
+    {
+     "scene": "ThePhantomCreeps@2516",
+     "title": "ThePhantomCreeps",
+     "start_s": 2516.02,
+     "end_s": 2542.01,
+     "score": 0.28141775727272034
+    },
+    {
+     "scene": "ThePhantomCreeps@2045",
+     "title": "ThePhantomCreeps",
+     "start_s": 2045.01,
+     "end_s": 2189.02,
+     "score": 0.28135237097740173
+    }
+   ],
+   "shipping": [
+    {
+     "scene": "amazing_adventure@743",
+     "title": "amazing_adventure",
+     "start_s": 743.0,
+     "end_s": 746.0,
+     "score": 0.3085569739341736
+    },
+    {
+     "scene": "CaptainKidd_@3509",
+     "title": "CaptainKidd_",
+     "start_s": 3509.01,
+     "end_s": 3554.02,
+     "score": 0.30042576789855957
+    },
+    {
+     "scene": "EndoftheWorld@967",
+     "title": "EndoftheWorld",
+     "start_s": 967.0,
+     "end_s": 1004.0,
+     "score": 0.29938867688179016
+    },
+    {
+     "scene": "CaptainKidd_@1058",
+     "title": "CaptainKidd_",
+     "start_s": 1058.02,
+     "end_s": 1118.02,
+     "score": 0.2917969822883606
+    },
+    {
+     "scene": "CaptainKidd_@5263",
+     "title": "CaptainKidd_",
+     "start_s": 5263.03,
+     "end_s": 5273.01,
+     "score": 0.2910739481449127
+    },
+    {
+     "scene": "CaptainKidd_@2992",
+     "title": "CaptainKidd_",
+     "start_s": 2992.03,
+     "end_s": 3029.03,
+     "score": 0.28894492983818054
+    },
+    {
+     "scene": "CaptainKidd_@5233",
+     "title": "CaptainKidd_",
+     "start_s": 5233.03,
+     "end_s": 5238.0,
+     "score": 0.2873142659664154
+    },
+    {
+     "scene": "CaptainKidd_@2131",
+     "title": "CaptainKidd_",
+     "start_s": 2131.03,
+     "end_s": 2150.02,
+     "score": 0.2848610281944275
+    },
+    {
+     "scene": "CaptainKidd_@1333",
+     "title": "CaptainKidd_",
+     "start_s": 1333.03,
+     "end_s": 1348.01,
+     "score": 0.28467175364494324
+    },
+    {
+     "scene": "CaptainKidd_@3468",
+     "title": "CaptainKidd_",
+     "start_s": 3468.0,
+     "end_s": 3501.0,
+     "score": 0.284304678440094
+    }
+   ],
+   "necklace": [
+    {
+     "scene": "BloodontheSun@2808",
+     "title": "BloodontheSun",
+     "start_s": 2808.0,
+     "end_s": 2970.0,
+     "score": 0.25365111231803894
+    },
+    {
+     "scene": "BloodontheSun@3013",
+     "title": "BloodontheSun",
+     "start_s": 3013.0,
+     "end_s": 3021.0,
+     "score": 0.25257208943367004
+    },
+    {
+     "scene": "BloodontheSun@2991",
+     "title": "BloodontheSun",
+     "start_s": 2991.0,
+     "end_s": 3001.0,
+     "score": 0.251910537481308
+    },
+    {
+     "scene": "BloodontheSun@3005",
+     "title": "BloodontheSun",
+     "start_s": 3005.0,
+     "end_s": 3008.0,
+     "score": 0.24566210806369781
+    },
+    {
+     "scene": "CarnivalofSouls@4525",
+     "title": "CarnivalofSouls",
+     "start_s": 4525.02,
+     "end_s": 4537.03,
+     "score": 0.24561339616775513
+    },
+    {
+     "scene": "heartbeat@1842",
+     "title": "heartbeat",
+     "start_s": 1842.01,
+     "end_s": 2000.03,
+     "score": 0.24387365579605103
+    },
+    {
+     "scene": "BloodontheSun@2974",
+     "title": "BloodontheSun",
+     "start_s": 2974.0,
+     "end_s": 2986.0,
+     "score": 0.24316595494747162
+    },
+    {
+     "scene": "BloodontheSun@4935",
+     "title": "BloodontheSun",
+     "start_s": 4935.0,
+     "end_s": 4938.0,
+     "score": 0.24270518124103546
+    },
+    {
+     "scene": "amazing_adventure@250",
+     "title": "amazing_adventure",
+     "start_s": 250.0,
+     "end_s": 254.0,
+     "score": 0.24251686036586761
+    },
+    {
+     "scene": "Hitchcock_Secret_Agent@4317",
+     "title": "Hitchcock_Secret_Agent",
+     "start_s": 4317.02,
+     "end_s": 4320.02,
+     "score": 0.2414434403181076
+    }
+   ]
+  }
+ }
+}

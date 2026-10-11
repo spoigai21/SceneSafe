@@ -397,3 +397,100 @@ Whatever the result, the literal precision of both systems is reported next to i
     too high for this phase.
 - **Thematic judgements are more subjective than literal ones.** The theme lines narrow them, and agreement is
   reported.
+
+---
+
+# Phase 4f amendment: adding dialogue
+
+Written and committed **after** the Phase 4e labels (the second labeller hadn't labelled 4e) and **before** any
+Phase 4f run or label. Whisper transcripts were produced before this commit, and only Whisper's own output was
+inspected (see "Transcript check before this commit" below).
+
+## Question
+
+Does adding what is **said** in a scene to what is **shown** find scenes that suit the ad more often than frames alone?
+
+## Data
+
+- **Films, scenes and ads:** the 14 Phase 4d films and their Phase 3 scenes (threshold 0.75), and the 60 ads.
+- **Labels and guides:** the Phase 4d literal guide and the Phase 4e theme lines, unchanged.
+
+## Transcripts
+
+- **Source:** Whisper (`mlx-community/whisper-large-v3-turbo`, mlx-whisper on the laptop GPU), English, run on each
+  film's full audio (decoded with PyAV to 16 kHz mono).
+- **What counts as speech:** a segment is dropped if Whisper's `no_speech_prob` is above 0.6 or its average
+  log-probability is below −1.0 (Whisper's own defaults). mlx-whisper reports `no_speech_prob` as 0 for every
+  segment, so that check does nothing here. Two more rules, set after reading the transcripts (below):
+  - a segment of 10 s or more with under 0.5 words per second is dropped (Whisper filling music or silence with a
+    stock phrase such as "Thank you." or "The End");
+  - a segment with the same text as the one before it is dropped (Whisper stuck in a loop repeating one line).
+- **A scene's dialogue:** the speech segments whose midpoint falls inside the scene.
+- **Accuracy:** transcripts are not checked against human subtitles. The accuracy of Whisper on these films is
+  unmeasured, and it's reported as a limit.
+- **Transcript check before this commit:** the transcripts (not any scores, picks or labels) were read for
+  problems. Ordinary dialogue read as plausible and on-plot. Two kinds of junk were found and led to the two rules
+  above: 571 long, nearly empty segments ("The End" 105 times, "Thank you." 73 times, mostly exactly 30 s long) and
+  repetition loops (e.g. one line repeated 20 times at 1 s steps).
+
+## Systems (top 10 scenes per ad)
+
+1. **Frames:** the Phase 4d ViT-B/32 system (the brief as written, each scene at its best second). Its picks are
+   reused unchanged.
+2. **Dialogue:**
+   - **Model:** sentence-transformers `all-mpnet-base-v2`.
+   - **The ad's text:** its brief, then ". ", then its theme line.
+   - **How a scene is scored:** its dialogue is split into windows of 50 words (stride 25), and the scene scores as
+     its best window's cosine similarity.
+   - Scenes without speech are never picked.
+3. **Both:**
+   - **The combined score:** for each ad, the frame score and the dialogue score are each z-scored over the scenes
+     that have them, then added with equal weight.
+   - **Scenes without speech:** they get 0 for dialogue, the average.
+   - **Fixed in advance:** the weight is never tuned.
+
+## Labels
+
+- **The pool:** every (ad, scene) pair picked by any system, shuffled (`default_rng(0)`). **All are labelled again.**
+- **What every card shows:** the brief, the literal guide line, the theme line, the 4 frames, and the scene's
+  dialogue (cut to 600 characters on the card), with nothing about the system.
+- **Why relabel everything:** Phase 4d and 4e labels came from silent frames, so they would be unfair to dialogue.
+- **Levels:** 2 = literal fit, 1 = thematic fit, 0 = neither, as in Phase 4e. The judge may use the dialogue to decide
+  what a scene is about.
+- **Primary labeller:** labels the whole pool.
+- **Second labeller:** the project author labels a random 100 (`default_rng(5)`). Agreement is reported as in 4e.
+
+## Metrics
+
+Means over 60 ads, with a 95% bootstrap over ads (10,000 resamples, `default_rng(0)`).
+
+- **For each system:**
+  - thematic precision@10 (labels 1 or 2)
+  - literal precision@10 (label 2)
+  - graded nDCG@10
+- **Paired differences:**
+  - both − frames
+  - dialogue − frames
+  - both − dialogue
+- **Also reported:**
+  - how many scenes and picks have speech
+  - sensitivity with the author's labels where present
+
+## Decision rule
+
+- **Dialogue improves matching** if the 95% interval of the paired **thematic precision@10** difference
+  (both − frames) is entirely above 0.
+- **It makes matching worse** if the interval is entirely below 0.
+- Otherwise, "no measurable difference".
+
+The other differences and literal precision are reported whatever the result.
+
+## Disclosures
+
+- **Fourth use of these films.** These films were used in Phases 4d and 4e, and the primary labeller has seen their
+  frames. Their dialogue has not been read, apart from the check above. A confirmation on fresh films would be needed
+  before the result is treated as general.
+- **Different evidence from earlier phases.** Labels now include dialogue, so 4f numbers are not comparable with 4d
+  or 4e numbers, even for the same frames system.
+- **Who wrote the themes.** The primary labeller wrote the theme lines, and they are reused unchanged in the
+  dialogue query.
