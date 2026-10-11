@@ -237,3 +237,88 @@ Only this one model is run on the test films. That check was exploratory and is 
   chosen on practice films only, and the method is unchanged from v1.
 - **One model, chosen in advance.** Running all three candidates on the test films and reporting the best would
   inflate the result.
+
+---
+
+# Phase 4d amendment: the model comparison, re-run bigger on fresh films
+
+Written and committed **after** the Phase 4c results and **before** any Phase 4d film was embedded, viewed or
+scored.
+
+## Question
+
+Same as 4c: with the method held fixed, does SigLIP2 ViT-B/16 pick better scenes than CLIP ViT-B/32? Phase 4c's
+interval (±0.07 with 20 ads) was too wide to detect a gain of a few points, and its test films had been used three
+times. Phase 4d asks the same question with three times the ads, fresh films and a written label guide.
+
+## Data
+
+**Films:** 14 new films, listed in `corpus/manifest_4d.json`.
+- **Selection:** made by `scripts/build_manifest_4d.py`, with the same rules as the original corpus (public
+  domain, 60–120 min, the same genre vocabulary and exclusions). It skips every title already in the corpus and
+  takes the first 2 per genre in download-count order.
+- **Use:** none of these films has been used for anything before.
+- **Practice films:** none. Nothing is tuned in this phase.
+
+**Ads:** 60.
+- **The original 20** (`configs/ads.yaml`, unchanged).
+- **40 new ads** (`configs/ads_extra.yaml`).
+  - **Written:** after the new film titles were known, but before any frame of them was seen.
+  - **Content:** everyday subjects, none written for a particular film.
+
+**Label guide (`configs/label_guide.yaml`):** for each of the 60 ads, one line on what fits and one on what
+doesn't.
+- **Purpose:** it settles in advance the judgement calls that caused the Phase 4b and 4c disagreements. For example:
+  - wine needs a dinner table
+  - a held-up banknote counts for the bank ad
+  - a lion is not a dog
+- **Who sees it:** both labellers.
+- **The general rule** from Phase 4 is unchanged. The guide narrows it; it doesn't replace it.
+
+**Scenes:** the Phase 3 detector (threshold 0.75, minimum 3 s), run on the new films' ViT-B/32 embeddings.
+
+## Methods
+
+Both models use the v1 method, exactly as in Phase 4c:
+- the brief as written
+- exact search over every second
+- each scene once, at its best second
+- top 10 per ad, with no cut-off and no junk filter
+
+The models:
+- **ViT-B/32** embeds the films exactly as in Phase 2.
+- **SigLIP2** uses its own preprocessing, as in 4c.
+
+## Labels
+
+- **Pool:** every (ad, scene) pair picked by either model, shuffled (`default_rng(0)`).
+- **What the judge sees:** each card shows the ad's category and brief, its label-guide line, and 4 frames from the
+  scene. Nothing on the card says which model picked it.
+- **Primary labeller:** labels every pair, blind to the model.
+- **Second labeller:** the project author labels a random 100 (`default_rng(3)`).
+- **Agreement:** reported as before, with a list of any cards discussed during labelling.
+
+## Metrics
+
+- **precision@10 and nDCG@10:** per model; the ideal ranking uses every fitting pair in the pool for that ad.
+- **Difference:** the paired difference SigLIP2 − ViT-B/32.
+- **Uncertainty:** means over 60 ads, 95% bootstrap over ads (10,000 resamples, `default_rng(0)`).
+- **Sensitivity:** the author's labels used wherever they exist.
+- **Descriptive only:** picks that are mostly near-black by the Phase 4b pixel rule.
+
+## Decision rule
+
+- **SigLIP2 improves on ViT-B/32** if the 95% interval of the paired precision@10 difference is entirely above 0.
+- **ViT-B/32 is better** if the interval is entirely below 0.
+- Otherwise, "no measurable difference".
+- A per-ad table is reported, including every ad where SigLIP2 does worse.
+
+## Disclosures
+
+- **Seen before:** the 4c result (+0.025, not measurable) and the model choice (made on practice films) were known
+  before this amendment.
+- **Who wrote the guide:** the primary labeller wrote it after labelling Phases 4–4c. Some lines reflect cases
+  seen in those phases' test films, which are not used here.
+- **Who labels:** the primary labeller is the AI assistant that wrote the pipeline, as in every earlier phase.
+- **Data counts:** the new films are kept in a separate manifest, so the corpus counts reported for Phases 0–4c
+  don't change.

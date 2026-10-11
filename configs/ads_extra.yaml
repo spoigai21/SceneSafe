@@ -1,0 +1,244 @@
+# 40 more simulated ads for Phase 4d (EVAL-PROTOCOL.md, "Phase 4d amendment"). Not real ads or real advertisers.
+# Written before any Phase 4d film was embedded or viewed, and frozen with the amendment. Same format as ads.yaml.
+# Briefs name everyday subjects a film of the 1930s-70s might show; none was written for a particular film.
+# genres is kept for format only (Phase 4d has no genre baseline). avoid is enforced in Phase 5.
+ads:
+  - id: bicycle
+    category: sports
+    brief: a person riding a bicycle
+    genres: [comedy, drama]
+    avoid: [accidents, violence]
+
+  - id: rail_travel
+    category: travel
+    brief: a train at a railway station
+    genres: [drama, crime]
+    avoid: [accidents, death]
+
+  - id: hotel
+    category: travel
+    brief: a hotel lobby with a reception desk
+    genres: [comedy, drama]
+    avoid: [violence, death]
+
+  - id: city_tourism
+    category: travel
+    brief: a busy city street with crowds and traffic
+    genres: [crime, drama]
+    avoid: [violence, accidents]
+
+  - id: motorcycle
+    category: automotive
+    brief: a person riding a motorcycle
+    genres: [crime, adventure]
+    avoid: [accidents, death]
+
+  - id: boating
+    category: outdoors
+    brief: a small boat on a lake or river
+    genres: [adventure, comedy]
+    avoid: [accidents, death]
+
+  - id: fishing
+    category: outdoors
+    brief: a person fishing by a river or lake
+    genres: [adventure, comedy]
+    avoid: [violence, death]
+
+  - id: camping
+    category: outdoors
+    brief: a campfire outdoors at night
+    genres: [western, adventure]
+    avoid: [violence, death, horror]
+
+  - id: ski_resort
+    category: travel
+    brief: people in a snowy mountain landscape
+    genres: [adventure, comedy]
+    avoid: [accidents, death]
+
+  - id: gardening
+    category: home
+    brief: a garden full of flowers
+    genres: [drama, comedy]
+    avoid: [violence, death, horror]
+
+  - id: kitchenware
+    category: home
+    brief: someone cooking in a kitchen
+    genres: [drama, comedy]
+    avoid: [violence, horror]
+
+  - id: bedding
+    category: home
+    brief: a bed in a bedroom
+    genres: [drama, comedy]
+    avoid: [violence, death, horror]
+
+  - id: cleaning
+    category: home
+    brief: someone cleaning or washing up at home
+    genres: [comedy, drama]
+    avoid: [violence, horror]
+
+  - id: baby_care
+    category: kids
+    brief: a mother holding a baby
+    genres: [drama]
+    avoid: [violence, weapons, accidents, death, horror, alcohol, smoking]
+
+  - id: school_supplies
+    category: kids
+    brief: children in a classroom
+    genres: [drama, comedy]
+    avoid: [violence, weapons, accidents, death, horror, alcohol, smoking]
+
+  - id: bridal
+    category: fashion
+    brief: a bride in a wedding dress at a wedding
+    genres: [drama, comedy]
+    avoid: [violence, death, horror]
+
+  - id: party_supplies
+    category: events
+    brief: people celebrating at a party
+    genres: [comedy, drama]
+    avoid: [violence, death]
+
+  - id: news_media
+    category: media
+    brief: a person reading a newspaper
+    genres: [crime, drama]
+    avoid: [violence]
+
+  - id: bookstore
+    category: media
+    brief: shelves full of books in a library or study
+    genres: [drama, crime]
+    avoid: [violence, horror]
+
+  - id: office_supplies
+    category: business
+    brief: people working in an office
+    genres: [crime, drama]
+    avoid: [violence]
+
+  - id: piano_lessons
+    category: entertainment
+    brief: a person playing the piano
+    genres: [comedy, drama]
+    avoid: [violence, horror]
+
+  - id: theatre_tickets
+    category: entertainment
+    brief: an audience watching a show on stage
+    genres: [comedy, drama]
+    avoid: [violence, death]
+
+  - id: horse_racing
+    category: sports
+    brief: horses racing on a race track
+    genres: [western, drama]
+    avoid: [accidents, death]
+
+  - id: golf
+    category: sports
+    brief: people playing golf
+    genres: [comedy]
+    avoid: [violence]
+
+  - id: swimwear
+    category: fashion
+    brief: people swimming
+    genres: [comedy, adventure]
+    avoid: [accidents, death]
+
+  - id: watches
+    category: fashion
+    brief: a clock or a wristwatch
+    genres: [crime, drama]
+    avoid: [violence]
+
+  - id: menswear
+    category: fashion
+    brief: a well-dressed man in a suit and tie
+    genres: [crime, drama]
+    avoid: [violence, death]
+
+  - id: cosmetics
+    category: beauty
+    brief: a woman putting on makeup at a mirror
+    genres: [drama, comedy]
+    avoid: [violence, horror]
+
+  - id: hair_salon
+    category: beauty
+    brief: a person having their hair cut or styled
+    genres: [comedy, drama]
+    avoid: [violence, horror]
+
+  - id: bakery
+    category: food_drink
+    brief: bread and cakes
+    genres: [comedy, drama]
+    avoid: [violence, horror]
+
+  - id: grocery
+    category: retail
+    brief: a shop or market stall selling food
+    genres: [drama, comedy]
+    avoid: [violence, horror]
+
+  - id: department_store
+    category: retail
+    brief: people shopping in a store
+    genres: [comedy, drama]
+    avoid: [violence, horror]
+
+  - id: dairy
+    category: food_drink
+    brief: cows or farm animals in a field
+    genres: [western, drama]
+    avoid: [violence, death]
+
+  - id: cat_food
+    category: pets
+    brief: a cat
+    genres: [comedy, drama]
+    avoid: [violence, death, horror]
+
+  - id: bird_feed
+    category: pets
+    brief: a bird
+    genres: [adventure, comedy]
+    avoid: [violence, death, horror]
+
+  - id: home_insurance
+    category: finance
+    brief: a family house seen from outside
+    genres: [drama, comedy]
+    avoid: [violence, accidents, death, horror]
+
+  - id: stationery
+    category: retail
+    brief: a person writing a letter
+    genres: [drama, crime]
+    avoid: [violence]
+
+  - id: radio
+    category: electronics
+    brief: people listening to a radio
+    genres: [drama, crime]
+    avoid: [violence]
+
+  - id: shipping
+    category: logistics
+    brief: a harbour with ships and docks
+    genres: [adventure, crime]
+    avoid: [accidents, death]
+
+  - id: necklace
+    category: fashion
+    brief: a woman wearing a necklace
+    genres: [drama, comedy]
+    avoid: [violence, death]

@@ -21,12 +21,14 @@ def frame_strip(title: str, start: float, end: float, out):
     strip.save(out, quality=82)
 
 
-def sheets(pool: list[dict], frames_dir, out_dir):
-    """Labelling sheets for the primary labeller: PAIRS_PER_SHEET pairs each, in pool order, no method shown."""
+def sheets(pool: list[dict], frames_dir, out_dir, guide: dict | None = None):
+    """Labelling sheets for the primary labeller: PAIRS_PER_SHEET pairs each, in pool order, no method shown. With a
+    label guide (Phase 4d), each pair also shows its ad's fits / doesn't-fit line."""
     from PIL import Image, ImageDraw
     out_dir.mkdir(parents=True, exist_ok=True)
     w = THUMB[0] * FRAMES_PER_SCENE + 4 * (FRAMES_PER_SCENE - 1) + 16
-    row_h = THUMB[1] + 30
+    extra = 30 if guide else 0
+    row_h = THUMB[1] + 30 + extra
     for s in range(0, len(pool), PAIRS_PER_SHEET):
         chunk = pool[s:s + PAIRS_PER_SHEET]
         sheet = Image.new("RGB", (w, row_h * len(chunk)), "white")
@@ -34,5 +36,9 @@ def sheets(pool: list[dict], frames_dir, out_dir):
         for r, p in enumerate(chunk):
             y = r * row_h
             draw.text((8, y + 6), f"{p['pair']}  [{p['category']}]  {p['brief']}", fill="black")
-            sheet.paste(Image.open(frames_dir / f"{p['scene']}.jpg"), (8, y + 24))
+            if guide:
+                g = guide[p["ad"]]
+                draw.text((8, y + 22), f"fits: {g['fits']}", fill="#1b5e20")
+                draw.text((8, y + 36), f"not: {g['not']}", fill="#8b1a1a")
+            sheet.paste(Image.open(frames_dir / f"{p['scene']}.jpg"), (8, y + 24 + extra))
         sheet.save(out_dir / f"sheet_{s // PAIRS_PER_SHEET + 1:03d}.jpg", quality=82)

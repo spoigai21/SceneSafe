@@ -1,0 +1,74 @@
+# Phase 4d label guide (EVAL-PROTOCOL.md, "Phase 4d amendment"). Written before any Phase 4d film was viewed, and
+# frozen with the amendment. Both labellers see the line for the card's ad.
+#
+# General rule (unchanged from Phase 4): Fits = the ad's subject, or its natural setting, is clearly visible in the
+# 4 frames. Anything else, including "loosely related" and "can't tell", is Doesn't fit.
+# Applies to every ad:
+#   - Clearly visible = recognisable without guessing, in at least one frame; not a tiny background detail.
+#   - A credit or title card over the subject counts only if the subject is still clearly visible behind it.
+#   - Judge relevance only: ignore safety, film quality, black and white, and what the rest of the film is about.
+#   - A look-alike is not the subject: a lion is not a dog, a rocket is not an airplane, a toy or a painting of the
+#     subject is not the subject.
+guide:
+  # --- the original 20 ads ---
+  car:              {fits: "a car moving on a road, seen from outside or from the driver's seat", not: "a parked car with no driving; a car interior with no road visible"}
+  airline:          {fits: "an airplane in flight, or on the ground at an airport", not: "a rocket or spaceship; a cockpit that could be anything"}
+  cruise:           {fits: "a ship or large boat on open water, or its deck with the sea visible", not: "a harbour with no ship at sea; a spaceship; a rowing boat on a river"}
+  beach_resort:     {fits: "sand and sea together: a beach", not: "a rocky coast or a coastal road with no beach; desert sand"}
+  beer:             {fits: "people drinking in a bar, pub or saloon", not: "drinks at home or at a party with no bar; an empty bar"}
+  wine:             {fits: "a wine glass or bottle at a dinner table", not: "a cocktail or champagne glass away from a dinner table; a toast with no table"}
+  coffee:           {fits: "people with cups of coffee or tea", not: "a meal with no cups visible; glasses of alcohol"}
+  restaurant:       {fits: "people eating, or seated at a table with food, at home or in a restaurant", not: "a table with only drinks; an empty dining room"}
+  fashion:          {fits: "a woman whose dress is the visual focus: evening gown, ball gown, formal or glamorous dress", not: "everyday clothes, a nightgown, or a woman seen only from the shoulders up"}
+  jewelry:          {fits: "a couple kissing or embracing", not: "a couple standing or talking without touching; a hug between people who are clearly not a couple"}
+  pet_food:         {fits: "a dog", not: "any other animal, including wolves, lions and foxes"}
+  outdoor_gear:     {fits: "people walking or trekking through forest, jungle, hills or mountains", not: "people standing still in a forest; people in water"}
+  phone:            {fits: "a person holding a telephone to their ear or speaking into it", not: "a telephone that nobody is using"}
+  music:            {fits: "people dancing", not: "a crowd, a band or singing without dancing"}
+  furniture:        {fits: "a home sitting room with sofa or armchairs, as the setting", not: "an office, a hall, a hallway or a bedroom; a room too dark to see"}
+  toys:             {fits: "children playing", not: "children standing, talking or sitting still; adults playing"}
+  western_wear:     {fits: "people in western clothes riding horses", not: "horses with nobody riding; riders in non-western dress, such as knights or soldiers in armour"}
+  bank:             {fits: "banknotes or coins clearly visible being counted, handed over or held up", not: "a bank or shop with no money visible; a game with chips or tokens"}
+  pharmacy:         {fits: "a doctor or nurse attending a patient", not: "a patient alone; a doctor with nobody to treat"}
+  sci_fi_game:      {fits: "a rocket or spaceship, outside or inside", not: "an airplane; a starfield with no craft"}
+  # --- the 40 new ads ---
+  bicycle:          {fits: "a person riding a bicycle", not: "a parked bicycle; a motorcycle"}
+  rail_travel:      {fits: "a train at a station, or a station platform with a train", not: "a train interior with no station; railway tracks with no train"}
+  hotel:            {fits: "a hotel lobby or reception desk", not: "a hotel bedroom; a house hall; an office"}
+  city_tourism:     {fits: "a city street with many people and vehicles", not: "an empty or near-empty street; a small-town or village street"}
+  motorcycle:       {fits: "a person riding a motorcycle", not: "a parked motorcycle; a bicycle"}
+  boating:          {fits: "a small boat (rowing boat, canoe, small sailboat) on a lake or river", not: "a large ship; a boat on the open sea"}
+  fishing:          {fits: "a person fishing with a rod or net", not: "people by water who are not fishing; fish in a market"}
+  camping:          {fits: "an outdoor campfire at night", not: "an indoor fireplace; a fire burning a building"}
+  ski_resort:       {fits: "people in snow, outdoors, with snow on the ground", not: "snow with no people; snow seen only through a window"}
+  gardening:        {fits: "flowers growing in a garden, as the setting", not: "a vase of cut flowers; a lawn or park with no flowers"}
+  kitchenware:      {fits: "a person cooking or preparing food in a kitchen", not: "a kitchen nobody is cooking in; eating at a table"}
+  bedding:          {fits: "a bed in a bedroom, clearly visible", not: "a hospital bed; a sofa"}
+  cleaning:         {fits: "a person cleaning, sweeping or washing dishes or clothes", not: "a tidy room with nobody cleaning"}
+  baby_care:        {fits: "an adult holding or caring for a baby", not: "a child old enough to walk; a doll"}
+  school_supplies:  {fits: "children in a classroom", not: "adults in a classroom or lecture hall; children outdoors"}
+  bridal:           {fits: "a bride in a wedding dress, or a wedding ceremony", not: "a woman in a white dress at anything other than a wedding"}
+  party_supplies:   {fits: "a group celebrating: a party, a toast, a festive gathering", not: "a formal meeting; a crowd that is not celebrating"}
+  news_media:       {fits: "a person reading a newspaper", not: "a newspaper lying unread; a newspaper headline insert with no reader"}
+  bookstore:        {fits: "shelves full of books as part of the setting", not: "a single book; a few books on a table"}
+  office_supplies:  {fits: "people working at desks in an office", not: "a person at a desk at home; a police station or shop"}
+  piano_lessons:    {fits: "a person playing a piano", not: "a piano nobody is playing"}
+  theatre_tickets:  {fits: "an audience watching a stage show, or a stage show with an audience in view", not: "an empty stage or empty seats; a cinema screen"}
+  horse_racing:     {fits: "horses racing on a race track", not: "horses ridden in open country (that is western_wear); a horse stable"}
+  golf:             {fits: "people playing golf on a course", not: "a lawn or park with nobody playing golf"}
+  swimwear:         {fits: "people swimming", not: "people wading, rowing or standing by the water"}
+  watches:          {fits: "a clock or wristwatch as a clear object of attention (close-up, or someone looking at it)", not: "a clock hanging somewhere in the background"}
+  menswear:         {fits: "a man in a suit and tie, clearly the focus of the frame", not: "a man in shirt sleeves, uniform or western clothes; suits only in a crowd"}
+  cosmetics:        {fits: "a woman putting on makeup or doing her face at a mirror", not: "a woman at a mirror who is not putting on makeup"}
+  hair_salon:       {fits: "a person having their hair cut, combed or styled by someone else or at a mirror", not: "a person touching their hair in passing"}
+  bakery:           {fits: "bread, cakes or pastries clearly visible", not: "a meal where no bread or cake is clearly visible"}
+  grocery:          {fits: "a shop or market stall with food on display", not: "a shop selling other goods; food on a dinner table"}
+  department_store: {fits: "people shopping in a store with goods on display", not: "an empty shop; a market stall selling food (that is grocery)"}
+  dairy:            {fits: "cows, sheep, pigs or other farm animals in a field or farmyard", not: "horses being ridden; wild animals"}
+  cat_food:         {fits: "a domestic cat", not: "lions, tigers, leopards or other big cats"}
+  bird_feed:        {fits: "a real bird, wild or in a cage", not: "a drawing, statue or toy bird; an airplane"}
+  home_insurance:   {fits: "a family house seen from outside", not: "a mansion, castle, apartment block, barn or shop; a house interior"}
+  stationery:       {fits: "a person writing a letter or note by hand", not: "a person typing; reading a letter"}
+  radio:            {fits: "people listening to a radio set that is in view", not: "a radio nobody is listening to; a radio operator with headphones in a cockpit"}
+  shipping:         {fits: "a harbour or dock with ships or boats", not: "a ship at open sea (that is cruise); a riverbank with no dock"}
+  necklace:         {fits: "a woman wearing a clearly visible necklace", not: "a necklace too small to make out; a necklace not being worn"}

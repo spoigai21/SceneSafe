@@ -44,9 +44,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--ids", nargs="*", help="only these title ids")
+    ap.add_argument("--manifest", default=str(MANIFEST), help="e.g. corpus/manifest_4d.json")
     args = ap.parse_args()
 
-    titles = json.loads(MANIFEST.read_text())["titles"]
+    titles = json.loads(Path(args.manifest).read_text())["titles"]
     if args.ids:
         titles = [t for t in titles if t["id"] in set(args.ids)]
     DEST.mkdir(parents=True, exist_ok=True)

@@ -2,8 +2,9 @@
 
     PYTHONPATH=. .venv/bin/python scripts/label_server.py [--phase 4b]      then open http://localhost:8765
 
-Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2))
-one at a time: the ad's category and brief, and 4 frames from the scene. Nothing on the page says which method
+Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2);
+Phase 4d: 100, default_rng(3)) one at a time: the ad's category and brief (in 4d, also its label-guide line), and
+4 frames from the scene. Nothing on the page says which method
 found the scene, and the primary labels are never sent to the browser. Every click is saved straight to
 results/<phase>/labels_author.json, so you can stop and come back.
 """
@@ -19,8 +20,11 @@ from urllib.parse import unquote
 from scenesafe.common.results import REPO_ROOT
 from scenesafe.match.labels import author_sample
 
-PHASES = {"4": ("phase4", 100, 0), "4b": ("phase4b", 50, 1), "4c": ("phase4c", 50, 2)}    # results dir, sample size, seed
-FRAMES = REPO_ROOT / "data" / "phase4" / "test" / "frames"
+# results dir, sample size, seed, frames dir, show the label guide
+_P4_FRAMES = REPO_ROOT / "data" / "phase4" / "test" / "frames"
+PHASES = {"4": ("phase4", 100, 0, _P4_FRAMES, False), "4b": ("phase4b", 50, 1, _P4_FRAMES, False),
+          "4c": ("phase4c", 50, 2, _P4_FRAMES, False),
+          "4d": ("phase4d", 100, 3, REPO_ROOT / "data" / "phase4d" / "frames", True)}
 PORT = 8765
 
 PAGE = """<!doctype html>
@@ -34,6 +38,8 @@ PAGE = """<!doctype html>
   .cat { text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: #888; }
   h1 { font-size: 26px; margin: 4px 0 18px; }
   img { width: 100%; border-radius: 6px; background: #000; }
+  .guide { font-size: 14px; color: #444; background: #fff; border: 1px solid #ddd; border-radius: 6px;
+           padding: 8px 12px; margin: -6px 0 14px; }
   .q { margin: 18px 0 12px; font-size: 15px; color: #444; }
   .buttons { display: flex; gap: 12px; }
   button { flex: 1; font-size: 17px; padding: 14px; border-radius: 8px; border: 1px solid #bbb; background: #fff;
@@ -49,6 +55,7 @@ PAGE = """<!doctype html>
   <div id="card">
     <div class="cat" id="cat"></div>
     <h1 id="brief"></h1>
+    <div class="guide" id="guide" hidden></div>
     <img id="img" alt="4 frames from the scene">
     <div class="q">Is this scene a natural place for this ad? (Relevance only. Ignore safety. Unsure = doesn't fit.)</div>
     <div class="buttons">
@@ -72,6 +79,8 @@ function show() {
   const it = items[i];
   $("cat").textContent = `${i + 1} / ${items.length} · ${it.category}`;
   $("brief").textContent = it.brief;
+  $("guide").hidden = !it.fits;
+  if (it.fits) $("guide").textContent = `Fits: ${it.fits}. Doesn't fit: ${it.not}.`;
   $("img").src = "/frames/" + encodeURIComponent(it.scene) + ".jpg";
   $("yes").classList.toggle("chosen", labels[it.pair] === 1);
   $("no").classList.toggle("chosen", labels[it.pair] === 0);
@@ -119,9 +128,14 @@ def save_labels(labels: dict):
     os.replace(tmp, OUT)
 
 
-def items(size: int, seed: int) -> list[dict]:
+def items(size: int, seed: int, with_guide: bool) -> list[dict]:
     pool = json.loads(POOL.read_text())["pairs"]
-    return [{k: pool[i][k] for k in ("pair", "category", "brief", "scene")} for i in author_sample(len(pool), size, seed)]
+    out = [{k: pool[i][k] for k in ("pair", "ad", "category", "brief", "scene")} for i in author_sample(len(pool), size, seed)]
+    if with_guide:
+        from scenesafe.match.catalogue import label_guide
+        guide = label_guide()
+        out = [{**it, **guide[it["ad"]]} for it in out]
+    return out
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -170,10 +184,10 @@ LOCK = threading.Lock()
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--phase", choices=list(PHASES), default="4")
-    phase_dir, size, seed = PHASES[ap.parse_args().phase]
+    phase_dir, size, seed, FRAMES, with_guide = PHASES[ap.parse_args().phase]
     POOL = REPO_ROOT / "results" / phase_dir / "pool.json"
     OUT = REPO_ROOT / "results" / phase_dir / "labels_author.json"
-    ITEMS = items(size, seed)
+    ITEMS = items(size, seed, with_guide)
     ALLOWED = {it["pair"] for it in ITEMS}
     print(f"{len(ITEMS)} pairs to label, {len(load_labels())} done so far. Open http://localhost:{PORT}  (Ctrl+C to stop)")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
