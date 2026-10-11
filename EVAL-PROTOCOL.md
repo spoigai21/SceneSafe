@@ -171,3 +171,69 @@ scenes (threshold 0.75).
   fixes for specific ads or scenes.
 - **Previously seen pairs.** Some pairs may already have been seen by the primary labeller. Their earlier
   labels are reused unchanged.
+
+---
+
+# Phase 4c amendment: a different model, same method
+
+Written and committed **after** the Phase 4b results and **before** any Phase 4c result on the test films.
+
+## Question
+
+With the matching method held fixed, does a stronger image–text model pick better scenes than CLIP ViT-B/32?
+
+## What changes
+
+Only the model:
+
+- **v1 (Phase 4):** CLIP ViT-B/32, OpenCLIP `laion2b_s34b_b79k`. Its Phase 4 picks and labels are reused unchanged.
+- **4c:** SigLIP2 ViT-B/16, OpenCLIP `ViT-B-16-SigLIP2` / `webli`, in PyTorch fp16 on the laptop GPU (MPS), with
+  the model's own standard preprocessing.
+
+Everything else is v1:
+
+- **Briefs:** each brief is embedded as written, with no templates.
+- **Search:** exact search over every second of the 14 test films, at the same 1 fps seconds as the corpus
+  embeddings.
+- **Scenes:** each scene is returned once, at its best second; top 10 per ad, with no cut-off and no junk filter.
+- **Scene boundaries:** the scenes are the Phase 3 scenes (detected from the ViT-B/32 embeddings, threshold 0.75), so
+  both models choose from exactly the same set of scenes.
+
+The Phase 4b changes (templates, neutral baseline, junk filter, cut-off) are left out on purpose: the cut-off would
+need re-calibrating for the new model's score scale, and testing one change at a time keeps the answer clean.
+
+## How the model was chosen (practice films only)
+
+- **Candidates:** three models were tried on the 300 labelled Phase 4b practice pairs, all from OpenCLIP:
+  ViT-L/14 (`dfn2b`), SigLIP2 ViT-B/16 (`webli`) and SigLIP2 SO400M/14 (`webli`).
+- **Measure:** how well each one ranks the fitting pairs above the non-fitting ones, within each ad's 15 pairs (AUC,
+  on the 16 ads that have both kinds).
+- **Result:** ViT-B/32 scored 0.57. All three candidates scored about 0.64–0.65, with overlapping intervals.
+- **Choice:** SigLIP2 ViT-B/16, the fastest of the three on the laptop.
+
+Only this one model is run on the test films. That check was exploratory and is not a reported result.
+
+## Evaluation (test films, once)
+
+- **Labelling:**
+  - (ad, scene) pairs not labelled in Phase 4 or 4b are pooled, shuffled (`default_rng(0)`) and labelled blind by the
+    primary labeller (same display, same rule).
+  - Pairs labelled earlier reuse their primary labels.
+  - The project author labels a random 50 of the new pairs (`default_rng(2)`), and agreement is reported as before.
+- **Metrics:** precision@10 and nDCG@10 for v1 and 4c, and the paired difference 4c − v1, with means over the 20 ads
+  and a 95% bootstrap over ads (10,000 resamples, `default_rng(0)`).
+- **nDCG's ideal ranking** uses every labelled pair for the ad (Phases 4, 4b and 4c).
+- **Sensitivity:** the same comparison with the author's labels used wherever they exist.
+
+## Decision rule
+
+- **4c improves on v1** if the 95% interval of the paired precision@10 difference is entirely above 0. Otherwise,
+  the result is reported as "no measurable improvement".
+- A per-ad table is reported, including every ad where 4c does worse.
+
+## Disclosures
+
+- **The test films are used a third time.** v1 and v2 results on them were seen before this amendment. The model was
+  chosen on practice films only, and the method is unchanged from v1.
+- **One model, chosen in advance.** Running all three candidates on the test films and reporting the best would
+  inflate the result.

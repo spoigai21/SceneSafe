@@ -2,9 +2,10 @@
 
     PYTHONPATH=. .venv/bin/python scripts/label_server.py [--phase 4b]      then open http://localhost:8765
 
-Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b: 50 new pairs, default_rng(1)) one at a time: the ad's category and brief, and 4 frames from the scene. Nothing on
-the page says which method found the scene, and the primary labels are never sent to the browser. Every click
-is saved straight to results/<phase>/labels_author.json, so you can stop and come back.
+Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2))
+one at a time: the ad's category and brief, and 4 frames from the scene. Nothing on the page says which method
+found the scene, and the primary labels are never sent to the browser. Every click is saved straight to
+results/<phase>/labels_author.json, so you can stop and come back.
 """
 
 import argparse
@@ -18,7 +19,7 @@ from urllib.parse import unquote
 from scenesafe.common.results import REPO_ROOT
 from scenesafe.match.labels import author_sample
 
-PHASES = {"4": ("phase4", 100, 0), "4b": ("phase4b", 50, 1)}    # results dir, sample size, seed
+PHASES = {"4": ("phase4", 100, 0), "4b": ("phase4b", 50, 1), "4c": ("phase4c", 50, 2)}    # results dir, sample size, seed
 FRAMES = REPO_ROOT / "data" / "phase4" / "test" / "frames"
 PORT = 8765
 
