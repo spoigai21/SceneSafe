@@ -322,3 +322,78 @@ The models:
 - **Who labels:** the primary labeller is the AI assistant that wrote the pipeline, as in every earlier phase.
 - **Data counts:** the new films are kept in a separate manifest, so the corpus counts reported for Phases 0–4c
   don't change.
+
+---
+
+# Phase 4e amendment: thematic relevance
+
+Written and committed **after** the Phase 4d results and **before** the Phase 4e run or any Phase 4e label.
+
+## Question
+
+Phases 4–4d judged a scene relevant only if the ad's literal subject was visible. Contextual advertising also sells
+**thematic** matches, where the scene is about the ad's world or mood: a romantic scene for jewellery, or a glamorous
+woman for cosmetics. Phase 4e asks two things:
+
+1. How often do the current system's picks suit the ad thematically?
+2. Does describing each ad by its theme, as well as its literal brief, find suitable scenes more often?
+
+## Labels: three levels
+
+- **2, literal fit:** the Phase 4d guide's "fits" line (`configs/label_guide.yaml`). This is unchanged.
+- **1, thematic fit:** not a literal fit, but the scene is about the ad's theme, as given by that ad's `theme` line in
+  `configs/themes.yaml`.
+- **0, neither.** Unsure still means 0.
+
+The judge sees the brief, the literal guide line, the theme line and 4 frames, with nothing about which system
+picked the scene.
+
+## Systems (ViT-B/32, the 14 Phase 4d films, Phase 3 scenes, v1 method, top 10 per ad)
+
+- **Literal:** the Phase 4d ViT-B/32 run (the brief as written). Its picks are reused unchanged.
+- **Theme:** the same, except each ad's query vector is the unit mean of 4 ViT-B/32 text embeddings: the brief plus
+  the ad's 3 `query` phrases from `configs/themes.yaml`. The phrases were written once per ad and are not tuned.
+
+## Labelling
+
+- **Carried over:** pairs the primary labeller judged a literal fit in Phase 4d keep label 2. The literal rule hasn't
+  changed.
+- **The pool:** every other pair from either system (Phase 4d non-fits plus the theme system's new pairs) goes into
+  one shuffled pool (`default_rng(0)`). The primary labeller labels it 0/1/2, blind to the system.
+  - **Disagreements with 4d:** a 4d non-fit may now receive a 2. If so, the 4e label stands, and the number of such
+    pairs is reported.
+- **Second labeller:** the project author labels a random 100 of the pool (`default_rng(4)`) on the same three levels.
+- **Agreement:** exact agreement across all three levels, plus Cohen's kappa for "thematic or literal" vs neither,
+  and for literal vs not.
+
+## Metrics
+
+Means over 60 ads, with a 95% bootstrap over ads (10,000 resamples, `default_rng(0)`). For each system and for the
+paired difference theme − literal:
+
+- **thematic precision@10 (decision metric):** the share of the top 10 labelled 1 or 2.
+- **literal precision@10:** the share labelled 2. This shows the trade-off.
+- **graded nDCG@10:** gain = label (0/1/2). The ideal ranking uses every labelled pair for the ad.
+- **Sensitivity:** the author's labels used wherever they exist.
+
+## Decision rule
+
+- **The theme system improves on the literal system** if the 95% interval of the paired thematic precision@10
+  difference is entirely above 0.
+- **It is worse** if the interval is entirely below 0.
+- Otherwise, "no measurable difference".
+
+Whatever the result, the literal precision of both systems is reported next to it, with a per-ad table.
+
+## Disclosures
+
+- **This is a different and broader relevance question than Phases 4–4d.**
+  - Thematic precision is not comparable with the earlier literal numbers and is never reported as an improvement on
+    them.
+  - Both levels are reported side by side.
+- **The themes were written by the primary labeller after labelling the Phase 4d cards for these same films.**
+  - They are written per ad, generically ("romance or a special occasion"), and none names a film or a scene.
+  - Even so, the writer had seen what these films contain. Fresh films would remove this, and the cost was judged
+    too high for this phase.
+- **Thematic judgements are more subjective than literal ones.** The theme lines narrow them, and agreement is
+  reported.

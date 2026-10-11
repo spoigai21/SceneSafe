@@ -10,6 +10,7 @@ from scenesafe.corpus import titles
 ADS = REPO_ROOT / "configs" / "ads.yaml"
 ADS_EXTRA = REPO_ROOT / "configs" / "ads_extra.yaml"       # Phase 4d's 40 more ads
 GUIDE = REPO_ROOT / "configs" / "label_guide.yaml"
+THEMES = REPO_ROOT / "configs" / "themes.yaml"            # Phase 4e
 SPLIT = REPO_ROOT / "configs" / "phase4_split.yaml"
 
 
@@ -35,6 +36,11 @@ def ads_4d() -> list[Ad]:
 def label_guide() -> dict[str, dict[str, str]]:
     """Ad id -> {"fits": ..., "not": ...} (Phase 4d)."""
     return yaml.safe_load(GUIDE.read_text())["guide"]
+
+
+def themes() -> dict[str, dict]:
+    """Ad id -> {"theme": what counts as a thematic fit, "query": 3 phrases for the theme system} (Phase 4e)."""
+    return yaml.safe_load(THEMES.read_text())["themes"]
 
 
 def test_films() -> list[str]:

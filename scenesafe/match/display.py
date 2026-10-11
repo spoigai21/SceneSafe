@@ -27,7 +27,7 @@ def sheets(pool: list[dict], frames_dir, out_dir, guide: dict | None = None):
     from PIL import Image, ImageDraw
     out_dir.mkdir(parents=True, exist_ok=True)
     w = THUMB[0] * FRAMES_PER_SCENE + 4 * (FRAMES_PER_SCENE - 1) + 16
-    extra = 30 if guide else 0
+    extra = (44 if any("theme" in g for g in guide.values()) else 30) if guide else 0
     row_h = THUMB[1] + 30 + extra
     for s in range(0, len(pool), PAIRS_PER_SHEET):
         chunk = pool[s:s + PAIRS_PER_SHEET]
@@ -40,5 +40,7 @@ def sheets(pool: list[dict], frames_dir, out_dir, guide: dict | None = None):
                 g = guide[p["ad"]]
                 draw.text((8, y + 22), f"fits: {g['fits']}", fill="#1b5e20")
                 draw.text((8, y + 36), f"not: {g['not']}", fill="#8b1a1a")
+                if "theme" in g:
+                    draw.text((8, y + 50), f"theme: {g['theme']}", fill="#1a3d8b")
             sheet.paste(Image.open(frames_dir / f"{p['scene']}.jpg"), (8, y + 24 + extra))
         sheet.save(out_dir / f"sheet_{s // PAIRS_PER_SHEET + 1:03d}.jpg", quality=82)

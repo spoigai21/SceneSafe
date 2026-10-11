@@ -1,0 +1,2240 @@
+{
+  "phase": 4,
+  "name": "match_model_4d",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-11T02:48:21+00:00",
+  "git_commit": "5d0ae7fd6ea497cee97114d1d436f33948ce0f0b-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "protocol": "EVAL-PROTOCOL.md (Phase 4d amendment)",
+    "k": 10,
+    "bootstrap_resamples": 10000,
+    "models": {
+      "b32": "ViT-B-32 laion2b_s34b_b79k",
+      "siglip2": "ViT-B-16-SigLIP2 webli"
+    },
+    "author_sample": {
+      "size": 100,
+      "seed": 3
+    }
+  },
+  "summary": {
+    "precision@10": {
+      "b32": {
+        "mean": 0.26833333333333337,
+        "ci95": [
+          0.19333333333333333,
+          0.3466666666666667
+        ]
+      },
+      "siglip2": {
+        "mean": 0.2833333333333334,
+        "ci95": [
+          0.21,
+          0.36
+        ]
+      },
+      "siglip2-b32": {
+        "mean": 0.014999999999999998,
+        "ci95": [
+          -0.01333333333333334,
+          0.045
+        ],
+        "improves": false,
+        "ads_better": 18,
+        "ads_same": 28,
+        "ads_worse": 14
+      }
+    },
+    "ndcg@10": {
+      "b32": {
+        "mean": 0.39341132080282265,
+        "ci95": [
+          0.2992052716701993,
+          0.4848094312852373
+        ]
+      },
+      "siglip2": {
+        "mean": 0.4299206559184961,
+        "ci95": [
+          0.33957159145650057,
+          0.5203580368595919
+        ]
+      },
+      "siglip2-b32": {
+        "mean": 0.03650933511567338,
+        "ci95": [
+          -0.030805138780229144,
+          0.10517970164451679
+        ],
+        "improves": false,
+        "ads_better": 19,
+        "ads_same": 22,
+        "ads_worse": 19
+      }
+    }
+  },
+  "per_ad": {
+    "car": {
+      "fitting_scenes_known": 11,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "precision@10": 0.7,
+        "ndcg@10": 0.7257345305446319
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.914856882358379
+      }
+    },
+    "airline": {
+      "fitting_scenes_known": 13,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "precision@10": 0.8,
+        "ndcg@10": 0.8415908474314976
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9052116356304493
+      }
+    },
+    "cruise": {
+      "fitting_scenes_known": 11,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9305687780632227
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9216017310213247
+      }
+    },
+    "beach_resort": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "beer": {
+      "fitting_scenes_known": 7,
+      "b32": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.5438481712953243
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.8582497453167928
+      }
+    },
+    "wine": {
+      "fitting_scenes_known": 3,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.23463936301137822
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.5256940434743352
+      }
+    },
+    "coffee": {
+      "fitting_scenes_known": 9,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.7279965505724832
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.6538479352874086
+      }
+    },
+    "restaurant": {
+      "fitting_scenes_known": 8,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.7,
+        "ndcg@10": 0.903222291229094
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.8009634987298765
+      }
+    },
+    "fashion": {
+      "fitting_scenes_known": 5,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.7469385177900298
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.23819820987960558
+      }
+    },
+    "jewelry": {
+      "fitting_scenes_known": 5,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.40344480709417424
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.544192623472237
+      }
+    },
+    "pet_food": {
+      "fitting_scenes_known": 12,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 1.0,
+        "ndcg@10": 1.0
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9305687780632227
+      }
+    },
+    "outdoor_gear": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.20438239758848611
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.46845052016107697
+      }
+    },
+    "phone": {
+      "fitting_scenes_known": 12,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 1.0,
+        "ndcg@10": 1.0
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9266360779006401
+      }
+    },
+    "music": {
+      "fitting_scenes_known": 5,
+      "b32": {
+        "relevant": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.7113062262147116
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.6843515475204855
+      }
+    },
+    "furniture": {
+      "fitting_scenes_known": 7,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.19783987238813033
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.6574652120933718
+      }
+    },
+    "toys": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "western_wear": {
+      "fitting_scenes_known": 18,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 1.0,
+        "ndcg@10": 1.0
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 1.0,
+        "ndcg@10": 1.0
+      }
+    },
+    "bank": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.8503449055347546
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "pharmacy": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.5855700749881525
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.4637257479802832
+      }
+    },
+    "sci_fi_game": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.7903864795495061
+      }
+    },
+    "bicycle": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "rail_travel": {
+      "fitting_scenes_known": 6,
+      "b32": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.3861817348048538
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.9671081267272548
+      }
+    },
+    "hotel": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "city_tourism": {
+      "fitting_scenes_known": 7,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.6573429591465088
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.6373866922380802
+      }
+    },
+    "motorcycle": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "boating": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.7598336331031966
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.7757386182436072
+      }
+    },
+    "fishing": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "camping": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "ski_resort": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "gardening": {
+      "fitting_scenes_known": 5,
+      "b32": {
+        "relevant": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.5987171642521193
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.4994819328264776
+      }
+    },
+    "kitchenware": {
+      "fitting_scenes_known": 1,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.38685280723454163
+      }
+    },
+    "bedding": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.8065735963827293
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.38685280723454163
+      }
+    },
+    "cleaning": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "baby_care": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "school_supplies": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "bridal": {
+      "fitting_scenes_known": 1,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.43067655807339306
+      }
+    },
+    "party_supplies": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.6975637657739948
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.6213549039708058
+      }
+    },
+    "news_media": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.8276904491046954
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.49958026644179554
+      }
+    },
+    "bookstore": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.2811463015585058
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.8117854639642847
+      }
+    },
+    "office_supplies": {
+      "fitting_scenes_known": 9,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.7441861791075426
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.5,
+        "ndcg@10": 0.670037563822468
+      }
+    },
+    "piano_lessons": {
+      "fitting_scenes_known": 3,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.38268031849431083
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.812653045383133
+      }
+    },
+    "theatre_tickets": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "horse_racing": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "golf": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "swimwear": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.18457569677956817
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.5249810332008933
+      }
+    },
+    "watches": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.5032251913410369
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.6422813708518126
+      }
+    },
+    "menswear": {
+      "fitting_scenes_known": 14,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.9,
+        "ndcg@10": 0.9216017310213247
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "precision@10": 0.7,
+        "ndcg@10": 0.7778721720600673
+      }
+    },
+    "cosmetics": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "hair_salon": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "bakery": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "grocery": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.20438239758848611
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.46845052016107697
+      }
+    },
+    "department_store": {
+      "fitting_scenes_known": 4,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.8712137160156971
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.5143371794949736
+      }
+    },
+    "dairy": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "cat_food": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "bird_feed": {
+      "fitting_scenes_known": 1,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.1,
+        "ndcg@10": 0.3562071871080222
+      }
+    },
+    "home_insurance": {
+      "fitting_scenes_known": 7,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.7796142215590063
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.4,
+        "ndcg@10": 0.5088279487803783
+      }
+    },
+    "stationery": {
+      "fitting_scenes_known": 8,
+      "b32": {
+        "relevant": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.7497435623413752
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.7762287425386261
+      }
+    },
+    "radio": {
+      "fitting_scenes_known": 0,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "shipping": {
+      "fitting_scenes_known": 2,
+      "b32": {
+        "relevant": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.8503449055347546
+      },
+      "siglip2": {
+        "relevant": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.2,
+        "ndcg@10": 0.5714285040141098
+      }
+    },
+    "necklace": {
+      "fitting_scenes_known": 6,
+      "b32": {
+        "relevant": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "precision@10": 0.3,
+        "ndcg@10": 0.35995783244018875
+      },
+      "siglip2": {
+        "relevant": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "precision@10": 0.6,
+        "ndcg@10": 0.870715242300424
+      }
+    }
+  },
+  "pairs_labelled": 960,
+  "mostly_junk_picks": {
+    "b32": 42,
+    "siglip2": 32,
+    "of": 600
+  },
+  "agreement": {
+    "n": 100,
+    "agreement": 0.88,
+    "cohen_kappa": 0.68,
+    "fits_rate_a": 0.25,
+    "fits_rate_b": 0.25,
+    "disagreements": [
+      "D0002",
+      "D0035",
+      "D0127",
+      "D0234",
+      "D0419",
+      "D0456",
+      "D0483",
+      "D0522",
+      "D0567",
+      "D0568",
+      "D0584",
+      "D0881"
+    ]
+  },
+  "sensitivity_author_labels_where_present": {
+    "b32": {
+      "mean": 0.26833333333333337,
+      "ci95": [
+        0.19499999999999998,
+        0.3466666666666667
+      ]
+    },
+    "siglip2": {
+      "mean": 0.28333333333333344,
+      "ci95": [
+        0.21,
+        0.36
+      ]
+    },
+    "siglip2-b32": {
+      "mean": 0.015000000000000003,
+      "ci95": [
+        -0.013333333333333334,
+        0.043333333333333335
+      ],
+      "improves": false,
+      "ads_better": 18,
+      "ads_same": 31,
+      "ads_worse": 11
+    }
+  }
+}

@@ -3,8 +3,9 @@
     PYTHONPATH=. .venv/bin/python scripts/label_server.py [--phase 4b]      then open http://localhost:8765
 
 Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2);
-Phase 4d: 100, default_rng(3)) one at a time: the ad's category and brief (in 4d, also its label-guide line), and
-4 frames from the scene. Nothing on the page says which method
+Phase 4d: 100, default_rng(3); Phase 4e: 100, default_rng(4)) one at a time: the ad's category and brief (in 4d and
+4e, also its label-guide line; in 4e, its theme line and a third button for a thematic fit), and 4 frames from the
+scene. Nothing on the page says which method
 found the scene, and the primary labels are never sent to the browser. Every click is saved straight to
 results/<phase>/labels_author.json, so you can stop and come back.
 """
@@ -24,7 +25,9 @@ from scenesafe.match.labels import author_sample
 _P4_FRAMES = REPO_ROOT / "data" / "phase4" / "test" / "frames"
 PHASES = {"4": ("phase4", 100, 0, _P4_FRAMES, False), "4b": ("phase4b", 50, 1, _P4_FRAMES, False),
           "4c": ("phase4c", 50, 2, _P4_FRAMES, False),
-          "4d": ("phase4d", 100, 3, REPO_ROOT / "data" / "phase4d" / "frames", True)}
+          "4d": ("phase4d", 100, 3, REPO_ROOT / "data" / "phase4d" / "frames", True),
+          "4e": ("phase4e", 100, 4, REPO_ROOT / "data" / "phase4d" / "frames", True)}
+LEVELS = {"4e"}    # three labels: 2 literal fit, 1 thematic fit, 0 doesn't fit
 PORT = 8765
 
 PAGE = """<!doctype html>
@@ -44,7 +47,7 @@ PAGE = """<!doctype html>
   .buttons { display: flex; gap: 12px; }
   button { flex: 1; font-size: 17px; padding: 14px; border-radius: 8px; border: 1px solid #bbb; background: #fff;
            cursor: pointer; }
-  button.yes { border-color: #2e7d32; } button.no { border-color: #b23b3b; }
+  button.yes { border-color: #2e7d32; } button.no { border-color: #b23b3b; } button.theme { border-color: #2b55a8; }
   button.chosen { background: #1d1d1b; color: #fff; }
   .small { margin-top: 14px; display: flex; justify-content: space-between; font-size: 13px; color: #777; }
   .small a { color: #555; cursor: pointer; }
@@ -60,6 +63,7 @@ PAGE = """<!doctype html>
     <div class="q">Is this scene a natural place for this ad? (Relevance only. Ignore safety. Unsure = doesn't fit.)</div>
     <div class="buttons">
       <button class="yes" id="yes">Fits (F)</button>
+      <button class="theme" id="theme" hidden>Thematic fit (T)</button>
       <button class="no" id="no">Doesn't fit (D)</button>
     </div>
     <div class="small"><a id="back">&larr; back</a><span id="saved"></span></div>
@@ -80,9 +84,14 @@ function show() {
   $("cat").textContent = `${i + 1} / ${items.length} · ${it.category}`;
   $("brief").textContent = it.brief;
   $("guide").hidden = !it.fits;
-  if (it.fits) $("guide").textContent = `Fits: ${it.fits}. Doesn't fit: ${it.not}.`;
+  if (it.fits) $("guide").textContent = it.theme
+    ? `Literal fit: ${it.fits}. Thematic fit: ${it.theme}. Doesn't fit: neither.`
+    : `Fits: ${it.fits}. Doesn't fit: ${it.not}.`;
+  $("theme").hidden = !it.theme;
+  $("yes").textContent = it.theme ? "Literal fit (F)" : "Fits (F)";
+  $("theme").classList.toggle("chosen", labels[it.pair] === 1);
   $("img").src = "/frames/" + encodeURIComponent(it.scene) + ".jpg";
-  $("yes").classList.toggle("chosen", labels[it.pair] === 1);
+  $("yes").classList.toggle("chosen", labels[it.pair] === (it.theme ? 2 : 1));
   $("no").classList.toggle("chosen", labels[it.pair] === 0);
 }
 async function choose(v) {
@@ -97,12 +106,15 @@ async function choose(v) {
   while (i < items.length && items[i].pair in labels) i++;
   show();
 }
-$("yes").onclick = () => choose(1);
+const yesValue = () => (items[i] && items[i].theme ? 2 : 1);
+$("yes").onclick = () => choose(yesValue());
+$("theme").onclick = () => choose(1);
 $("no").onclick = () => choose(0);
 $("back").onclick = () => { if (i > 0) { i--; show(); } };
 $("review").onclick = () => { i = 0; show(); };
 document.addEventListener("keydown", e => {
-  if (e.key === "f" || e.key === "F") choose(1);
+  if (e.key === "f" || e.key === "F") choose(yesValue());
+  else if ((e.key === "t" || e.key === "T") && items[i] && items[i].theme) choose(1);
   else if (e.key === "d" || e.key === "D") choose(0);
   else if (e.key === "ArrowLeft" && i > 0) { i--; show(); }
 });
@@ -128,13 +140,17 @@ def save_labels(labels: dict):
     os.replace(tmp, OUT)
 
 
-def items(size: int, seed: int, with_guide: bool) -> list[dict]:
+def items(size: int, seed: int, with_guide: bool, with_themes: bool = False) -> list[dict]:
     pool = json.loads(POOL.read_text())["pairs"]
     out = [{k: pool[i][k] for k in ("pair", "ad", "category", "brief", "scene")} for i in author_sample(len(pool), size, seed)]
     if with_guide:
         from scenesafe.match.catalogue import label_guide
         guide = label_guide()
         out = [{**it, **guide[it["ad"]]} for it in out]
+    if with_themes:
+        from scenesafe.match.catalogue import themes
+        th = themes()
+        out = [{**it, "theme": th[it["ad"]]["theme"]} for it in out]
     return out
 
 
@@ -167,7 +183,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path != "/label":
             return self._send(b"not found", "text/plain", 404)
         body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
-        if body.get("pair") not in ALLOWED or body.get("value") not in (0, 1):
+        if body.get("pair") not in ALLOWED or body.get("value") not in VALUES:
             return self._send(b"bad label", "text/plain", 400)
         with LOCK:
             labels = load_labels()
@@ -184,10 +200,12 @@ LOCK = threading.Lock()
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--phase", choices=list(PHASES), default="4")
-    phase_dir, size, seed, FRAMES, with_guide = PHASES[ap.parse_args().phase]
+    phase = ap.parse_args().phase
+    phase_dir, size, seed, FRAMES, with_guide = PHASES[phase]
+    VALUES = (0, 1, 2) if phase in LEVELS else (0, 1)
     POOL = REPO_ROOT / "results" / phase_dir / "pool.json"
     OUT = REPO_ROOT / "results" / phase_dir / "labels_author.json"
-    ITEMS = items(size, seed, with_guide)
+    ITEMS = items(size, seed, with_guide, phase in LEVELS)
     ALLOWED = {it["pair"] for it in ITEMS}
     print(f"{len(ITEMS)} pairs to label, {len(load_labels())} done so far. Open http://localhost:{PORT}  (Ctrl+C to stop)")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

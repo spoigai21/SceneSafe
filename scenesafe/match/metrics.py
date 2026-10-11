@@ -1,4 +1,4 @@
-"""Scoring (EVAL-PROTOCOL.md, "Metrics"): precision@k, nDCG@k with binary gains, bootstrap over ads, and
+"""Scoring (EVAL-PROTOCOL.md, "Metrics"): precision@k, nDCG@k with binary or graded gains, bootstrap over ads, and
 agreement between two labellers."""
 
 import numpy as np
@@ -17,6 +17,15 @@ def ndcg_at_k(relevant: list[int], n_relevant_known: int, k: int) -> float:
     dcg = sum(r / np.log2(i + 2) for i, r in enumerate(relevant[:k]))
     idcg = sum(1 / np.log2(i + 2) for i in range(ideal))
     return float(dcg / idcg)
+
+
+def graded_ndcg_at_k(gains: list[int], known_gains: list[int], k: int) -> float:
+    """Graded gain (e.g. 0/1/2), log2 discount. The ideal ranking is the k largest gains known for the ad."""
+    ideal = sorted(known_gains, reverse=True)[:k]
+    idcg = sum(g / np.log2(i + 2) for i, g in enumerate(ideal))
+    if idcg == 0:
+        return 0.0
+    return float(sum(g / np.log2(i + 2) for i, g in enumerate(gains[:k])) / idcg)
 
 
 def bootstrap(per_ad: np.ndarray, n: int = 10_000, seed: int = 0) -> tuple[float, float]:

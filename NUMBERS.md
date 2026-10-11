@@ -131,6 +131,22 @@ scenes and v1 method; only the model changes (CLIP ViT-B/32 → SigLIP2 ViT-B/16
 | Label agreement, 50 new pairs | 82%, κ 0.61 (49 undiscussed pairs: 82%, κ 0.60) | — | same; `results/phase4c/SUMMARY.md` |
 | Picks that are mostly near-black (> half their seconds junk by the 4b pixel rule) | ViT-B/32 18 of 200; SigLIP2 5 of 200 | — | `results/phase4c/match_model_cpu-laptop_seed0.json` |
 
+## Phase 4d
+
+Rules: Phase 4d amendment in `EVAL-PROTOCOL.md`, frozen in commit `5d0ae7f`. 14 fresh films (`corpus/manifest_4d.json`;
+67,121 seconds, 3,116 scenes), 60 ads (`configs/ads.yaml` + `configs/ads_extra.yaml`), label guide
+(`configs/label_guide.yaml`). Same v1 method for both models.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| precision@10, ViT-B/32 → SigLIP2 | 0.268 → 0.283; difference +0.015 [−0.013, +0.045]; 18 ads better, 28 same, 14 worse | (not hardware-dependent) | `results/phase4d/match_model_cpu-laptop_seed0.json` |
+| nDCG@10, ViT-B/32 → SigLIP2 | 0.393 → 0.430; +0.037 [−0.031, +0.105] | — | same |
+| Ads with no fitting scene in either model's picks | 20 of 60 | — | same |
+| Pairs labelled (primary) | 960, of which 236 fit | — | `results/phase4d/labels_primary.json` |
+| Label agreement, 100 pairs | 88%, κ 0.68 (97 undiscussed pairs: 89%, κ 0.70); fit rate 25% for both labellers | — | `results/phase4d/match_model_cpu-laptop_seed0.json`; `results/phase4d/SUMMARY.md` |
+| Sensitivity (author's labels where present), precision@10 | +0.015 [−0.013, +0.043] | — | same |
+| Picks that are mostly near-black | ViT-B/32 42 of 600; SigLIP2 32 of 600 | — | same |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.

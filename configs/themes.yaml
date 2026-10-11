@@ -1,0 +1,69 @@
+# Phase 4e themes (EVAL-PROTOCOL.md, "Phase 4e amendment"). Simulated ads; written before any Phase 4e run, frozen
+# with the amendment.
+#
+# theme:  what counts as a THEMATIC fit (label 1) for the judge: the scene is about the ad's world or mood, even if the
+#         product or literal subject is not on screen. A literal fit (label 2) is the Phase 4d guide's "fits" line.
+# query:  3 short phrases the theme system embeds alongside the literal brief (one fixed set per ad, written once).
+themes:
+  # --- the original 20 ads ---
+  car:              {theme: "travel by road or the freedom of the open road: a journey, a road trip, people setting off somewhere", query: ["a road trip", "people travelling together", "driving through the countryside"]}
+  airline:          {theme: "air travel or long-distance travel: airports, pilots, arrivals and departures, travellers with luggage", query: ["travellers with luggage", "a pilot in uniform", "people arriving from a long journey"]}
+  cruise:           {theme: "travel by sea or holiday on the water: ships, decks, sailors, ports, the ocean", query: ["life on board a ship", "sailors on deck", "a holiday by the sea"]}
+  beach_resort:     {theme: "a seaside holiday or leisure in the sun: swimming, sunbathing, the coast, relaxing outdoors in summer", query: ["people relaxing in the sun", "a seaside holiday", "people in swimsuits"]}
+  beer:             {theme: "social drinking and good times with friends: pubs, saloons, toasts, people relaxing together", query: ["friends relaxing together", "a lively saloon", "a toast among friends"]}
+  wine:             {theme: "fine dining, elegance or a romantic evening: formal dinners, candlelight, a refined occasion", query: ["a romantic dinner", "a formal dinner party", "an elegant evening"]}
+  coffee:           {theme: "a quiet shared moment or everyday conversation at home or in a café: talking over a table, mornings", query: ["a quiet conversation at a table", "a café", "a morning at home"]}
+  restaurant:       {theme: "food, eating out or a social meal: diners, waiters, kitchens, a family at the table", query: ["a family dinner", "a waiter serving guests", "a busy restaurant"]}
+  fashion:          {theme: "glamour or style: a well-dressed woman, an elegant occasion, a ball, getting dressed up", query: ["a glamorous woman", "an elegant ball", "a fashionable couple"]}
+  jewelry:          {theme: "romance or a special occasion: a couple in love, a proposal, an anniversary, a wedding", query: ["a couple in love", "a romantic moment", "a marriage proposal"]}
+  pet_food:         {theme: "pets or caring for animals at home: dogs and their owners, a family pet", query: ["a family pet", "a person with their dog", "a pet at home"]}
+  outdoor_gear:     {theme: "outdoor adventure: expeditions, camping, climbing, explorers in the wild", query: ["an expedition in the wilderness", "explorers on a journey", "adventure in the mountains"]}
+  phone:            {theme: "communication or staying in touch: calls, messages, news arriving, people talking at a distance", query: ["people keeping in touch", "receiving important news", "an urgent message"]}
+  music:            {theme: "music or entertainment: dancing, singing, a band, a concert, a party with music", query: ["a band playing music", "a singer performing", "a party with music"]}
+  furniture:        {theme: "home and comfort: a well-furnished home, a family at home, relaxing indoors", query: ["a cosy home", "a family relaxing at home", "a well-furnished room"]}
+  toys:             {theme: "childhood or family fun: children, games, a family playing together", query: ["a happy family with children", "children having fun", "a family game"]}
+  western_wear:     {theme: "the American West: cowboys, ranches, saloons, western towns, frontier life", query: ["a western town", "cowboys on a ranch", "life on the frontier"]}
+  bank:             {theme: "money, business or financial security: deals, offices, wealth, paying or saving", query: ["a business deal", "a wealthy man", "paying for something"]}
+  pharmacy:         {theme: "health and care: doctors, hospitals, nursing, recovery, looking after someone who is unwell", query: ["a hospital", "caring for a sick person", "a doctor's office"]}
+  sci_fi_game:      {theme: "science fiction or futuristic technology: space, robots, laboratories, futuristic machines", query: ["futuristic technology", "a robot", "a science fiction laboratory"]}
+  # --- the 40 extra ads ---
+  bicycle:          {theme: "active leisure outdoors: cycling, sport, healthy exercise, a ride in the park", query: ["outdoor exercise", "a ride in the park", "people doing sport outdoors"]}
+  rail_travel:      {theme: "travel by train or setting off on a journey: stations, platforms, carriages, travellers", query: ["travellers at a station", "a journey by rail", "passengers on a train"]}
+  hotel:            {theme: "travel stays and hospitality: hotels, guests, bellboys, staying away from home", query: ["guests at a hotel", "a bellboy carrying luggage", "a hotel room"]}
+  city_tourism:     {theme: "city life and sightseeing: famous landmarks, busy downtowns, a city skyline", query: ["a famous city landmark", "a city skyline", "busy city life"]}
+  motorcycle:       {theme: "speed, freedom or the thrill of riding: chases on the road, riders, open highways", query: ["a fast ride on the open road", "the thrill of speed", "a highway"]}
+  boating:          {theme: "leisure on the water: lakes, rivers, rowing, a day by the water", query: ["a day on the lake", "a peaceful river", "people by the water"]}
+  fishing:          {theme: "quiet time in nature by the water: rivers, lakes, fishermen, a peaceful outdoor day", query: ["a peaceful riverbank", "a fisherman", "a quiet day by the lake"]}
+  camping:          {theme: "outdoor life and the wilderness at night: camps, tents, travellers resting outdoors", query: ["a camp in the wilderness", "travellers resting outdoors", "a night under the stars"]}
+  ski_resort:       {theme: "winter and mountain holidays: snow, mountains, cold weather, winter sports", query: ["a winter holiday", "snowy mountains", "people in winter coats in the snow"]}
+  gardening:        {theme: "gardens and the outdoors at home: plants, flowers, lawns, a garden party", query: ["a beautiful garden", "a garden party", "flowers and plants"]}
+  kitchenware:      {theme: "food preparation or home life in the kitchen: cooks, kitchens, preparing a meal", query: ["a kitchen", "a cook at work", "preparing a meal"]}
+  bedding:          {theme: "rest and sleep: bedrooms, sleeping, waking up, a cosy night in", query: ["a bedroom", "a person asleep", "waking up in the morning"]}
+  cleaning:         {theme: "housework and a tidy home: servants, maids, domestic chores, laundry", query: ["a maid at work", "household chores", "laundry"]}
+  baby_care:        {theme: "parenthood or young families: babies, mothers, new parents, a nursery", query: ["a mother and child", "a young family", "a nursery"]}
+  school_supplies:  {theme: "school and learning: pupils, teachers, studying, books and lessons", query: ["a teacher and pupils", "students studying", "a lesson"]}
+  bridal:           {theme: "weddings and marriage: brides, ceremonies, engagements, newlyweds", query: ["a wedding ceremony", "newlyweds", "an engagement"]}
+  party_supplies:   {theme: "celebration and festivity: parties, balloons, toasts, dancing, a festive crowd", query: ["a festive celebration", "a crowd celebrating", "a party with dancing"]}
+  news_media:       {theme: "news and current events: newspapers, headlines, reporters, newsrooms", query: ["a newspaper headline", "a reporter", "a newsroom"]}
+  bookstore:        {theme: "reading and learning: books, libraries, studies, scholars, writers", query: ["a library", "a person reading a book", "a writer's study"]}
+  office_supplies:  {theme: "work and business: offices, desks, paperwork, managers and clerks", query: ["an office", "a businessman at his desk", "paperwork"]}
+  piano_lessons:    {theme: "music and performance: pianos, musicians, concerts, singing", query: ["a musician performing", "a concert", "a singer with a pianist"]}
+  theatre_tickets:  {theme: "live entertainment: theatres, stages, performers, audiences, nightclubs with shows", query: ["a theatre", "performers on stage", "a nightclub show"]}
+  horse_racing:     {theme: "horses or the excitement of racing and betting: horses at speed, stables, jockeys, gamblers", query: ["galloping horses", "a jockey", "people betting on a race"]}
+  golf:             {theme: "leisure and country-club life: sport on a lawn, a country club, wealthy people at leisure", query: ["a country club", "people playing sport on a lawn", "wealthy people at leisure"]}
+  swimwear:         {theme: "water and summer leisure: swimming pools, lakes, the sea, bathing", query: ["a swimming pool", "people bathing", "summer by the water"]}
+  watches:          {theme: "time and punctuality: clocks, deadlines, someone checking the time, a race against time", query: ["a race against time", "someone checking the time", "a clock striking"]}
+  menswear:         {theme: "men's style: well-dressed men, gentlemen, formal occasions, a man getting dressed", query: ["a well-dressed gentleman", "men in formal evening wear", "a man getting dressed"]}
+  cosmetics:        {theme: "beauty and glamour: a beautiful woman, a glamorous star, getting ready to go out, dressing rooms", query: ["a beautiful woman", "a glamorous star", "a woman getting ready to go out"]}
+  hair_salon:       {theme: "grooming and appearance: barbers, hairdressers, shaving, a person getting ready, a styled look", query: ["a barber shop", "a man shaving", "a person getting ready in front of a mirror"]}
+  bakery:           {theme: "food and treats: bakeries, kitchens, cakes, a celebration with food, breakfast", query: ["a celebration cake", "breakfast", "a baker at work"]}
+  grocery:          {theme: "food shopping and markets: shops, market streets, stalls, shopkeepers", query: ["a market street", "a shopkeeper", "a busy shop"]}
+  department_store: {theme: "shopping and consumer goods: shops, shop windows, salespeople, people buying things", query: ["a shop window", "a salesperson with a customer", "people buying things"]}
+  dairy:            {theme: "farm and country life: farms, barns, fields, farmers, rural landscapes", query: ["a farm", "a farmer", "the countryside"]}
+  cat_food:         {theme: "pets or cosy domestic life: house pets, a quiet home, an owner with an animal", query: ["a pet at home", "a cosy home", "a person stroking an animal"]}
+  bird_feed:        {theme: "nature and wildlife: birds, trees, the countryside, a garden in the open air", query: ["nature and wildlife", "birds in the sky", "a peaceful countryside"]}
+  home_insurance:   {theme: "home and family security: family houses, a neighbourhood, protecting one's home", query: ["a family home", "a quiet neighbourhood", "a family in front of their house"]}
+  stationery:       {theme: "writing and correspondence: letters, notes, desks, writers, paperwork", query: ["a letter", "a writer at a desk", "reading a handwritten note"]}
+  radio:            {theme: "broadcast entertainment or news at home: radios, announcers, families listening, broadcasts", query: ["a radio broadcast", "an announcer at a microphone", "a family at home in the evening"]}
+  shipping:         {theme: "trade and transport by sea: ports, docks, cargo, sailors, ships", query: ["a busy port", "sailors at a dock", "cargo being loaded"]}
+  necklace:         {theme: "glamour, jewellery or elegance: elegant women, evening wear, a romantic gift", query: ["an elegant woman in evening wear", "a romantic gift", "glamorous jewellery"]}
