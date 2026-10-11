@@ -1,0 +1,1467 @@
+{
+ "films": "test",
+ "titles": [
+  "Assignment_Outer_Space",
+  "Cosmos_War_of_the_Planets",
+  "Cyrano_DeBergerac",
+  "Grave_of_the_Vampire_movie",
+  "OnlytheValaint",
+  "Quicksand_clear",
+  "TheMagicSword",
+  "TheStranger_0",
+  "cco_thegunandthepulpit",
+  "house_on_haunted_hill_ipod",
+  "lost_world",
+  "my_favorite_brunette",
+  "royal_wedding",
+  "tarzans_revenge"
+ ],
+ "scene_threshold": 0.75,
+ "seconds": 71091,
+ "scenes": 3911,
+ "model": "ViT-B-16-SigLIP2",
+ "pretrained": "webli",
+ "scenes_from": "ViT-B-32 laion2b_s34b_b79k (Phase 3)",
+ "picks": {
+  "car": [
+   {
+    "scene": "my_favorite_brunette@1750",
+    "title": "my_favorite_brunette",
+    "start_s": 1750.01,
+    "end_s": 1753.02,
+    "score": 0.13791118562221527
+   },
+   {
+    "scene": "my_favorite_brunette@1773",
+    "title": "my_favorite_brunette",
+    "start_s": 1773.0,
+    "end_s": 1799.03,
+    "score": 0.13718928396701813
+   },
+   {
+    "scene": "my_favorite_brunette@1753",
+    "title": "my_favorite_brunette",
+    "start_s": 1753.02,
+    "end_s": 1761.02,
+    "score": 0.13100354373455048
+   },
+   {
+    "scene": "my_favorite_brunette@859",
+    "title": "my_favorite_brunette",
+    "start_s": 859.02,
+    "end_s": 914.01,
+    "score": 0.12823373079299927
+   },
+   {
+    "scene": "Quicksand_clear@4095",
+    "title": "Quicksand_clear",
+    "start_s": 4095.02,
+    "end_s": 4098.03,
+    "score": 0.12311863899230957
+   },
+   {
+    "scene": "my_favorite_brunette@1747",
+    "title": "my_favorite_brunette",
+    "start_s": 1747.01,
+    "end_s": 1750.01,
+    "score": 0.12276123464107513
+   },
+   {
+    "scene": "Quicksand_clear@4264",
+    "title": "Quicksand_clear",
+    "start_s": 4264.03,
+    "end_s": 4274.0,
+    "score": 0.11279955506324768
+   },
+   {
+    "scene": "my_favorite_brunette@1733",
+    "title": "my_favorite_brunette",
+    "start_s": 1733.03,
+    "end_s": 1737.0,
+    "score": 0.1115366518497467
+   },
+   {
+    "scene": "Quicksand_clear@4140",
+    "title": "Quicksand_clear",
+    "start_s": 4140.0,
+    "end_s": 4158.02,
+    "score": 0.10835426300764084
+   },
+   {
+    "scene": "my_favorite_brunette@2381",
+    "title": "my_favorite_brunette",
+    "start_s": 2381.01,
+    "end_s": 2388.02,
+    "score": 0.10685890913009644
+   }
+  ],
+  "airline": [
+   {
+    "scene": "my_favorite_brunette@4130",
+    "title": "my_favorite_brunette",
+    "start_s": 4130.03,
+    "end_s": 4133.03,
+    "score": 0.10959961265325546
+   },
+   {
+    "scene": "my_favorite_brunette@4152",
+    "title": "my_favorite_brunette",
+    "start_s": 4152.01,
+    "end_s": 4156.02,
+    "score": 0.10659293085336685
+   },
+   {
+    "scene": "TheStranger_0@107",
+    "title": "TheStranger_0",
+    "start_s": 107.01,
+    "end_s": 127.03,
+    "score": 0.09663742035627365
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@902",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 902.0,
+    "end_s": 906.01,
+    "score": 0.09632633626461029
+   },
+   {
+    "scene": "lost_world@3935",
+    "title": "lost_world",
+    "start_s": 3935.03,
+    "end_s": 3963.02,
+    "score": 0.09616182744503021
+   },
+   {
+    "scene": "TheStranger_0@329",
+    "title": "TheStranger_0",
+    "start_s": 329.03,
+    "end_s": 332.03,
+    "score": 0.09420499205589294
+   },
+   {
+    "scene": "Assignment_Outer_Space@912",
+    "title": "Assignment_Outer_Space",
+    "start_s": 912.01,
+    "end_s": 946.01,
+    "score": 0.09349589794874191
+   },
+   {
+    "scene": "Assignment_Outer_Space@2720",
+    "title": "Assignment_Outer_Space",
+    "start_s": 2720.02,
+    "end_s": 2750.01,
+    "score": 0.09219175577163696
+   },
+   {
+    "scene": "Quicksand_clear@3373",
+    "title": "Quicksand_clear",
+    "start_s": 3373.0,
+    "end_s": 3417.01,
+    "score": 0.09123726934194565
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@923",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 923.02,
+    "end_s": 926.03,
+    "score": 0.09115665405988693
+   }
+  ],
+  "cruise": [
+   {
+    "scene": "royal_wedding@773",
+    "title": "royal_wedding",
+    "start_s": 773.01,
+    "end_s": 778.01,
+    "score": 0.11897878348827362
+   },
+   {
+    "scene": "royal_wedding@1267",
+    "title": "royal_wedding",
+    "start_s": 1267.03,
+    "end_s": 1270.0,
+    "score": 0.11247497797012329
+   },
+   {
+    "scene": "royal_wedding@1264",
+    "title": "royal_wedding",
+    "start_s": 1264.03,
+    "end_s": 1267.03,
+    "score": 0.10926225781440735
+   },
+   {
+    "scene": "Quicksand_clear@4558",
+    "title": "Quicksand_clear",
+    "start_s": 4558.02,
+    "end_s": 4566.03,
+    "score": 0.10695153474807739
+   },
+   {
+    "scene": "TheStranger_0@107",
+    "title": "TheStranger_0",
+    "start_s": 107.01,
+    "end_s": 127.03,
+    "score": 0.09870581328868866
+   },
+   {
+    "scene": "Quicksand_clear@4501",
+    "title": "Quicksand_clear",
+    "start_s": 4501.03,
+    "end_s": 4541.0,
+    "score": 0.09578238427639008
+   },
+   {
+    "scene": "Assignment_Outer_Space@2851",
+    "title": "Assignment_Outer_Space",
+    "start_s": 2851.01,
+    "end_s": 2855.02,
+    "score": 0.09463517367839813
+   },
+   {
+    "scene": "tarzans_revenge@4162",
+    "title": "tarzans_revenge",
+    "start_s": 4162.02,
+    "end_s": 4166.03,
+    "score": 0.0932980328798294
+   },
+   {
+    "scene": "Cyrano_DeBergerac@1458",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 1458.02,
+    "end_s": 1503.0,
+    "score": 0.0928107276558876
+   },
+   {
+    "scene": "Assignment_Outer_Space@570",
+    "title": "Assignment_Outer_Space",
+    "start_s": 570.0,
+    "end_s": 623.02,
+    "score": 0.09181655943393707
+   }
+  ],
+  "beach_resort": [
+   {
+    "scene": "my_favorite_brunette@1733",
+    "title": "my_favorite_brunette",
+    "start_s": 1733.03,
+    "end_s": 1737.0,
+    "score": 0.09688564389944077
+   },
+   {
+    "scene": "my_favorite_brunette@3387",
+    "title": "my_favorite_brunette",
+    "start_s": 3387.02,
+    "end_s": 3407.0,
+    "score": 0.08688542246818542
+   },
+   {
+    "scene": "OnlytheValaint@4579",
+    "title": "OnlytheValaint",
+    "start_s": 4579.02,
+    "end_s": 4582.03,
+    "score": 0.08448264747858047
+   },
+   {
+    "scene": "my_favorite_brunette@2470",
+    "title": "my_favorite_brunette",
+    "start_s": 2470.0,
+    "end_s": 2477.01,
+    "score": 0.08003426343202591
+   },
+   {
+    "scene": "my_favorite_brunette@2483",
+    "title": "my_favorite_brunette",
+    "start_s": 2483.01,
+    "end_s": 2650.01,
+    "score": 0.0758475586771965
+   },
+   {
+    "scene": "Cosmos_War_of_the_Planets@4433",
+    "title": "Cosmos_War_of_the_Planets",
+    "start_s": 4433.03,
+    "end_s": 4454.02,
+    "score": 0.07301683723926544
+   },
+   {
+    "scene": "Quicksand_clear@4501",
+    "title": "Quicksand_clear",
+    "start_s": 4501.03,
+    "end_s": 4541.0,
+    "score": 0.07293756306171417
+   },
+   {
+    "scene": "my_favorite_brunette@2402",
+    "title": "my_favorite_brunette",
+    "start_s": 2402.03,
+    "end_s": 2465.03,
+    "score": 0.07202667742967606
+   },
+   {
+    "scene": "my_favorite_brunette@2381",
+    "title": "my_favorite_brunette",
+    "start_s": 2381.01,
+    "end_s": 2388.02,
+    "score": 0.06603506952524185
+   },
+   {
+    "scene": "my_favorite_brunette@859",
+    "title": "my_favorite_brunette",
+    "start_s": 859.02,
+    "end_s": 914.01,
+    "score": 0.06587458401918411
+   }
+  ],
+  "beer": [
+   {
+    "scene": "Quicksand_clear@1441",
+    "title": "Quicksand_clear",
+    "start_s": 1441.01,
+    "end_s": 1560.02,
+    "score": 0.1451110690832138
+   },
+   {
+    "scene": "royal_wedding@2210",
+    "title": "royal_wedding",
+    "start_s": 2210.01,
+    "end_s": 2301.03,
+    "score": 0.13761059939861298
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@764",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 764.03,
+    "end_s": 902.0,
+    "score": 0.13411405682563782
+   },
+   {
+    "scene": "Cyrano_DeBergerac@2534",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 2534.03,
+    "end_s": 3168.03,
+    "score": 0.13263092935085297
+   },
+   {
+    "scene": "cco_thegunandthepulpit@3538",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 3538.03,
+    "end_s": 3544.04,
+    "score": 0.13248687982559204
+   },
+   {
+    "scene": "TheStranger_0@2317",
+    "title": "TheStranger_0",
+    "start_s": 2317.01,
+    "end_s": 2502.03,
+    "score": 0.13120564818382263
+   },
+   {
+    "scene": "TheStranger_0@2809",
+    "title": "TheStranger_0",
+    "start_s": 2809.01,
+    "end_s": 2869.03,
+    "score": 0.12539759278297424
+   },
+   {
+    "scene": "royal_wedding@2313",
+    "title": "royal_wedding",
+    "start_s": 2313.01,
+    "end_s": 2337.0,
+    "score": 0.12484708428382874
+   },
+   {
+    "scene": "TheStranger_0@2537",
+    "title": "TheStranger_0",
+    "start_s": 2537.0,
+    "end_s": 2560.02,
+    "score": 0.1245683878660202
+   },
+   {
+    "scene": "royal_wedding@513",
+    "title": "royal_wedding",
+    "start_s": 513.01,
+    "end_s": 621.02,
+    "score": 0.12422357499599457
+   }
+  ],
+  "wine": [
+   {
+    "scene": "house_on_haunted_hill_ipod@3139",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 3139.01,
+    "end_s": 3377.01,
+    "score": 0.11823611706495285
+   },
+   {
+    "scene": "royal_wedding@2116",
+    "title": "royal_wedding",
+    "start_s": 2116.01,
+    "end_s": 2169.03,
+    "score": 0.11288288235664368
+   },
+   {
+    "scene": "tarzans_revenge@3914",
+    "title": "tarzans_revenge",
+    "start_s": 3914.01,
+    "end_s": 3920.02,
+    "score": 0.10952180624008179
+   },
+   {
+    "scene": "my_favorite_brunette@3766",
+    "title": "my_favorite_brunette",
+    "start_s": 3766.03,
+    "end_s": 3928.02,
+    "score": 0.10948557406663895
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@1350",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 1350.02,
+    "end_s": 1441.01,
+    "score": 0.10927604138851166
+   },
+   {
+    "scene": "TheMagicSword@3186",
+    "title": "TheMagicSword",
+    "start_s": 3186.02,
+    "end_s": 3192.02,
+    "score": 0.10642139613628387
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@472",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 472.01,
+    "end_s": 709.01,
+    "score": 0.10465724766254425
+   },
+   {
+    "scene": "Cyrano_DeBergerac@2200",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 2200.03,
+    "end_s": 2298.03,
+    "score": 0.10423613339662552
+   },
+   {
+    "scene": "TheStranger_0@1478",
+    "title": "TheStranger_0",
+    "start_s": 1478.01,
+    "end_s": 1869.03,
+    "score": 0.10411880910396576
+   },
+   {
+    "scene": "TheMagicSword@115",
+    "title": "TheMagicSword",
+    "start_s": 115.02,
+    "end_s": 132.03,
+    "score": 0.10394127666950226
+   }
+  ],
+  "coffee": [
+   {
+    "scene": "Quicksand_clear@89",
+    "title": "Quicksand_clear",
+    "start_s": 89.02,
+    "end_s": 174.01,
+    "score": 0.11837572604417801
+   },
+   {
+    "scene": "cco_thegunandthepulpit@3129",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 3129.02,
+    "end_s": 3139.03,
+    "score": 0.11249580979347229
+   },
+   {
+    "scene": "TheStranger_0@4053",
+    "title": "TheStranger_0",
+    "start_s": 4053.02,
+    "end_s": 4117.01,
+    "score": 0.11005215346813202
+   },
+   {
+    "scene": "royal_wedding@2116",
+    "title": "royal_wedding",
+    "start_s": 2116.01,
+    "end_s": 2169.03,
+    "score": 0.10726574808359146
+   },
+   {
+    "scene": "cco_thegunandthepulpit@3139",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 3139.03,
+    "end_s": 3148.04,
+    "score": 0.10657134652137756
+   },
+   {
+    "scene": "TheStranger_0@4435",
+    "title": "TheStranger_0",
+    "start_s": 4435.03,
+    "end_s": 4607.0,
+    "score": 0.1062408983707428
+   },
+   {
+    "scene": "TheStranger_0@2317",
+    "title": "TheStranger_0",
+    "start_s": 2317.01,
+    "end_s": 2502.03,
+    "score": 0.10320974141359329
+   },
+   {
+    "scene": "Cyrano_DeBergerac@2534",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 2534.03,
+    "end_s": 3168.03,
+    "score": 0.10014636814594269
+   },
+   {
+    "scene": "cco_thegunandthepulpit@1893",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 1893.04,
+    "end_s": 1909.01,
+    "score": 0.09785567969083786
+   },
+   {
+    "scene": "cco_thegunandthepulpit@1371",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 1371.02,
+    "end_s": 1376.02,
+    "score": 0.0970001071691513
+   }
+  ],
+  "restaurant": [
+   {
+    "scene": "cco_thegunandthepulpit@1371",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 1371.02,
+    "end_s": 1376.02,
+    "score": 0.12486840784549713
+   },
+   {
+    "scene": "cco_thegunandthepulpit@1399",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 1399.04,
+    "end_s": 1402.0,
+    "score": 0.12417081743478775
+   },
+   {
+    "scene": "cco_thegunandthepulpit@1893",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 1893.04,
+    "end_s": 1909.01,
+    "score": 0.12173998355865479
+   },
+   {
+    "scene": "cco_thegunandthepulpit@1409",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 1409.01,
+    "end_s": 1417.01,
+    "score": 0.11911734193563461
+   },
+   {
+    "scene": "tarzans_revenge@2209",
+    "title": "tarzans_revenge",
+    "start_s": 2209.01,
+    "end_s": 2277.01,
+    "score": 0.11127998679876328
+   },
+   {
+    "scene": "TheStranger_0@1478",
+    "title": "TheStranger_0",
+    "start_s": 1478.01,
+    "end_s": 1869.03,
+    "score": 0.11068972945213318
+   },
+   {
+    "scene": "Cyrano_DeBergerac@2200",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 2200.03,
+    "end_s": 2298.03,
+    "score": 0.10849257558584213
+   },
+   {
+    "scene": "royal_wedding@2116",
+    "title": "royal_wedding",
+    "start_s": 2116.01,
+    "end_s": 2169.03,
+    "score": 0.10832478851079941
+   },
+   {
+    "scene": "tarzans_revenge@234",
+    "title": "tarzans_revenge",
+    "start_s": 234.0,
+    "end_s": 310.01,
+    "score": 0.10755917429924011
+   },
+   {
+    "scene": "tarzans_revenge@170",
+    "title": "tarzans_revenge",
+    "start_s": 170.0,
+    "end_s": 208.01,
+    "score": 0.10728719830513
+   }
+  ],
+  "fashion": [
+   {
+    "scene": "house_on_haunted_hill_ipod@1542",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 1542.01,
+    "end_s": 1708.01,
+    "score": 0.12021218240261078
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@2063",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 2063.03,
+    "end_s": 2132.03,
+    "score": 0.11983206868171692
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@3682",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 3682.02,
+    "end_s": 3739.0,
+    "score": 0.11952269077301025
+   },
+   {
+    "scene": "TheMagicSword@1909",
+    "title": "TheMagicSword",
+    "start_s": 1909.01,
+    "end_s": 1941.01,
+    "score": 0.11452249437570572
+   },
+   {
+    "scene": "cco_thegunandthepulpit@4195",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 4195.04,
+    "end_s": 4201.0,
+    "score": 0.11208205670118332
+   },
+   {
+    "scene": "royal_wedding@1980",
+    "title": "royal_wedding",
+    "start_s": 1980.01,
+    "end_s": 2056.02,
+    "score": 0.11186771094799042
+   },
+   {
+    "scene": "Cyrano_DeBergerac@4581",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 4581.01,
+    "end_s": 4602.03,
+    "score": 0.11170430481433868
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@4104",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 4104.0,
+    "end_s": 4139.0,
+    "score": 0.11158489435911179
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@3503",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 3503.0,
+    "end_s": 3531.03,
+    "score": 0.11149237304925919
+   },
+   {
+    "scene": "my_favorite_brunette@1028",
+    "title": "my_favorite_brunette",
+    "start_s": 1028.03,
+    "end_s": 1144.01,
+    "score": 0.11130006611347198
+   }
+  ],
+  "jewelry": [
+   {
+    "scene": "my_favorite_brunette@5173",
+    "title": "my_favorite_brunette",
+    "start_s": 5173.0,
+    "end_s": 5187.01,
+    "score": 0.12824644148349762
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@3893",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 3893.03,
+    "end_s": 3981.01,
+    "score": 0.12727944552898407
+   },
+   {
+    "scene": "OnlytheValaint@678",
+    "title": "OnlytheValaint",
+    "start_s": 678.02,
+    "end_s": 690.03,
+    "score": 0.12541398406028748
+   },
+   {
+    "scene": "my_favorite_brunette@3630",
+    "title": "my_favorite_brunette",
+    "start_s": 3630.03,
+    "end_s": 3685.01,
+    "score": 0.12388540059328079
+   },
+   {
+    "scene": "my_favorite_brunette@564",
+    "title": "my_favorite_brunette",
+    "start_s": 564.03,
+    "end_s": 623.02,
+    "score": 0.12338781356811523
+   },
+   {
+    "scene": "Cyrano_DeBergerac@4231",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 4231.03,
+    "end_s": 4423.02,
+    "score": 0.12328927963972092
+   },
+   {
+    "scene": "OnlytheValaint@650",
+    "title": "OnlytheValaint",
+    "start_s": 650.0,
+    "end_s": 673.02,
+    "score": 0.1224985346198082
+   },
+   {
+    "scene": "my_favorite_brunette@1028",
+    "title": "my_favorite_brunette",
+    "start_s": 1028.03,
+    "end_s": 1144.01,
+    "score": 0.12177448719739914
+   },
+   {
+    "scene": "tarzans_revenge@2327",
+    "title": "tarzans_revenge",
+    "start_s": 2327.02,
+    "end_s": 2428.02,
+    "score": 0.11867499351501465
+   },
+   {
+    "scene": "my_favorite_brunette@2650",
+    "title": "my_favorite_brunette",
+    "start_s": 2650.01,
+    "end_s": 2669.03,
+    "score": 0.11837495118379593
+   }
+  ],
+  "pet_food": [
+   {
+    "scene": "tarzans_revenge@1933",
+    "title": "tarzans_revenge",
+    "start_s": 1933.03,
+    "end_s": 1997.03,
+    "score": 0.10751722753047943
+   },
+   {
+    "scene": "tarzans_revenge@763",
+    "title": "tarzans_revenge",
+    "start_s": 763.03,
+    "end_s": 821.02,
+    "score": 0.10608122497797012
+   },
+   {
+    "scene": "tarzans_revenge@4022",
+    "title": "tarzans_revenge",
+    "start_s": 4022.02,
+    "end_s": 4025.02,
+    "score": 0.10016518086194992
+   },
+   {
+    "scene": "TheStranger_0@1001",
+    "title": "TheStranger_0",
+    "start_s": 1001.0,
+    "end_s": 1073.0,
+    "score": 0.09837241470813751
+   },
+   {
+    "scene": "tarzans_revenge@1536",
+    "title": "tarzans_revenge",
+    "start_s": 1536.0,
+    "end_s": 1579.01,
+    "score": 0.09758199006319046
+   },
+   {
+    "scene": "tarzans_revenge@426",
+    "title": "tarzans_revenge",
+    "start_s": 426.03,
+    "end_s": 430.03,
+    "score": 0.09397949278354645
+   },
+   {
+    "scene": "TheMagicSword@1902",
+    "title": "TheMagicSword",
+    "start_s": 1902.0,
+    "end_s": 1905.0,
+    "score": 0.09357511252164841
+   },
+   {
+    "scene": "tarzans_revenge@2826",
+    "title": "tarzans_revenge",
+    "start_s": 2826.02,
+    "end_s": 2832.03,
+    "score": 0.09263888746500015
+   },
+   {
+    "scene": "tarzans_revenge@2033",
+    "title": "tarzans_revenge",
+    "start_s": 2033.03,
+    "end_s": 2110.01,
+    "score": 0.09250814467668533
+   },
+   {
+    "scene": "tarzans_revenge@953",
+    "title": "tarzans_revenge",
+    "start_s": 953.02,
+    "end_s": 1005.0,
+    "score": 0.09131703525781631
+   }
+  ],
+  "outdoor_gear": [
+   {
+    "scene": "tarzans_revenge@1095",
+    "title": "tarzans_revenge",
+    "start_s": 1095.03,
+    "end_s": 1139.0,
+    "score": 0.1246468722820282
+   },
+   {
+    "scene": "TheMagicSword@2605",
+    "title": "TheMagicSword",
+    "start_s": 2605.01,
+    "end_s": 2650.02,
+    "score": 0.11989101767539978
+   },
+   {
+    "scene": "tarzans_revenge@763",
+    "title": "tarzans_revenge",
+    "start_s": 763.03,
+    "end_s": 821.02,
+    "score": 0.1170148029923439
+   },
+   {
+    "scene": "tarzans_revenge@4112",
+    "title": "tarzans_revenge",
+    "start_s": 4112.01,
+    "end_s": 4156.02,
+    "score": 0.11691180616617203
+   },
+   {
+    "scene": "tarzans_revenge@874",
+    "title": "tarzans_revenge",
+    "start_s": 874.01,
+    "end_s": 895.03,
+    "score": 0.11543463170528412
+   },
+   {
+    "scene": "tarzans_revenge@821",
+    "title": "tarzans_revenge",
+    "start_s": 821.02,
+    "end_s": 863.03,
+    "score": 0.11455696076154709
+   },
+   {
+    "scene": "tarzans_revenge@3600",
+    "title": "tarzans_revenge",
+    "start_s": 3600.03,
+    "end_s": 3698.03,
+    "score": 0.11273674666881561
+   },
+   {
+    "scene": "cco_thegunandthepulpit@423",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 423.02,
+    "end_s": 489.03,
+    "score": 0.11127879470586777
+   },
+   {
+    "scene": "tarzans_revenge@3454",
+    "title": "tarzans_revenge",
+    "start_s": 3454.02,
+    "end_s": 3546.01,
+    "score": 0.11073693633079529
+   },
+   {
+    "scene": "tarzans_revenge@2486",
+    "title": "tarzans_revenge",
+    "start_s": 2486.02,
+    "end_s": 2555.02,
+    "score": 0.11039677262306213
+   }
+  ],
+  "phone": [
+   {
+    "scene": "Quicksand_clear@309",
+    "title": "Quicksand_clear",
+    "start_s": 309.01,
+    "end_s": 360.03,
+    "score": 0.15158289670944214
+   },
+   {
+    "scene": "Quicksand_clear@3064",
+    "title": "Quicksand_clear",
+    "start_s": 3064.03,
+    "end_s": 3152.01,
+    "score": 0.14945942163467407
+   },
+   {
+    "scene": "Quicksand_clear@2063",
+    "title": "Quicksand_clear",
+    "start_s": 2063.03,
+    "end_s": 2068.03,
+    "score": 0.1493903249502182
+   },
+   {
+    "scene": "my_favorite_brunette@1883",
+    "title": "my_favorite_brunette",
+    "start_s": 1883.01,
+    "end_s": 1967.03,
+    "score": 0.14865706861019135
+   },
+   {
+    "scene": "Quicksand_clear@2068",
+    "title": "Quicksand_clear",
+    "start_s": 2068.03,
+    "end_s": 2077.01,
+    "score": 0.1484389305114746
+   },
+   {
+    "scene": "TheStranger_0@4354",
+    "title": "TheStranger_0",
+    "start_s": 4354.02,
+    "end_s": 4392.02,
+    "score": 0.14828085899353027
+   },
+   {
+    "scene": "Quicksand_clear@174",
+    "title": "Quicksand_clear",
+    "start_s": 174.01,
+    "end_s": 181.01,
+    "score": 0.1476679891347885
+   },
+   {
+    "scene": "Quicksand_clear@2046",
+    "title": "Quicksand_clear",
+    "start_s": 2046.01,
+    "end_s": 2063.03,
+    "score": 0.14553730189800262
+   },
+   {
+    "scene": "royal_wedding@1656",
+    "title": "royal_wedding",
+    "start_s": 1656.02,
+    "end_s": 1659.02,
+    "score": 0.1453223079442978
+   },
+   {
+    "scene": "TheStranger_0@4392",
+    "title": "TheStranger_0",
+    "start_s": 4392.02,
+    "end_s": 4415.01,
+    "score": 0.14522768557071686
+   }
+  ],
+  "music": [
+   {
+    "scene": "Cyrano_DeBergerac@2534",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 2534.03,
+    "end_s": 3168.03,
+    "score": 0.13243713974952698
+   },
+   {
+    "scene": "Cyrano_DeBergerac@1766",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 1766.03,
+    "end_s": 2200.03,
+    "score": 0.12885792553424835
+   },
+   {
+    "scene": "Cyrano_DeBergerac@790",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 790.02,
+    "end_s": 932.03,
+    "score": 0.12846292555332184
+   },
+   {
+    "scene": "lost_world@509",
+    "title": "lost_world",
+    "start_s": 509.01,
+    "end_s": 521.02,
+    "score": 0.1283183991909027
+   },
+   {
+    "scene": "Grave_of_the_Vampire_movie@3287",
+    "title": "Grave_of_the_Vampire_movie",
+    "start_s": 3287.03,
+    "end_s": 3348.01,
+    "score": 0.12582531571388245
+   },
+   {
+    "scene": "Cyrano_DeBergerac@137",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 137.0,
+    "end_s": 231.03,
+    "score": 0.12487619370222092
+   },
+   {
+    "scene": "Cyrano_DeBergerac@642",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 642.01,
+    "end_s": 790.02,
+    "score": 0.12473300844430923
+   },
+   {
+    "scene": "royal_wedding@4709",
+    "title": "royal_wedding",
+    "start_s": 4709.0,
+    "end_s": 4828.02,
+    "score": 0.12369067966938019
+   },
+   {
+    "scene": "Cyrano_DeBergerac@2298",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 2298.03,
+    "end_s": 2534.03,
+    "score": 0.12222310155630112
+   },
+   {
+    "scene": "TheStranger_0@4053",
+    "title": "TheStranger_0",
+    "start_s": 4053.02,
+    "end_s": 4117.01,
+    "score": 0.12173079699277878
+   }
+  ],
+  "furniture": [
+   {
+    "scene": "my_favorite_brunette@4898",
+    "title": "my_favorite_brunette",
+    "start_s": 4898.03,
+    "end_s": 4929.02,
+    "score": 0.09759465605020523
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@3682",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 3682.02,
+    "end_s": 3739.0,
+    "score": 0.09409696608781815
+   },
+   {
+    "scene": "lost_world@821",
+    "title": "lost_world",
+    "start_s": 821.02,
+    "end_s": 830.03,
+    "score": 0.09225965291261673
+   },
+   {
+    "scene": "lost_world@798",
+    "title": "lost_world",
+    "start_s": 798.03,
+    "end_s": 815.01,
+    "score": 0.09158757328987122
+   },
+   {
+    "scene": "OnlytheValaint@509",
+    "title": "OnlytheValaint",
+    "start_s": 509.01,
+    "end_s": 650.04,
+    "score": 0.08936510235071182
+   },
+   {
+    "scene": "lost_world@637",
+    "title": "lost_world",
+    "start_s": 637.0,
+    "end_s": 683.01,
+    "score": 0.08670303970575333
+   },
+   {
+    "scene": "house_on_haunted_hill_ipod@2981",
+    "title": "house_on_haunted_hill_ipod",
+    "start_s": 2981.01,
+    "end_s": 3099.03,
+    "score": 0.08641701191663742
+   },
+   {
+    "scene": "my_favorite_brunette@4314",
+    "title": "my_favorite_brunette",
+    "start_s": 4314.01,
+    "end_s": 4431.03,
+    "score": 0.0857871025800705
+   },
+   {
+    "scene": "my_favorite_brunette@1181",
+    "title": "my_favorite_brunette",
+    "start_s": 1181.01,
+    "end_s": 1635.03,
+    "score": 0.0853145569562912
+   },
+   {
+    "scene": "my_favorite_brunette@914",
+    "title": "my_favorite_brunette",
+    "start_s": 914.01,
+    "end_s": 980.01,
+    "score": 0.08416358381509781
+   }
+  ],
+  "toys": [
+   {
+    "scene": "Grave_of_the_Vampire_movie@2053",
+    "title": "Grave_of_the_Vampire_movie",
+    "start_s": 2053.01,
+    "end_s": 2073.03,
+    "score": 0.11446844041347504
+   },
+   {
+    "scene": "tarzans_revenge@1221",
+    "title": "tarzans_revenge",
+    "start_s": 1221.02,
+    "end_s": 1349.01,
+    "score": 0.11046448349952698
+   },
+   {
+    "scene": "Cosmos_War_of_the_Planets@4070",
+    "title": "Cosmos_War_of_the_Planets",
+    "start_s": 4070.03,
+    "end_s": 4091.02,
+    "score": 0.10201310366392136
+   },
+   {
+    "scene": "tarzans_revenge@3281",
+    "title": "tarzans_revenge",
+    "start_s": 3281.01,
+    "end_s": 3311.01,
+    "score": 0.10105475783348083
+   },
+   {
+    "scene": "my_favorite_brunette@3417",
+    "title": "my_favorite_brunette",
+    "start_s": 3417.01,
+    "end_s": 3432.03,
+    "score": 0.10056433826684952
+   },
+   {
+    "scene": "Cyrano_DeBergerac@642",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 642.01,
+    "end_s": 790.02,
+    "score": 0.09919900447130203
+   },
+   {
+    "scene": "my_favorite_brunette@2402",
+    "title": "my_favorite_brunette",
+    "start_s": 2402.03,
+    "end_s": 2465.03,
+    "score": 0.09919057041406631
+   },
+   {
+    "scene": "tarzans_revenge@669",
+    "title": "tarzans_revenge",
+    "start_s": 669.0,
+    "end_s": 678.01,
+    "score": 0.09780091792345047
+   },
+   {
+    "scene": "tarzans_revenge@3168",
+    "title": "tarzans_revenge",
+    "start_s": 3168.03,
+    "end_s": 3181.01,
+    "score": 0.09743498265743256
+   },
+   {
+    "scene": "Cyrano_DeBergerac@790",
+    "title": "Cyrano_DeBergerac",
+    "start_s": 790.02,
+    "end_s": 932.03,
+    "score": 0.09707218408584595
+   }
+  ],
+  "western_wear": [
+   {
+    "scene": "cco_thegunandthepulpit@2777",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 2777.02,
+    "end_s": 2782.03,
+    "score": 0.15490655601024628
+   },
+   {
+    "scene": "cco_thegunandthepulpit@3013",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 3013.01,
+    "end_s": 3034.03,
+    "score": 0.14953535795211792
+   },
+   {
+    "scene": "cco_thegunandthepulpit@423",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 423.02,
+    "end_s": 489.03,
+    "score": 0.1491214632987976
+   },
+   {
+    "scene": "cco_thegunandthepulpit@350",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 350.0,
+    "end_s": 354.0,
+    "score": 0.14865480363368988
+   },
+   {
+    "scene": "cco_thegunandthepulpit@2709",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 2709.01,
+    "end_s": 2728.02,
+    "score": 0.14799539744853973
+   },
+   {
+    "scene": "cco_thegunandthepulpit@690",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 690.03,
+    "end_s": 693.04,
+    "score": 0.14713087677955627
+   },
+   {
+    "scene": "cco_thegunandthepulpit@384",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 384.03,
+    "end_s": 402.0,
+    "score": 0.14502936601638794
+   },
+   {
+    "scene": "cco_thegunandthepulpit@284",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 284.03,
+    "end_s": 289.03,
+    "score": 0.14498217403888702
+   },
+   {
+    "scene": "cco_thegunandthepulpit@4241",
+    "title": "cco_thegunandthepulpit",
+    "start_s": 4241.03,
+    "end_s": 4274.02,
+    "score": 0.14459435641765594
+   },
+   {
+    "scene": "OnlytheValaint@145",
+    "title": "OnlytheValaint",
+    "start_s": 145.04,
+    "end_s": 169.02,
+    "score": 0.14438843727111816
+   }
+  ],
+  "bank": [
+   {
+    "scene": "Quicksand_clear@1844",
+    "title": "Quicksand_clear",
+    "start_s": 1844.01,
+    "end_s": 1873.0,
+    "score": 0.1332128793001175
+   },
+   {
+    "scene": "Quicksand_clear@471",
+    "title": "Quicksand_clear",
+    "start_s": 471.0,
+    "end_s": 474.01,
+    "score": 0.1296916902065277
+   },
+   {
+    "scene": "Quicksand_clear@3260",
+    "title": "Quicksand_clear",
+    "start_s": 3260.02,
+    "end_s": 3308.0,
+    "score": 0.1286649852991104
+   },
+   {
+    "scene": "Quicksand_clear@2131",
+    "title": "Quicksand_clear",
+    "start_s": 2131.03,
+    "end_s": 2145.01,
+    "score": 0.12723951041698456
+   },
+   {
+    "scene": "OnlytheValaint@2720",
+    "title": "OnlytheValaint",
+    "start_s": 2720.02,
+    "end_s": 2893.04,
+    "score": 0.11498720943927765
+   },
+   {
+    "scene": "Quicksand_clear@1177",
+    "title": "Quicksand_clear",
+    "start_s": 1177.01,
+    "end_s": 1255.02,
+    "score": 0.11449993401765823
+   },
+   {
+    "scene": "Quicksand_clear@433",
+    "title": "Quicksand_clear",
+    "start_s": 433.03,
+    "end_s": 471.0,
+    "score": 0.11414692550897598
+   },
+   {
+    "scene": "TheStranger_0@1150",
+    "title": "TheStranger_0",
+    "start_s": 1150.02,
+    "end_s": 1246.01,
+    "score": 0.11234358698129654
+   },
+   {
+    "scene": "my_favorite_brunette@1883",
+    "title": "my_favorite_brunette",
+    "start_s": 1883.01,
+    "end_s": 1967.03,
+    "score": 0.11165735870599747
+   },
+   {
+    "scene": "TheStranger_0@4739",
+    "title": "TheStranger_0",
+    "start_s": 4739.0,
+    "end_s": 4811.01,
+    "score": 0.11082278937101364
+   }
+  ],
+  "pharmacy": [
+   {
+    "scene": "my_favorite_brunette@3294",
+    "title": "my_favorite_brunette",
+    "start_s": 3294.02,
+    "end_s": 3370.03,
+    "score": 0.12418792396783829
+   },
+   {
+    "scene": "Grave_of_the_Vampire_movie@977",
+    "title": "Grave_of_the_Vampire_movie",
+    "start_s": 977.02,
+    "end_s": 987.03,
+    "score": 0.12268973886966705
+   },
+   {
+    "scene": "my_favorite_brunette@2912",
+    "title": "my_favorite_brunette",
+    "start_s": 2912.01,
+    "end_s": 3166.03,
+    "score": 0.11900778114795685
+   },
+   {
+    "scene": "tarzans_revenge@513",
+    "title": "tarzans_revenge",
+    "start_s": 513.01,
+    "end_s": 535.0,
+    "score": 0.11783351749181747
+   },
+   {
+    "scene": "my_favorite_brunette@3166",
+    "title": "my_favorite_brunette",
+    "start_s": 3166.03,
+    "end_s": 3215.01,
+    "score": 0.1178215742111206
+   },
+   {
+    "scene": "Grave_of_the_Vampire_movie@858",
+    "title": "Grave_of_the_Vampire_movie",
+    "start_s": 858.02,
+    "end_s": 939.02,
+    "score": 0.11698631942272186
+   },
+   {
+    "scene": "my_favorite_brunette@264",
+    "title": "my_favorite_brunette",
+    "start_s": 264.03,
+    "end_s": 271.0,
+    "score": 0.11633137613534927
+   },
+   {
+    "scene": "Grave_of_the_Vampire_movie@943",
+    "title": "Grave_of_the_Vampire_movie",
+    "start_s": 943.03,
+    "end_s": 951.03,
+    "score": 0.1155877634882927
+   },
+   {
+    "scene": "tarzans_revenge@1854",
+    "title": "tarzans_revenge",
+    "start_s": 1854.02,
+    "end_s": 1882.01,
+    "score": 0.11532650142908096
+   },
+   {
+    "scene": "tarzans_revenge@1913",
+    "title": "tarzans_revenge",
+    "start_s": 1913.01,
+    "end_s": 1927.02,
+    "score": 0.1142072081565857
+   }
+  ],
+  "sci_fi_game": [
+   {
+    "scene": "Assignment_Outer_Space@3184",
+    "title": "Assignment_Outer_Space",
+    "start_s": 3184.01,
+    "end_s": 3191.02,
+    "score": 0.1299726366996765
+   },
+   {
+    "scene": "Assignment_Outer_Space@1947",
+    "title": "Assignment_Outer_Space",
+    "start_s": 1947.01,
+    "end_s": 1951.01,
+    "score": 0.12893076241016388
+   },
+   {
+    "scene": "Assignment_Outer_Space@3543",
+    "title": "Assignment_Outer_Space",
+    "start_s": 3543.01,
+    "end_s": 3575.0,
+    "score": 0.12891535460948944
+   },
+   {
+    "scene": "Assignment_Outer_Space@2319",
+    "title": "Assignment_Outer_Space",
+    "start_s": 2319.02,
+    "end_s": 2335.03,
+    "score": 0.1286991387605667
+   },
+   {
+    "scene": "Assignment_Outer_Space@4205",
+    "title": "Assignment_Outer_Space",
+    "start_s": 4205.0,
+    "end_s": 4229.02,
+    "score": 0.12866513431072235
+   },
+   {
+    "scene": "Assignment_Outer_Space@1958",
+    "title": "Assignment_Outer_Space",
+    "start_s": 1958.02,
+    "end_s": 1968.03,
+    "score": 0.12839090824127197
+   },
+   {
+    "scene": "Cosmos_War_of_the_Planets@299",
+    "title": "Cosmos_War_of_the_Planets",
+    "start_s": 299.03,
+    "end_s": 311.01,
+    "score": 0.1283477395772934
+   },
+   {
+    "scene": "Assignment_Outer_Space@2113",
+    "title": "Assignment_Outer_Space",
+    "start_s": 2113.01,
+    "end_s": 2121.02,
+    "score": 0.12830843031406403
+   },
+   {
+    "scene": "Assignment_Outer_Space@2720",
+    "title": "Assignment_Outer_Space",
+    "start_s": 2720.02,
+    "end_s": 2750.01,
+    "score": 0.12722985446453094
+   },
+   {
+    "scene": "Assignment_Outer_Space@2335",
+    "title": "Assignment_Outer_Space",
+    "start_s": 2335.03,
+    "end_s": 2342.01,
+    "score": 0.12672197818756104
+   }
+  ]
+ }
+}

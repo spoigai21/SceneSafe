@@ -17,7 +17,7 @@ import numpy as np
 from scenesafe.common.results import REPO_ROOT, write_result
 from scenesafe.embed.model import ALT_MODEL, ALT_PRETRAINED, DEFAULT_MODEL, DEFAULT_PRETRAINED
 from scenesafe.index.units import load_corpus, scenes
-from scenesafe.match import v2
+from scenesafe.match import luma, v2
 from scenesafe.match.catalogue import ads, test_films
 from scenesafe.match.display import frame_strip, sheets
 from scenesafe.match.labels import author_sample
@@ -161,6 +161,19 @@ def compare(v1_picks, alt_picks, label, seed):
     return summary, per_ad
 
 
+def mostly_junk(picks: dict) -> int:
+    """Picks whose seconds are mostly near-black or blank by the Phase 4b pixel rule (descriptive, not a decision)."""
+    ids = test_films()
+    corpus = load_corpus(ids)
+    is_junk = v2.junk_mask(*luma.load(ids))
+    n = 0
+    for scenes_ in picks.values():
+        for s in scenes_:
+            sel = (corpus.title == ids.index(s["title"])) & (corpus.time >= s["start_s"]) & (corpus.time < s["end_s"])
+            n += is_junk[sel].mean() > 0.5
+    return int(n)
+
+
 def score(seed: int):
     v1_picks = json.loads((P4 / "picks.json").read_text())["picks"]
     alt_picks = json.loads((OUT / "picks.json").read_text())["picks"]
@@ -169,7 +182,9 @@ def score(seed: int):
     missing = [p["pair"] for p in pool if (p["ad"], p["scene"]) not in primary]
     assert not missing, f"unlabelled pairs: {missing[:10]}"
     summary, per_ad = compare(v1_picks, alt_picks, primary, seed)
-    data = {"summary": summary, "per_ad": per_ad, "new_pairs_labelled": len(pool)}
+    data = {"summary": summary, "per_ad": per_ad, "new_pairs_labelled": len(pool),
+            "mostly_junk_picks": {"v1": mostly_junk({a: v["clip"] for a, v in v1_picks.items()}),
+                                  "alt": mostly_junk(alt_picks), "of": 200}}
 
     author_file = OUT / "labels_author.json"
     if author_file.exists():
@@ -191,6 +206,7 @@ def score(seed: int):
         print(f"{metric}: v1 {s['v1']['mean']:.3f}  SigLIP2 {s['alt']['mean']:.3f}  diff {d['mean']:+.3f} "
               f"[{d['ci95'][0]:+.3f}, {d['ci95'][1]:+.3f}] improves={d['improves']}  "
               f"ads better/same/worse {d['ads_better']}/{d['ads_same']}/{d['ads_worse']}")
+    print("mostly near-black picks:", data["mostly_junk_picks"])
     if "agreement" in data:
         a = data["agreement"]
         print(f"agreement on {a['n']} pairs: {a['agreement']:.2f}, kappa {a['cohen_kappa']:.2f}")

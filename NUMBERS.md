@@ -118,6 +118,19 @@ Phase 4. Cut-off tau = 0.146 from 300 labelled practice-film pairs (`results/pha
 | Label agreement, 50 new pairs | 84%, κ 0.69 (47 undiscussed pairs: 83%, κ 0.67) | — | same; `results/phase4b/SUMMARY.md` |
 | Junk seconds (pixel rule), practice films | 3,030 of 108,454 (2.8%) | — | `scripts/run_phase4b.py practice-pool` output |
 
+## Phase 4c
+
+Rules: Phase 4c amendment in `EVAL-PROTOCOL.md`, frozen in commit `ec47455`. Same 14 test films, 20 ads, Phase 3
+scenes and v1 method; only the model changes (CLIP ViT-B/32 → SigLIP2 ViT-B/16, OpenCLIP `webli`).
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| precision@10, ViT-B/32 → SigLIP2 | 0.440 → 0.465; difference +0.025 [−0.045, +0.095]; 8 ads better, 6 same, 6 worse | (not hardware-dependent) | `results/phase4c/match_model_cpu-laptop_seed0.json` |
+| nDCG@10, ViT-B/32 → SigLIP2 | 0.572 → 0.635; +0.063 [−0.054, +0.189] | — | same |
+| Sensitivity (author's labels where present), precision@10 | 0.460 → 0.510; +0.050 [−0.040, +0.145] | — | same |
+| Label agreement, 50 new pairs | 82%, κ 0.61 (49 undiscussed pairs: 82%, κ 0.60) | — | same; `results/phase4c/SUMMARY.md` |
+| Picks that are mostly near-black (> half their seconds junk by the 4b pixel rule) | ViT-B/32 18 of 200; SigLIP2 5 of 200 | — | `results/phase4c/match_model_cpu-laptop_seed0.json` |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.
