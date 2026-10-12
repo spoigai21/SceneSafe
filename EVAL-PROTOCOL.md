@@ -494,3 +494,224 @@ The other differences and literal precision are reported whatever the result.
   or 4e numbers, even for the same frames system.
 - **Who wrote the themes.** The primary labeller wrote the theme lines, and they are reused unchanged in the
   dialogue query.
+
+---
+
+# Phase 4g amendment: scene cards (a written description of each scene)
+
+Written and committed **after** the Phase 4f result and two practice rounds (below), and **before** any card was
+written for the test films or any Phase 4g pick was made or labelled.
+
+## Question
+
+Does matching ads against a short written description of each scene, made by a vision-language model that looks at
+the frames and reads the dialogue, find scenes that suit the ad more often than frames alone?
+
+## Why, and what was tried first (practice, not reported as results)
+
+- **Phase 4f:** adding dialogue to frames gave no measurable gain (thematic precision@10 both − frames −0.017
+  [−0.087, +0.052]).
+- **Practice round 1, fusion rules (all 14 Phase 4d films, Phase 4f labels plus 278 extra practice labels):** none of
+  the rules tried beat frames alone: stronger-of-two, average of available signals, frames-gated, mixing slots,
+  re-ranking frames' top 20 with dialogue, and z-score + weight + threshold + max as in ContextIQ (WACV 2025). All were
+  within ±0.02 of frames. Conclusion: the dialogue signal itself was weak, not the way it was combined.
+- **Practice round 2, scene cards (2 films only: `calvary`, `Hitchcock_Secret_Agent`; top 5 per ad; 60 ads; every
+  pick labelled):** thematic fit frames 0.287, cards 0.443, frames+cards 0.423; frames+cards − frames +0.137
+  [+0.083, +0.193]. The prompt, decoding settings and matched fields were settled on these 2 films, which is why they
+  are left out of the test.
+
+## Data
+
+- **Test films:** the 12 Phase 4d films other than the 2 practice films, with their Phase 3 scenes (threshold 0.75).
+- **Ads, guide and theme lines:** the 60 Phase 4d ads, unchanged.
+- **Transcripts:** the Phase 4f transcripts and speech rules, unchanged.
+
+## Scene cards
+
+- **Model:** `mlx-community/Qwen3-VL-4B-Instruct-4bit` (mlx-vlm, laptop GPU), greedy decoding (temperature 0),
+  repetition penalty 1.15, at most 90 new tokens.
+- **Input:** the scene's 4-frame strip (the same image the labeller sees) and its dialogue, cut to 600 characters at
+  a word.
+- **Prompt:** fixed in `scenesafe/match/cards.py` (`PROMPT`). It asks for five lines: place, visible (up to 6 things),
+  activity, talk (up to 3 dialogue topics, or none), mood.
+- **Matched text:** the place, visible, activity and talk lines joined, keys removed, "none" dropped. Mood is not
+  matched.
+- **Every card is written once and cached** (`data/cards/`); cards are not edited or regenerated.
+
+## Systems (top 10 scenes per ad, over the 12 test films)
+
+1. **Frames:** the Phase 4d ViT-B/32 scene scores (the brief as written, each scene at its best second).
+2. **Cards:** cosine similarity between the card text and the ad text (brief, ". ", theme line), both embedded with
+   `all-mpnet-base-v2` as in Phase 4f.
+3. **Frames+cards:** for each ad, the frame score and the card score are each z-scored over all test scenes, then
+   added with equal weight. The weight is never tuned.
+
+## Labels
+
+- **The pool:** every (ad, scene) pair picked by any system, shuffled (`default_rng(0)`), ids `G####`.
+- **What every labelling card shows:** as in Phase 4f: the brief, literal guide line, theme line, 4 frames and the
+  dialogue (cut to 600 characters). **The scene card text is never shown**, and nothing says which system picked it.
+- **Levels:** 2 = literal fit, 1 = thematic fit, 0 = neither, as in 4e and 4f.
+- **Primary labeller:** the AI assistant labels the whole pool. As in Phase 4f, the work may be split across parallel
+  instances of the same model with the same written rules; this is reported.
+- **Second labeller:** the project author labels a random 100 (`default_rng(6)`). Agreement is reported as in 4f.
+
+## Metrics
+
+Means over 60 ads, with a 95% bootstrap over ads (10,000 resamples, `default_rng(0)`).
+
+- **For each system:** thematic precision@10, literal precision@10, graded nDCG@10.
+- **Paired differences:** frames+cards − frames, cards − frames, frames+cards − cards.
+- **Also reported:** sensitivity with the author's labels where present.
+
+## Decision rule
+
+- **Scene cards improve matching** if the 95% interval of the paired **thematic precision@10** difference
+  (frames+cards − frames) is entirely above 0.
+- **They make matching worse** if the interval is entirely below 0.
+- Otherwise, "no measurable difference".
+
+Literal precision and the other differences are reported whatever the result.
+
+## Disclosures
+
+- **Fifth use of these 12 films.** They were used in Phases 4d, 4e and 4f, and in fusion practice round 1. The
+  primary labeller has seen their frames and their Phase 4f pool. The card method was never run on them before this
+  commit. A confirmation on fresh films would be needed before the result is treated as general.
+- **Not comparable with earlier phases:** different film set (12, not 14) and different pools.
+- **The card model is not the labeller.** Cards come from Qwen3-VL; labels from the AI assistant (Claude) and the
+  author. The labeller never sees the cards.
+- **Who wrote the themes.** The primary labeller wrote the theme lines, which are part of the ad text matched here.
+
+## Phase 4g addendum: relabel under the author's labelling rules (written after the result)
+
+Written **after** the Phase 4g result and the author's 51 labels, so it is a sensitivity analysis, not the
+pre-registered result. The pre-registered labels (`labels_primary.json`) and their result stay the headline; the
+relabel (`labels_relabel.json`) is reported beside them.
+
+- **Why:** agreement on 51 pairs was moderate (exact 61%, thematic-or-better κ 0.49). Going through the 20
+  disagreements with the author showed the primary labeller was stricter on themes and looser on literal fits.
+- **The author's rules, written down:**
+  1. **Dialogue makes a theme fit (1) when the conversation is about the topic**, even if nothing on screen shows it
+     (a captain talking about the voyage and the sharks fits a sea theme). One passing line in an unrelated
+     conversation is not enough.
+  2. **A real but loose link fits the theme (1):** a headline or sign about the topic (a newspaper headline about
+     money for the money theme), or a setting that belongs to the theme (a street with goods outside shops for
+     markets; a rider for horses).
+  3. **A literal fit (2) needs the thing clearly in focus and clearly recognisable.** If it is small, partly seen or
+     uncertain, it is at most 1.
+  4. **A glamorous or beautiful woman as the clear focus fits a beauty theme (1).**
+  5. **If it is unclear whether the thing is there at all** (dark, blurred), it is not 2; it is 1 only if the scene
+     fits the theme anyway.
+- **Author corrections** (author's own call, before the relabel): three of the author's labels changed while the
+  author reviewed cards for the discussion, two 1 → 0 and one 1 → 2 (`corrections` in `labels_author.json`).
+- **How:** the whole pool is relabelled from scratch under these rules, blind to the system and without the scene
+  cards, as before. The primary labeller saw the 20 disagreement cards while learning the rules.
+
+---
+
+# Phase 4h amendment: confirmation on fresh films, and a re-rank by the card model
+
+Written **after** the Phase 4g result and **before** the Phase 4h films were selected, downloaded or viewed.
+
+## Questions
+
+1. **Confirmation:** do scene cards still beat frames on films that no part of the method has been tuned or tested
+   on?
+2. **Re-rank:** does letting the card model judge a shortlist of candidate scenes improve on frames+cards?
+
+## Data
+
+- **Films:** fresh public-domain films chosen by `scripts/build_manifest_4h.py`: the corpus rules of
+  `build_manifest.py`, skipping every title in `corpus/manifest.json` and `corpus/manifest_4d.json`, **1 per genre**
+  (the first in download-count order). The list is written to `corpus/manifest_4h.json`.
+- **Scenes:** the Phase 3 detector (threshold 0.75) on ViT-B/32 embeddings made exactly as in Phase 2.
+- **Ads, guide and theme lines:** the 60 Phase 4d ads, unchanged. The frame queries are the Phase 4d ViT-B/32 brief
+  embeddings (`data/phase4d/briefs_b32.npy`).
+- **Transcripts:** Whisper as in Phase 4f, with the same speech rules.
+
+## Systems (top 10 scenes per ad)
+
+1. **Frames:** the Phase 4d ViT-B/32 scene scores.
+2. **Frames+cards:** exactly as in Phase 4g (same card model, prompt, decoding, matched fields, text model and equal
+   weight).
+3. **Rerank:**
+   - **Shortlist:** frames+cards' top 30 for the ad.
+   - **Judge:** the card model (`mlx-community/Qwen3-VL-4B-Instruct-4bit`) sees the scene's 4-frame strip and dialogue
+     (cut to 600 characters) and the ad's brief, literal guide line and theme line, and answers one digit (prompt
+     `JUDGE_PROMPT` in `scenesafe/match/cards.py`; greedy, at most 3 tokens). 2 = clearly shows the literal fit,
+     1 = fits the theme, 0 = neither. An answer with no digit counts as 0.
+   - **Order:** by the judge's digit, high to low, ties by the frames+cards score. Top 10 kept.
+   - **Checked before this commit only on the 2 Phase 4g practice films** (14 scene–ad checks, for speed and that the
+     answer parses). No test film was used.
+
+## Labels
+
+- **The pool:** every (ad, scene) pair picked by any system, shuffled (`default_rng(0)`), ids `H####`.
+- **What every labelling card shows:** as in Phase 4g. The scene cards and the judge's answers are never shown.
+- **Rules:** the 4e levels with the author's rules from the Phase 4g addendum (dialogue about the topic fits the
+  theme; loose but real links fit the theme; 2 only when clearly in focus; glamour fits beauty themes; unclear → not
+  2).
+- **Primary labeller:** the AI assistant, possibly split across parallel instances with the same written rules.
+- **Second labeller:** the project author labels a random 100 (`default_rng(7)`), if they choose to.
+
+## Metrics
+
+As in Phase 4g: thematic precision@10, literal precision@10 and graded nDCG@10 per system; means over 60 ads with a
+95% bootstrap over ads (10,000 resamples, `default_rng(0)`). Paired differences: frames+cards − frames,
+rerank − frames+cards, rerank − frames. Also reported: the judge's answer counts, and the ads where the judge gave 0
+to all 30 shortlisted scenes ("nothing here").
+
+## Decision rules
+
+Both on thematic precision@10:
+
+1. **Cards confirmed** if the 95% interval of frames+cards − frames is entirely above 0; **not confirmed**
+   otherwise (below 0: worse).
+2. **Re-rank helps** if the interval of rerank − frames+cards is entirely above 0; **hurts** if entirely below 0;
+   otherwise no measurable difference.
+
+## Disclosures
+
+- **The judge sees the same guide and theme lines as the labeller.** An advertiser would supply such a description,
+  but it makes the judge's task close to the labelling task.
+- **The judge and the card writer are the same model; the labeller is a different one** (Claude), and never sees
+  the cards or the judge's answers.
+- **The primary labeller built the system** and wrote the guide and theme lines.
+- **Fewer films than Phase 4g** (1 per genre), chosen for time on the laptop.
+
+## Phase 4h addendum: sharper labelling rules, a relabel, a repeat check, and the matcher (written after the result)
+
+Written **after** the Phase 4h result and the author's 100 labels, so everything here is a sensitivity analysis or
+a follow-up. The pre-registered labels (`labels_primary.json`) and their result stay the headline.
+
+- **Why:** agreement with the author on 100 pairs was moderate (exact 64%, thematic-or-better κ 0.50, literal κ
+  0.59). With the author's labels the re-rank gain was +0.022 [−0.003, +0.047].
+- **What the 36 disagreements and the author's questions while labelling showed:** the author gives 2 only when the
+  ad's picture is the main subject of the scene, and gives 2 more readily than the primary labeller when it is
+  (a small boat filling the frame; a car on a road). The author gives 1 for settings from the theme's list even
+  without dialogue, and 0 for a single topical word or a generic setting.
+- **Rules added to the Phase 4g addendum's rules:**
+  6. **2 means the guide's literal picture is the main subject: what the scene is about on screen.** If the thing is
+     only the background or setting for something else (a bar behind a couple flirting, a bed in a breakfast
+     conversation, a suit on a man in a murder scene), it is 1. If it is the main subject, it is 2 even when old
+     footage is imperfect.
+  7. **Size and number words in the guide count.** "A busy street with crowds and traffic" needs many people and
+     vehicles; a quiet street with a few people is 1.
+  8. **The literal case is part of the theme.** If a scene meets the literal line, it is 2, never 1.
+  9. **The guide's "not" examples are not 2.** They are 1 only if the theme line fits for another reason (a radio
+     operator at a control console is 0 for a radio ad whose theme is broadcasts at home).
+  10. **A place or activity named in the theme line fits the theme (1) by itself** (rugged mountain terrain for a
+      mountain-holiday theme, a garden for gardening). A single topical word in unrelated dialogue, or a generic
+      setting (a corridor, an office for a hotel ad), is 0.
+- **How:** the whole 4h pool (1,086 pairs) is relabelled from scratch under rules 1–10, blind to the system, without
+  the cards or the judge's answers, and without the author's labels, split across 4 parallel instances of the same
+  model. Result: `labels_relabel.json` and `match_confirm_relabel_cpu-laptop_seed0.json`.
+- **Not independent:** the new rules were written from the author's 100 labels, so agreement on those 100 after the
+  relabel is not an independent measure. It is reported, with this caveat.
+- **Repeat check:** the card writer and the judge are re-run from scratch on a random sample (`default_rng(0)`; 30
+  cards, 60 judgements) and compared with the stored outputs (`repeat.json`). Decoding is greedy, so they should be
+  identical.
+- **The matcher:** whatever the relabel shows, **frames+cards is the project's matcher**. The re-rank was not robust
+  to the author's labels; it is reported as an optional extra with an unclear gain, and is not tuned further on
+  these films (that would be tuning on the test).

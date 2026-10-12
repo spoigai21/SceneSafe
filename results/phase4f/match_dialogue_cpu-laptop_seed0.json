@@ -1,0 +1,3400 @@
+{
+  "phase": 4,
+  "name": "match_dialogue",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-11T05:35:19+00:00",
+  "git_commit": "aaeea3a49d31dfcab07c09c92402eb105d4caee7-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "protocol": "EVAL-PROTOCOL.md (Phase 4f amendment)",
+    "k": 10,
+    "bootstrap_resamples": 10000,
+    "whisper_model": "mlx-community/whisper-large-v3-turbo",
+    "text_model": "sentence-transformers/all-mpnet-base-v2",
+    "author_sample": {
+      "size": 100,
+      "seed": 5
+    }
+  },
+  "summary": {
+    "thematic": {
+      "frames": {
+        "mean": 0.4433333333333334,
+        "ci95": [
+          0.3583333333333334,
+          0.5299999999999999
+        ]
+      },
+      "dialogue": {
+        "mean": 0.33666666666666667,
+        "ci95": [
+          0.2700000000000001,
+          0.4033333333333333
+        ]
+      },
+      "both": {
+        "mean": 0.4266666666666667,
+        "ci95": [
+          0.35,
+          0.5033333333333333
+        ]
+      },
+      "both-frames": {
+        "mean": -0.016666666666666666,
+        "ci95": [
+          -0.08666666666666666,
+          0.05166666666666667
+        ],
+        "above_zero": false,
+        "below_zero": false,
+        "ads_better": 23,
+        "ads_same": 9,
+        "ads_worse": 28
+      },
+      "dialogue-frames": {
+        "mean": -0.1066666666666667,
+        "ci95": [
+          -0.20166666666666663,
+          -0.014999999999999996
+        ],
+        "above_zero": false,
+        "below_zero": true,
+        "ads_better": 22,
+        "ads_same": 10,
+        "ads_worse": 28
+      },
+      "both-dialogue": {
+        "mean": 0.09000000000000001,
+        "ci95": [
+          0.03666666666666667,
+          0.14333333333333334
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 32,
+        "ads_same": 15,
+        "ads_worse": 13
+      }
+    },
+    "literal": {
+      "frames": {
+        "mean": 0.28500000000000003,
+        "ci95": [
+          0.20995833333333336,
+          0.365
+        ]
+      },
+      "dialogue": {
+        "mean": 0.056666666666666664,
+        "ci95": [
+          0.03333333333333333,
+          0.08666666666666666
+        ]
+      },
+      "both": {
+        "mean": 0.155,
+        "ci95": [
+          0.10000000000000002,
+          0.21499999999999997
+        ]
+      },
+      "both-frames": {
+        "mean": -0.13,
+        "ci95": [
+          -0.18000000000000002,
+          -0.08333333333333331
+        ],
+        "above_zero": false,
+        "below_zero": true,
+        "ads_better": 4,
+        "ads_same": 23,
+        "ads_worse": 33
+      },
+      "dialogue-frames": {
+        "mean": -0.22833333333333336,
+        "ci95": [
+          -0.2983333333333334,
+          -0.16166666666666668
+        ],
+        "above_zero": false,
+        "below_zero": true,
+        "ads_better": 1,
+        "ads_same": 22,
+        "ads_worse": 37
+      },
+      "both-dialogue": {
+        "mean": 0.09833333333333334,
+        "ci95": [
+          0.06000000000000001,
+          0.13999999999999999
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 26,
+        "ads_same": 33,
+        "ads_worse": 1
+      }
+    },
+    "ndcg": {
+      "frames": {
+        "mean": 0.517463777665864,
+        "ci95": [
+          0.43623517884693175,
+          0.5975381763012918
+        ]
+      },
+      "dialogue": {
+        "mean": 0.322992641866298,
+        "ci95": [
+          0.2651789311529545,
+          0.38291521961566294
+        ]
+      },
+      "both": {
+        "mean": 0.4233614370561529,
+        "ci95": [
+          0.3514328903787443,
+          0.4940828040451669
+        ]
+      },
+      "both-frames": {
+        "mean": -0.09410234060971123,
+        "ci95": [
+          -0.1837072327958759,
+          -0.005090187674894466
+        ],
+        "above_zero": false,
+        "below_zero": true,
+        "ads_better": 19,
+        "ads_same": 3,
+        "ads_worse": 38
+      },
+      "dialogue-frames": {
+        "mean": -0.19447113579956604,
+        "ci95": [
+          -0.30160569520599184,
+          -0.08549481182172226
+        ],
+        "above_zero": false,
+        "below_zero": true,
+        "ads_better": 16,
+        "ads_same": 3,
+        "ads_worse": 41
+      },
+      "both-dialogue": {
+        "mean": 0.10036879518985482,
+        "ci95": [
+          0.04522084131459894,
+          0.1548889986060924
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 38,
+        "ads_same": 7,
+        "ads_worse": 15
+      }
+    }
+  },
+  "per_ad": {
+    "car": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.8474816192134235
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.23097435584496498
+      }
+    },
+    "airline": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.8415908474314976
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.15532569082315176
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.5036067026046991
+      }
+    },
+    "cruise": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9652843890316114
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5
+      },
+      "both": {
+        "gains": [
+          1,
+          2,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.6912073570418389
+      }
+    },
+    "beach_resort": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6309297535714575
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "beer": {
+      "frames": {
+        "gains": [
+          1,
+          2,
+          0,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.6456548799563212
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.35607998333403856
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          1,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7392726467617994
+      }
+    },
+    "wine": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          2,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.4707482680665159
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.4383554936068509
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.7442527014330056
+      }
+    },
+    "coffee": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          0,
+          1,
+          2,
+          0,
+          2,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.7258459907006078
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.3155393815023784
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5284916605661875
+      }
+    },
+    "restaurant": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.9260852545422736
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.3253402459199785
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.7928378185574602
+      }
+    },
+    "fashion": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.538361378339093
+      },
+      "dialogue": {
+        "gains": [
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5891767561147263
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.8638050090896643
+      }
+    },
+    "jewelry": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7597431237284716
+      },
+      "dialogue": {
+        "gains": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5069604604099196
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7925055182928236
+      }
+    },
+    "pet_food": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 1.0,
+        "graded_ndcg@10": 1.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.1244541635112973
+      },
+      "both": {
+        "gains": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.46692474155501895
+      }
+    },
+    "outdoor_gear": {
+      "frames": {
+        "gains": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7806865161519334
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.2562178510336593
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.7036761468660816
+      }
+    },
+    "phone": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9526058178152246
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.13886244387355454
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.8512360941594274
+      }
+    },
+    "music": {
+      "frames": {
+        "gains": [
+          0,
+          2,
+          0,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.5262488297317792
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          2,
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5255962946851963
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.526746517380367
+      }
+    },
+    "furniture": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.4590862647413488
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.17987004506013904
+      },
+      "both": {
+        "gains": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.40436762103842916
+      }
+    },
+    "toys": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "western_wear": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 1.0,
+        "graded_ndcg@10": 1.0
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.6158865373339314
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.9207464801295094
+      }
+    },
+    "bank": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.43056322872474745
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5269623532497625
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3517285712784355
+      }
+    },
+    "pharmacy": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.653628502106659
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5343647521019463
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.5028281933309477
+      }
+    },
+    "sci_fi_game": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.06943122193677727
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.857980942822373
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7453016244178956
+      }
+    },
+    "bicycle": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "rail_travel": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          0,
+          1,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.4249406591369053
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3011674065962914
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.2919434775421459
+      }
+    },
+    "hotel": {
+      "frames": {
+        "gains": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.3845886798362516
+      },
+      "dialogue": {
+        "gains": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.6188443607827014
+      },
+      "both": {
+        "gains": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.44579858799315136
+      }
+    },
+    "city_tourism": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.8186059289542997
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.07465450324353458
+      }
+    },
+    "motorcycle": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.3555371721314527
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "boating": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.8507798894141978
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.12356916454683368
+      }
+    },
+    "fishing": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6934264036172708
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "camping": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7653606369886217
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7461976723150332
+      }
+    },
+    "ski_resort": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.38685280723454163
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3065735963827292
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "gardening": {
+      "frames": {
+        "gains": [
+          1,
+          2,
+          2,
+          1,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7654770701140461
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.24844481188052708
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.586651769398438
+      }
+    },
+    "kitchenware": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.41659741729292316
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.29363713736616454
+      }
+    },
+    "bedding": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.5156341855464533
+      },
+      "dialogue": {
+        "gains": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.4183860315303641
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5598331767161802
+      }
+    },
+    "cleaning": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.4354564198715557
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.49788233261344017
+      }
+    },
+    "baby_care": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "school_supplies": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.13120507751234178
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.49055949973859936
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5922216874835863
+      }
+    },
+    "bridal": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.16347782479468276
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.641576042502111
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.18979187714092388
+      }
+    },
+    "party_supplies": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.6941721642196859
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.2622415820583415
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.5051795420714608
+      }
+    },
+    "news_media": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.7670908803530933
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.36664596509447145
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.4562822157534437
+      }
+    },
+    "bookstore": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.22429691053391435
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.41448847978297076
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5990251067846264
+      }
+    },
+    "office_supplies": {
+      "frames": {
+        "gains": [
+          1,
+          2,
+          2,
+          2,
+          0,
+          1,
+          1,
+          0,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7636048018342302
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.17280430617228193
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.3730366999054746
+      }
+    },
+    "piano_lessons": {
+      "frames": {
+        "gains": [
+          0,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.6892493748554345
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.28442665562171
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.15855310684582824
+      }
+    },
+    "theatre_tickets": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3333333333333333
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "horse_racing": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.8630152897016883
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.14279514403613733
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.4288398090337664
+      }
+    },
+    "golf": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.17723928678404774
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.2640681225725909
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "swimwear": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.18457569677956817
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.17723928678404774
+      }
+    },
+    "watches": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.6090534085608094
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3289621565012424
+      },
+      "both": {
+        "gains": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.654097706263891
+      }
+    },
+    "menswear": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9608008655106622
+      },
+      "dialogue": {
+        "gains": [
+          2,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.6620158551732016
+      },
+      "both": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9266360779006401
+      }
+    },
+    "cosmetics": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.18795160328752808
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6994607062496514
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7971998030554314
+      }
+    },
+    "hair_salon": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5307430968653729
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.15101961822780524
+      }
+    },
+    "bakery": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.2529427027676571
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6201883649938427
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7030884762210325
+      }
+    },
+    "grocery": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.4081165307618716
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.12092199990360372
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.2807721888661444
+      }
+    },
+    "department_store": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.6693361719601371
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.34976724854564406
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.650525693528409
+      }
+    },
+    "dairy": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5527460588826717
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.33013764944712026
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.38196033715832356
+      }
+    },
+    "cat_food": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.4856486183364634
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3636969626460723
+      },
+      "both": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3294836243397122
+      }
+    },
+    "bird_feed": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3333333333333333
+      }
+    },
+    "home_insurance": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.9383776412742684
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.07886907803361608
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.08797117839993937
+      }
+    },
+    "stationery": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.9141315374980888
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.213540959390929
+      },
+      "both": {
+        "gains": [
+          1,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.4274277552273709
+      }
+    },
+    "radio": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.13565197343244778
+      },
+      "dialogue": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3235866969737877
+      },
+      "both": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "shipping": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.7489488901483692
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5540800425185399
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6350584024407196
+      }
+    },
+    "necklace": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.3564439177607651
+      },
+      "dialogue": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6227752377403497
+      },
+      "both": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5822651145197838
+      }
+    }
+  },
+  "pairs_labelled": 1425,
+  "scenes": 3116,
+  "scenes_with_speech": 1639,
+  "label_counts": {
+    "0": 881,
+    "1": 317,
+    "2": 227
+  },
+  "picks_with_speech": {
+    "frames": 357,
+    "dialogue": 600,
+    "both": 593
+  }
+}

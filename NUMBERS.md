@@ -147,6 +147,79 @@ Rules: Phase 4d amendment in `EVAL-PROTOCOL.md`, frozen in commit `5d0ae7f`. 14 
 | Sensitivity (author's labels where present), precision@10 | +0.015 [−0.013, +0.043] | — | same |
 | Picks that are mostly near-black | ViT-B/32 42 of 600; SigLIP2 32 of 600 | — | same |
 
+## Phase 4e
+
+Rules: Phase 4e amendment in `EVAL-PROTOCOL.md`, frozen in commit `6da2abb`. The 14 Phase 4d films, 60 ads, theme
+lines (`configs/themes.yaml`). Three-level labels (2 literal, 1 thematic, 0 neither). Primary labels only.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| thematic precision@10, literal search → theme search | 0.525 → 0.543; +0.018 [−0.040, +0.075]; 24 ads better, 21 same, 15 worse | (not hardware-dependent) | `results/phase4e/match_theme_cpu-laptop_seed0.json` |
+| literal precision@10, literal search → theme search | 0.287 → 0.218; −0.068 [−0.113, −0.028] | — | same |
+| graded nDCG@10, literal search → theme search | 0.547 → 0.537; −0.011 [−0.072, +0.049] | — | same |
+| Pairs labelled (primary) | 1,013: 612 × 0, 357 × 1, 44 × 2 | — | `results/phase4e/labels_primary.json` |
+
+## Phase 4f
+
+Rules: Phase 4f amendment in `EVAL-PROTOCOL.md`, frozen in commit `aaeea3a`. The 14 Phase 4d films (3,116 scenes,
+1,639 with speech), 60 ads. Whisper large-v3-turbo transcripts. Primary labels only.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| thematic precision@10: frames / dialogue / both | 0.443 / 0.337 / 0.427 | (not hardware-dependent) | `results/phase4f/match_dialogue_cpu-laptop_seed0.json` |
+| both − frames, thematic precision@10 | −0.017 [−0.087, +0.052]; 23 ads better, 9 same, 28 worse | — | same |
+| literal precision@10: frames / dialogue / both; both − frames | 0.285 / 0.057 / 0.155; −0.130 [−0.180, −0.083] | — | same |
+| graded nDCG@10: frames / dialogue / both; both − frames | 0.517 / 0.323 / 0.423; −0.094 [−0.184, −0.005] | — | same |
+| Picks with speech: frames / dialogue / both | 357 / 600 / 593 of 600 | — | same |
+| Pairs labelled (primary) | 1,425: 881 × 0, 317 × 1, 227 × 2 | — | `results/phase4f/labels_primary.json` |
+
+## Phase 4g
+
+Rules: Phase 4g amendment in `EVAL-PROTOCOL.md`, frozen by hash before the run (`results/phase4g/rules_hash.txt`).
+The 12 Phase 4d films not used to develop the cards (2,635 scenes), 60 ads. Scene cards from Qwen3-VL-4B (4-bit,
+mlx-vlm).
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| thematic precision@10: frames / cards / frames+cards | 0.482 / 0.670 / 0.692 | (not hardware-dependent) | `results/phase4g/match_cards_cpu-laptop_seed0.json` |
+| frames+cards − frames, thematic precision@10 | +0.210 [+0.155, +0.268]; 42 ads better, 14 same, 4 worse | — | same |
+| cards − frames, thematic precision@10 | +0.188 [+0.123, +0.255] | — | same |
+| literal precision@10: frames / cards / frames+cards; frames+cards − frames | 0.275 / 0.252 / 0.340; +0.065 [+0.035, +0.097] | — | same |
+| graded nDCG@10: frames / cards / frames+cards; frames+cards − frames | 0.502 / 0.659 / 0.736; +0.234 [+0.169, +0.297] | — | same |
+| Pairs labelled (primary) | 1,249: 554 × 0, 403 × 1, 292 × 2 | — | `results/phase4g/labels_primary.json` |
+| Label agreement, 51 pairs (pre-registered labels) | exact 63%; thematic-or-better κ 0.57; literal κ 0.30 | — | `results/phase4g/match_cards_cpu-laptop_seed0.json` |
+| Sensitivity (author's labels where present), frames+cards − frames | +0.213 [+0.160, +0.268] | — | same |
+| Relabel under the author's rules (written after the result): thematic precision@10 frames / cards / frames+cards | 0.553 / 0.753 / 0.750; frames+cards − frames +0.197 [+0.142, +0.255]; 39 better, 18 same, 3 worse | — | `results/phase4g/match_cards_relabel_cpu-laptop_seed0.json` |
+| Relabel: label agreement, 51 pairs | exact 82%; thematic-or-better κ 0.72; literal κ 0.78 | — | same |
+| Scene card speed | about 1.5 s per scene (Qwen3-VL-4B 4-bit) | gpu-apple-m5 | progress log of the card run; not in a results file. Re-measure before quoting it. |
+
+## Phase 4h
+
+Rules: Phase 4h amendment in `EVAL-PROTOCOL.md`, frozen by hash before the films were selected
+(`results/phase4h/rules_hash.txt`). 7 fresh films (`corpus/manifest_4h.json`; 2,287 scenes), 60 ads. Labels under the
+author's rules (Phase 4g addendum). Primary labels are the headline; the author labelled a 100-pair sample.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| thematic precision@10: frames / frames+cards / rerank | 0.498 / 0.695 / 0.730 | (not hardware-dependent) | `results/phase4h/match_confirm_cpu-laptop_seed0.json` |
+| frames+cards − frames, thematic precision@10 | +0.197 [+0.142, +0.253]; 45 ads better, 8 same, 7 worse | — | same |
+| rerank − frames+cards, thematic precision@10 | +0.035 [+0.008, +0.062]; 23 better, 29 same, 8 worse | — | same |
+| rerank − frames, thematic precision@10 | +0.232 [+0.180, +0.287]; 47 better, 9 same, 4 worse | — | same |
+| literal precision@10: frames / frames+cards / rerank | 0.233 / 0.288 / 0.330; rerank − frames +0.097 [+0.055, +0.142] | — | same |
+| graded nDCG@10: frames / frames+cards / rerank | 0.526 / 0.738 / 0.779 | — | same |
+| Judge answers on 1,800 shortlist checks | 806 × 0, 312 × 1, 682 × 2, 0 unreadable | — | same |
+| Judge vs labels, 893 pairs | exact 53%; fits vs doesn't fit 74% | — | computed from `data/phase4h/judge.json` and `results/phase4h/labels_primary.json`; not in a results file. Re-compute before quoting it. |
+| Pairs labelled (primary) | 1,086: 461 × 0, 386 × 1, 239 × 2 | — | `results/phase4h/labels_primary.json` |
+| Author vs primary labels, 100 pairs | exact 64%; thematic-or-better κ 0.50; literal κ 0.59 | — | `results/phase4h/match_confirm_cpu-laptop_seed0.json` (agreement) |
+| Sensitivity (author's labels where present): frames+cards − frames | +0.202 [+0.147, +0.258]; 44 better, 11 same, 5 worse | — | same (sensitivity_author_labels_where_present) |
+| Sensitivity (author's labels where present): rerank − frames+cards | +0.022 [−0.003, +0.047]; 20 better, 31 same, 9 worse (interval includes 0) | — | same |
+| Relabel under the Phase 4h addendum (written after the result): thematic precision@10 frames / frames+cards / rerank | 0.473 / 0.662 / 0.697 | — | `results/phase4h/match_confirm_relabel_cpu-laptop_seed0.json` |
+| Relabel: frames+cards − frames; rerank − frames+cards | +0.188 [+0.138, +0.240], 45 / 7 / 8; +0.035 [+0.007, +0.065], 22 / 27 / 11 | — | same |
+| Relabel with the author's labels where present: frames+cards − frames; rerank − frames+cards | +0.192 [+0.143, +0.243]; +0.027 [−0.000, +0.055] | — | same (sensitivity_author_labels_where_present) |
+| Relabel vs author, 100 pairs (not independent: rules written from these labels) | exact 75%; thematic-or-better κ 0.65; literal κ 0.71 | — | same (agreement) |
+| Repeat check, greedy decoding | cards 30/30 identical, judge 60/60 identical | gpu-apple-m5 | `results/phase4h/repeat.json` |
+| Judge speed | about 0.3 s per shortlist check (Qwen3-VL-4B 4-bit) | gpu-apple-m5 | progress log of the test step; not in a results file. Re-measure before quoting it. |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.

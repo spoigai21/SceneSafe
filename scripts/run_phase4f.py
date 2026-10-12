@@ -115,10 +115,10 @@ def card_text(p: dict) -> str:
     return t if len(t) <= DIALOGUE_SHOWN else t[:DIALOGUE_SHOWN].rsplit(" ", 1)[0] + " …"
 
 
-def sheets(pool: list[dict], per_sheet: int = 5):
+def sheets(pool: list[dict], per_sheet: int = 5, out=None):
     """Primary labeller's sheets: brief, guide and theme lines, 4 frames, then the scene's dialogue. No system shown."""
     from PIL import Image, ImageDraw
-    out = DATA / "sheets"
+    out = out or DATA / "sheets"
     out.mkdir(parents=True, exist_ok=True)
     guide, th = label_guide(), themes()
     w = THUMB[0] * FRAMES_PER_SCENE + 4 * (FRAMES_PER_SCENE - 1) + 16

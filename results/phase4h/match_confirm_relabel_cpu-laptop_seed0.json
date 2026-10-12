@@ -1,0 +1,3520 @@
+{
+  "phase": 4,
+  "name": "match_confirm_relabel",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-12T06:37:07+00:00",
+  "git_commit": "aaeea3a49d31dfcab07c09c92402eb105d4caee7-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "protocol": "EVAL-PROTOCOL.md (Phase 4h amendment)",
+    "labels": "relabel",
+    "k": 10,
+    "shortlist": 30,
+    "bootstrap_resamples": 10000,
+    "card_model": "mlx-community/Qwen3-VL-4B-Instruct-4bit",
+    "text_model": "sentence-transformers/all-mpnet-base-v2",
+    "whisper_model": "mlx-community/whisper-large-v3-turbo",
+    "author_sample": {
+      "size": 100,
+      "seed": 7
+    }
+  },
+  "summary": {
+    "thematic": {
+      "frames": {
+        "mean": 0.47333333333333333,
+        "ci95": [
+          0.39333333333333337,
+          0.5533333333333333
+        ]
+      },
+      "frames+cards": {
+        "mean": 0.6616666666666667,
+        "ci95": [
+          0.5816666666666667,
+          0.7383333333333333
+        ]
+      },
+      "rerank": {
+        "mean": 0.6966666666666668,
+        "ci95": [
+          0.6216666666666666,
+          0.7683333333333332
+        ]
+      },
+      "frames+cards - frames": {
+        "mean": 0.18833333333333332,
+        "ci95": [
+          0.1383333333333333,
+          0.24000000000000002
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 45,
+        "ads_same": 7,
+        "ads_worse": 8
+      },
+      "rerank - frames+cards": {
+        "mean": 0.034999999999999996,
+        "ci95": [
+          0.00666666666666666,
+          0.065
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 22,
+        "ads_same": 27,
+        "ads_worse": 11
+      },
+      "rerank - frames": {
+        "mean": 0.2233333333333333,
+        "ci95": [
+          0.17333333333333337,
+          0.275
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 46,
+        "ads_same": 10,
+        "ads_worse": 4
+      }
+    },
+    "literal": {
+      "frames": {
+        "mean": 0.16499999999999998,
+        "ci95": [
+          0.10333333333333335,
+          0.23166666666666672
+        ]
+      },
+      "frames+cards": {
+        "mean": 0.21499999999999997,
+        "ci95": [
+          0.15166666666666667,
+          0.2833333333333333
+        ]
+      },
+      "rerank": {
+        "mean": 0.24833333333333332,
+        "ci95": [
+          0.17833333333333334,
+          0.32166666666666666
+        ]
+      },
+      "frames+cards - frames": {
+        "mean": 0.05,
+        "ci95": [
+          0.02166666666666667,
+          0.08
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 21,
+        "ads_same": 34,
+        "ads_worse": 5
+      },
+      "rerank - frames+cards": {
+        "mean": 0.03333333333333333,
+        "ci95": [
+          0.016666666666666666,
+          0.051666666666666666
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 14,
+        "ads_same": 45,
+        "ads_worse": 1
+      },
+      "rerank - frames": {
+        "mean": 0.08333333333333331,
+        "ci95": [
+          0.05,
+          0.11999999999999998
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 24,
+        "ads_same": 34,
+        "ads_worse": 2
+      }
+    },
+    "ndcg": {
+      "frames": {
+        "mean": 0.4973861208399566,
+        "ci95": [
+          0.42493113924739845,
+          0.5669219027581262
+        ]
+      },
+      "frames+cards": {
+        "mean": 0.7166075624161308,
+        "ci95": [
+          0.6526118646032664,
+          0.7743928382863462
+        ]
+      },
+      "rerank": {
+        "mean": 0.7663195986392012,
+        "ci95": [
+          0.7107155986204429,
+          0.8152385505503786
+        ]
+      },
+      "frames+cards - frames": {
+        "mean": 0.2192214415761742,
+        "ci95": [
+          0.14536359001648227,
+          0.2947301982450166
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 50,
+        "ads_same": 0,
+        "ads_worse": 10
+      },
+      "rerank - frames+cards": {
+        "mean": 0.04971203622307042,
+        "ci95": [
+          0.006175563381665401,
+          0.09005897665310701
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 37,
+        "ads_same": 9,
+        "ads_worse": 14
+      },
+      "rerank - frames": {
+        "mean": 0.2689334777992446,
+        "ci95": [
+          0.20252539692539576,
+          0.3373484130100434
+        ],
+        "above_zero": true,
+        "below_zero": false,
+        "ads_better": 52,
+        "ads_same": 1,
+        "ads_worse": 7
+      }
+    }
+  },
+  "per_ad": {
+    "car": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.8581437227514841
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.8958531670948341
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.8958531670948341
+      }
+    },
+    "airline": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.18454357993201065
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8629780729302488
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8532602530502207
+      }
+    },
+    "cruise": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          0,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7161488735463396
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.9241189044609822
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.8,
+        "graded_ndcg@10": 0.9241189044609822
+      }
+    },
+    "beach_resort": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.1814264283009775
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          2,
+          0,
+          1,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7063496274165245
+      },
+      "rerank": {
+        "gains": [
+          2,
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.8413131749872802
+      }
+    },
+    "beer": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.9390784591734157
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.790073715254891
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          2,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.805470758946884
+      }
+    },
+    "wine": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6949410105562138
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.8189080569732082
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7240829646115214
+      }
+    },
+    "coffee": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.6454031107355656
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.6766426509245912
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8142787679152584
+      }
+    },
+    "restaurant": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.8669028388083035
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          0,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.9026211929811947
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.8813076659279538
+      }
+    },
+    "fashion": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3864410018148879
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.8916580671056387
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.8916580671056387
+      }
+    },
+    "jewelry": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.5377172977645548
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.6451766950635954
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.8255676616891978
+      }
+    },
+    "pet_food": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.595526114744716
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7146136620683542
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.8608418891335189
+      }
+    },
+    "outdoor_gear": {
+      "frames": {
+        "gains": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.7658733245489868
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.8764172118974404
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.810161613677533
+      }
+    },
+    "phone": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9681896059005243
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.8517926582444502
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.8517926582444502
+      }
+    },
+    "music": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.13319810923658396
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7393553192779309
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.9895189817329358
+      }
+    },
+    "furniture": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.4792820845577218
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7217138567434911
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          2,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.8251014870731225
+      }
+    },
+    "toys": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.5091318024536576
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.41065880037875163
+      },
+      "rerank": {
+        "gains": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.6317693260071761
+      }
+    },
+    "western_wear": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.9206999287164557
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.7254629049229904
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.8134340833229297
+      }
+    },
+    "bank": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.21779548001177884
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5515034178285835
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6978118755025209
+      }
+    },
+    "pharmacy": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6173551734830718
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7358599668149974
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8562035261462873
+      }
+    },
+    "sci_fi_game": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 1.0,
+        "graded_ndcg@10": 1.0
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9305687780632227
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 1.0,
+        "graded_ndcg@10": 1.0
+      }
+    },
+    "bicycle": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.2890648263178879
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      }
+    },
+    "rail_travel": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.14126697285982898
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 1.0
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.9066276098484507
+      }
+    },
+    "hotel": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.19213559442543615
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.4040512922912763
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5068286590697112
+      }
+    },
+    "city_tourism": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7909506325094737
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.9305687780632227
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 1.0
+      }
+    },
+    "motorcycle": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7430842844234515
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.44202250846479313
+      }
+    },
+    "boating": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.1831104382081276
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          2,
+          0,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7443599029624287
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          2,
+          0,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.7887592727079568
+      }
+    },
+    "fishing": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.123151194370365
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6170963711982227
+      },
+      "rerank": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5204732013389002
+      }
+    },
+    "camping": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.7963498961870903
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.8147388609850096
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.8706265221182905
+      }
+    },
+    "ski_resort": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6691255538181726
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7534494445524138
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5079937796926363
+      }
+    },
+    "gardening": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.27727342735504823
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.49661976912920763
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.8550961823035497
+      }
+    },
+    "kitchenware": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.18205333106166585
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6774061517901411
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7247967301388094
+      }
+    },
+    "bedding": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8417166665346414
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.903544255739898
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.903544255739898
+      }
+    },
+    "cleaning": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.390677637594991
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.3847368188672701
+      },
+      "rerank": {
+        "gains": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.6482195079418547
+      }
+    },
+    "baby_care": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5078961547485289
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.75369761125927
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.9558295932317544
+      }
+    },
+    "school_supplies": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6364391809889587
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.46927872602275644
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6713860725233041
+      }
+    },
+    "bridal": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.1480409554829326
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.47084972088011423
+      }
+    },
+    "party_supplies": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3325237473383257
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.5737104006980274
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          1,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.8054081627741106
+      }
+    },
+    "news_media": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5388856921828065
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.8643145546088337
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7630946912803436
+      }
+    },
+    "bookstore": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.07491210085649577
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.6868532117921093
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.7907991589009246
+      }
+    },
+    "office_supplies": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.4556378388787294
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.8852637863689365
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.9236202263231336
+      }
+    },
+    "piano_lessons": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6309297535714575
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.3333333333333333
+      }
+    },
+    "theatre_tickets": {
+      "frames": {
+        "gains": [
+          0,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.5706913585474966
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.7880098070631301
+      },
+      "rerank": {
+        "gains": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.7916170715321708
+      }
+    },
+    "horse_racing": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5954536088025922
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.8631997506525685
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.913852335159709
+      }
+    },
+    "golf": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.9565912771023182
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 1.0
+      }
+    },
+    "swimwear": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.6,
+        "graded_ndcg@10": 0.8239913764816057
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.5,
+        "graded_ndcg@10": 0.8409895138199108
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.9542768701790127
+      }
+    },
+    "watches": {
+      "frames": {
+        "gains": [
+          0,
+          2,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.3,
+        "graded_ndcg@10": 0.585329582118817
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.8493989673079653
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.9002369916612287
+      }
+    },
+    "menswear": {
+      "frames": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.7,
+        "graded_ndcg@10": 0.8851021949626573
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9608008655106622
+      },
+      "rerank": {
+        "gains": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.9,
+        "graded_ndcg@10": 0.9608008655106622
+      }
+    },
+    "cosmetics": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5423640154200349
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.9216017310213247
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.6848374495230163
+      }
+    },
+    "hair_salon": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.19342640361727081
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.17723928678404774
+      }
+    },
+    "bakery": {
+      "frames": {
+        "gains": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.4729327934832575
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.84860265890399
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7631925784528223
+      }
+    },
+    "grocery": {
+      "frames": {
+        "gains": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.5669397587301618
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          1,
+          2,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.9002440646140066
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.7,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.865482402398968
+      }
+    },
+    "department_store": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.31746923970074004
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5517905102360229
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7375728492866022
+      }
+    },
+    "dairy": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.23386470445736623
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.3,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.4521844746141331
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.80737248436437
+      }
+    },
+    "cat_food": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.2,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.19903650127012357
+      },
+      "frames+cards": {
+        "gains": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.4644625617253261
+      },
+      "rerank": {
+        "gains": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.4,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.5178170746652446
+      }
+    },
+    "bird_feed": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.6,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.7100599906664629
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8125776617963187
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8519428612054291
+      }
+    },
+    "home_insurance": {
+      "frames": {
+        "gains": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.8073344680151096
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.8180132217541968
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.4,
+        "graded_ndcg@10": 0.8585229601088019
+      }
+    },
+    "stationery": {
+      "frames": {
+        "gains": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.5,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.4317986436075744
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8609782517222415
+      },
+      "rerank": {
+        "gains": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.2,
+        "graded_ndcg@10": 0.8122244210497414
+      }
+    },
+    "radio": {
+      "frames": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.0,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.0
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 1.0
+      },
+      "rerank": {
+        "gains": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "thematic_precision@10": 0.1,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.31546487678572877
+      }
+    },
+    "shipping": {
+      "frames": {
+        "gains": [
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "thematic_precision@10": 0.8,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.8701661981957828
+      },
+      "frames+cards": {
+        "gains": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 1.0
+      },
+      "rerank": {
+        "gains": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 1.0
+      }
+    },
+    "necklace": {
+      "frames": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "thematic_precision@10": 0.9,
+        "literal_precision@10": 0.0,
+        "graded_ndcg@10": 0.7653078254750618
+      },
+      "frames+cards": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.883866524442402
+      },
+      "rerank": {
+        "gains": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "thematic_precision@10": 1.0,
+        "literal_precision@10": 0.1,
+        "graded_ndcg@10": 0.883866524442402
+      }
+    }
+  },
+  "pairs_labelled": 1086,
+  "films": [
+    "GonewiththeWest",
+    "Inner_Sanctum_movie",
+    "Kilimanjaro",
+    "Minesweeper_1943",
+    "Phantom_Planet",
+    "mr_robinson_crusoe",
+    "teenagers_from_outerspace"
+  ],
+  "scenes": 2287,
+  "scenes_with_speech": 1259,
+  "judge_answers": {
+    "-1": 0,
+    "0": 806,
+    "1": 312,
+    "2": 682
+  },
+  "ads_judged_all_zero": [
+    "bicycle"
+  ],
+  "label_counts": {
+    "0": 495,
+    "1": 416,
+    "2": 175
+  },
+  "agreement": {
+    "n": 100,
+    "exact_3_level": 0.75,
+    "thematic_or_better": {
+      "n": 100,
+      "agreement": 0.83,
+      "cohen_kappa": 0.646128226477935,
+      "fits_rate_a": 0.57,
+      "fits_rate_b": 0.64
+    },
+    "literal": {
+      "n": 100,
+      "agreement": 0.91,
+      "cohen_kappa": 0.7137404580152673,
+      "fits_rate_a": 0.18,
+      "fits_rate_b": 0.21
+    },
+    "disagreements": [
+      "H0006",
+      "H0258",
+      "H0260",
+      "H0265",
+      "H0279",
+      "H0282",
+      "H0286",
+      "H0462",
+      "H0471",
+      "H0486",
+      "H0521",
+      "H0535",
+      "H0564",
+      "H0586",
+      "H0677",
+      "H0762",
+      "H0800",
+      "H0811",
+      "H0859",
+      "H0885",
+      "H0956",
+      "H1004",
+      "H1009",
+      "H1044",
+      "H1063"
+    ]
+  },
+  "sensitivity_author_labels_where_present": {
+    "frames": {
+      "mean": 0.4816666666666667,
+      "ci95": [
+        0.4033333333333334,
+        0.56
+      ]
+    },
+    "frames+cards": {
+      "mean": 0.6733333333333333,
+      "ci95": [
+        0.5966666666666668,
+        0.745
+      ]
+    },
+    "rerank": {
+      "mean": 0.7,
+      "ci95": [
+        0.6266666666666667,
+        0.7699999999999999
+      ]
+    },
+    "frames+cards - frames": {
+      "mean": 0.19166666666666668,
+      "ci95": [
+        0.14333333333333334,
+        0.2433333333333333
+      ],
+      "above_zero": true,
+      "below_zero": false,
+      "ads_better": 44,
+      "ads_same": 11,
+      "ads_worse": 5
+    },
+    "rerank - frames+cards": {
+      "mean": 0.02666666666666667,
+      "ci95": [
+        -4.625929269271485e-18,
+        0.055
+      ],
+      "above_zero": false,
+      "below_zero": false,
+      "ads_better": 22,
+      "ads_same": 27,
+      "ads_worse": 11
+    },
+    "rerank - frames": {
+      "mean": 0.21833333333333332,
+      "ci95": [
+        0.16999999999999998,
+        0.26999999999999996
+      ],
+      "above_zero": true,
+      "below_zero": false,
+      "ads_better": 48,
+      "ads_same": 7,
+      "ads_worse": 5
+    }
+  }
+}

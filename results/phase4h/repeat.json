@@ -1,0 +1,14 @@
+{
+ "cards": {
+  "n": 30,
+  "identical": 30,
+  "different": []
+ },
+ "judge": {
+  "n": 60,
+  "identical": 60,
+  "different": []
+ },
+ "sample": "default_rng(0)",
+ "decoding": "greedy (temperature 0)"
+}

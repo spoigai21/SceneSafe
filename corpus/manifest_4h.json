@@ -1,0 +1,106 @@
+{
+  "rules": "Select the Phase 4h confirmation films and write corpus/manifest_4h.json (EVAL-PROTOCOL.md, \"Phase 4h\namendment\").\n\nSame rules as build_manifest.py (public domain, 60-120 min, one H.264 MP4 between 360p and 720p, the same genre\nvocabulary and exclusions), applied to a fresh search. Titles already in corpus/manifest.json or\ncorpus/manifest_4d.json (by id or by title) are skipped, and the first PER_GENRE remaining titles per genre, in\ndownload-count order, are taken. The committed manifest, not this script, is the source of truth.",
+  "excluded_by_hand": {
+    "ChildBride": "exploitation film containing a nude scene with a child actor"
+  },
+  "titles": [
+    {
+      "id": "teenagers_from_outerspace",
+      "title": "Teenagers from Outer Space",
+      "year": 1959,
+      "genre": "horror",
+      "subjects": "Sci-Fi; Horror",
+      "url": "https://archive.org/download/teenagers_from_outerspace/Teenagers_from_Outer_Space.mp4",
+      "file": "Teenagers_from_Outer_Space.mp4",
+      "bytes": 1046447923,
+      "width": 610,
+      "height": 480,
+      "duration_s": 5128.99,
+      "md5": "bda36fa2b94906fd3380ca580bf39c8b"
+    },
+    {
+      "id": "mr_robinson_crusoe",
+      "title": "Mr. Robinson Crusoe",
+      "year": 1932,
+      "genre": "comedy",
+      "subjects": "Adventure; Comedy",
+      "url": "https://archive.org/download/mr_robinson_crusoe/mr._robinson_crusoe.mp4",
+      "file": "mr._robinson_crusoe.mp4",
+      "bytes": 858667870,
+      "width": 640,
+      "height": 480,
+      "duration_s": 4231.09,
+      "md5": "6276853e7cb06b7f60520e5c330cd4d8"
+    },
+    {
+      "id": "Inner_Sanctum_movie",
+      "title": "Inner Sanctum",
+      "year": 1948,
+      "genre": "crime",
+      "subjects": "noir; Fritz Leiber; Charles Russell; Mary Beth Hughes",
+      "url": "https://archive.org/download/Inner_Sanctum_movie/Inner_Sanctum.mp4",
+      "file": "Inner_Sanctum.mp4",
+      "bytes": 386876911,
+      "width": 640,
+      "height": 480,
+      "duration_s": 3720.97,
+      "md5": "63b00b1756874afd3a47a4c4d02e2c4c"
+    },
+    {
+      "id": "Kilimanjaro",
+      "title": "The Snows of Kilimanjaro",
+      "year": 1952,
+      "genre": "adventure",
+      "subjects": "Adventure; Drama; Romance; Ernest Hemingway; Ava Gardner; Susan Hayward; Gregory Peck",
+      "url": "https://archive.org/download/Kilimanjaro/The_Snows_of_Kilimanjaro.mp4",
+      "file": "The_Snows_of_Kilimanjaro.mp4",
+      "bytes": 705066657,
+      "width": 600,
+      "height": 480,
+      "duration_s": 6783.32,
+      "md5": "2be19acf74d34d5d02c45fff500a4a70"
+    },
+    {
+      "id": "GonewiththeWest",
+      "title": "Gone with the West",
+      "year": 1975,
+      "genre": "western",
+      "subjects": "Western; Action; James Caan; Stefanie Powers; Sammy Davis, Jr.",
+      "url": "https://archive.org/download/GonewiththeWest/GonewiththeWest.mp4",
+      "file": "GonewiththeWest.mp4",
+      "bytes": 566352715,
+      "width": 540,
+      "height": 360,
+      "duration_s": 5436.74,
+      "md5": "34b936845b6f8e803900d60f0751d838"
+    },
+    {
+      "id": "Phantom_Planet",
+      "title": "The Phantom Planet",
+      "year": 1961,
+      "genre": "scifi",
+      "subjects": "sci-fi; MST3K; space travel",
+      "url": "https://archive.org/download/Phantom_Planet/The_Phantom_Planet.mp4",
+      "file": "The_Phantom_Planet.mp4",
+      "bytes": 512855084,
+      "width": 640,
+      "height": 480,
+      "duration_s": 4924.59,
+      "md5": "8231495a7729cbbc0c86963315076582"
+    },
+    {
+      "id": "Minesweeper_1943",
+      "title": "Minesweeper",
+      "year": 1943,
+      "genre": "drama",
+      "subjects": "military; coast guard; navy; mine; minesweeper; wwii; propaganda; melodrama; richard arlen; poverty row; redemption; gambling; false identity; japanese; low budget; robert mitchum; desertion; awol; diving; pearl harbor",
+      "url": "https://archive.org/download/Minesweeper_1943/minesweeper.mp4",
+      "file": "minesweeper.mp4",
+      "bytes": 410982676,
+      "width": 640,
+      "height": 480,
+      "duration_s": 3943.16,
+      "md5": "e9a5ef78e80cadcfcd626ac39cf5cd17"
+    }
+  ]
+}

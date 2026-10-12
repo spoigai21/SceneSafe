@@ -1,0 +1,7 @@
+2026-10-11T19:38:31Z  rules frozen before the cards step (not yet committed; author asked to run straight away)
+ec86a7073cc34fbfce0375dc6273290a696c57cfc4bca94530efe848958840ca  EVAL-PROTOCOL.md
+176275fca6b22e64f4f486f63a63cd474b1b424a4b27cffc60af880f924634c1  scenesafe/match/cards.py
+db2b322bffae8fa7244cf662055f89496544163c0831cac2df11b3a033d77688  scripts/run_phase4g.py
+7fd8a303c091b423f5fa7fdcaa622859e9f47ff45e017d6ec55fd43bdf2eb982  scripts/run_phase4f.py
+2026-10-11T20:42:40Z  cards.py changed: mx.clear_cache() after each card (memory only; greedy decoding, outputs unchanged). New hash: 315fcc02821461e2b7a7dfc76d8280e344fcc10b46bfd2d913628eb3f34c7f23
+2026-10-11T20:42:47Z  cards.py changed: model loaded once per process instead of once per film (memory only). New hash: 3bbfe1710ddfe57b0809f92ba0ce5da7b13c2565d4756728ee902fed6c6607e4

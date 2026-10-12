@@ -1,0 +1,10 @@
+2026-10-11T22:48:10Z  Phase 4h rules frozen before the films were selected (not yet committed)
+fec8a084173978f6d9f93afa3dbce129d62f603f82f1a05cbe00423ae60b784c  EVAL-PROTOCOL.md
+1a4e7d3bc1157a9eb2306bd08a0c11240090e9e66a161f0eb4513ad260c20ec7  scenesafe/match/cards.py
+edb7b65e867d1da34c918ce2728d3ee5c13dfc37fe51c4024b3e9549b96da6db  scripts/run_phase4h.py
+e79b9df33e08de70142435976445f05c9dac22a96d0fde10c42264fef20da6c9  scripts/build_manifest_4h.py
+7fd8a303c091b423f5fa7fdcaa622859e9f47ff45e017d6ec55fd43bdf2eb982  scripts/run_phase4f.py
+
+2026-10-12T06:31:04Z  Phase 4h addendum frozen before the relabel (not yet committed)
+8c3fe34529ba9370bf38f4b92711f4b55d9f62b5852c14beca0f2ab98ad69b0d  EVAL-PROTOCOL.md
+cb40852af75b7426f196455806e1e42161c9c06c8f83d32d1e68fd1f5a989642  scripts/run_phase4h.py

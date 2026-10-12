@@ -48,3 +48,17 @@ def test_speech_filter():
             seg(32, 33, "I can."), seg(33, 34, "I can."), seg(34, 35, "I can."), seg(35, 37, "Where to?")]
     assert scene_text(segs, 0, 40) == "Hello there. I can. Where to?"
     assert scene_text(segs, 33, 40) == "Where to?"
+
+
+def test_card_text():
+    from scenesafe.match.cards import card_text, cut
+    card = "place: a saloon\nvisible: bar, glasses\nactivity: men drinking\ntalk: none\nmood: tense"
+    assert card_text(card) == "a saloon bar, glasses men drinking"
+    assert card_text("place: road\ntalk: money, a loan") == "road money, a loan"
+    assert cut("a bc d", 4) == "a" and cut("short") == "short"
+
+
+def test_judge_digit():
+    from scenesafe.match.cards import parse_digit
+    assert parse_digit("2") == 2 and parse_digit(" 1.") == 1 and parse_digit("0\n") == 0
+    assert parse_digit("Answer: 2") == 2 and parse_digit("yes") == -1

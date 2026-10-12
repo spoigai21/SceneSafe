@@ -3,9 +3,9 @@
     PYTHONPATH=. .venv/bin/python scripts/label_server.py [--phase 4b]      then open http://localhost:8765
 
 Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2);
-Phase 4d: 100, default_rng(3); Phase 4e and 4f: 100, default_rng(4) and (5)) one at a time: the ad's category and
+Phase 4d: 100, default_rng(3); Phase 4e to 4h: 100, default_rng(4) to (7)) one at a time: the ad's category and
 brief (from 4d, also its label-guide line; from 4e, its theme line and a third button for a thematic fit), 4 frames
-from the scene and, in 4f, the scene's dialogue. Nothing on the page says which method
+from the scene and, from 4f, the scene's dialogue. Nothing on the page says which method
 found the scene, and the primary labels are never sent to the browser. Every click is saved straight to
 results/<phase>/labels_author.json, so you can stop and come back.
 """
@@ -27,8 +27,10 @@ PHASES = {"4": ("phase4", 100, 0, _P4_FRAMES, False), "4b": ("phase4b", 50, 1, _
           "4c": ("phase4c", 50, 2, _P4_FRAMES, False),
           "4d": ("phase4d", 100, 3, REPO_ROOT / "data" / "phase4d" / "frames", True),
           "4e": ("phase4e", 100, 4, REPO_ROOT / "data" / "phase4d" / "frames", True),
-          "4f": ("phase4f", 100, 5, REPO_ROOT / "data" / "phase4d" / "frames", True)}
-LEVELS = {"4e", "4f"}    # three labels: 2 literal fit, 1 thematic fit, 0 doesn't fit
+          "4f": ("phase4f", 100, 5, REPO_ROOT / "data" / "phase4d" / "frames", True),
+          "4g": ("phase4g", 100, 6, REPO_ROOT / "data" / "phase4d" / "frames", True),
+          "4h": ("phase4h", 100, 7, REPO_ROOT / "data" / "phase4d" / "frames", True)}
+LEVELS = {"4e", "4f", "4g", "4h"}    # three labels: 2 literal fit, 1 thematic fit, 0 doesn't fit
 PORT = 8765
 
 PAGE = """<!doctype html>

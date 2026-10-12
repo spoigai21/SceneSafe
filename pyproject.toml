@@ -18,6 +18,7 @@ dependencies = [
     "transformers",       # tokenizer for the Phase 4c SigLIP2 model
     "sentencepiece",
     "mlx-whisper; sys_platform == 'darwin'",   # Phase 4f speech-to-text (Apple silicon)
+    "mlx-vlm; sys_platform == 'darwin'",       # Phase 4g scene cards (Apple silicon)
     "sentence-transformers",                   # Phase 4f dialogue embeddings
 ]
 
