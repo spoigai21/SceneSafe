@@ -1,0 +1,2716 @@
+{
+ "items": [
+  {
+   "id": "T0001",
+   "scene": "Kilimanjaro@4062",
+   "title": "Kilimanjaro",
+   "dialogue": "I'm really sorry. I didn't know you."
+  },
+  {
+   "id": "T0002",
+   "scene": "Kilimanjaro@6756",
+   "title": "Kilimanjaro",
+   "dialogue": "There, God."
+  },
+  {
+   "id": "T0003",
+   "scene": "GonewiththeWest@1391",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0004",
+   "scene": "BloodontheSun@4413",
+   "title": "BloodontheSun",
+   "dialogue": ""
+  },
+  {
+   "id": "T0005",
+   "scene": "TheOver-the-HillGangRidesAgain@4095",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0006",
+   "scene": "GonewiththeWest@1230",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0007",
+   "scene": "EndoftheWorld@1636",
+   "title": "EndoftheWorld",
+   "dialogue": "You know, maybe I better send my instruments back to Woolworths."
+  },
+  {
+   "id": "T0008",
+   "scene": "GonewiththeWest@637",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0009",
+   "scene": "Inner_Sanctum_movie@2853",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": "No one saw her get off, huh? No."
+  },
+  {
+   "id": "T0010",
+   "scene": "GonewiththeWest@121",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0011",
+   "scene": "teenagers_from_outerspace@1566",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "What was that? Don't worry, I'll get it. That is what I wanted to tell you about. The reason I came to your place when I did not know where else to go. Heck, I thought it was a 50 cent piece at least. That looks like... who it is. It's Sparky's. Sparky's dog tag. Where on earth did you find it? When I first arrived, I was with some others. One of them destroyed a small creature. Later, I found that among the remains. You mean somebody killed Sparky? Oh, no, Derek, it can't be true. Why would anyone want to kill Sparky? Betty, I'm sorry. Tell me who did it, Derek. They are gone now. Only I"
+  },
+  {
+   "id": "T0012",
+   "scene": "GonewiththeWest@941",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0013",
+   "scene": "BloodontheSun@4456",
+   "title": "BloodontheSun",
+   "dialogue": "Johnny Clark from the embassy. I'm certainly relieved to find you here, Nick. Why? Where'd you expect to find me? Frankly, in a Japanese dungeon. I told you. What's the story? You've got a friend somewhere on this island, Nick. We received a phone call from him at the embassy 20 minutes ago. Who was it? Anonymous. A warrant is to be sworn out for your arrest. You're to be held for questioning, suspected of being a Chinese agent. The ambassador sent me over in his car. Official American property can't be violated. So I'm to put you on the Wilson at once in charge of the captain. Great. You'll"
+  },
+  {
+   "id": "T0014",
+   "scene": "Kilimanjaro@2130",
+   "title": "Kilimanjaro",
+   "dialogue": "Many ways. I've got another fear now, worse. I'm going to have a baby."
+  },
+  {
+   "id": "T0015",
+   "scene": "TheOver-the-HillGangRidesAgain@2424",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0016",
+   "scene": "EndoftheWorld@4688",
+   "title": "EndoftheWorld",
+   "dialogue": "I wish that you and your wife would come with us."
+  },
+  {
+   "id": "T0017",
+   "scene": "TheOver-the-HillGangRidesAgain@4188",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "And I'm mighty glad the dear Lord saw fit to lead the kid back to his rightful place before the end. That place was alongside of us, just like we're standing here alongside of him now. And in a way, you know, it's kind of fitting that of all of us, the kid was the first to go. He... well, he... He always did like to lead the way. Rangers... May he rest in peace. In peace."
+  },
+  {
+   "id": "T0018",
+   "scene": "TheOver-the-HillGangRidesAgain@508",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Reckon so."
+  },
+  {
+   "id": "T0019",
+   "scene": "Phantom_Planet@3148",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0020",
+   "scene": "GonewiththeWest@1206",
+   "title": "GonewiththeWest",
+   "dialogue": "I'll get you!"
+  },
+  {
+   "id": "T0021",
+   "scene": "TheFlyingDeuces@3961",
+   "title": "TheFlyingDeuces",
+   "dialogue": "No!"
+  },
+  {
+   "id": "T0022",
+   "scene": "CarnivalofSouls@4932",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0023",
+   "scene": "teenagers_from_outerspace@1910",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Say, who are you anyway? Never mind. Just tell me."
+  },
+  {
+   "id": "T0024",
+   "scene": "teenagers_from_outerspace@1553",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Hanging up right over there. They look a little large for you, Derek."
+  },
+  {
+   "id": "T0025",
+   "scene": "teenagers_from_outerspace@2526",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0026",
+   "scene": "EndoftheWorld@4701",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0027",
+   "scene": "secret_weapon@2785",
+   "title": "secret_weapon",
+   "dialogue": "Dr. Toebel is a brilliant scientist. I saw immediately that he wouldn't send us a message so simple to decipher. Neither would he affix these top figures without a meaning. Then it isn't the Alfred substitution code. Yes, it is, Watson, but with a very clever variation. I'm not sure what he's doing. Yes, it is, Watson, but with a very clever variation. You see, the one, two, three figures means that we skip letters in that order. In other words, observe, Watson. The first letter, which is I, skips one and becomes J."
+  },
+  {
+   "id": "T0028",
+   "scene": "ThePhantomCreeps@2656",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0029",
+   "scene": "CaptainKidd_@334",
+   "title": "CaptainKidd_",
+   "dialogue": "Question me on it again, would you? I'll rip you from belly to chime."
+  },
+  {
+   "id": "T0030",
+   "scene": "Phantom_Planet@2248",
+   "title": "Phantom_Planet",
+   "dialogue": "Not at all. You're free to go anywhere here on Riton."
+  },
+  {
+   "id": "T0031",
+   "scene": "teenagers_from_outerspace@1521",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Who's the stranger?"
+  },
+  {
+   "id": "T0032",
+   "scene": "ThePhantomCreeps@4166",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0033",
+   "scene": "Kilimanjaro@1211",
+   "title": "Kilimanjaro",
+   "dialogue": "Thanks. I'm Cynthia. Cynthia Green. Cynthia, that's nice. When did you come here? Two minutes ago. I'll be here. The latest thing from home. I'm, uh... Harry Street, Chicago Tribune, and you're right. Ex-Chicago Tribune. And I'm trying to write. They're telling it the other way. Do you mind? Well, everybody's trying something over here. Or at least trying to try. What are you trying to do? Are you trying to paint? No. I'm not trying to paint. Are you trying to sculpt? No, I'm not trying to sculpt. Well, then you must be trying to write, too. No. I'm only trying to be happy. Well, everybody's"
+  },
+  {
+   "id": "T0034",
+   "scene": "EndoftheWorld@2821",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0035",
+   "scene": "angel_and_the_badman@1346",
+   "title": "angel_and_the_badman",
+   "dialogue": "Says one of the men was a Mr. Laredo Stevens."
+  },
+  {
+   "id": "T0036",
+   "scene": "Phantom_Planet@3839",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0037",
+   "scene": "Kilimanjaro@4000",
+   "title": "Kilimanjaro",
+   "dialogue": "People asked for my autograph and pointed me out. And why didn't she come back to me? At last I made a cry for help."
+  },
+  {
+   "id": "T0038",
+   "scene": "Kilimanjaro@6195",
+   "title": "Kilimanjaro",
+   "dialogue": "Oh. Stretcher bearers! Leave him alone!"
+  },
+  {
+   "id": "T0039",
+   "scene": "Kilimanjaro@4347",
+   "title": "Kilimanjaro",
+   "dialogue": "Excuse me. You're going to go like this. The road is very bad. The way is very bad. Let's go! Camaradas! Hermanos! Our time of triumph and glory is coming! I wish I was back in Detroit. You're a murderer, huh? Yeah. I wish I was back in Detroit where I was when I got sucked into this. I just woke up like I got sucked into this. Did you leave any of that bourgeois? No. What are you doing here? You'd die laughing if I told you."
+  },
+  {
+   "id": "T0040",
+   "scene": "TheOver-the-HillGangRidesAgain@3083",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Oh, it was the newspaper man, I think."
+  },
+  {
+   "id": "T0041",
+   "scene": "GonewiththeWest@2463",
+   "title": "GonewiththeWest",
+   "dialogue": "What was that? I don't know."
+  },
+  {
+   "id": "T0042",
+   "scene": "teenagers_from_outerspace@1637",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0043",
+   "scene": "heartbeat@4187",
+   "title": "heartbeat",
+   "dialogue": "Can you guess the reason I'm reeling"
+  },
+  {
+   "id": "T0044",
+   "scene": "Kilimanjaro@3552",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0045",
+   "scene": "GonewiththeWest@4837",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0046",
+   "scene": "BloodontheSun@2309",
+   "title": "BloodontheSun",
+   "dialogue": "I say, Condon, may we join you? It looks as if every table's taken. I arranged it that way. This is Nick Condon, Tokyo Chronicle. Miss Iris Hedger just arrived from Shanghai. I hope you'll enjoy Tokyo. I think I'm going to. Never mind. I do it better. Besides, I'm not crazy. What do you mean, crazy? No man in his right mind would willingly share your company, Miss Hilliard. How is Shanghai these days? Oh, Shanghai is always gay. For everyone but the Chinese. May the waiter interrupt long enough to take your orders. Daiquiri. Same. How was the trip over? A little on the rough side. I always"
+  },
+  {
+   "id": "T0047",
+   "scene": "secret_weapon@1821",
+   "title": "secret_weapon",
+   "dialogue": "At once. Now I can be frank with you, Mr. Holmes. Dr. Tobel has disappeared. They found my car on Richmond Bypass wrecked. I loaned it to him last night. For what purpose, Miss Abelie? He wouldn't tell me. But he said that if anything should happen to him, I want to give you this. Holmes! Then he must have expected something. Yes. This envelope has been opened and resealed. But that isn't possible. It hasn't been out of my hands. We meet again, Mr. Holmes. What? Why, that's not the message."
+  },
+  {
+   "id": "T0048",
+   "scene": "TheGhoul@1381",
+   "title": "TheGhoul",
+   "dialogue": ""
+  },
+  {
+   "id": "T0049",
+   "scene": "heartbeat@5137",
+   "title": "heartbeat",
+   "dialogue": "I want to see."
+  },
+  {
+   "id": "T0050",
+   "scene": "TheOver-the-HillGangRidesAgain@4047",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Guess once you're arranging, you don't stop. Not while you're perpendicular."
+  },
+  {
+   "id": "T0051",
+   "scene": "GonewiththeWest@2229",
+   "title": "GonewiththeWest",
+   "dialogue": "You better have a drink with him. This is Nemo's private style. I gotta have a drink."
+  },
+  {
+   "id": "T0052",
+   "scene": "ThePhantomCreeps@1119",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0053",
+   "scene": "TheOver-the-HillGangRidesAgain@4098",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0054",
+   "scene": "secret_weapon@3816",
+   "title": "secret_weapon",
+   "dialogue": "The water's this way. Moriarty's rooms must be up here."
+  },
+  {
+   "id": "T0055",
+   "scene": "GonewiththeWest@5266",
+   "title": "GonewiththeWest",
+   "dialogue": "Yes, a man can be a man, and a man must be a man."
+  },
+  {
+   "id": "T0056",
+   "scene": "GonewiththeWest@1483",
+   "title": "GonewiththeWest",
+   "dialogue": "Oh"
+  },
+  {
+   "id": "T0057",
+   "scene": "ThePhantomCreeps@1921",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Blow up the whole city? I guess you're right. We'll take it back to our mail-in house. We'll be safer there. We're not the only survivors. The box is still here. Hey!"
+  },
+  {
+   "id": "T0058",
+   "scene": "Kilimanjaro@442",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0059",
+   "scene": "CarnivalofSouls@4810",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0060",
+   "scene": "GonewiththeWest@3470",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0061",
+   "scene": "EndoftheWorld@1646",
+   "title": "EndoftheWorld",
+   "dialogue": "Well, it's not exactly what we were looking for, but it sure is beautiful. Yeah. Well, that other spot on the charts about 40 miles from here."
+  },
+  {
+   "id": "T0062",
+   "scene": "Kilimanjaro@1965",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0063",
+   "scene": "Phantom_Planet@3602",
+   "title": "Phantom_Planet",
+   "dialogue": "We have been sighted by the enemy."
+  },
+  {
+   "id": "T0064",
+   "scene": "angel_and_the_badman@5036",
+   "title": "angel_and_the_badman",
+   "dialogue": "I know him. He's got a gun all right. I know him."
+  },
+  {
+   "id": "T0065",
+   "scene": "GonewiththeWest@816",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0066",
+   "scene": "GonewiththeWest@4742",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0067",
+   "scene": "Phantom_Planet@972",
+   "title": "Phantom_Planet",
+   "dialogue": "Retro rocket feed lines must be cut."
+  },
+  {
+   "id": "T0068",
+   "scene": "TheOver-the-HillGangRidesAgain@4005",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0069",
+   "scene": "TheOver-the-HillGangRidesAgain@1038",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "He was a real gentleman. And a gravestone big enough to record half the good things the kid done. I wish I'd have known him. Now here he lies in Boothills with a marker like that. I don't know how the rest of you feel, but I could stand a good stiff drink of whisk about now."
+  },
+  {
+   "id": "T0070",
+   "scene": "CaptainKidd_@5152",
+   "title": "CaptainKidd_",
+   "dialogue": "lazarus in your cabin captain i hope mr povey has a proper explanation sire mr povey was killed"
+  },
+  {
+   "id": "T0071",
+   "scene": "ThePhantomCreeps@2045",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Monk is gone! But I still have you. You will be the instrument of my vengeance. So you decided to come back, did you? The settlement broke in, they carried me off. They stole the meteor. You're lying. I left you on guard and you betrayed me. You have sold the source of my power to my enemies. No, I swear it. Then why did you remove that box from the secret board? I heard voices. I thought strangers were coming to steal it. I shall show you what happens to those who cross me. Don't let them get me. I'm shot! I swear I'm not lying! Look! All right. I'm going to remove that bullet. Then you will"
+  },
+  {
+   "id": "T0072",
+   "scene": "mr_robinson_crusoe@3414",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "Awful. Awful."
+  },
+  {
+   "id": "T0073",
+   "scene": "Kilimanjaro@4709",
+   "title": "Kilimanjaro",
+   "dialogue": "Not sick. Not important. We'll get you a good doctor, man. Doctor. It will be a good doctor. Doctor. It will be a good doctor. I will get you a good doctor. Doctor. It was a wise man who said that if all the medicines were dumped into the sea, it would be a horrible day for the fish. But don't worry about me. I shall be in excellent hands before long. What about yourself, now? You don't look happy. I'm all right. What have you been doing with yourself all these years? You've traveled? I've followed my nose, just wondered, but about you... Where? Where? Tell me where. Hmm? Nothing to brag"
+  },
+  {
+   "id": "T0074",
+   "scene": "ThePhantomCreeps@1364",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Well, did you get Zorka's formula? The G-Man placed a guard around Zorka's house. We haven't been able to answer. You've got to get him! Or find Zorka's assistant, Monk. I'm about to broadcast a recording to our friends in Europe, informing them of Zocca's death. It is necessary to share a very vital secret and knowledge with you. The hiding place of the source of all my power. The source? Yes. If the day goes in, during my absence, you would be able to remove it to a safer place. There is power enough to seize or destroy the world. And only I, I know how to release and control it. It must be"
+  },
+  {
+   "id": "T0075",
+   "scene": "GonewiththeWest@707",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0076",
+   "scene": "GonewiththeWest@2966",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0077",
+   "scene": "Kilimanjaro@6390",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0078",
+   "scene": "teenagers_from_outerspace@2538",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0079",
+   "scene": "teenagers_from_outerspace@3981",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "It is worthless. Unless I can figure out an energy substitute. Maybe it won't come into the city, Derek. It will come to the city. For more food, if nothing else."
+  },
+  {
+   "id": "T0080",
+   "scene": "Kilimanjaro@6566",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0081",
+   "scene": "Inner_Sanctum_movie@210",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": "Oh!"
+  },
+  {
+   "id": "T0082",
+   "scene": "EndoftheWorld@4050",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0083",
+   "scene": "GonewiththeWest@3644",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0084",
+   "scene": "Phantom_Planet@3144",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0085",
+   "scene": "TheGhoul@2602",
+   "title": "TheGhoul",
+   "dialogue": "Oh I'm going to show you how we make coffee in the desert, underneath the stars. But you don't make it south, do you? Oh, of course not. A Circassian slave, lovely as sin. Ripped to the waist, and lashed for miles across the Sahara. Where she is fighting, and she is fighting for the sea. The Nile, across the Sahara. Where she is finally eaten by locusts, and rightly. Take this canister and do exactly as I tell you. Two. Four. Five."
+  },
+  {
+   "id": "T0086",
+   "scene": "CaptainKidd_@2436",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0087",
+   "scene": "mr_robinson_crusoe@3400",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "I wouldn't spoil your beautiful teeth for anything in the world."
+  },
+  {
+   "id": "T0088",
+   "scene": "GonewiththeWest@4615",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0089",
+   "scene": "teenagers_from_outerspace@3479",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0090",
+   "scene": "GonewiththeWest@1021",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0091",
+   "scene": "GonewiththeWest@448",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0092",
+   "scene": "angel_and_the_badman@5045",
+   "title": "angel_and_the_badman",
+   "dialogue": "Yeah!"
+  },
+  {
+   "id": "T0093",
+   "scene": "ThePhantomCreeps@2484",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Any living thing impregnated with this invisible gas dies on the sea ray. You mean the human beings? Oh, man first would go into deep coma. And then? That would stop one or two men, but more would keep coming. You seem to forget our iron man."
+  },
+  {
+   "id": "T0094",
+   "scene": "EndoftheWorld@1251",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0095",
+   "scene": "BloodontheSun@1447",
+   "title": "BloodontheSun",
+   "dialogue": "Did not expect to meet you here except as friend. Can I use your phone? Hello. Hello, Tokyo Chronicle, please. You've got some explaining to do, Yamada. Hello, hello. Give me Charlie Spray. Among other things, my government does not like its nationals to be thrown into the jug without any charge. Japanese government would not do that to American condons, son. Here is charge. Nicholas Condon, much esteemed editor at Tokyo Chronicle, held private celebration in his own home. Gaiety intense and far-reaching Causing complaints from neighbors Complaints ignored Forcing police to make polite"
+  },
+  {
+   "id": "T0096",
+   "scene": "GonewiththeWest@245",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0097",
+   "scene": "TheOver-the-HillGangRidesAgain@523",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0098",
+   "scene": "teenagers_from_outerspace@3534",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Are you hurt badly? I don't think so. Just bruised. Oh, thank heavens it's over. It was like a nightmare. I wish it was over. What do you mean? Back in the cave where he shot at me. Some kind of man-eating monster. Poor Mac, the guy I was with. I could hear the thing tearing him apart. He was dead in a few seconds. Oh, how horrible. What could it have been? I don't know. But whatever it is, I'm afraid the nightmare has just begun."
+  },
+  {
+   "id": "T0099",
+   "scene": "GonewiththeWest@5123",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0100",
+   "scene": "Kilimanjaro@3564",
+   "title": "Kilimanjaro",
+   "dialogue": "Naturally, when I have an incentive, swimming to you, darling."
+  },
+  {
+   "id": "T0101",
+   "scene": "ThePhantomCreeps@1233",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Captain West, my paper would like an official statement from you. What were you doing in that plane? Following you to get a story. What do you make of him, Doctor? I find no bodily injuries. The man seemed to be in a coma. That's right. He collapsed suddenly at the control. The ambulance is coming. Take this girl away. Come on, lady. Captain West, I want to know the connection between this plane crash and Dr. Zorka's death. Unless you tell me... All right, arrest her. Leave go of me. You can't arrest me without a charge. The charger was throwing away in a government plane. Come on. You can't"
+  },
+  {
+   "id": "T0102",
+   "scene": "Phantom_Planet@3783",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0103",
+   "scene": "Kilimanjaro@4426",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0104",
+   "scene": "CaptainKidd_@4694",
+   "title": "CaptainKidd_",
+   "dialogue": "Adam. How did you... if they find you on board, sir. I'll come back for Lady Anne. Oh, thank you, sir. I've been hanging on the rudder chain since dark, waiting for the turn of the watch. The jolly boat's more to stern. I worked it alongside. It's secured right out of this port. Watt get in it and drift aft under the main cabin. What now? Get me some dry clothes. Shadwell wears it, Captain. In his own cabin with Mr. Povey, sir. Examining the silver chest they brought back on board, sir. My father's chest. Shadwell, kid, doesn't suspect you. Tell Lady Anne to get some things together, and when"
+  },
+  {
+   "id": "T0105",
+   "scene": "TheFlyingDeuces@3688",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0106",
+   "scene": "TheOver-the-HillGangRidesAgain@2572",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0107",
+   "scene": "Phantom_Planet@205",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0108",
+   "scene": "secret_weapon@3217",
+   "title": "secret_weapon",
+   "dialogue": "Wait."
+  },
+  {
+   "id": "T0109",
+   "scene": "teenagers_from_outerspace@2200",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Oh, Derek."
+  },
+  {
+   "id": "T0110",
+   "scene": "Minesweeper_1943@1152",
+   "title": "Minesweeper_1943",
+   "dialogue": "Hey. Oh. Right. Right shoulder. Left shoulder. Right. Come on, Smith."
+  },
+  {
+   "id": "T0111",
+   "scene": "amazing_adventure@1648",
+   "title": "amazing_adventure",
+   "dialogue": "Well, your driving test was satisfactory. But driving isn't everything. What we want is punctuality and service. Yes, sir. Oh, uh, uh, what about my livery, sir? The uniform will cost ten pounds. Oh, uh. We supply it, you pay for it out of your wages. A pound a week, to me. Very good, sir. Report at seven in the morning. Yes, sir. hello you get the job i'm sure sure i thought you would because all mike's uniform will just about fit you yeah can't smoke here you know thanks thanks the rules wait a minute what was that about mike in the uniform oh he got the sack after six weeks they always do"
+  },
+  {
+   "id": "T0112",
+   "scene": "ThePhantomCreeps@4650",
+   "title": "ThePhantomCreeps",
+   "dialogue": "I have brought you here to advise you that I have recommended you in the orders of the day and have recommended to the president that you be awarded the medal for distinguished service. Thank you, sir. I think Jean should get both our medals, Bob. She earned them. She really did, sir. The hardest job for a good reporter is to suppress untimely news. I assure you, Ms. Drew, on behalf of the people of the United States and myself, your efforts in this case are deeply appreciated. Thank you. Can I print that? This time? Yes."
+  },
+  {
+   "id": "T0113",
+   "scene": "EndoftheWorld@3185",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0114",
+   "scene": "CarnivalofSouls@107",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0115",
+   "scene": "CarnivalofSouls@2814",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0116",
+   "scene": "GonewiththeWest@3965",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0117",
+   "scene": "Kilimanjaro@5912",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0118",
+   "scene": "TheFlyingDeuces@3735",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0119",
+   "scene": "angel_and_the_badman@4087",
+   "title": "angel_and_the_badman",
+   "dialogue": "Oh, Andy's always on tape."
+  },
+  {
+   "id": "T0120",
+   "scene": "GonewiththeWest@4232",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0121",
+   "scene": "GonewiththeWest@5015",
+   "title": "GonewiththeWest",
+   "dialogue": "Sandy! Get away! You good little tin marshal. The park has got to be paid for his tune. Not just with money."
+  },
+  {
+   "id": "T0122",
+   "scene": "TheOver-the-HillGangRidesAgain@3968",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Shoot."
+  },
+  {
+   "id": "T0123",
+   "scene": "GonewiththeWest@2992",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0124",
+   "scene": "Minesweeper_1943@135",
+   "title": "Minesweeper_1943",
+   "dialogue": "You got those things trained. If they were I wouldn't be here. By this time next year, it is expected that every able-bodied man between the ages of 21 and 45 will be either in the armed service or working in a defense plant. How do you like that? I bet the next thing you know they'll be forcing us to go to work. Why don't you get wise to yourself, Madigan? The Japs attacked Pearl Harbor last week. We're at war. And every able-bodied man has a job to do. So what? A bunch of politicians ain't gonna wave no flag in my face and put me in no uniform. I don't owe this country a thing. Listen,"
+  },
+  {
+   "id": "T0125",
+   "scene": "teenagers_from_outerspace@4923",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "How is it you are able to leave the planet? Will not the government structure collapse in your absence?"
+  },
+  {
+   "id": "T0126",
+   "scene": "TheFlyingDeuces@3833",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0127",
+   "scene": "mr_robinson_crusoe@327",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "Ah, rainwater. That's not bad. Try it. Here, taste it. It's a little brackish, but not bad at all. Go on. Try it. Now, wait a minute. I'll give you one more chance. Coconuts. Freshwater from coconuts. Fresh water from coconuts. You must have an ancestor not very far removed that put his teeth into a situation like this and swallow this one go. Ah! Try it. Listen, if you're going to high hat, you and I are going to get into difficulty. You know, I'm a... I'm a darn psyched man. You know, I'm a darn psyched man. You know, I'm a... I'm a darn psyched man. You know, I'm a... I'm a darn sight more"
+  },
+  {
+   "id": "T0128",
+   "scene": "EndoftheWorld@4498",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0129",
+   "scene": "EndoftheWorld@660",
+   "title": "EndoftheWorld",
+   "dialogue": "We could at least go back to the bedroom. I'll never make it."
+  },
+  {
+   "id": "T0130",
+   "scene": "teenagers_from_outerspace@2921",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0131",
+   "scene": "Kilimanjaro@4403",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0132",
+   "scene": "ThePhantomCreeps@4524",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0133",
+   "scene": "Kilimanjaro@189",
+   "title": "Kilimanjaro",
+   "dialogue": "But they know their business."
+  },
+  {
+   "id": "T0134",
+   "scene": "GonewiththeWest@4608",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0135",
+   "scene": "GonewiththeWest@400",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0136",
+   "scene": "EndoftheWorld@33",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0137",
+   "scene": "GonewiththeWest@4681",
+   "title": "GonewiththeWest",
+   "dialogue": "Help! Help! Help! Help! Help!"
+  },
+  {
+   "id": "T0138",
+   "scene": "amazing_adventure@2627",
+   "title": "amazing_adventure",
+   "dialogue": ""
+  },
+  {
+   "id": "T0139",
+   "scene": "GonewiththeWest@2758",
+   "title": "GonewiththeWest",
+   "dialogue": "Go dig his grave."
+  },
+  {
+   "id": "T0140",
+   "scene": "angel_and_the_badman@2604",
+   "title": "angel_and_the_badman",
+   "dialogue": ""
+  },
+  {
+   "id": "T0141",
+   "scene": "mr_robinson_crusoe@2474",
+   "title": "mr_robinson_crusoe",
+   "dialogue": ""
+  },
+  {
+   "id": "T0142",
+   "scene": "Phantom_Planet@995",
+   "title": "Phantom_Planet",
+   "dialogue": "Frank!"
+  },
+  {
+   "id": "T0143",
+   "scene": "CarnivalofSouls@2457",
+   "title": "CarnivalofSouls",
+   "dialogue": "That man."
+  },
+  {
+   "id": "T0144",
+   "scene": "GonewiththeWest@2865",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0145",
+   "scene": "Kilimanjaro@3536",
+   "title": "Kilimanjaro",
+   "dialogue": "But into it I poured the anger that I felt and some dirt and belly laugh humor."
+  },
+  {
+   "id": "T0146",
+   "scene": "CarnivalofSouls@585",
+   "title": "CarnivalofSouls",
+   "dialogue": "I don't know about that girl. How do you mean? The day before yesterday, she was the only one of three girls to survive an accident. You'd think she'd feel a little something like humbleness or gratitude. Never know what she thinks. She's always kept pretty much to herself. Yeah, maybe in her place I'd do the same thing. Just pick up life again. Well, she's so quiet like she fools you. But she's a tough-minded little thing. I guess that's what it takes to survive. But I still say she's behaving strangely. Well, if she's got a problem, it'll go right along with her. Yep."
+  },
+  {
+   "id": "T0147",
+   "scene": "Kilimanjaro@6182",
+   "title": "Kilimanjaro",
+   "dialogue": "We're at a sharp knife. The area, slip sharp point of knife. Fly dry, Tracy."
+  },
+  {
+   "id": "T0148",
+   "scene": "mr_robinson_crusoe@0",
+   "title": "mr_robinson_crusoe",
+   "dialogue": ""
+  },
+  {
+   "id": "T0149",
+   "scene": "teenagers_from_outerspace@251",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0150",
+   "scene": "CaptainKidd_@4882",
+   "title": "CaptainKidd_",
+   "dialogue": "Quiet! Handle on, Boots!"
+  },
+  {
+   "id": "T0151",
+   "scene": "CarnivalofSouls@4777",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0152",
+   "scene": "GonewiththeWest@348",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0153",
+   "scene": "ThePhantomCreeps@146",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0154",
+   "scene": "BloodontheSun@2101",
+   "title": "BloodontheSun",
+   "dialogue": "Isn't it clear to you now?"
+  },
+  {
+   "id": "T0155",
+   "scene": "Minesweeper_1943@739",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0156",
+   "scene": "mr_robinson_crusoe@303",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "Rudy, we're certainly in for it now. Cut off in the world for many, many months. I suppose the first thing to do is to look for water."
+  },
+  {
+   "id": "T0157",
+   "scene": "TheOver-the-HillGangRidesAgain@4168",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "He was our friend and our comrade in our. There's a whole lot more I could say about him, but I reckon that that marking on the gravestone says it all. Now, most of his life was doing good for others."
+  },
+  {
+   "id": "T0158",
+   "scene": "heartbeat@352",
+   "title": "heartbeat",
+   "dialogue": "Good. Good. I was afraid you'd gone."
+  },
+  {
+   "id": "T0159",
+   "scene": "teenagers_from_outerspace@2268",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Oh, Grandpa, thank heavens. Derek, he's all right. Betty, what is it, child? What's the matter? Grandpa, was somebody there? Somebody you told me were at the college? Oh, yes, a friend of Derek's. Did he find you okay? He's a murderer. He killed Professor Simpson, Grandpa. He's after Derek, and he's probably on the way back to the house right now. A murderer? But are the police... Don't argue, Grandpa. Just get out of there. We're going to the city hall police station right now. Meet us there. Don't worry about me, Betty. I'll leave right away. Goodbye, honey."
+  },
+  {
+   "id": "T0160",
+   "scene": "teenagers_from_outerspace@1164",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Hey, I thought you were getting ready to go swimming. No, that can wait."
+  },
+  {
+   "id": "T0161",
+   "scene": "GonewiththeWest@1682",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0162",
+   "scene": "GonewiththeWest@4625",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0163",
+   "scene": "EndoftheWorld@2880",
+   "title": "EndoftheWorld",
+   "dialogue": "Re-re-re-re-re-re..."
+  },
+  {
+   "id": "T0164",
+   "scene": "Minesweeper_1943@3897",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0165",
+   "scene": "mr_robinson_crusoe@4117",
+   "title": "mr_robinson_crusoe",
+   "dialogue": ""
+  },
+  {
+   "id": "T0166",
+   "scene": "GonewiththeWest@872",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0167",
+   "scene": "angel_and_the_badman@3712",
+   "title": "angel_and_the_badman",
+   "dialogue": ""
+  },
+  {
+   "id": "T0168",
+   "scene": "GonewiththeWest@1468",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0169",
+   "scene": "mr_robinson_crusoe@1389",
+   "title": "mr_robinson_crusoe",
+   "dialogue": ""
+  },
+  {
+   "id": "T0170",
+   "scene": "TheFlyingDeuces@3965",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0171",
+   "scene": "angel_and_the_badman@4648",
+   "title": "angel_and_the_badman",
+   "dialogue": "Hers was like corn silk, you say."
+  },
+  {
+   "id": "T0172",
+   "scene": "BloodontheSun@2974",
+   "title": "BloodontheSun",
+   "dialogue": "bootleg thinking that's not good enough and so you've elected to help them why not i'm a woman"
+  },
+  {
+   "id": "T0173",
+   "scene": "GonewiththeWest@4826",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0174",
+   "scene": "Kilimanjaro@4323",
+   "title": "Kilimanjaro",
+   "dialogue": "I don't understand English, sir. Excuse me. You know an American driver by the name of Cynthia Green? I don't understand English, sir."
+  },
+  {
+   "id": "T0175",
+   "scene": "ThePhantomCreeps@618",
+   "title": "ThePhantomCreeps",
+   "dialogue": "That must be Bob West. It's a government plane."
+  },
+  {
+   "id": "T0176",
+   "scene": "teenagers_from_outerspace@339",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Of what concern our foreign beings? Of none to you, Thor. Just as you were so unconcerned when you destroyed the small creature. So bravely. It was no more than an insect. But it had life. And that life you had to take to satisfy your endless hunger for killing. Silence, both of you. Proceed, bring the gargon."
+  },
+  {
+   "id": "T0177",
+   "scene": "TheGhoul@4026",
+   "title": "TheGhoul",
+   "dialogue": ""
+  },
+  {
+   "id": "T0178",
+   "scene": "TheOver-the-HillGangRidesAgain@3976",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0179",
+   "scene": "GonewiththeWest@5353",
+   "title": "GonewiththeWest",
+   "dialogue": "But a man can be his own monster And a man can stand like a stone"
+  },
+  {
+   "id": "T0180",
+   "scene": "Minesweeper_1943@3800",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0181",
+   "scene": "CaptainKidd_@338",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0182",
+   "scene": "secret_weapon@3794",
+   "title": "secret_weapon",
+   "dialogue": "Wait."
+  },
+  {
+   "id": "T0183",
+   "scene": "Kilimanjaro@4620",
+   "title": "Kilimanjaro",
+   "dialogue": "Let's go!"
+  },
+  {
+   "id": "T0184",
+   "scene": "teenagers_from_outerspace@2950",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Proceed."
+  },
+  {
+   "id": "T0185",
+   "scene": "amazing_adventure@2019",
+   "title": "amazing_adventure",
+   "dialogue": "Oh, no. No, I haven't won that bet yet."
+  },
+  {
+   "id": "T0186",
+   "scene": "ThePhantomCreeps@1592",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0187",
+   "scene": "GonewiththeWest@3724",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0188",
+   "scene": "Kilimanjaro@4453",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0189",
+   "scene": "Minesweeper_1943@1471",
+   "title": "Minesweeper_1943",
+   "dialogue": "Headwind, sir, engine stop. Swinging right and drifting back along our sweep line toward the mine. I heard one third come left to your course. Aye, aye, sir. If we're back on our course toward that little number, we'd make a great show, wouldn't it? A one-way ticket to Davy Jones. Here she is. Here! Notify the other ship to stand by and maintain strain on the cable. We'll lower boats and cut loose the mine. Send out a detail and boats to unfile the gear. Aye, aye, sir."
+  },
+  {
+   "id": "T0190",
+   "scene": "GonewiththeWest@3578",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0191",
+   "scene": "teenagers_from_outerspace@3904",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Why wouldn't the gun work? Must have been damaged somehow. When Thor was thrown in the crash. You said that thing would keep growing. If it does, what can stop it from wrecking the city? I may be able to repair the damaged part of the disintegrator. If I can, we will stop the Gargan and give the Earth a weapon against invasion as well. If only I can get it to work."
+  },
+  {
+   "id": "T0192",
+   "scene": "Kilimanjaro@4392",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0193",
+   "scene": "Minesweeper_1943@1212",
+   "title": "Minesweeper_1943",
+   "dialogue": "I missed."
+  },
+  {
+   "id": "T0194",
+   "scene": "TheFlyingDeuces@3538",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0195",
+   "scene": "teenagers_from_outerspace@3654",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0196",
+   "scene": "Kilimanjaro@92",
+   "title": "Kilimanjaro",
+   "dialogue": "Close to the western summit, there is the dried and frozen carcass of a leopard."
+  },
+  {
+   "id": "T0197",
+   "scene": "TheGhoul@2928",
+   "title": "TheGhoul",
+   "dialogue": "The things, see, I swear it. When you told me you'd come back from the grave, how could I believe you? I never knew such things could be. I have no got it. The girl. She has it. I swear it. Oh. Look as if you've seen a ghost. I have. I saw Morlant as plainly as I see you. I'm going to mix myself a drink. Betty, just a minute. Well? I have an idea they're trying to scare us out of this house."
+  },
+  {
+   "id": "T0198",
+   "scene": "mr_robinson_crusoe@2146",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "This is Gottsch's famous toehold in my own hammerlock. How do you like that? There, now you be a good boy. Hey, I've got this."
+  },
+  {
+   "id": "T0199",
+   "scene": "TheGhoul@2127",
+   "title": "TheGhoul",
+   "dialogue": "You may say I have no right to express this opinion, but to my mind it's a scandalous and disgraceful burial, which may have disastrous consequences. It would be very disastrous if he came back, wouldn't it? I quite see Mr. Hartley's point. Yes, you make friends quickly, don't you? An enemy's quicker. Need me have these childish squabbles? We all know the dead men don't come back. Oh, I wish I was back home in bed. Hadn't somebody better answer that? I'm sorry to do it with an intimate friend of Professor Mullen. Well, you'd better come in. We seem to be giving a party. Oh, thank you. My name"
+  },
+  {
+   "id": "T0200",
+   "scene": "Inner_Sanctum_movie@3024",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": "Let me lean on your shoulder. All right. What's going on up there?"
+  },
+  {
+   "id": "T0201",
+   "scene": "TheOver-the-HillGangRidesAgain@3979",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0202",
+   "scene": "GonewiththeWest@4784",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0203",
+   "scene": "CaptainKidd_@355",
+   "title": "CaptainKidd_",
+   "dialogue": "Are we such calloused rascals that we'd leave a dead comrade without commending his soul to his new master?"
+  },
+  {
+   "id": "T0204",
+   "scene": "EndoftheWorld@4630",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0205",
+   "scene": "CaptainKidd_@5042",
+   "title": "CaptainKidd_",
+   "dialogue": "Greetings, Captain. What news have you brought me from the Indian seas? By your leave, Your Majesty, both good and ill, but mostly very good indeed. I returned by way of the American colonies, sire. So I understood. With the main points of your voyage, I am familiar. I wonder if you can enlighten me about the affair of the Queen's godchild, Lady Anne Dunstan, and your shipmaster, Mr. Mercy. Oh, that poor impetuous fellow, sire. Enveigled that bud of innocence he did into running away with him and catching him red-handed in defense of the very life. I was forced to dispatch and bone. Rest in"
+  },
+  {
+   "id": "T0206",
+   "scene": "ThePhantomCreeps@1038",
+   "title": "ThePhantomCreeps",
+   "dialogue": "None, what if? Damn, what happened?"
+  },
+  {
+   "id": "T0207",
+   "scene": "GonewiththeWest@753",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0208",
+   "scene": "CarnivalofSouls@4690",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0209",
+   "scene": "CarnivalofSouls@4054",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0210",
+   "scene": "GonewiththeWest@3299",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0211",
+   "scene": "angel_and_the_badman@4809",
+   "title": "angel_and_the_badman",
+   "dialogue": "No, Quirt. You don't raid a new rope with me."
+  },
+  {
+   "id": "T0212",
+   "scene": "Kilimanjaro@4076",
+   "title": "Kilimanjaro",
+   "dialogue": "I think I'm rather sorry I'm not the right one."
+  },
+  {
+   "id": "T0213",
+   "scene": "secret_weapon@3839",
+   "title": "secret_weapon",
+   "dialogue": "I can't wait any longer, Holmes. You'll have to forgive the crudity, my friend. This is only the coup de grace. Stand still, Moriarty, you're done for. Hold! On the contrary, Inspector, my men are outside. It's you who are done for. Really? Just take a look out the window. And see for yourself. He'll try to get to the speedboat. Yes, he won't go without Tobel. Come along. Wait."
+  },
+  {
+   "id": "T0214",
+   "scene": "TheOver-the-HillGangRidesAgain@1171",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Jason. Grief can play tricks on a man. Swear, that drunk at the end of the bar looks just like the Baltimore kid to me, too. Pour us another round of drinks. Never mind more drinks, you dang fools. Grief ain't playing no tricks. That there is the Baltimore kid."
+  },
+  {
+   "id": "T0215",
+   "scene": "TheOver-the-HillGangRidesAgain@3959",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Hurry, hurry. Shook out. Get out of here."
+  },
+  {
+   "id": "T0216",
+   "scene": "GonewiththeWest@4787",
+   "title": "GonewiththeWest",
+   "dialogue": "You good little tin marshal."
+  },
+  {
+   "id": "T0217",
+   "scene": "ThePhantomCreeps@2274",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0218",
+   "scene": "CarnivalofSouls@2462",
+   "title": "CarnivalofSouls",
+   "dialogue": "I didn't mean any harm. I just stopped to get a drink. No."
+  },
+  {
+   "id": "T0219",
+   "scene": "TheOver-the-HillGangRidesAgain@598",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "I don't know about that, Jason. We got a message for you. Brazos!"
+  },
+  {
+   "id": "T0220",
+   "scene": "TheGhoul@2470",
+   "title": "TheGhoul",
+   "dialogue": "Scared of a dead man in his tomb? Shame on yourself. Are you a child that your knee should rattle at the talk of a madman? Look your enemy in the face. It's the fear the big door has got you and will hold you fast till you stare it down. You dead men walk. I'm not thinking a dead man will cross my path tonight."
+  },
+  {
+   "id": "T0221",
+   "scene": "CaptainKidd_@5171",
+   "title": "CaptainKidd_",
+   "dialogue": "Nightmare! A pity you overlooked last hope, Captain. We stood on the headland with my friend Avery and watched you sail by. May it please, Your Majesty, I accuse this man of piracy and murder. was ever a gentleman so misogynate. Lock him up in Newgate. He is to be held for the next session of the court of Oye and Terminer. They ought to be tried for his life. Handle me, you coward! All I done was to the credit and for the honor and glory of England!"
+  },
+  {
+   "id": "T0222",
+   "scene": "CaptainKidd_@74",
+   "title": "CaptainKidd_",
+   "dialogue": "Madagascar, for centuries the bloodiest cockpit of all the seas, where the infamous Brotherhood of the Damned waited to plunder the treasure-laden galleons from India and Cathay, then returned drunk with slaughter to their pirate stronghold of last hope. Most ruthless of all was Captain William Kidd. He encountered the great London galleon, the Twelve Apostles, commanded by Admiral Lord Blaine and approaching unsuspected in the guise of a peaceful merchant, by a sudden treacherous salvo he reduced her to a burning hulk. When night fell, the Twelve Apostles"
+  },
+  {
+   "id": "T0223",
+   "scene": "Kilimanjaro@4298",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0224",
+   "scene": "GonewiththeWest@1383",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0225",
+   "scene": "TheOver-the-HillGangRidesAgain@410",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Will you please place the ring on her finger? Ring?"
+  },
+  {
+   "id": "T0226",
+   "scene": "CaptainKidd_@345",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0227",
+   "scene": "Kilimanjaro@4658",
+   "title": "Kilimanjaro",
+   "dialogue": "Come on!"
+  },
+  {
+   "id": "T0228",
+   "scene": "TheFlyingDeuces@1306",
+   "title": "TheFlyingDeuces",
+   "dialogue": "Ah!"
+  },
+  {
+   "id": "T0229",
+   "scene": "GonewiththeWest@5060",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0230",
+   "scene": "Kilimanjaro@5960",
+   "title": "Kilimanjaro",
+   "dialogue": "Through the fields of pups. Like opium. Opium. Makes you feel funny."
+  },
+  {
+   "id": "T0231",
+   "scene": "GonewiththeWest@4877",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0232",
+   "scene": "GonewiththeWest@3981",
+   "title": "GonewiththeWest",
+   "dialogue": "Abide with me as falls even tight."
+  },
+  {
+   "id": "T0233",
+   "scene": "CaptainKidd_@3702",
+   "title": "CaptainKidd_",
+   "dialogue": "Well, my father said Captain Kidd told you. Shadwell, what manner of ship is this? My father was killed deliberately, I'm sure of this. That's why I can't bear to face your captain. I'd accuse him of... There is a man on board, milady."
+  },
+  {
+   "id": "T0234",
+   "scene": "ThePhantomCreeps@1856",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0235",
+   "scene": "angel_and_the_badman@4156",
+   "title": "angel_and_the_badman",
+   "dialogue": ""
+  },
+  {
+   "id": "T0236",
+   "scene": "BloodontheSun@2066",
+   "title": "BloodontheSun",
+   "dialogue": "that Mr. and Mrs. Miller were murdered last night. Yes. We read in the papers this morning about your escapade last night, Mr. Condon. In your incoherent condition, you spoke of this unpleasant fantasy. As we were concerned with the fate of Mr. Miller even more than you, we immediately made inquiries. From the captain of the Nagata Maru, a most trustworthy gentleman."
+  },
+  {
+   "id": "T0237",
+   "scene": "EndoftheWorld@3739",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0238",
+   "scene": "TheOver-the-HillGangRidesAgain@3411",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "He was nothing but an old drunk anyway."
+  },
+  {
+   "id": "T0239",
+   "scene": "Minesweeper_1943@3888",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0240",
+   "scene": "ThePhantomCreeps@3272",
+   "title": "ThePhantomCreeps",
+   "dialogue": "There's nothing that can withstand its power."
+  },
+  {
+   "id": "T0241",
+   "scene": "Phantom_Planet@3881",
+   "title": "Phantom_Planet",
+   "dialogue": "Oh, it was a magnificent victory. But I'm deeply plagued with regret when I'm forced to destroy. If it wasn't them, it would have been you. Perhaps you are right. You're wise Chapman. One day you and Harrod will lead our people. I'm ungrateful, but... I will teach him all he needs to know."
+  },
+  {
+   "id": "T0242",
+   "scene": "CaptainKidd_@54",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0243",
+   "scene": "Kilimanjaro@5915",
+   "title": "Kilimanjaro",
+   "dialogue": "That man finally gets tired. Molo. Congoni. In the tent. Congoni. I don't want to go in the tent. In the tent. Oh, it's a clear night. It's not going to rain. You'll do just as I say. What a life! Man can't live as he pleases. Can't even die as he pleases. Die as he flees."
+  },
+  {
+   "id": "T0244",
+   "scene": "Kilimanjaro@6529",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0245",
+   "scene": "GonewiththeWest@4110",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0246",
+   "scene": "CarnivalofSouls@1342",
+   "title": "CarnivalofSouls",
+   "dialogue": "I would with you along. Good."
+  },
+  {
+   "id": "T0247",
+   "scene": "Kilimanjaro@283",
+   "title": "Kilimanjaro",
+   "dialogue": "Ow! Ow! Oh, jeez."
+  },
+  {
+   "id": "T0248",
+   "scene": "GonewiththeWest@2811",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0249",
+   "scene": "GonewiththeWest@4582",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0250",
+   "scene": "TheOver-the-HillGangRidesAgain@3996",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Shoot. You mind your manner."
+  },
+  {
+   "id": "T0251",
+   "scene": "BloodontheSun@5094",
+   "title": "BloodontheSun",
+   "dialogue": "Ah Help!"
+  },
+  {
+   "id": "T0252",
+   "scene": "EndoftheWorld@3436",
+   "title": "EndoftheWorld",
+   "dialogue": "They're so powerful. But limited. We must be prisoners of this place. unable to function away from it. Otherwise, they'd get the crystal themselves. What are they going to do? We're waiting around to find out. We're going to get out of here. Oh, how? Look at this place. The door's wide open. There's no one guarding this. When they sleep, maybe their powers sleep with them. Now, come on. Come on."
+  },
+  {
+   "id": "T0253",
+   "scene": "BloodontheSun@917",
+   "title": "BloodontheSun",
+   "dialogue": "Have you got to America? Oh, no. You're too anxious to get rid of me. I'm just going to see a couple of friends of mine off on the boat. Your name, please. Name? Well, uh, there's Shushikata here. He's been tailing me all day. I am Thought Control Officer. Pleased to answer questions. All right. I'll give you an answer. I'm thinking this is a new loan stupidity, even for the Imperial Police. Now, I want to see Mr. and Mrs. Miller, Stateroom 23. Any objections? Ah, yes. Mr. and Mrs. Miller? Not yet arrived. Well, I'll wait for them on deck. Sorry. Not permitted tonight. Excuse me, please. I'm"
+  },
+  {
+   "id": "T0254",
+   "scene": "Phantom_Planet@2971",
+   "title": "Phantom_Planet",
+   "dialogue": "Chapman, come here. Those are gravity plates that we've had placed here."
+  },
+  {
+   "id": "T0255",
+   "scene": "TheOver-the-HillGangRidesAgain@10",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0256",
+   "scene": "GonewiththeWest@1234",
+   "title": "GonewiththeWest",
+   "dialogue": "Oh, my God!"
+  },
+  {
+   "id": "T0257",
+   "scene": "Kilimanjaro@1957",
+   "title": "Kilimanjaro",
+   "dialogue": "Harry!"
+  },
+  {
+   "id": "T0258",
+   "scene": "teenagers_from_outerspace@4291",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "If only there were more power, Betty. Is there any way to generate more power? We've got to have more."
+  },
+  {
+   "id": "T0259",
+   "scene": "ThePhantomCreeps@4557",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0260",
+   "scene": "CaptainKidd_@3109",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0261",
+   "scene": "heartbeat@3987",
+   "title": "heartbeat",
+   "dialogue": ""
+  },
+  {
+   "id": "T0262",
+   "scene": "GonewiththeWest@433",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0263",
+   "scene": "GonewiththeWest@4299",
+   "title": "GonewiththeWest",
+   "dialogue": "Come on! Where'd they go? Come on! Hold it! Get him! Get him! Where'd they go? Keep after him! Get away! Hey, come back here! Get back down! I'm going back."
+  },
+  {
+   "id": "T0264",
+   "scene": "ThePhantomCreeps@4098",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0265",
+   "scene": "CaptainKidd_@116",
+   "title": "CaptainKidd_",
+   "dialogue": "Stap me, there's a pretty sight. It'll be prettier still when the fire reaches the magazine, captain pretty though lots of stout semen among them they've been with us a long time we can none of us live forever mr boyle dead men don't talk man your own we got this job to do before high tide There. And dig fast. If the tide catches us there, it'll save the king's hangman some rope. There you are. Deep enough to bury a man in. Give us a hand, man. Already, Captain. Down she goes. What are you waiting for? Well, Captain, that chest's been in your cabin a longish time."
+  },
+  {
+   "id": "T0266",
+   "scene": "GonewiththeWest@4948",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0267",
+   "scene": "TheOver-the-HillGangRidesAgain@4020",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Bando!"
+  },
+  {
+   "id": "T0268",
+   "scene": "Phantom_Planet@1205",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0269",
+   "scene": "CaptainKidd_@4891",
+   "title": "CaptainKidd_",
+   "dialogue": "Quiet! Hold on to me. Take her away. Today's jet is a mackerel. He's gone through. I guess that's the end of it, may cap? Ah, good riddles. Back to the ship, boys."
+  },
+  {
+   "id": "T0270",
+   "scene": "secret_weapon@2955",
+   "title": "secret_weapon",
+   "dialogue": "Dead? Dead as a doornail. Mr. Holmes, where did you know about this? The yard only heard 15 minutes ago. We'd better hurry, Holmes. There's still time to save Farrell and Kern. Farrell and Kern. Too late, Watson. About this time, Farrell and Kern are dead too. What? Deductions again, Mr. Rose? Facts, Inspector. Oh, facts. But how do you know about them? Elementary, my dear Watson. This man has been dead for at least two hours. Moriarty isn't wasting any time. Hello? This is Lestrade. Put me on the mackety. Mackety? Oh, this is Lestrade. Do you know anything about two men named, uh, Farrell"
+  },
+  {
+   "id": "T0271",
+   "scene": "BloodontheSun@1415",
+   "title": "BloodontheSun",
+   "dialogue": ""
+  },
+  {
+   "id": "T0272",
+   "scene": "teenagers_from_outerspace@3998",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0273",
+   "scene": "CaptainKidd_@3042",
+   "title": "CaptainKidd_",
+   "dialogue": "Much too tidy for that, more like a kingship. Yet she has the lines of a merchantman. Have the longboat ready and manned. Longboat, same boat! Stand by to put a shot across her bows, Mr. Mercy. Aye, sir. Number four gun crew, stand by for action! She's flying the English colors. Perhaps she's our escort ship. It was about here we were to meet, wasn't it? Well, we'll make dead certain just the same. Mr. Hilliard, see that all hands are at the station. Very good, sir. Ready? Fire! Well, thanks, Mr. Mercy. How did Starboard? Doctor Starboard? Starboard, she is, sir."
+  },
+  {
+   "id": "T0274",
+   "scene": "Kilimanjaro@4674",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0275",
+   "scene": "TheOver-the-HillGangRidesAgain@2008",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Hey, kid. Excuse me. Well, welcome. Welcome. I want you to meet a very dear friend of mine. Never mind a few friends. What about the old ones? What about your promise to us? Promise? Yeah, that you weren't going to drink no more. I'm not drinking. I was just chatting with my lady friend."
+  },
+  {
+   "id": "T0276",
+   "scene": "EndoftheWorld@2815",
+   "title": "EndoftheWorld",
+   "dialogue": "The only thing we can do... go it alone."
+  },
+  {
+   "id": "T0277",
+   "scene": "teenagers_from_outerspace@3869",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "There it is, Derek! It was under the rock! Quick! Shoot it, Derek! Shoot it! It won't work! Run!"
+  },
+  {
+   "id": "T0278",
+   "scene": "GonewiththeWest@3582",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0279",
+   "scene": "GonewiththeWest@329",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0280",
+   "scene": "CarnivalofSouls@2721",
+   "title": "CarnivalofSouls",
+   "dialogue": "I could go out there. I could put an end to that, too. I could go out there. Now, don't be hasty. If it is all my imagination, I could put a stop to it. Maybe, but at least someone should be with you. Now I can't possibly get away now. I'm a person of strong will. And the time to go out there is now. And if I have to, I can go alone."
+  },
+  {
+   "id": "T0281",
+   "scene": "ThePhantomCreeps@4587",
+   "title": "ThePhantomCreeps",
+   "dialogue": "They hurt me! And I take them with me! All of them! Put them down! I'm for the ocean! I must be killed! I'll give up first!"
+  },
+  {
+   "id": "T0282",
+   "scene": "Kilimanjaro@4514",
+   "title": "Kilimanjaro",
+   "dialogue": "Dad! You're hurt. Hold me a little. You're very hurt. Oh, dear little. Not like a horse. No. I'm getting help. No, I can't help. Stretch your back!"
+  },
+  {
+   "id": "T0283",
+   "scene": "GonewiththeWest@5142",
+   "title": "GonewiththeWest",
+   "dialogue": "Life isn't just a Sunday picnic, life isn't just a ball. Life isn't just a bed of bruises, life isn't just at all."
+  },
+  {
+   "id": "T0284",
+   "scene": "teenagers_from_outerspace@3522",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0285",
+   "scene": "Phantom_Planet@1511",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0286",
+   "scene": "CaptainKidd_@2570",
+   "title": "CaptainKidd_",
+   "dialogue": "our midst, and I esteem it a privilege to commit his body to the deep. We shall all mourn him. Aye, we shall mourn him, but take comfort, my friends. We shall never see his like again."
+  },
+  {
+   "id": "T0287",
+   "scene": "Phantom_Planet@4442",
+   "title": "Phantom_Planet",
+   "dialogue": "Good. You're on time. Here we go."
+  },
+  {
+   "id": "T0288",
+   "scene": "TheOver-the-HillGangRidesAgain@2409",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0289",
+   "scene": "ThePhantomCreeps@3233",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Let me out. Let me! Doctor! Doctor! Doctor Zorka! Doctor! Doctor! Light! Meteorite! Where is it? Gone! We're locked in with Zorba King!"
+  },
+  {
+   "id": "T0290",
+   "scene": "teenagers_from_outerspace@2535",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Eric, no!"
+  },
+  {
+   "id": "T0291",
+   "scene": "Phantom_Planet@3133",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0292",
+   "scene": "CarnivalofSouls@1930",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0293",
+   "scene": "mr_robinson_crusoe@2713",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "George Graham is killed instantly after jumping from a seven-story window."
+  },
+  {
+   "id": "T0294",
+   "scene": "ThePhantomCreeps@2669",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0295",
+   "scene": "GonewiththeWest@5170",
+   "title": "GonewiththeWest",
+   "dialogue": "Life isn't just in a man you can trust"
+  },
+  {
+   "id": "T0296",
+   "scene": "TheOver-the-HillGangRidesAgain@1076",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Feels kinda empty."
+  },
+  {
+   "id": "T0297",
+   "scene": "mr_robinson_crusoe@250",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "Oops!"
+  },
+  {
+   "id": "T0298",
+   "scene": "ThePhantomCreeps@4620",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0299",
+   "scene": "mr_robinson_crusoe@3435",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "Come on, I treat the other."
+  },
+  {
+   "id": "T0300",
+   "scene": "Kilimanjaro@4662",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0301",
+   "scene": "Minesweeper_1943@3356",
+   "title": "Minesweeper_1943",
+   "dialogue": "It's like looking for a needle in a haystack."
+  },
+  {
+   "id": "T0302",
+   "scene": "Kilimanjaro@1777",
+   "title": "Kilimanjaro",
+   "dialogue": "Don't you think it's time to have the first shot? What? Oh, no, no, I don't want it. How correct you are, Mr. Johnson. No, I definitely don't want it. Come on, you'll do it marvelously. One duke, none of them, sir. Come on, he's all yours. Now, take it easy. Just imagine he's a tin can in the camp. But he's not a tin can. Actually, I don't want to do it. I don't want to shoot low at this distance. Careful, don't smoke. Now, just set them squarely in your sights. Freeze yourself and squeeze. Dear Harry, please shut up. Come on, hurry up. Will you shoot the... Missed. I told you I didn't want"
+  },
+  {
+   "id": "T0303",
+   "scene": "teenagers_from_outerspace@2572",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Thank the Lord you're safe. I just came from Alice's. There was a skeleton in the pool. Alice? Oh, no. We came to meet Grandpa. The murderer came in the car with him. What? But how did you get mixed up in this? Since he killed Sparky out by the old mine. He's an insane killer, Joe. And he forced Gramps to drive here? Where is Gramps? Is he okay? Yes, he's... Oh, there he is, trying to get across the street."
+  },
+  {
+   "id": "T0304",
+   "scene": "GonewiththeWest@3751",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0305",
+   "scene": "secret_weapon@3836",
+   "title": "secret_weapon",
+   "dialogue": ""
+  },
+  {
+   "id": "T0306",
+   "scene": "ThePhantomCreeps@3520",
+   "title": "ThePhantomCreeps",
+   "dialogue": "The random radio is locked somewhere, Captain. The instruments prove that. Phone for more men. Have them surround the block. We'll search every building in this neighborhood if necessary, Jeff. We'll cover as much as we can until help arrives. Jim, you take that seat. Come on, Jim."
+  },
+  {
+   "id": "T0307",
+   "scene": "GonewiththeWest@1429",
+   "title": "GonewiththeWest",
+   "dialogue": "You're not here."
+  },
+  {
+   "id": "T0308",
+   "scene": "angel_and_the_badman@1049",
+   "title": "angel_and_the_badman",
+   "dialogue": "How is he? Hungry. Oh, he's hungry. He's going to be all right. Thanks a lot for housing. You're welcome. Smoke sausage and eggs? Sounds great. Two eggs or would you like three? I'd like six. You shall have them. Penny, get one of father's shirts and a razor. I'll get him some food. So I talked a lot. Yes. I listened only because I thought you might say something that would aid us in helping you. As to notifying your wife, for instance. What did I say? If you had a wife. What did I talk about? Well, you talked of Margaret. She, uh, she filled out a red dress. What else? Oh, you mentioned"
+  },
+  {
+   "id": "T0309",
+   "scene": "EndoftheWorld@1238",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0310",
+   "scene": "ThePhantomCreeps@1869",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0311",
+   "scene": "Kilimanjaro@3520",
+   "title": "Kilimanjaro",
+   "dialogue": "And what a woman. I wrote a book about her, too."
+  },
+  {
+   "id": "T0312",
+   "scene": "ThePhantomCreeps@1064",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0313",
+   "scene": "Phantom_Planet@1694",
+   "title": "Phantom_Planet",
+   "dialogue": "We do not speak it. But here on Raytan... Raytan? Yes, Raytan. The name of our planet. Here we are able to translate all languages through voice tone waves. Why all these explanations? Let us go on with the charges. You're right, Heron. This is no time for explanations. Explanations."
+  },
+  {
+   "id": "T0314",
+   "scene": "GonewiththeWest@167",
+   "title": "GonewiththeWest",
+   "dialogue": "Come on, let's go. Come on, get along."
+  },
+  {
+   "id": "T0315",
+   "scene": "GonewiththeWest@2790",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0316",
+   "scene": "EndoftheWorld@354",
+   "title": "EndoftheWorld",
+   "dialogue": "This is Andrew Boran, Coldward Equator. I want to speak to Commander Beckerman. Hello, Commander. Andrew Boran. I've just been deciphering some signals from outer space. And the patterns are... are well... consistent. As though they're trying to form words or sentences. Have you picked up anything similar? Now, I wish I could tell you more. It's just a feeling I have. Okay. Thanks anyway. It's 5.30, Professor. And you are a guest of honor at that banquet this evening. Yeah, thanks, Larry."
+  },
+  {
+   "id": "T0317",
+   "scene": "amazing_adventure@2580",
+   "title": "amazing_adventure",
+   "dialogue": "That boss!"
+  },
+  {
+   "id": "T0318",
+   "scene": "TheFlyingDeuces@3837",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0319",
+   "scene": "Kilimanjaro@3606",
+   "title": "Kilimanjaro",
+   "dialogue": "You've got a few other things at home I'd like to call my own. I can't let you go, darling. I can't let go of you. Countess, there's no one like you."
+  },
+  {
+   "id": "T0320",
+   "scene": "GonewiththeWest@1024",
+   "title": "GonewiththeWest",
+   "dialogue": "You want me to split your head? Hey! Help!"
+  },
+  {
+   "id": "T0321",
+   "scene": "CaptainKidd_@727",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0322",
+   "scene": "GonewiththeWest@4861",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0323",
+   "scene": "ThePhantomCreeps@3266",
+   "title": "ThePhantomCreeps",
+   "dialogue": "and genius combined."
+  },
+  {
+   "id": "T0324",
+   "scene": "Inner_Sanctum_movie@3659",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": ""
+  },
+  {
+   "id": "T0325",
+   "scene": "CarnivalofSouls@4554",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0326",
+   "scene": "TheFlyingDeuces@3847",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0327",
+   "scene": "TheOver-the-HillGangRidesAgain@2970",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Just because he said he was the Baltimore kid?"
+  },
+  {
+   "id": "T0328",
+   "scene": "TheOver-the-HillGangRidesAgain@3869",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0329",
+   "scene": "Phantom_Planet@1071",
+   "title": "Phantom_Planet",
+   "dialogue": "Keep working that radar and keep working it until we locate Chapman. Yes, sir. He's got to be out there somewhere. He just has to be."
+  },
+  {
+   "id": "T0330",
+   "scene": "Kilimanjaro@1968",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0331",
+   "scene": "ThePhantomCreeps@4171",
+   "title": "ThePhantomCreeps",
+   "dialogue": "The soldiers out there, they'll get me. I take care of them with the sea array. Two of the soldiers are out there."
+  },
+  {
+   "id": "T0332",
+   "scene": "GonewiththeWest@1426",
+   "title": "GonewiththeWest",
+   "dialogue": "Oh"
+  },
+  {
+   "id": "T0333",
+   "scene": "angel_and_the_badman@1313",
+   "title": "angel_and_the_badman",
+   "dialogue": ""
+  },
+  {
+   "id": "T0334",
+   "scene": "CarnivalofSouls@1529",
+   "title": "CarnivalofSouls",
+   "dialogue": "Come in, Mrs. Farley. Just a minute. I thought you were going to stop it. Yeah, I, uh, what's when you asked me in? I, I'm John Linden. I'm your neighbor right across the hall. Oh, nice to meet you. Excuse me. Hey, I, uh, I was wondering if you're not doing it. Stand right there."
+  },
+  {
+   "id": "T0335",
+   "scene": "angel_and_the_badman@437",
+   "title": "angel_and_the_badman",
+   "dialogue": "Sam. Don't. If that doesn't quiet him, I don't know who it will. I'll never get that bullet out with him kicking around like that. I'm afraid to give him any more sedative. He's already had enough. Please be quiet. The doctor's trying to... He can't hear you. What do you suppose that delirious mind is searching for? He must be in great pain. Not with that much laudanum in him. It's as if he were reaching for something. Something specific. I don't understand it. By now, he should be completely inert. I didn't think... No. What? All right. Well, Thomas, how is the young man? Delirious. A gun in"
+  },
+  {
+   "id": "T0336",
+   "scene": "Kilimanjaro@2687",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0337",
+   "scene": "TheFlyingDeuces@2071",
+   "title": "TheFlyingDeuces",
+   "dialogue": "Turn out the guard and place them both under arrest. Yes, sir."
+  },
+  {
+   "id": "T0338",
+   "scene": "Minesweeper_1943@66",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0339",
+   "scene": "GonewiththeWest@715",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0340",
+   "scene": "ThePhantomCreeps@2682",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0341",
+   "scene": "teenagers_from_outerspace@2209",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Oh, some kind of foolish joke. I'm not going to keep a job where this sort of thing goes on. I want to believe what I'm thinking isn't true, but... It was a focusing disintegrator. Then whoever killed Sparky... But you said they'd gone. For some reason they weren't to stop me. Somehow we were traced here. I want you to get in your vehicle and go to a place where you will be safe. But how could they... Grandpa, I left a note for Grandpa. They must have... Oh, Derek! I will go to your place. No, they may be waiting for you there. I can call Grandpa."
+  },
+  {
+   "id": "T0342",
+   "scene": "teenagers_from_outerspace@2462",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "What are you doing? Be silent. Continue ahead."
+  },
+  {
+   "id": "T0343",
+   "scene": "CarnivalofSouls@4269",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0344",
+   "scene": "CaptainKidd_@2161",
+   "title": "CaptainKidd_",
+   "dialogue": "Hey!"
+  },
+  {
+   "id": "T0345",
+   "scene": "teenagers_from_outerspace@4063",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Derek, they say it's coming. It has grown. It's just northeast of town. I'd better wake up Grandpa. We'll all go down to the cellar. You go there with him. There is a chance I can do something yet. What? What are you looking at?"
+  },
+  {
+   "id": "T0346",
+   "scene": "Kilimanjaro@3624",
+   "title": "Kilimanjaro",
+   "dialogue": "I can't, Harry. I've hardly anything on. Get up here. Please, lover. Not out here. I suppose it was the elusiveness of Liz which was her main attraction. She was something to hunt down and trap and capture."
+  },
+  {
+   "id": "T0347",
+   "scene": "mr_robinson_crusoe@747",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "We'll build a house in spite of our unfriendly neighbors."
+  },
+  {
+   "id": "T0348",
+   "scene": "GonewiththeWest@612",
+   "title": "GonewiththeWest",
+   "dialogue": "I, uh, I work real cheap."
+  },
+  {
+   "id": "T0349",
+   "scene": "amazing_adventure@1339",
+   "title": "amazing_adventure",
+   "dialogue": "In the new book. Here we are, sir. Oh, there's Mr. Masters now. Mr. Masters, I want you to know the chief fire at elements. Mr. Masters."
+  },
+  {
+   "id": "T0350",
+   "scene": "Kilimanjaro@349",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0351",
+   "scene": "GonewiththeWest@4988",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0352",
+   "scene": "Kilimanjaro@3309",
+   "title": "Kilimanjaro",
+   "dialogue": "She's very good at killing. I taught her. Indeed, Buanna."
+  },
+  {
+   "id": "T0353",
+   "scene": "GonewiththeWest@5191",
+   "title": "GonewiththeWest",
+   "dialogue": "But he'll still be around when the chips are all down"
+  },
+  {
+   "id": "T0354",
+   "scene": "TheGhoul@4073",
+   "title": "TheGhoul",
+   "dialogue": ""
+  },
+  {
+   "id": "T0355",
+   "scene": "ThePhantomCreeps@1955",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0356",
+   "scene": "BloodontheSun@5189",
+   "title": "BloodontheSun",
+   "dialogue": ""
+  },
+  {
+   "id": "T0357",
+   "scene": "teenagers_from_outerspace@2532",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0358",
+   "scene": "Kilimanjaro@1678",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0359",
+   "scene": "CaptainKidd_@724",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0360",
+   "scene": "BloodontheSun@1409",
+   "title": "BloodontheSun",
+   "dialogue": ""
+  },
+  {
+   "id": "T0361",
+   "scene": "angel_and_the_badman@971",
+   "title": "angel_and_the_badman",
+   "dialogue": "Hello. You're awake. Sure. I'm awake. What is all this? What? Where am I? Oh, don't you remember? Father and I drove you into town. Is anything wrong? No. The doctor says you'll be all right in a week or two. You were delirious, you know. Two days and two nights. Well, maybe that's why I'm so hungry. I could eat a yearling steer. If I could catch one. Oh, well, we'll get you something. Mother! You talked a lot in your delirium. Mother, he's awake."
+  },
+  {
+   "id": "T0362",
+   "scene": "Phantom_Planet@3642",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0363",
+   "scene": "Kilimanjaro@2697",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0364",
+   "scene": "Kilimanjaro@4438",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0365",
+   "scene": "secret_weapon@526",
+   "title": "secret_weapon",
+   "dialogue": ""
+  },
+  {
+   "id": "T0366",
+   "scene": "TheOver-the-HillGangRidesAgain@4295",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Flinded, kid. You should have been there. I'm glad I wasn't, all things considered. Nash did you real proud, kid. Almost made me cry. Well, the important thing is, the Baltimore kid is dead and buried with the kind of respect he deserved. Now you don't have to worry about living up to the past reputation. I suppose Nash is right, but... I'm gonna miss the kid a little bit. Oh, he'll be remembered. I hope so. Well, anyway, I'll be starting all over again with something I've been doing all my life. Wait a minute. You ain't gonna start rangering again. Oh, no. No, no. No, I'm gonna open up a"
+  },
+  {
+   "id": "T0367",
+   "scene": "EndoftheWorld@4656",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0368",
+   "scene": "Phantom_Planet@1330",
+   "title": "Phantom_Planet",
+   "dialogue": "Some of the instruments are off, others are going. Meteor? You are completely off course Pegasus 4. Check your position immediately. Tuner base 1 to Pegasus 4. Can you read me? Frank, your airline's broken. Navigate to McConaughey. Frank, Frank. Lieutenant McConaughey, we're going to try to land. What exactly will I be looking for? A floating space monster? No joke, Chaplain. I wish it were."
+  },
+  {
+   "id": "T0369",
+   "scene": "ThePhantomCreeps@1872",
+   "title": "ThePhantomCreeps",
+   "dialogue": "Who are they? Did you get that guy's license number? I sure did."
+  },
+  {
+   "id": "T0370",
+   "scene": "teenagers_from_outerspace@733",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "How did he get free? He escaped from Saul. I could have stopped him. Derek is to be brought back alive. He is the son of our leader. Derek? I reported his actions and was connected with the leader himself. He told me this. He said Derek does not know. As the son of our leader, the High Court will pardon him. He will be pardoned. When the sky is light, we will begin to search for him."
+  },
+  {
+   "id": "T0371",
+   "scene": "GonewiththeWest@395",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0372",
+   "scene": "TheOver-the-HillGangRidesAgain@859",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Now, what can I do for you? Well, howdy, man. Judge Amos Polk, ain't he? Ex-judge, thanks to your efforts. What the devil are you doing here? The devil's own bid now, wager. Well, I've gone straight. I'll have you know that this newspaper business is a legitimate enterprise. Well, it better be, because we come to get some facts. Yeah, I know. About the Baltimore kid. How do you know that's what we come for? Because I'm the one that sent for you to come. You? Yeah. Well, after the kid and his gang killed the marshal and the others, and the rest of them run off. Somebody got in a lucky shot and"
+  },
+  {
+   "id": "T0373",
+   "scene": "Phantom_Planet@3531",
+   "title": "Phantom_Planet",
+   "dialogue": "It was captured during the last war. the only one of their monsters that didn't die in the attack. When did this attack take place?"
+  },
+  {
+   "id": "T0374",
+   "scene": "CarnivalofSouls@1355",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0375",
+   "scene": "Phantom_Planet@1985",
+   "title": "Phantom_Planet",
+   "dialogue": "But that's my only hope of getting back. Forget about it. Two ships in my unit disappeared. Did they crash here? Unfortunately, yes. They were pulled into our strong gravitational field. Well, so was I."
+  },
+  {
+   "id": "T0376",
+   "scene": "GonewiththeWest@290",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0377",
+   "scene": "ThePhantomCreeps@4489",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0378",
+   "scene": "teenagers_from_outerspace@2545",
+   "title": "teenagers_from_outerspace",
+   "dialogue": ""
+  },
+  {
+   "id": "T0379",
+   "scene": "mr_robinson_crusoe@3072",
+   "title": "mr_robinson_crusoe",
+   "dialogue": "This is the 19th hole. This is the clubhouse. I'm going to give you two weeks' card here. I'm going to put you up."
+  },
+  {
+   "id": "T0380",
+   "scene": "Minesweeper_1943@3600",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0381",
+   "scene": "CarnivalofSouls@4852",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0382",
+   "scene": "Inner_Sanctum_movie@1892",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": "Hi. Didn't steer you wrong, did it?"
+  },
+  {
+   "id": "T0383",
+   "scene": "Phantom_Planet@1874",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0384",
+   "scene": "GonewiththeWest@1259",
+   "title": "GonewiththeWest",
+   "dialogue": "Come on, come on. Come on, come on! Come on!"
+  },
+  {
+   "id": "T0385",
+   "scene": "GonewiththeWest@1847",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0386",
+   "scene": "angel_and_the_badman@1515",
+   "title": "angel_and_the_badman",
+   "dialogue": "It was a concession that Father allowed even an empty one. It was only because you couldn't rest without... Why the cartridges?"
+  },
+  {
+   "id": "T0387",
+   "scene": "teenagers_from_outerspace@2565",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Betty."
+  },
+  {
+   "id": "T0388",
+   "scene": "CarnivalofSouls@4571",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0389",
+   "scene": "GonewiththeWest@5132",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0390",
+   "scene": "Phantom_Planet@3902",
+   "title": "Phantom_Planet",
+   "dialogue": "Oh, where's Zahia?"
+  },
+  {
+   "id": "T0391",
+   "scene": "mr_robinson_crusoe@491",
+   "title": "mr_robinson_crusoe",
+   "dialogue": ""
+  },
+  {
+   "id": "T0392",
+   "scene": "angel_and_the_badman@3979",
+   "title": "angel_and_the_badman",
+   "dialogue": "You're just a little bit different That's why I love you Thanks for the money, Daddy. I hope you don't think I was here. Bourbon large glass if there's plenty of room on either side do you have to come pulling in here between us I didn't see it you interrupted a very important discussion on serious matters regarding big things me and my brothers don't like it gentlemen gentlemen no trouble please we just put the place back together after the last difference of opinion gentlemen over the brigades in the overhead many of the brigades I've had a dreadful time keeping body and soul"
+  },
+  {
+   "id": "T0393",
+   "scene": "GonewiththeWest@336",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0394",
+   "scene": "secret_weapon@1369",
+   "title": "secret_weapon",
+   "dialogue": ""
+  },
+  {
+   "id": "T0395",
+   "scene": "Kilimanjaro@1974",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0396",
+   "scene": "GonewiththeWest@3191",
+   "title": "GonewiththeWest",
+   "dialogue": "Hey, shut up! Now this is going to be a catch-as-catch-can wrestling match. No rules, no holds barred, and no interference. Anybody that interferes is going to have to answer to me. In this corner, we've got Mr. Polk. Oh, yeah! All right, all right, and over here, Mr. Sharp. Yeah! Hey, ref, ref. Better night. Get down! Everybody ready?"
+  },
+  {
+   "id": "T0397",
+   "scene": "ThePhantomCreeps@4511",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0398",
+   "scene": "TheFlyingDeuces@3843",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0399",
+   "scene": "amazing_adventure@2539",
+   "title": "amazing_adventure",
+   "dialogue": "Ah! Ah, what happened?"
+  },
+  {
+   "id": "T0400",
+   "scene": "CarnivalofSouls@74",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0401",
+   "scene": "GonewiththeWest@4998",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0402",
+   "scene": "Inner_Sanctum_movie@2807",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": "I'm not hungry, Ma. All right. Don't eat unless you want to."
+  },
+  {
+   "id": "T0403",
+   "scene": "BloodontheSun@121",
+   "title": "BloodontheSun",
+   "dialogue": ""
+  },
+  {
+   "id": "T0404",
+   "scene": "CaptainKidd_@1696",
+   "title": "CaptainKidd_",
+   "dialogue": "So a man must starve while his manners fatten."
+  },
+  {
+   "id": "T0405",
+   "scene": "Phantom_Planet@4044",
+   "title": "Phantom_Planet",
+   "dialogue": "What was that?"
+  },
+  {
+   "id": "T0406",
+   "scene": "teenagers_from_outerspace@2686",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "And that's the way it happened. Next thing I knew, he was trying to fire out the window at Betty and Derrick. I swerved the car and..."
+  },
+  {
+   "id": "T0407",
+   "scene": "GonewiththeWest@251",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0408",
+   "scene": "EndoftheWorld@4376",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0409",
+   "scene": "EndoftheWorld@787",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0410",
+   "scene": "Phantom_Planet@3151",
+   "title": "Phantom_Planet",
+   "dialogue": "I never did."
+  },
+  {
+   "id": "T0411",
+   "scene": "EndoftheWorld@4366",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0412",
+   "scene": "secret_weapon@3746",
+   "title": "secret_weapon",
+   "dialogue": "Closer to the end, Holmes. Closer and closer. Each second, a few more drops leave your desiccated body. And... You can feel them, can't you? You're perfectly conscious, aren't you, Holmes? I shall be conscious long after you are dead, Moriarty. Ha! Long after you are dead, Moriarty. Ha! Still the same old, swaggering, conceited Sherlock Holmes."
+  },
+  {
+   "id": "T0413",
+   "scene": "Kilimanjaro@4460",
+   "title": "Kilimanjaro",
+   "dialogue": ""
+  },
+  {
+   "id": "T0414",
+   "scene": "GonewiththeWest@2657",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0415",
+   "scene": "GonewiththeWest@2349",
+   "title": "GonewiththeWest",
+   "dialogue": "Oh!"
+  },
+  {
+   "id": "T0416",
+   "scene": "TheGhoul@347",
+   "title": "TheGhoul",
+   "dialogue": "Yes, but I suppose a great Egyptologist can't be expected to be like other people. Well, he'd be like a great many other people soon. That's not a very sympathetic thing to say. I don't know. That's not a very sympathetic thing to say. Well, I'm not a sympathetic man. Want a drink? That's, uh... Across the hall, isn't it? I dare say. Table 22nd, 1931. The eternal light, mine last. And here? The door shut. It is? No listeners? None. They are drawn. You were always suspicious. Have you ever trusted a living soul? Only fools. I trust you. Better to trust in the spirit than in the flesh. I put my"
+  },
+  {
+   "id": "T0417",
+   "scene": "TheOver-the-HillGangRidesAgain@4055",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": ""
+  },
+  {
+   "id": "T0418",
+   "scene": "EndoftheWorld@3026",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0419",
+   "scene": "Minesweeper_1943@1510",
+   "title": "Minesweeper_1943",
+   "dialogue": "Don't worry about me."
+  },
+  {
+   "id": "T0420",
+   "scene": "GonewiththeWest@4779",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0421",
+   "scene": "Inner_Sanctum_movie@1145",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": "I've boarded here so long, but I practically own the place. All right, go ahead. Have a can. I think I've had enough already. Ahem. Shhh. Did you get that way falling into the river?"
+  },
+  {
+   "id": "T0422",
+   "scene": "EndoftheWorld@300",
+   "title": "EndoftheWorld",
+   "dialogue": ""
+  },
+  {
+   "id": "T0423",
+   "scene": "Phantom_Planet@4121",
+   "title": "Phantom_Planet",
+   "dialogue": "Over there. Help! Incessible! Oh, Father! What happened to him? I think it was the solarite. Are you all right? I... What happened? I don't know. Was it the solarite? Did you see him? It was terrible. I'm going to control room. No, you stay with Viara. Chapman! Yes? Go through that corridor. It's shorter. Right. Be careful. I'll be all right. Oh, Heron. Thaitha, are you all right?"
+  },
+  {
+   "id": "T0424",
+   "scene": "Kilimanjaro@369",
+   "title": "Kilimanjaro",
+   "dialogue": "Casey, Casey, sorry."
+  },
+  {
+   "id": "T0425",
+   "scene": "Phantom_Planet@4778",
+   "title": "Phantom_Planet",
+   "dialogue": "I don't know. I don't understand. It's unbelievable. We'll get you back to Moonbase for a thorough examination. Do you think you're hurt? I don't think so. You must have been knocked out for quite a while. I must have been dreaming. Quite possible you were delirious. The shock of the crash landing of your ship. Ray's gone. But I just left safe in her."
+  },
+  {
+   "id": "T0426",
+   "scene": "GonewiththeWest@2085",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0427",
+   "scene": "GonewiththeWest@744",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0428",
+   "scene": "TheOver-the-HillGangRidesAgain@414",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Oh, yeah, the ring. Place the ring on her finger, please. No, no, no, no, Mr. Fitch. Now do you understand, Reverend, why I insisted on a rehearsal? I certainly do. Well, that's what's got me so nervous, all this rehearsing. No, Jason."
+  },
+  {
+   "id": "T0429",
+   "scene": "Inner_Sanctum_movie@60",
+   "title": "Inner_Sanctum_movie",
+   "dialogue": ""
+  },
+  {
+   "id": "T0430",
+   "scene": "amazing_adventure@1347",
+   "title": "amazing_adventure",
+   "dialogue": "Good morning, Mr. Masters. What's the meaning of all this and bliss? Well, elements have just placed a little order for 100 stones. 100? Well, it's only a trial order, of course. One hundred? Well, it's only a trial order, of course. Don't we? Well, I've already explained that we're really not interested in wholesale business. You must appreciate, Mr. Masters, that if we can get together, we can take at least forty thousand a year. Certainly. But now we have... Oh, no, no, Mr. Masters, we can at least consider the matter. Well, I'll think it over. I know you're busy at the moment, so I'll"
+  },
+  {
+   "id": "T0431",
+   "scene": "teenagers_from_outerspace@2434",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "You think the tip might have been a phony, Mac? Don't think so, Harry. The girl who called seemed to know what she was talking about. Another call, Mac. Joe Rogers, reporter on the Daily News. He's on the way over. Found another skeleton. Only this time at the bottom of a swimming pool."
+  },
+  {
+   "id": "T0432",
+   "scene": "Phantom_Planet@891",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0433",
+   "scene": "GonewiththeWest@270",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0434",
+   "scene": "GonewiththeWest@4170",
+   "title": "GonewiththeWest",
+   "dialogue": "Oh, oh, oh. He's over here. I'll be damned. Kelsey! Jebediah Kelsey!"
+  },
+  {
+   "id": "T0435",
+   "scene": "CarnivalofSouls@3215",
+   "title": "CarnivalofSouls",
+   "dialogue": ""
+  },
+  {
+   "id": "T0436",
+   "scene": "TheFlyingDeuces@2404",
+   "title": "TheFlyingDeuces",
+   "dialogue": "I don't know, but I know what keeps me down. Me too. Good old terracotta for me any time. Tomiscus, we have."
+  },
+  {
+   "id": "T0437",
+   "scene": "Minesweeper_1943@1447",
+   "title": "Minesweeper_1943",
+   "dialogue": ""
+  },
+  {
+   "id": "T0438",
+   "scene": "teenagers_from_outerspace@1894",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Well, hello."
+  },
+  {
+   "id": "T0439",
+   "scene": "ThePhantomCreeps@3438",
+   "title": "ThePhantomCreeps",
+   "dialogue": ""
+  },
+  {
+   "id": "T0440",
+   "scene": "GonewiththeWest@4728",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0441",
+   "scene": "CaptainKidd_@4345",
+   "title": "CaptainKidd_",
+   "dialogue": ""
+  },
+  {
+   "id": "T0442",
+   "scene": "TheFlyingDeuces@3951",
+   "title": "TheFlyingDeuces",
+   "dialogue": ""
+  },
+  {
+   "id": "T0443",
+   "scene": "Minesweeper_1943@2967",
+   "title": "Minesweeper_1943",
+   "dialogue": "like we're gonna have no mind business famous well army planes reported a sub in these waters they're not hanging around for fun I'd sure like to get a shot at one of their minds sir."
+  },
+  {
+   "id": "T0444",
+   "scene": "Kilimanjaro@519",
+   "title": "Kilimanjaro",
+   "dialogue": "A lot of matters now. Harry, please."
+  },
+  {
+   "id": "T0445",
+   "scene": "GonewiththeWest@4524",
+   "title": "GonewiththeWest",
+   "dialogue": ""
+  },
+  {
+   "id": "T0446",
+   "scene": "secret_weapon@1349",
+   "title": "secret_weapon",
+   "dialogue": "They want you to try again, sir."
+  },
+  {
+   "id": "T0447",
+   "scene": "angel_and_the_badman@2132",
+   "title": "angel_and_the_badman",
+   "dialogue": "Glad there's a well. Because it'd sure get thirsty around here if we had to wait for Carson. Gonna walk this pony. Benny? Hmm? Nothing."
+  },
+  {
+   "id": "T0448",
+   "scene": "teenagers_from_outerspace@1907",
+   "title": "teenagers_from_outerspace",
+   "dialogue": "Tell me where they are."
+  },
+  {
+   "id": "T0449",
+   "scene": "angel_and_the_badman@5817",
+   "title": "angel_and_the_badman",
+   "dialogue": "Quirt, step away from those women. Why don't you turn around, Quirt?"
+  },
+  {
+   "id": "T0450",
+   "scene": "Phantom_Planet@3125",
+   "title": "Phantom_Planet",
+   "dialogue": ""
+  },
+  {
+   "id": "T0451",
+   "scene": "TheOver-the-HillGangRidesAgain@2136",
+   "title": "TheOver-the-HillGangRidesAgain",
+   "dialogue": "Hmm. Mighty fine little office. Ah, they've got rooms for us upstairs and everything. Oh, not a bad looking set of hardware. I think I'll check it out. Here, Jason. I want it. I want it. Here, Marshal. Next time, just hand Jason things. hot in the broad daylight, if possible. Sorry, Jason. That's all right. Which brings us to a point we better discuss, kid. Now, we're none of us as fast as we used to be. That might help if we sort of planned a little strategy. What do you mean, strategy? Just in case of trouble. I only know one way to face trouble. Head on. Well, that's maybe all right for"
+  },
+  {
+   "id": "T0452",
+   "scene": "Kilimanjaro@4653",
+   "title": "Kilimanjaro",
+   "dialogue": "Come on, look!"
+  }
+ ]
+}

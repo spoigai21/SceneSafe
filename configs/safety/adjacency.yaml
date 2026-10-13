@@ -1,0 +1,15 @@
+# Phase 5 adjacency norms by ad category (EVAL-PROTOCOL.md, "Phase 5 amendment"). Frozen with the amendment.
+# An ad of this category is not placed in a break next to a scene with any of these tags, in every rule set.
+# Written from common industry practice, not from the films. Categories not listed have no extra norm.
+adjacency:
+  automotive:  [accidents, violence]
+  travel:      [accidents, death]
+  logistics:   [accidents]
+  food_drink:  [horror, death, violence]
+  alcohol:     [violence, accidents]
+  kids:        [violence, weapons, death, horror, alcohol, smoking, sexual]
+  pets:        [violence, death]
+  health:      [death, drugs]
+  finance:     [accidents, death]
+  events:      [death]
+  beauty:      [violence, horror]

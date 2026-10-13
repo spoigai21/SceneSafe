@@ -3,10 +3,13 @@
     PYTHONPATH=. .venv/bin/python scripts/label_server.py [--phase 4b]      then open http://localhost:8765
 
 Shows the sampled pairs (Phase 4: 100, default_rng(0); Phase 4b and 4c: 50 new pairs, default_rng(1) and (2);
-Phase 4d: 100, default_rng(3); Phase 4e to 4h: 100, default_rng(4) to (7)) one at a time: the ad's category and
+Phase 4d: 100, default_rng(3); Phase 4e to 4h: 100, default_rng(4) to (7); Phase 5 and 5b: 100 scenes, default_rng(8) and (9);
+Phase 5c: 50 scenes, default_rng(10), shown as the larger 2 x 2 frame grid)
+one at a time: the ad's category and
 brief (from 4d, also its label-guide line; from 4e, its theme line and a third button for a thematic fit), 4 frames
 from the scene and, from 4f, the scene's dialogue. Nothing on the page says which method
-found the scene, and the primary labels are never sent to the browser. Every click is saved straight to
+found the scene, and the primary labels are never sent to the browser. Phase 5 is different: no ad, just the scene,
+and a checkbox for each content tag that is present (brand safety); the detector's tags are never sent either. Every click is saved straight to
 results/<phase>/labels_author.json, so you can stop and come back.
 """
 
@@ -29,7 +32,11 @@ PHASES = {"4": ("phase4", 100, 0, _P4_FRAMES, False), "4b": ("phase4b", 50, 1, _
           "4e": ("phase4e", 100, 4, REPO_ROOT / "data" / "phase4d" / "frames", True),
           "4f": ("phase4f", 100, 5, REPO_ROOT / "data" / "phase4d" / "frames", True),
           "4g": ("phase4g", 100, 6, REPO_ROOT / "data" / "phase4d" / "frames", True),
-          "4h": ("phase4h", 100, 7, REPO_ROOT / "data" / "phase4d" / "frames", True)}
+          "4h": ("phase4h", 100, 7, REPO_ROOT / "data" / "phase4d" / "frames", True),
+          "5": ("phase5", 100, 8, REPO_ROOT / "data" / "phase4d" / "frames", False),
+          "5b": ("phase5b", 100, 9, REPO_ROOT / "data" / "phase4d" / "frames", False),
+          "5c": ("phase5c", 50, 10, REPO_ROOT / "data" / "phase5" / "grids", False),
+          "5d": ("phase5d", 50, 11, REPO_ROOT / "data" / "phase5" / "grids", False)}
 LEVELS = {"4e", "4f", "4g", "4h"}    # three labels: 2 literal fit, 1 thematic fit, 0 doesn't fit
 PORT = 8765
 
@@ -136,6 +143,87 @@ document.addEventListener("keydown", e => {
 """
 
 
+SAFETY_PAGE = PAGE.split("<body>")[0] + """<body><main>
+  <div class="top"><span id="pos"></span><span>tick what is present &middot; Enter = save &amp; next &middot; &larr; back</span></div>
+  <div class="bar"><div id="fill"></div></div>
+  <div id="card">
+    <div class="cat" id="cat"></div>
+    <h1>Which of these are present in the scene?</h1>
+    <img id="img" alt="4 frames from the scene">
+    <div class="dialogue" id="dialogue"></div>
+    <div id="tags" style="margin-top:14px"></div>
+    <div class="buttons" style="margin-top:14px"><button class="yes" id="save">Save &amp; next (Enter)</button></div>
+    <div class="small"><a id="back" href="#">&larr; back</a> &middot; go to # <input id="goto" type="number" min="1"
+      style="width:60px"><span id="saved"></span></div>
+  </div>
+  <div id="done" hidden><h1>All done. Thank you.</h1><p>Your labels are saved in labels_author.json.</p>
+     <p><a id="review" href="#1">Review from the start</a> &middot; go to # <input id="goto2" type="number" min="1"
+      style="width:60px"></p></div>
+</main>
+<script>
+let items = [], labels = {}, tags = {}, i = 0;
+const $ = id => document.getElementById(id);
+function show() {
+  const n = Object.keys(labels).length;
+  $("fill").style.width = (100 * n / items.length) + "%";
+  $("pos").textContent = `${n} of ${items.length} labelled`;
+  if (i >= items.length) { $("card").hidden = true; $("done").hidden = false; return; }
+  $("card").hidden = false; $("done").hidden = true;
+  const it = items[i], have = labels[it.pair] || [];
+  $("cat").textContent = `${i + 1} / ${items.length} · nothing ticked = none of them`;
+  $("img").src = "/frames/" + encodeURIComponent(it.scene) + ".jpg";
+  $("dialogue").textContent = "Dialogue: " + (it.dialogue || "(no speech)");
+  $("tags").innerHTML = Object.entries(tags).map(([t, d]) =>
+    `<label style="display:block;margin:6px 0;font-size:15px"><input type="checkbox" value="${t}"
+      ${have.includes(t) ? "checked" : ""}> <b>${t}</b> <span style="color:#666">${d}</span></label>`).join("");
+}
+async function save() {
+  if (i >= items.length) return;
+  const it = items[i];
+  const v = [...document.querySelectorAll("#tags input:checked")].map(x => x.value);
+  const r = await fetch("/label", {method: "POST", headers: {"Content-Type": "application/json"},
+                                   body: JSON.stringify({pair: it.pair, value: v})});
+  if (!r.ok) { $("saved").textContent = "NOT saved - is the server running?"; return; }
+  const again = it.pair in labels;
+  labels[it.pair] = v; $("saved").textContent = "saved"; i++;
+  if (!again) while (i < items.length && items[i].pair in labels) i++;   // reviewing steps one by one
+  show();
+}
+$("save").onclick = save;
+$("back").onclick = e => { e.preventDefault(); if (i > 0) { i--; show(); } };
+$("review").onclick = e => { e.preventDefault(); i = 0; show(); };
+function go(v) { const n = parseInt(v); if (n >= 1 && n <= items.length) { i = n - 1; show(); } }
+for (const id of ["goto", "goto2"]) $(id).addEventListener("keydown", e => {
+  if (e.key === "Enter") { e.preventDefault(); e.stopPropagation(); go(e.target.value); e.target.value = ""; } });
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT" && e.target.type === "number") return;
+  if (e.key === "Enter") save();
+  else if (e.key === "ArrowLeft" && i > 0) { i--; show(); }
+});
+(async () => {
+  tags = await (await fetch("/tags")).json();
+  items = await (await fetch("/items")).json();
+  labels = await (await fetch("/labels")).json();
+  while (i < items.length && items[i].pair in labels) i++;
+  if (location.hash.length > 1) go(location.hash.slice(1));
+  show();
+})();
+</script></body></html>
+"""
+
+
+def safety_items(size: int, seed: int) -> list[dict]:
+    pool = json.loads(POOL.read_text())["items"]
+    return [{"pair": pool[i]["id"], "scene": pool[i]["scene"], "dialogue": pool[i]["dialogue"]}
+            for i in author_sample(len(pool), size, seed)]
+
+
+def valid(value) -> bool:
+    if PHASE.startswith("5"):
+        return isinstance(value, list) and all(v in TAG_DEFS for v in value) and len(set(value)) == len(value)
+    return value in VALUES
+
+
 def load_labels() -> dict:
     return json.loads(OUT.read_text())["labels"] if OUT.exists() else {}
 
@@ -173,7 +261,9 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path == "/":
-            self._send(PAGE.encode(), "text/html; charset=utf-8")
+            self._send((SAFETY_PAGE if PHASE.startswith("5") else PAGE).encode(), "text/html; charset=utf-8")
+        elif self.path == "/tags":
+            self._send(json.dumps(TAG_DEFS).encode(), "application/json")
         elif self.path == "/items":
             self._send(json.dumps(ITEMS).encode(), "application/json")
         elif self.path == "/labels":
@@ -192,7 +282,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path != "/label":
             return self._send(b"not found", "text/plain", 404)
         body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
-        if body.get("pair") not in ALLOWED or body.get("value") not in VALUES:
+        if body.get("pair") not in ALLOWED or not valid(body.get("value")):
             return self._send(b"bad label", "text/plain", 400)
         with LOCK:
             labels = load_labels()
@@ -209,12 +299,14 @@ LOCK = threading.Lock()
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--phase", choices=list(PHASES), default="4")
-    phase = ap.parse_args().phase
+    phase = PHASE = ap.parse_args().phase
     phase_dir, size, seed, FRAMES, with_guide = PHASES[phase]
     VALUES = (0, 1, 2) if phase in LEVELS else (0, 1)
     POOL = REPO_ROOT / "results" / phase_dir / "pool.json"
     OUT = REPO_ROOT / "results" / phase_dir / "labels_author.json"
-    ITEMS = items(size, seed, with_guide, phase in LEVELS)
+    from scenesafe.safety.tags import TAGS, TAGS_OBVIOUS
+    TAG_DEFS = TAGS_OBVIOUS if phase == "5d" else TAGS                       # 5d: the obvious definitions
+    ITEMS = safety_items(size, seed) if phase.startswith("5") else items(size, seed, with_guide, phase in LEVELS)
     ALLOWED = {it["pair"] for it in ITEMS}
     print(f"{len(ITEMS)} pairs to label, {len(load_labels())} done so far. Open http://localhost:{PORT}  (Ctrl+C to stop)")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

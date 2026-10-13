@@ -1,0 +1,42 @@
+2026-10-12T17:59:20Z  Phase 5 rules frozen after the practice round, before any test film was tagged (not yet committed)
+Practice: prompt v1 kept; a v2 adding 'judge from the frames' produced more spurious tags (sexual, alcohol) on 60 practice scenes and was rejected.
+33c983a2ea05dd630e6175dfb048a94f2246c06fd05b768ecae9b5eb6f36379b  EVAL-PROTOCOL.md
+96620baf06ae5a9695f31e7e186733620966f9c390ef6de7de6cce7cff70737a  scenesafe/safety/tags.py
+475f93393b55b6a9e4f7c8d8b7c8b453bf70e90babf2fd30f2dfbf8a2e1d1d1b  scenesafe/safety/rules.py
+938a7c21e0dfdcc72eec1d7020e8de8e3203522d279810b56d8b6813b276c0b1  scripts/run_phase5.py
+816caf13ef3c9617e7f191094a09686b333f2e20657fa25ab1dc02250007d1fa  configs/safety/adjacency.yaml
+56efe060525d3bc604cff2c0c5bfd1e664a20928ac14e4497aa15444317e3817  configs/safety/lenient.yaml
+c2594e3a24c1f6d9e8c34033680dc6713f8fe3fd163fed9b8550b552c34d8756  configs/safety/standard.yaml
+cd642596e74c69376ba22ba225d7445330ed9d3d9e884a0b98ab57f94eb064a9  configs/safety/strict.yaml
+
+2026-10-12T18:00:21Z  labelling instructions added to the Phase 5 amendment during test tagging, before any pool or label existed; label server gains the Phase 5 page
+bc8008665fac7ebbc69f36c36cf96641585dcc71a380ac91bfebaa6ba649e058  EVAL-PROTOCOL.md
+c1ff25e69583f0043c9dbeb2fba7b4913fad5374a6bf40b0c1407b3038c8f584  scripts/label_server.py
+
+2026-10-12T18:49:27Z  Phase 5b addendum frozen before the verifier was run on any test scene (not yet committed)
+533aec05ff08b7353e3acb5a193e69d0161cf6a82a8d418dcbc1dccd268e8131  EVAL-PROTOCOL.md
+cd016ae0ab129db2f4025ad59cba217ccb070f70886760417fbf3d1e6c4eab0b  scenesafe/safety/tags.py
+0c82592dc2fac38bcf2b6126c0b2a9badd79778efc88887062f5c38b7e2df85d  scripts/run_phase5.py
+
+2026-10-12T19:03:37Z  after the 5b result: 'risky scenes caught' added to the scoring output (descriptive; not in the decision rule)
+85cc2021576e97eedf5dc2ab1833e6a29f8872b263510fa73d43b50f0eed16b9  scripts/run_phase5.py
+c9aacb4668ca9b52e20080f1b0447482e64e5b577623ed9a1610af78dd270342  scripts/label_server.py
+
+2026-10-12T21:38:58Z  Phase 5c addendum frozen after development, before the 5c configuration was run outside the development set (not yet committed)
+7563b21c37c2098ea1f2701f89431ab359fde2bbc26eef87702d1161404c55ef  EVAL-PROTOCOL.md
+5ff441ba5bc70959d5757fdda55d868ca9671fc8c1e280fab285988f9eec4c79  scenesafe/safety/tags.py
+dfab78cce3c3ee648859166a10362e8d47966d82c7e96dc65e0e0fbe0af4b826  scenesafe/safety/candidates.py
+dfae991766ad8592e80c86faf62ab068ffca7315a5bd592905c9459913cd1707  scenesafe/match/display.py
+fee0e819bfd8acf1a0c4b9cf977be93b18fd4f10fb1b9231e80f02634ebfa86d  scripts/run_phase5.py
+9eaa3c65aa449e3a92b4cb744a592cdc471fbe9ab46d14e51b5d6ac2582a5a66  scripts/label_server.py
+
+2026-10-13T05:23:50Z  Phase 5d addendum frozen after development, before the 5d configuration was run outside the development set (not yet committed)
+6cd19450d1de0b3892937c7f38cf6326c1dfad8a74725dc4ace9b175178f6c9f  EVAL-PROTOCOL.md
+a89efb37dfada28889c0e5d152f8ae12e1b115c7e4247dd1b32fe63b23bd9469  scenesafe/safety/tags.py
+30e98604b5e7a588cc7e2d3363f7e9af09c5312f8b48cd6a09a8d429c2a6d0c2  scripts/run_phase5.py
+634cef33f70ae476e20d7618719b7176d2794a74f5a9652c37b194a7e0cdf6b7  scripts/label_server.py
+
+2026-10-13T06:16:50Z  Phase 5e addendum frozen after development, before 5e was run on any test scene (not yet committed)
+8f1e2e5f67b100dd7ee5c680c6ab4ce1cc429cb7d5972bbb50b6409b2be9966d  EVAL-PROTOCOL.md
+5da3538bf264e394e2c33424546a46e75eb122308bca5602a02c6bda6d61e7c9  scripts/run_phase5.py
+a89efb37dfada28889c0e5d152f8ae12e1b115c7e4247dd1b32fe63b23bd9469  scenesafe/safety/tags.py

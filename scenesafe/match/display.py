@@ -44,3 +44,20 @@ def sheets(pool: list[dict], frames_dir, out_dir, guide: dict | None = None):
                     draw.text((8, y + 50), f"theme: {g['theme']}", fill="#1a3d8b")
             sheet.paste(Image.open(frames_dir / f"{p['scene']}.jpg"), (8, y + 24 + extra))
         sheet.save(out_dir / f"sheet_{s // PAIRS_PER_SHEET + 1:03d}.jpg", quality=82)
+
+
+GRID_CELL = (384, 288)          # Phase 5c: 2 × 2 grid, 4× the pixels of a strip frame, so small objects can be seen
+
+
+def frame_grid(title: str, start: float, end: float, out, cell=GRID_CELL):
+    """The same 4 frames as frame_strip, larger, in a 2 × 2 grid (left to right, then top to bottom)."""
+    from PIL import Image
+    from scenesafe.decode.decoder import iter_frames
+    grid = Image.new("RGB", (cell[0] * 2 + 4, cell[1] * 2 + 4), "white")
+    step = (end - start) / FRAMES_PER_SCENE
+    for i in range(FRAMES_PER_SCENE):
+        t = min(start + (i + 0.5) * step, max(start, end - 1.0))
+        for f in iter_frames(video_path(title), start_s=t, duration_s=2.0):
+            grid.paste(f.frame.to_image().resize(cell), ((i % 2) * (cell[0] + 4), (i // 2) * (cell[1] + 4)))
+            break
+    grid.save(out, quality=88)

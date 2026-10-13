@@ -1,0 +1,991 @@
+{
+  "phase": 5,
+  "name": "safety",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-13T05:37:35+00:00",
+  "git_commit": "05cd2a7ebc5e0ae2b59213638aa476c851141cdc-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "protocol": "EVAL-PROTOCOL.md (Phase 5 amendment, Phase 5d addendum)",
+    "tags": "5d",
+    "per_stratum": 120,
+    "bootstrap_resamples": 10000,
+    "author_sample": {
+      "size": 100,
+      "seed": 8
+    }
+  },
+  "tags": "5d",
+  "pool": 146,
+  "strata_sizes": {
+    "A": 6,
+    "B": 0,
+    "C": 20,
+    "D": 3638
+  },
+  "left_out": 1258,
+  "rule_sets": {
+    "lenient": {
+      "should_block_share": 0.0,
+      "verified": {
+        "false_positive_rate": 1.0,
+        "fp_ci95": [
+          1.0,
+          1.0
+        ],
+        "miss_rate": 0.0,
+        "miss_ci95": [
+          0.0,
+          0.0
+        ],
+        "caught_share": 0.0,
+        "caught_ci95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "f1_ci95": [
+          0.0,
+          0.0
+        ],
+        "blocked_share": 0.0016375545851528383
+      },
+      "5d": {
+        "false_positive_rate": 1.0,
+        "fp_ci95": [
+          1.0,
+          1.0
+        ],
+        "miss_rate": 0.0,
+        "miss_ci95": [
+          0.0,
+          0.0
+        ],
+        "caught_share": 0.0,
+        "caught_ci95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "f1_ci95": [
+          0.0,
+          0.0
+        ],
+        "blocked_share": 0.0016375545851528383,
+        "minus_verified": {
+          "false_positive_rate": 0.0,
+          "fp_ci95": [
+            0.0,
+            0.0
+          ],
+          "miss_rate": 0.0,
+          "miss_ci95": [
+            0.0,
+            0.0
+          ],
+          "caught_share": 0.0,
+          "caught_ci95": [
+            0.0,
+            0.0
+          ],
+          "f1": 0.0,
+          "f1_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "5d_first": {
+        "false_positive_rate": 1.0,
+        "fp_ci95": [
+          1.0,
+          1.0
+        ],
+        "miss_rate": 0.0,
+        "miss_ci95": [
+          0.0,
+          0.0
+        ],
+        "caught_share": 0.0,
+        "caught_ci95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "f1_ci95": [
+          0.0,
+          0.0
+        ],
+        "blocked_share": 0.01709425036390102,
+        "minus_verified": {
+          "false_positive_rate": 0.0,
+          "fp_ci95": [
+            0.0,
+            0.0
+          ],
+          "miss_rate": 0.0,
+          "miss_ci95": [
+            0.0,
+            0.0
+          ],
+          "caught_share": 0.0,
+          "caught_ci95": [
+            0.0,
+            0.0
+          ],
+          "f1": 0.0,
+          "f1_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "5c": {
+        "false_positive_rate": 0.0,
+        "fp_ci95": [
+          0.0,
+          0.0
+        ],
+        "miss_rate": 0.0,
+        "miss_ci95": [
+          0.0,
+          0.0
+        ],
+        "caught_share": 0.0,
+        "caught_ci95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "f1_ci95": [
+          0.0,
+          0.0
+        ],
+        "blocked_share": 0.0,
+        "minus_verified": {
+          "false_positive_rate": -1.0,
+          "fp_ci95": [
+            -1.0,
+            -1.0
+          ],
+          "miss_rate": 0.0,
+          "miss_ci95": [
+            0.0,
+            0.0
+          ],
+          "caught_share": 0.0,
+          "caught_ci95": [
+            0.0,
+            0.0
+          ],
+          "f1": 0.0,
+          "f1_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "genre_baseline": {
+        "false_positive_rate": 1.0,
+        "fp_ci95": [
+          1.0,
+          1.0
+        ],
+        "miss_rate": 0.0,
+        "miss_ci95": [
+          0.0,
+          0.0
+        ],
+        "caught_share": 0.0,
+        "caught_ci95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "f1_ci95": [
+          0.0,
+          0.0
+        ],
+        "blocked_share": 0.16739446870451238,
+        "minus_verified": {
+          "false_positive_rate": 0.0,
+          "fp_ci95": [
+            0.0,
+            0.0
+          ],
+          "miss_rate": 0.0,
+          "miss_ci95": [
+            0.0,
+            0.0
+          ],
+          "caught_share": 0.0,
+          "caught_ci95": [
+            0.0,
+            0.0
+          ],
+          "f1": 0.0,
+          "f1_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "standard": {
+      "should_block_share": 0.025368449781659388,
+      "verified": {
+        "false_positive_rate": 0.8333333333333334,
+        "fp_ci95": [
+          0.5,
+          1.0
+        ],
+        "miss_rate": 0.025136686714051396,
+        "miss_ci95": [
+          0.0002733734281027884,
+          0.0582877710953162
+        ],
+        "caught_share": 0.010758472296933835,
+        "caught_ci95": [
+          0.0,
+          0.4
+        ],
+        "f1": 0.0202122283981809,
+        "f1_ci95": [
+          0.0,
+          0.24999999999999994
+        ],
+        "blocked_share": 0.0016375545851528383
+      },
+      "5d": {
+        "false_positive_rate": 0.8333333333333334,
+        "fp_ci95": [
+          0.5,
+          1.0
+        ],
+        "miss_rate": 0.025136686714051396,
+        "miss_ci95": [
+          0.0002733734281027884,
+          0.0582877710953162
+        ],
+        "caught_share": 0.010758472296933835,
+        "caught_ci95": [
+          0.0,
+          0.4
+        ],
+        "f1": 0.0202122283981809,
+        "f1_ci95": [
+          0.0,
+          0.24999999999999994
+        ],
+        "blocked_share": 0.0016375545851528383,
+        "minus_verified": {
+          "false_positive_rate": 0.0,
+          "fp_ci95": [
+            0.0,
+            0.0
+          ],
+          "miss_rate": 0.0,
+          "miss_ci95": [
+            0.0,
+            0.0
+          ],
+          "caught_share": 0.0,
+          "caught_ci95": [
+            0.0,
+            0.0
+          ],
+          "f1": 0.0,
+          "f1_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "5d_first": {
+        "false_positive_rate": 0.6063863757317723,
+        "fp_ci95": [
+          0.06094464195022855,
+          1.0
+        ],
+        "miss_rate": 0.008928698709876691,
+        "miss_ci95": [
+          0.0,
+          0.0269749984280304
+        ],
+        "caught_share": 0.6630805092343554,
+        "caught_ci95": [
+          0.0,
+          1.0
+        ],
+        "f1": 0.49398877905423444,
+        "f1_ci95": [
+          0.0,
+          0.8706901667556822
+        ],
+        "blocked_share": 0.04273562590975254,
+        "minus_verified": {
+          "false_positive_rate": -0.22694695760156103,
+          "fp_ci95": [
+            -0.790949958766779,
+            0.32927830586327095
+          ],
+          "miss_rate": -0.016207988004174705,
+          "miss_ci95": [
+            -0.041414044880710044,
+            0.0005804237589036764
+          ],
+          "caught_share": 0.6523220369374215,
+          "caught_ci95": [
+            -0.031931878658861094,
+            1.0
+          ],
+          "f1": 0.47377655065605356,
+          "f1_ci95": [
+            -0.1978033927794692,
+            0.8503058286253732
+          ]
+        }
+      },
+      "5c": {
+        "false_positive_rate": 0.0,
+        "fp_ci95": [
+          0.0,
+          0.0
+        ],
+        "miss_rate": 0.025368449781659388,
+        "miss_ci95": [
+          0.0005458515283842794,
+          0.05846524745269287
+        ],
+        "caught_share": 0.0,
+        "caught_ci95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "f1_ci95": [
+          0.0,
+          0.0
+        ],
+        "blocked_share": 0.0,
+        "minus_verified": {
+          "false_positive_rate": -0.8333333333333334,
+          "fp_ci95": [
+            -1.0,
+            -0.5
+          ],
+          "miss_rate": 0.00023176306760799154,
+          "miss_ci95": [
+            -8.14300653469921e-05,
+            0.0007911862735501055
+          ],
+          "caught_share": -0.010758472296933835,
+          "caught_ci95": [
+            -0.4,
+            0.0
+          ],
+          "f1": -0.0202122283981809,
+          "f1_ci95": [
+            -0.24999999999999994,
+            0.0
+          ]
+        }
+      },
+      "genre_baseline": {
+        "false_positive_rate": 0.9658673932788374,
+        "fp_ci95": [
+          0.8860608389048119,
+          1.0
+        ],
+        "miss_rate": 0.022440682080223314,
+        "miss_ci95": [
+          0.0,
+          0.056610351578818816
+        ],
+        "caught_share": 0.3369194907656446,
+        "caught_ci95": [
+          0.0,
+          1.0
+        ],
+        "f1": 0.061985583980734664,
+        "f1_ci95": [
+          0.0,
+          0.19113329396409712
+        ],
+        "blocked_share": 0.2504093886462882,
+        "minus_verified": {
+          "false_positive_rate": 0.13253405994550405,
+          "fp_ci95": [
+            -0.08747154810374115,
+            0.49801572785613085
+          ],
+          "miss_rate": -0.002696004633828082,
+          "miss_ci95": [
+            -0.0244379125596165,
+            0.011846922360319213
+          ],
+          "caught_share": 0.32616101846871076,
+          "caught_ci95": [
+            -0.06188757091284168,
+            1.0
+          ],
+          "f1": 0.04177335558255377,
+          "f1_ci95": [
+            -0.24739563541167972,
+            0.1810839362509363
+          ]
+        }
+      }
+    },
+    "strict": {
+      "should_block_share": 0.027824781659388644,
+      "verified": {
+        "false_positive_rate": 0.7857142857142857,
+        "fp_ci95": [
+          0.5625,
+          1.0
+        ],
+        "miss_rate": 0.027109589041095887,
+        "miss_ci95": [
+          0.0021923814743765417,
+          0.06005977220881181
+        ],
+        "caught_share": 0.029426189308484556,
+        "caught_ci95": [
+          0.0,
+          0.25
+        ],
+        "f1": 0.0517464424320828,
+        "f1_ci95": [
+          0.0,
+          0.23076923076923078
+        ],
+        "blocked_share": 0.003820960698689956
+      },
+      "5d": {
+        "false_positive_rate": 0.5769230769230769,
+        "fp_ci95": [
+          0.38461538461538464,
+          0.7692307692307693
+        ],
+        "miss_rate": 0.025,
+        "miss_ci95": [
+          0.0,
+          0.058333333333333334
+        ],
+        "caught_share": 0.10789602746444336,
+        "caught_ci95": [
+          0.042127435492364404,
+          1.0
+        ],
+        "f1": 0.17194216490816727,
+        "f1_ci95": [
+          0.07410838351088467,
+          0.5945945945945946
+        ],
+        "blocked_share": 0.007096069868995633,
+        "minus_verified": {
+          "false_positive_rate": -0.20879120879120883,
+          "fp_ci95": [
+            -0.3846153846153846,
+            -0.03846153846153855
+          ],
+          "miss_rate": -0.0021095890410958856,
+          "miss_ci95": [
+            -0.0032507528059129466,
+            -0.0010145324924595508
+          ],
+          "caught_share": 0.07846983815595882,
+          "caught_ci95": [
+            0.027719112988384375,
+            0.7272727272727273
+          ],
+          "f1": 0.12019572247608448,
+          "f1_ci95": [
+            0.04594719260868688,
+            0.3555495162157915
+          ]
+        }
+      },
+      "5d_first": {
+        "false_positive_rate": 0.730660134089737,
+        "fp_ci95": [
+          0.3999841855561413,
+          0.9688639588460343
+        ],
+        "miss_rate": 0.009489644101640498,
+        "miss_ci95": [
+          0.0,
+          0.028302389552968352
+        ],
+        "caught_share": 0.6830145496158248,
+        "caught_ci95": [
+          0.13398838767306834,
+          1.0
+        ],
+        "f1": 0.3863331638078506,
+        "f1_ci95": [
+          0.05371831458787973,
+          0.7055816169390621
+        ],
+        "blocked_share": 0.07056040756914118,
+        "minus_verified": {
+          "false_positive_rate": -0.05505415162454874,
+          "fp_ci95": [
+            -0.4356496062992127,
+            0.28011167011959026
+          ],
+          "miss_rate": -0.017619944939455387,
+          "miss_ci95": [
+            -0.04312551779454228,
+            -0.0004924231552496148
+          ],
+          "caught_share": 0.6535883603073402,
+          "caught_ci95": [
+            0.07829491083079601,
+            0.9814365836115303
+          ],
+          "f1": 0.3345867213757678,
+          "f1_ci95": [
+            -0.13318030598799463,
+            0.6639027112902771
+          ]
+        }
+      },
+      "5c": {
+        "false_positive_rate": 0.0,
+        "fp_ci95": [
+          0.0,
+          0.0
+        ],
+        "miss_rate": 0.027559377559377558,
+        "miss_ci95": [
+          0.00273000273000273,
+          0.060392210392210384
+        ],
+        "caught_share": 0.009808729769494852,
+        "caught_ci95": [
+          0.0,
+          0.08333333333333333
+        ],
+        "f1": 0.019426906265177273,
+        "f1_ci95": [
+          0.0,
+          0.15384615384615385
+        ],
+        "blocked_share": 0.0002729257641921397,
+        "minus_verified": {
+          "false_positive_rate": -0.7857142857142857,
+          "fp_ci95": [
+            -1.0,
+            -0.5625
+          ],
+          "miss_rate": 0.00044978851828167063,
+          "miss_ci95": [
+            -0.0005333485189171813,
+            0.0014371078110899692
+          ],
+          "caught_share": -0.019617459538989704,
+          "caught_ci95": [
+            -0.17653549098933433,
+            0.02069777551509064
+          ],
+          "f1": -0.03231953616690553,
+          "f1_ci95": [
+            -0.16859568762051402,
+            0.05597471016343799
+          ]
+        }
+      },
+      "genre_baseline": {
+        "false_positive_rate": 0.9818940969690457,
+        "fp_ci95": [
+          0.9487950177883031,
+          0.997441557203523
+        ],
+        "miss_rate": 0.041964913847974884,
+        "miss_ci95": [
+          0.0006319248430719973,
+          0.10564924571188353
+        ],
+        "caught_share": 0.3856465587706392,
+        "caught_ci95": [
+          0.05501782985226694,
+          0.9860400186133085
+        ],
+        "f1": 0.034587921352433194,
+        "f1_ci95": [
+          0.004954497775571485,
+          0.09407934874480195
+        ],
+        "blocked_share": 0.592653748180495,
+        "minus_verified": {
+          "false_positive_rate": 0.19617981125476003,
+          "fp_ci95": [
+            -0.0028863655909357124,
+            0.42328190731423626
+          ],
+          "miss_rate": 0.014855324806878997,
+          "miss_ci95": [
+            -0.018118502464588702,
+            0.055971346336581504
+          ],
+          "caught_share": 0.35622036946215463,
+          "caught_ci95": [
+            0.03094378545642084,
+            0.9428299190090519
+          ],
+          "f1": -0.017158521079649602,
+          "f1_ci95": [
+            -0.22251766055627023,
+            0.06998579108067417
+          ]
+        }
+      }
+    }
+  },
+  "per_tag": {
+    "verified": {
+      "violence": {
+        "labelled_share": 0.0002729257641921397,
+        "precision": null,
+        "recall": 0.0,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 1
+      },
+      "weapons": {
+        "labelled_share": 0.0024563318777292577,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_detected_in_pool": 2,
+        "n_labelled_in_pool": 9
+      },
+      "accidents": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "death": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "horror": {
+        "labelled_share": 0.02509552401746725,
+        "precision": null,
+        "recall": 0.0,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 4
+      },
+      "alcohol": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "smoking": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "sexual": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "drugs": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      }
+    },
+    "5d": {
+      "violence": {
+        "labelled_share": 0.0002729257641921397,
+        "precision": null,
+        "recall": 0.0,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 1
+      },
+      "weapons": {
+        "labelled_share": 0.0024563318777292577,
+        "precision": 0.5714285714285714,
+        "recall": 0.8888888888888888,
+        "n_detected_in_pool": 14,
+        "n_labelled_in_pool": 9
+      },
+      "accidents": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "death": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "horror": {
+        "labelled_share": 0.02509552401746725,
+        "precision": null,
+        "recall": 0.0,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 4
+      },
+      "alcohol": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "smoking": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "sexual": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "drugs": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      }
+    },
+    "5d_first": {
+      "violence": {
+        "labelled_share": 0.0002729257641921397,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_detected_in_pool": 4,
+        "n_labelled_in_pool": 1
+      },
+      "weapons": {
+        "labelled_share": 0.0024563318777292577,
+        "precision": 0.07770762506070909,
+        "recall": 0.8888888888888888,
+        "n_detected_in_pool": 15,
+        "n_labelled_in_pool": 9
+      },
+      "accidents": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 1,
+        "n_labelled_in_pool": 0
+      },
+      "death": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 2,
+        "n_labelled_in_pool": 0
+      },
+      "horror": {
+        "labelled_share": 0.02509552401746725,
+        "precision": 1.0,
+        "recall": 0.6702918252673554,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 4
+      },
+      "alcohol": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 3,
+        "n_labelled_in_pool": 0
+      },
+      "smoking": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 1,
+        "n_labelled_in_pool": 0
+      },
+      "sexual": {
+        "labelled_share": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "n_detected_in_pool": 2,
+        "n_labelled_in_pool": 0
+      },
+      "drugs": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      }
+    },
+    "5c": {
+      "violence": {
+        "labelled_share": 0.0002729257641921397,
+        "precision": null,
+        "recall": 0.0,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 1
+      },
+      "weapons": {
+        "labelled_share": 0.0024563318777292577,
+        "precision": 1.0,
+        "recall": 0.1111111111111111,
+        "n_detected_in_pool": 1,
+        "n_labelled_in_pool": 9
+      },
+      "accidents": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "death": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "horror": {
+        "labelled_share": 0.02509552401746725,
+        "precision": null,
+        "recall": 0.0,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 4
+      },
+      "alcohol": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "smoking": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "sexual": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      },
+      "drugs": {
+        "labelled_share": 0.0,
+        "precision": null,
+        "recall": null,
+        "n_detected_in_pool": 0,
+        "n_labelled_in_pool": 0
+      }
+    }
+  },
+  "agreement": {
+    "n": 50,
+    "standard_decision": {
+      "n": 50,
+      "agreement": 0.98,
+      "cohen_kappa": 0.0,
+      "fits_rate_a": 0.02,
+      "fits_rate_b": 0.0
+    },
+    "per_tag": {
+      "violence": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      },
+      "weapons": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.08,
+        "fits_rate_b": 0.08
+      },
+      "accidents": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      },
+      "death": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      },
+      "horror": {
+        "n": 50,
+        "agreement": 0.98,
+        "cohen_kappa": 0.0,
+        "fits_rate_a": 0.02,
+        "fits_rate_b": 0.0
+      },
+      "alcohol": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      },
+      "smoking": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      },
+      "sexual": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      },
+      "drugs": {
+        "n": 50,
+        "agreement": 1.0,
+        "cohen_kappa": 1.0,
+        "fits_rate_a": 0.0,
+        "fits_rate_b": 0.0
+      }
+    }
+  }
+}

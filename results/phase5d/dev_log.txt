@@ -1,0 +1,81 @@
+# Phase 5d development log (326 Phase 5c scenes, obvious-definition labels, weighted by the 5c strata)
+
+5b verifier                  lenient  blocks  1.5% wrong  34% caught  93% F1 0.77
+5c                           lenient  blocks  1.6% wrong  83% caught  25% F1 0.21
+5d first pass (grid)         lenient  blocks  5.3% wrong  95% caught  25% F1 0.09
+5d check grid p>=0.1         lenient  blocks  1.2% wrong  83% caught  18% F1 0.18
+5d check grid p>=0.2         lenient  blocks  1.1% wrong  84% caught  16% F1 0.16
+5d check grid p>=0.3         lenient  blocks  1.1% wrong  83% caught  16% F1 0.16
+5d check grid p>=0.5         lenient  blocks  0.9% wrong  82% caught  14% F1 0.15
+5d check grid p>=0.7         lenient  blocks  0.8% wrong  81% caught  14% F1 0.16
+5d check grid+strip p>=0.1   lenient  blocks  1.2% wrong  83% caught  18% F1 0.18
+5d check grid+strip p>=0.2   lenient  blocks  1.1% wrong  84% caught  16% F1 0.16
+5d check grid+strip p>=0.3   lenient  blocks  1.1% wrong  83% caught  16% F1 0.16
+5d check grid+strip p>=0.5   lenient  blocks  0.9% wrong  83% caught  14% F1 0.15
+5d check grid+strip p>=0.7   lenient  blocks  0.8% wrong  82% caught  14% F1 0.16
+
+5b verifier                  standard blocks  1.5% wrong  31% caught  47% F1 0.56
+5c                           standard blocks  2.2% wrong  71% caught  27% F1 0.28
+5d first pass (grid)         standard blocks  7.5% wrong  91% caught  29% F1 0.13
+5d check grid p>=0.1         standard blocks  1.4% wrong  68% caught  20% F1 0.24
+5d check grid p>=0.2         standard blocks  1.3% wrong  70% caught  18% F1 0.22
+5d check grid p>=0.3         standard blocks  1.3% wrong  69% caught  18% F1 0.22
+5d check grid p>=0.5         standard blocks  1.1% wrong  67% caught  15% F1 0.21
+5d check grid p>=0.7         standard blocks  1.0% wrong  66% caught  15% F1 0.21
+5d check grid+strip p>=0.1   standard blocks  1.4% wrong  68% caught  20% F1 0.24
+5d check grid+strip p>=0.2   standard blocks  1.3% wrong  70% caught  18% F1 0.22
+5d check grid+strip p>=0.3   standard blocks  1.3% wrong  69% caught  18% F1 0.22
+5d check grid+strip p>=0.5   standard blocks  1.1% wrong  67% caught  15% F1 0.21
+5d check grid+strip p>=0.7   standard blocks  1.0% wrong  66% caught  15% F1 0.21
+
+5b verifier                  strict   blocks  3.0% wrong  31% caught  33% F1 0.45
+5c                           strict   blocks  5.2% wrong  58% caught  36% F1 0.39
+5d first pass (grid)         strict   blocks 11.2% wrong  68% caught  59% F1 0.42
+5d check grid p>=0.1         strict   blocks  6.6% wrong  60% caught  42% F1 0.41
+5d check grid p>=0.2         strict   blocks  6.4% wrong  60% caught  41% F1 0.40
+5d check grid p>=0.3         strict   blocks  6.3% wrong  60% caught  41% F1 0.40
+5d check grid p>=0.5         strict   blocks  5.2% wrong  54% caught  39% F1 0.42
+5d check grid p>=0.7         strict   blocks  4.2% wrong  45% caught  38% F1 0.45
+5d check grid+strip p>=0.1   strict   blocks  6.9% wrong  61% caught  44% F1 0.41
+5d check grid+strip p>=0.2   strict   blocks  6.8% wrong  61% caught  43% F1 0.40
+5d check grid+strip p>=0.3   strict   blocks  6.6% wrong  61% caught  42% F1 0.40
+5d check grid+strip p>=0.5   strict   blocks  5.5% wrong  55% caught  40% F1 0.42
+5d check grid+strip p>=0.7   strict   blocks  4.4% wrong  47% caught  38% F1 0.45
+
+first violence p0.04/r0.08, weapons p0.49/r0.91, accidents p0.36/r0.90, death p0.07/r0.20, horror p0.17/r0.80, alcohol p0.10/r0.22, smoking p0.21/r1.00, sexual p0.03/r1.00, drugs p0.00/r0.00
+check0.5 violence p0.50/r0.03, weapons p0.86/r0.48, accidents p0.37/r0.90, death p0.20/r0.05, horror p1.00/r0.60, alcohol p0.43/r0.15, smoking p0.21/r0.73, sexual p0.13/r1.00, drugs p0.00/r0.00
+
+5b verifier                  lenient  blocks  1.5% wrong  34% caught  93% F1 0.77
+strip cands, obvious chk 0.2 lenient  blocks  0.8% wrong  81% caught  14% F1 0.16
+5b + grid chk 0.2            lenient  blocks  2.1% wrong  49% caught  98% F1 0.67
+5b + grid chk 0.2 weapons only lenient  blocks  1.5% wrong  34% caught  93% F1 0.77
+strip cands, obvious chk 0.5 lenient  blocks  0.7% wrong  81% caught  11% F1 0.14
+5b + grid chk 0.5            lenient  blocks  1.9% wrong  46% caught  95% F1 0.69
+5b + grid chk 0.5 weapons only lenient  blocks  1.5% wrong  34% caught  93% F1 0.77
+strip cands, obvious chk 0.7 lenient  blocks  0.6% wrong  80% caught  11% F1 0.15
+5b + grid chk 0.7            lenient  blocks  1.9% wrong  46% caught  95% F1 0.69
+5b + grid chk 0.7 weapons only lenient  blocks  1.5% wrong  34% caught  93% F1 0.77
+
+5b verifier                  standard blocks  1.5% wrong  31% caught  47% F1 0.56
+strip cands, obvious chk 0.2 standard blocks  0.9% wrong  68% caught  13% F1 0.19
+5b + grid chk 0.2            standard blocks  2.3% wrong  44% caught  57% F1 0.56
+5b + grid chk 0.2 weapons only standard blocks  1.5% wrong  31% caught  47% F1 0.56
+strip cands, obvious chk 0.5 standard blocks  0.8% wrong  67% caught  11% F1 0.17
+5b + grid chk 0.5            standard blocks  2.1% wrong  41% caught  54% F1 0.57
+5b + grid chk 0.5 weapons only standard blocks  1.5% wrong  31% caught  47% F1 0.56
+strip cands, obvious chk 0.7 standard blocks  0.8% wrong  67% caught  11% F1 0.17
+5b + grid chk 0.7            standard blocks  2.1% wrong  40% caught  54% F1 0.57
+5b + grid chk 0.7 weapons only standard blocks  1.5% wrong  31% caught  47% F1 0.56
+
+5b verifier                  strict   blocks  3.0% wrong  31% caught  33% F1 0.45
+strip cands, obvious chk 0.2 strict   blocks  2.7% wrong  45% caught  24% F1 0.34
+5b + grid chk 0.2            strict   blocks  7.8% wrong  55% caught  57% F1 0.50
+5b + grid chk 0.2 weapons only strict   blocks  4.8% wrong  39% caught  47% F1 0.53
+strip cands, obvious chk 0.5 strict   blocks  2.4% wrong  43% caught  22% F1 0.32
+5b + grid chk 0.5            strict   blocks  6.7% wrong  49% caught  56% F1 0.53
+5b + grid chk 0.5 weapons only strict   blocks  3.9% wrong  26% caught  47% F1 0.57
+strip cands, obvious chk 0.7 strict   blocks  2.2% wrong  42% caught  21% F1 0.31
+5b + grid chk 0.7            strict   blocks  5.7% wrong  41% caught  54% F1 0.57
+5b + grid chk 0.7 weapons only strict   blocks  3.9% wrong  26% caught  47% F1 0.58
+
+standard-risky dev scenes (obvious labels), by stratum: {'A': 13, 'B': 12, 'C': 3, 'D': 2} weights {'A': 1.0, 'B': 1.0, 'C': 1.0, 'D': 31.5}

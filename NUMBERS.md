@@ -220,6 +220,54 @@ author's rules (Phase 4g addendum). Primary labels are the headline; the author 
 | Repeat check, greedy decoding | cards 30/30 identical, judge 60/60 identical | gpu-apple-m5 | `results/phase4h/repeat.json` |
 | Judge speed | about 0.3 s per shortlist check (Qwen3-VL-4B 4-bit) | gpu-apple-m5 | progress log of the test step; not in a results file. Re-measure before quoting it. |
 
+## Phase 5 and 5b
+
+Rules: Phase 5 amendment and Phase 5b addendum in `EVAL-PROTOCOL.md`, frozen by hash (`results/phase5/rules_hash.txt`).
+19 films with scene cards (4,922 scenes, 4,903 breaks), 60 ads. Labels by the AI assistant, blind to the detector; no
+human labels. Rates are weighted from stratified samples to all scenes (Phase 5) or to the 4,442 scenes outside the
+Phase 5 sample (5b).
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| Detector speed (Qwen3-VL-4B 4-bit, 9 tags) | 0.36 s per scene | gpu-apple-m5 | progress log of the tag step; not in a results file. Re-measure before quoting it. |
+| Verifier speed (one tag per question) | 0.26 s per check; 2,045 checks, 38% of tags kept | gpu-apple-m5 | progress log of the verify step; not in a results file. Re-measure before quoting it. |
+| Phase 5, standard: should be blocked / detector blocks | 6.2% / 17.7% | (not hardware-dependent) | `results/phase5/safety_cpu-laptop_seed0.json` |
+| Phase 5, wrong blocks (of blocked): lenient / standard / strict | 83% [77, 89] / 69% [62, 75] / 52% [47, 58] | — | same |
+| Phase 5, missed (of kept): lenient / standard / strict | 0.0% / 0.8% [0.0, 2.4] / 5.0% [1.7, 9.2] | — | same |
+| Phase 5, genre baseline, standard: blocks / wrong blocks / missed / caught | 26.1% / 94% / 6.4% / 24% | — | same |
+| 5b, standard: should be blocked; blocks detector → verified | 3.8%; 13.9% → 5.6% | — | `results/phase5b/safety_cpu-laptop_seed0.json` |
+| 5b, wrong blocks detector → verified: lenient / standard / strict | 89% → 74% / 78% → 53% / 65% → 38% | — | same |
+| 5b, standard, verified − detector | wrong blocks −25.8 pts [−32.5, −17.7]; missed +0.3 pts [+0.0, +0.6]; caught −9 pts [−16, −4] | — | same |
+| 5b, standard, risky scenes caught: detector / verified / genre | 80% [55, 100] / 71% [48, 93] / 36% [14, 57] | — | same |
+| Inventory, verified: scenes blocked lenient / standard / strict | 3.9% / 6.8% / 12.8% | — | `results/phase5b/inventory_cpu-laptop_seed0.json` |
+| Inventory, verified: relevant slots removed lenient / standard / strict | 14.0% / 15.0% / 22.7% | — | same |
+| Tight-book fill: no rules / lenient / standard / strict (verified) | 85.9% / 77.6% / 75.6% / 68.1% | — | same |
+| Tight-book fill, standard: detector (Phase 5) / genre baseline; strict genre | 61.0% / 65.0%; 33.8% | — | `results/phase5/inventory_cpu-laptop_seed0.json` |
+| Slack-book fill, every rule set | 100% | — | both inventory files |
+| 5c (fresh 326 scenes, grid labels, weighted to 3,990): standard F1 5b / 5c / first pass | 0.39 [0.09, 0.73] / 0.26 [0.16, 0.46] / 0.28 | — | `results/phase5c/safety_cpu-laptop_seed0.json` |
+| 5c − 5b, F1: standard / strict | −0.13 [−0.46, +0.20] / +0.06 [−0.12, +0.20] | — | same |
+| 5c, standard, risky scenes caught: 5b / 5c / first pass | 27% [5, 65] / 20% [11, 50] / 39% | — | same |
+| 5c, weapons labelled (grid labels) | 5.6% of scenes; weapons recall 5b / 5c / first pass 0.05 / 0.12 / 0.09 | — | same |
+| 5c verifier speed (4B, 2 × 2 grid, P(yes)) | 0.56 s per check; 4,721 candidates, 806 kept | gpu-apple-m5 | progress log of the verify5c step; not in a results file. Re-measure before quoting it. |
+| 5d dev (326 scenes, obvious labels): labelled weapons / violence / alcohol, old → obvious definitions | 38 → 19 / 23 → 10 / 26 → 10 | — | `results/phase5d/labels_dev.json` vs `results/phase5c/labels_primary.json` |
+| 5d dev, 5b verifier: standard wrong blocks / caught / F1; lenient caught / F1 | 31% / 47% / 0.56; 93% / 0.77 | — | `results/phase5d/dev_log.txt` |
+| 5d dev, strict F1: 5b / 5b + grid weapons (P ≥ 0.7) | 0.45 / 0.58 | — | same |
+| 5d test (146 fresh scenes, weighted to 3,664), strict F1: 5b / 5d / grid first pass | 0.05 [0.00, 0.23] / 0.17 [0.07, 0.59] / 0.39 | — | `results/phase5d/safety_cpu-laptop_seed0.json` |
+| 5d − 5b, strict F1 | +0.12 [+0.05, +0.36] | — | same |
+| 5d test, strict: wrong blocks 5b / 5d; caught 5b / 5d | 79% / 58%; 3% / 11% | — | same |
+| 5d test, weapons scenes flagged: 5b / 5d | 0 of 9 / 8 of 9 | — | same (labels and tags) |
+| 5d grid first pass speed (4B, 2 × 2 grid, 9 tags) | 1.12 s per scene, 4,922 scenes | gpu-apple-m5 | progress log of the tag5d step; not in a results file. Re-measure before quoting it. |
+| Inventory, 5d strict: scenes blocked / tight-book fill | 13.2% / 67.5% | — | `results/phase5d/inventory_cpu-laptop_seed0.json` |
+| 5d author vs AI labels (50): exact match, before → after the author's review | 47 → 49 of 50; standard decision 49 of 50; weapons κ 0.85 → 1.00 | — | `results/phase5d/labels_author.json`, `labels_primary.json`; `safety_cpu-laptop_seed0.json` (after) |
+| 5e dev (472 scenes): horror / alcohol / smoking caught, 5d → 5e | 0 → 7 of 14 / 3 → 7 of 10 / 4 → 6 of 11 | — | `results/phase5e/dev_log.txt` |
+| 5e dev, violence caught: 4B every scene / 8B every scene (P ≥ 0.5) | 2 of 11 / 2 of 11 | — | same |
+| 5e dev, audio AUC for violence: screams / gunshots | 0.78 / 0.69 | — | same |
+| 5e test (452 relabelled 5b scenes, weighted to 4,442): 5e − 5d, standard F1 | −0.04 [−0.12, 0.00] | — | `results/phase5e/safety_cpu-laptop_seed0.json` |
+| 5e test, 5d: blocks / wrong blocks / caught / F1, lenient | 3.5% / 83% [76, 89] / 95% [83, 100] / 0.30 | — | same |
+| 5e test, 5d: blocks / wrong blocks / caught / F1, standard | 5.6% / 64% [57, 70] / 71% [44, 99] / 0.48 [0.38, 0.58] | — | same |
+| 5e test, 5d: blocks / wrong blocks / caught / F1, strict | 10.5% / 50% [42, 58] / 87% [66, 100] / 0.63 [0.54, 0.72] | — | same |
+| 5e test, strict F1 5b − 5d; weapons recall 5b / 5d | −0.07 [−0.18, 0.00]; 0.46 / 0.89 | — | same |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.

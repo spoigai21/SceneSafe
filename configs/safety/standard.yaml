@@ -1,0 +1,4 @@
+# Phase 5 rule set (EVAL-PROTOCOL.md, "Phase 5 amendment"). Frozen with the amendment. See lenient.yaml.
+name: standard
+block_all: [sexual, drugs, death, violence, horror]
+block_genres: [horror, crime]

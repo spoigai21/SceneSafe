@@ -1,0 +1,415 @@
+{
+  "phase": 5,
+  "name": "inventory",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-13T05:25:59+00:00",
+  "git_commit": "05cd2a7ebc5e0ae2b59213638aa476c851141cdc-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "protocol": "EVAL-PROTOCOL.md (Phase 5 amendment, Phase 5d addendum)",
+    "tags": "5d",
+    "relevant_share": 0.1,
+    "demand_per_ad": {
+      "slack": 10,
+      "tight": 80
+    },
+    "detector": "mlx-community/Qwen3-VL-4B-Instruct-4bit",
+    "matcher": "frames+cards (Phase 4g)"
+  },
+  "films": [
+    "BloodontheSun",
+    "CaptainKidd_",
+    "CarnivalofSouls",
+    "EndoftheWorld",
+    "GonewiththeWest",
+    "Inner_Sanctum_movie",
+    "Kilimanjaro",
+    "Minesweeper_1943",
+    "Phantom_Planet",
+    "TheFlyingDeuces",
+    "TheGhoul",
+    "TheOver-the-HillGangRidesAgain",
+    "ThePhantomCreeps",
+    "amazing_adventure",
+    "angel_and_the_badman",
+    "heartbeat",
+    "mr_robinson_crusoe",
+    "secret_weapon",
+    "teenagers_from_outerspace"
+  ],
+  "scenes": 4922,
+  "breaks": 4903,
+  "ads": 60,
+  "tags": "5d",
+  "tag_rate": {
+    "violence": 0.029865908167411623,
+    "weapons": 0.026818366517675742,
+    "accidents": 0.03900853311661926,
+    "death": 0.025396180414465664,
+    "horror": 0.010767980495733442,
+    "alcohol": 0.009345794392523364,
+    "smoking": 0.006298252742787485,
+    "sexual": 0.013612352702153597,
+    "drugs": 0.000609508329947176
+  },
+  "strata_sizes": {
+    "A": 193,
+    "B": 143,
+    "C": 316,
+    "D": 4270
+  },
+  "no_rules": {
+    "slack": {
+      "demand": 600,
+      "sold": 600,
+      "fill_rate": 1.0
+    },
+    "tight": {
+      "demand": 4800,
+      "sold": 4123,
+      "fill_rate": 0.8589583333333334
+    }
+  },
+  "rule_sets": {
+    "lenient": {
+      "block_all": [
+        "death",
+        "drugs",
+        "sexual"
+      ],
+      "scenes_blocked": 0.03921170255993499,
+      "breaks_removed_for_every_ad": 0.07138486640832144,
+      "slots_removed_mean_over_ads": 0.12734040383438716,
+      "slots_removed_per_ad": {
+        "car": 0.15704670609830718,
+        "airline": 0.13094024066897814,
+        "cruise": 0.13094024066897814,
+        "beach_resort": 0.15704670609830718,
+        "beer": 0.15704670609830718,
+        "wine": 0.15704670609830718,
+        "coffee": 0.11788700795431373,
+        "restaurant": 0.11788700795431373,
+        "fashion": 0.11788700795431373,
+        "jewelry": 0.11788700795431373,
+        "pet_food": 0.11788700795431373,
+        "outdoor_gear": 0.07138486640832142,
+        "phone": 0.1076891698959821,
+        "music": 0.11788700795431373,
+        "furniture": 0.11788700795431373,
+        "toys": 0.22537222108912913,
+        "western_wear": 0.07138486640832142,
+        "bank": 0.1913114419743015,
+        "pharmacy": 0.08566183968998575,
+        "sci_fi_game": 0.07138486640832142,
+        "bicycle": 0.15704670609830718,
+        "rail_travel": 0.13094024066897814,
+        "hotel": 0.15704670609830718,
+        "city_tourism": 0.15704670609830718,
+        "motorcycle": 0.15704670609830718,
+        "boating": 0.13094024066897814,
+        "fishing": 0.1076891698959821,
+        "camping": 0.11788700795431373,
+        "ski_resort": 0.13094024066897814,
+        "gardening": 0.11788700795431373,
+        "kitchenware": 0.11788700795431373,
+        "bedding": 0.11788700795431373,
+        "cleaning": 0.11788700795431373,
+        "baby_care": 0.22537222108912913,
+        "school_supplies": 0.22537222108912913,
+        "bridal": 0.11788700795431373,
+        "party_supplies": 0.1076891698959821,
+        "news_media": 0.1076891698959821,
+        "bookstore": 0.11788700795431373,
+        "office_supplies": 0.1076891698959821,
+        "piano_lessons": 0.11788700795431373,
+        "theatre_tickets": 0.1076891698959821,
+        "horse_racing": 0.13094024066897814,
+        "golf": 0.1076891698959821,
+        "swimwear": 0.13094024066897814,
+        "watches": 0.1076891698959821,
+        "menswear": 0.1076891698959821,
+        "cosmetics": 0.11788700795431373,
+        "hair_salon": 0.11788700795431373,
+        "bakery": 0.11788700795431373,
+        "grocery": 0.11788700795431373,
+        "department_store": 0.11788700795431373,
+        "dairy": 0.11788700795431373,
+        "cat_food": 0.11788700795431373,
+        "bird_feed": 0.11788700795431373,
+        "home_insurance": 0.16561289006730573,
+        "stationery": 0.1076891698959821,
+        "radio": 0.1076891698959821,
+        "shipping": 0.13094024066897814,
+        "necklace": 0.1076891698959821
+      },
+      "relevant_slots_removed": 0.14028144239226037,
+      "genre_baseline": {
+        "block_genres": [
+          "horror"
+        ],
+        "scenes_blocked": 0.18569687119057293,
+        "breaks_removed_for_every_ad": 0.18580460942280236,
+        "relevant_slots_removed": 0.16257357418307283
+      },
+      "books": {
+        "slack": {
+          "scene_rules": {
+            "fill_rate": 1.0,
+            "ads_fully_filled": 60,
+            "ads_with_nothing": 0
+          },
+          "genre_baseline": {
+            "fill_rate": 1.0,
+            "ads_fully_filled": 60,
+            "ads_with_nothing": 0
+          }
+        },
+        "tight": {
+          "scene_rules": {
+            "fill_rate": 0.7758333333333334,
+            "ads_fully_filled": 4,
+            "ads_with_nothing": 0
+          },
+          "genre_baseline": {
+            "fill_rate": 0.7047916666666667,
+            "ads_fully_filled": 3,
+            "ads_with_nothing": 0
+          }
+        }
+      }
+    },
+    "standard": {
+      "block_all": [
+        "death",
+        "drugs",
+        "horror",
+        "sexual",
+        "violence"
+      ],
+      "scenes_blocked": 0.0682649329540837,
+      "breaks_removed_for_every_ad": 0.11788700795431369,
+      "slots_removed_mean_over_ads": 0.13814331361751309,
+      "slots_removed_per_ad": {
+        "car": 0.16561289006730573,
+        "airline": 0.16561289006730573,
+        "cruise": 0.16561289006730573,
+        "beach_resort": 0.16561289006730573,
+        "beer": 0.16561289006730573,
+        "wine": 0.16561289006730573,
+        "coffee": 0.11788700795431373,
+        "restaurant": 0.11788700795431373,
+        "fashion": 0.11788700795431373,
+        "jewelry": 0.11788700795431373,
+        "pet_food": 0.11788700795431373,
+        "outdoor_gear": 0.11788700795431373,
+        "phone": 0.11788700795431373,
+        "music": 0.11788700795431373,
+        "furniture": 0.11788700795431373,
+        "toys": 0.22537222108912913,
+        "western_wear": 0.11788700795431373,
+        "bank": 0.19946971242096678,
+        "pharmacy": 0.11788700795431373,
+        "sci_fi_game": 0.11788700795431373,
+        "bicycle": 0.16561289006730573,
+        "rail_travel": 0.16561289006730573,
+        "hotel": 0.16561289006730573,
+        "city_tourism": 0.16561289006730573,
+        "motorcycle": 0.16561289006730573,
+        "boating": 0.16561289006730573,
+        "fishing": 0.11788700795431373,
+        "camping": 0.11788700795431373,
+        "ski_resort": 0.16561289006730573,
+        "gardening": 0.11788700795431373,
+        "kitchenware": 0.11788700795431373,
+        "bedding": 0.11788700795431373,
+        "cleaning": 0.11788700795431373,
+        "baby_care": 0.22537222108912913,
+        "school_supplies": 0.22537222108912913,
+        "bridal": 0.11788700795431373,
+        "party_supplies": 0.11788700795431373,
+        "news_media": 0.11788700795431373,
+        "bookstore": 0.11788700795431373,
+        "office_supplies": 0.11788700795431373,
+        "piano_lessons": 0.11788700795431373,
+        "theatre_tickets": 0.11788700795431373,
+        "horse_racing": 0.16561289006730573,
+        "golf": 0.11788700795431373,
+        "swimwear": 0.16561289006730573,
+        "watches": 0.11788700795431373,
+        "menswear": 0.11788700795431373,
+        "cosmetics": 0.11788700795431373,
+        "hair_salon": 0.11788700795431373,
+        "bakery": 0.11788700795431373,
+        "grocery": 0.11788700795431373,
+        "department_store": 0.11788700795431373,
+        "dairy": 0.11788700795431373,
+        "cat_food": 0.11788700795431373,
+        "bird_feed": 0.11788700795431373,
+        "home_insurance": 0.16561289006730573,
+        "stationery": 0.11788700795431373,
+        "radio": 0.11788700795431373,
+        "shipping": 0.16561289006730573,
+        "necklace": 0.11788700795431373
+      },
+      "relevant_slots_removed": 0.1504296055747243,
+      "genre_baseline": {
+        "block_genres": [
+          "horror",
+          "crime"
+        ],
+        "scenes_blocked": 0.2543681430312881,
+        "breaks_removed_for_every_ad": 0.25433408117479095,
+        "relevant_slots_removed": 0.24254110006088903
+      },
+      "books": {
+        "slack": {
+          "scene_rules": {
+            "fill_rate": 1.0,
+            "ads_fully_filled": 60,
+            "ads_with_nothing": 0
+          },
+          "genre_baseline": {
+            "fill_rate": 1.0,
+            "ads_fully_filled": 60,
+            "ads_with_nothing": 0
+          }
+        },
+        "tight": {
+          "scene_rules": {
+            "fill_rate": 0.7564583333333333,
+            "ads_fully_filled": 3,
+            "ads_with_nothing": 0
+          },
+          "genre_baseline": {
+            "fill_rate": 0.6497916666666667,
+            "ads_fully_filled": 3,
+            "ads_with_nothing": 0
+          }
+        }
+      }
+    },
+    "strict": {
+      "block_all": [
+        "accidents",
+        "alcohol",
+        "death",
+        "drugs",
+        "horror",
+        "sexual",
+        "smoking",
+        "violence",
+        "weapons"
+      ],
+      "scenes_blocked": 0.1324664770418529,
+      "breaks_removed_for_every_ad": 0.2253722210891291,
+      "slots_removed_mean_over_ads": 0.22537222108912913,
+      "slots_removed_per_ad": {
+        "car": 0.22537222108912913,
+        "airline": 0.22537222108912913,
+        "cruise": 0.22537222108912913,
+        "beach_resort": 0.22537222108912913,
+        "beer": 0.22537222108912913,
+        "wine": 0.22537222108912913,
+        "coffee": 0.22537222108912913,
+        "restaurant": 0.22537222108912913,
+        "fashion": 0.22537222108912913,
+        "jewelry": 0.22537222108912913,
+        "pet_food": 0.22537222108912913,
+        "outdoor_gear": 0.22537222108912913,
+        "phone": 0.22537222108912913,
+        "music": 0.22537222108912913,
+        "furniture": 0.22537222108912913,
+        "toys": 0.22537222108912913,
+        "western_wear": 0.22537222108912913,
+        "bank": 0.22537222108912913,
+        "pharmacy": 0.22537222108912913,
+        "sci_fi_game": 0.22537222108912913,
+        "bicycle": 0.22537222108912913,
+        "rail_travel": 0.22537222108912913,
+        "hotel": 0.22537222108912913,
+        "city_tourism": 0.22537222108912913,
+        "motorcycle": 0.22537222108912913,
+        "boating": 0.22537222108912913,
+        "fishing": 0.22537222108912913,
+        "camping": 0.22537222108912913,
+        "ski_resort": 0.22537222108912913,
+        "gardening": 0.22537222108912913,
+        "kitchenware": 0.22537222108912913,
+        "bedding": 0.22537222108912913,
+        "cleaning": 0.22537222108912913,
+        "baby_care": 0.22537222108912913,
+        "school_supplies": 0.22537222108912913,
+        "bridal": 0.22537222108912913,
+        "party_supplies": 0.22537222108912913,
+        "news_media": 0.22537222108912913,
+        "bookstore": 0.22537222108912913,
+        "office_supplies": 0.22537222108912913,
+        "piano_lessons": 0.22537222108912913,
+        "theatre_tickets": 0.22537222108912913,
+        "horse_racing": 0.22537222108912913,
+        "golf": 0.22537222108912913,
+        "swimwear": 0.22537222108912913,
+        "watches": 0.22537222108912913,
+        "menswear": 0.22537222108912913,
+        "cosmetics": 0.22537222108912913,
+        "hair_salon": 0.22537222108912913,
+        "bakery": 0.22537222108912913,
+        "grocery": 0.22537222108912913,
+        "department_store": 0.22537222108912913,
+        "dairy": 0.22537222108912913,
+        "cat_food": 0.22537222108912913,
+        "bird_feed": 0.22537222108912913,
+        "home_insurance": 0.22537222108912913,
+        "stationery": 0.22537222108912913,
+        "radio": 0.22537222108912913,
+        "shipping": 0.22537222108912913,
+        "necklace": 0.22537222108912913
+      },
+      "relevant_slots_removed": 0.23405047019822744,
+      "genre_baseline": {
+        "block_genres": [
+          "horror",
+          "crime",
+          "western",
+          "adventure"
+        ],
+        "scenes_blocked": 0.6070702966273872,
+        "breaks_removed_for_every_ad": 0.6071792779930655,
+        "relevant_slots_removed": 0.6233001826669373
+      },
+      "books": {
+        "slack": {
+          "scene_rules": {
+            "fill_rate": 1.0,
+            "ads_fully_filled": 60,
+            "ads_with_nothing": 0
+          },
+          "genre_baseline": {
+            "fill_rate": 1.0,
+            "ads_fully_filled": 60,
+            "ads_with_nothing": 0
+          }
+        },
+        "tight": {
+          "scene_rules": {
+            "fill_rate": 0.6747916666666667,
+            "ads_fully_filled": 2,
+            "ads_with_nothing": 0
+          },
+          "genre_baseline": {
+            "fill_rate": 0.3375,
+            "ads_fully_filled": 1,
+            "ads_with_nothing": 0
+          }
+        }
+      }
+    }
+  }
+}

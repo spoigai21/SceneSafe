@@ -1,0 +1,7 @@
+# Phase 5 rule set (EVAL-PROTOCOL.md, "Phase 5 amendment"). Frozen with the amendment.
+# block_all:   a break is removed for every ad if either neighbouring scene has one of these tags
+# block_genres: the genre baseline; whole films with these genre labels are removed
+# Adjacency (adjacency.yaml) and each ad's own avoid list apply in every rule set.
+name: lenient
+block_all: [sexual, drugs, death]
+block_genres: [horror]

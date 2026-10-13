@@ -1,0 +1,239 @@
+# Phase 5e development log (472 scenes with obvious-definition labels: 326 5d development + 146 5d test)
+
+## phase5e_e1.py
+5b
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 31% caught 47% F1 0.56 | str wrong 31% caught 33% F1 0.45
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 83% caught  1% F1 0.02 | str wrong 79% caught  3% F1 0.05
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 6/28 (14), accidents 22/29 (40), death 7/10 (22), horror 0/14 (2), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d (5b + grid weapons 0.7)
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 31% caught 47% F1 0.56 | str wrong 26% caught 47% F1 0.58
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 83% caught  1% F1 0.02 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 17/28 (32), accidents 22/29 (40), death 7/10 (22), horror 0/14 (2), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 30% caught 54% F1 0.61 | str wrong 38% caught 50% F1 0.56
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 19/28 (37), accidents 22/29 (40), death 7/10 (22), horror 7/14 (12), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 50% F1 0.60
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (34), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 50% F1 0.60
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+violence @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 55% F1 0.62 | str wrong 38% caught 50% F1 0.56
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 19/28 (37), accidents 22/29 (40), death 7/10 (22), horror 7/14 (12), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+violence @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 50% F1 0.60
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (34), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+violence @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 50% F1 0.60
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 3/10 (10), smoking 4/11 (4), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+smoking+alcohol @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 30% caught 54% F1 0.61 | str wrong 46% caught 54% F1 0.54
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 19/28 (37), accidents 22/29 (40), death 7/10 (22), horror 7/14 (12), alcohol 8/10 (23), smoking 9/11 (11), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+smoking+alcohol @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 37% caught 54% F1 0.58
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (34), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 8/10 (21), smoking 8/11 (9), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+smoking+alcohol @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+violence+smoking+alcohol @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 55% F1 0.62 | str wrong 46% caught 54% F1 0.54
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 19/28 (37), accidents 22/29 (40), death 7/10 (22), horror 7/14 (12), alcohol 8/10 (23), smoking 9/11 (11), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+violence+smoking+alcohol @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 37% caught 54% F1 0.58
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (34), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 8/10 (21), smoking 8/11 (9), sexual 3/3 (15), drugs 0/0 (0)
+5d + grid horror+violence+smoking+alcohol @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+
+## phase5e_e2.py
+E1 best (5b + grid weapons/horror/smoking/alcohol @0.7)
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 54% F1 0.62 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence @0.9
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all horror @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 31% caught 54% F1 0.61 | str wrong 26% caught 53% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (14), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all horror @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 52% F1 0.61
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (11), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all horror @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 52% F1 0.61
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (10), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all horror @0.9
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 52% F1 0.61
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (10), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 30% caught 55% F1 0.62 | str wrong 26% caught 53% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (14), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 52% F1 0.61
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (11), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 52% F1 0.61
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (10), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror @0.9
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 52% F1 0.61
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (10), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror+weapons+smoking+alcohol @0.3
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 30% caught 55% F1 0.62 | str wrong 46% caught 54% F1 0.54
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 20/28 (38), accidents 22/29 (40), death 7/10 (22), horror 7/14 (14), alcohol 8/10 (23), smoking 9/11 (11), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror+weapons+smoking+alcohol @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 37% caught 54% F1 0.58
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 19/28 (35), accidents 22/29 (40), death 7/10 (22), horror 7/14 (11), alcohol 8/10 (21), smoking 8/11 (9), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror+weapons+smoking+alcohol @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 53% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 19/28 (34), accidents 22/29 (40), death 7/10 (22), horror 7/14 (10), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + ask-all violence+horror+weapons+smoking+alcohol @0.9
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 26% caught 53% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 19/28 (34), accidents 22/29 (40), death 7/10 (22), horror 7/14 (10), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+violence labelled: [0.   0.   0.   0.   0.   0.   0.   0.01 0.35 0.82 1.  ]  unlabelled >0.5: 2 of 461
+horror labelled: [0.   0.   0.   0.05 0.05 0.11 0.21 0.96 0.98 0.98 0.99 1.   1.   1.  ]  unlabelled >0.5: 3 of 458
+
+## phase5e_e3.py
+violence 11 labelled; AUC gun 0.69, hit 0.69, scream 0.78, explosion 0.69, fire 0.58
+weapons 28 labelled; AUC gun 0.50, hit 0.54, scream 0.52, explosion 0.54, fire 0.45
+horror 14 labelled; AUC gun 0.32, hit 0.37, scream 0.62, explosion 0.48, fire 0.30
+accidents 29 labelled; AUC gun 0.76, hit 0.57, scream 0.64, explosion 0.82, fire 0.74
+death 10 labelled; AUC gun 0.67, hit 0.63, scream 0.69, explosion 0.67, fire 0.52
+
+## phase5e_e4.py
+E1 best
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (7), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + fired question @0.3 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 54% F1 0.62 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + fired question @0.5 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 54% F1 0.62 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + fired question @0.7 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 54% F1 0.62 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + weapons & gunshot audio @0.05 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 55% F1 0.63 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 4/11 (10), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + weapons & gunshot audio @0.1 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 54% F1 0.62 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 3/11 (9), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + weapons & gunshot audio @0.2 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + weapons & gunshot audio @0.4 -> violence
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+   raw caught/labelled (flagged): violence 2/11 (8), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+weapons-flagged scenes: 33
+  GonewiththeWest@741                      label ['violence', 'weapons']  fired 0.00  gun-audio 0.00
+  Kilimanjaro@336                          label []  fired 0.00  gun-audio 0.00
+  CarnivalofSouls@4229                     label ['weapons']  fired 0.00  gun-audio 0.00
+  teenagers_from_outerspace@2927           label ['weapons']  fired 0.00  gun-audio 0.00
+  TheFlyingDeuces@3602                     label []  fired 0.00  gun-audio 0.00
+  teenagers_from_outerspace@3256           label ['weapons']  fired 0.00  gun-audio 0.00
+  GonewiththeWest@239                      label []  fired 0.00  gun-audio 0.01
+  teenagers_from_outerspace@2529           label ['violence', 'weapons']  fired 0.00  gun-audio 0.00
+  GonewiththeWest@1566                     label []  fired 0.00  gun-audio 0.00
+  secret_weapon@3896                       label ['weapons']  fired 0.00  gun-audio 0.00
+  ThePhantomCreeps@4134                    label ['horror', 'violence', 'weapons']  fired 0.91  gun-audio 0.19
+  BloodontheSun@4221                       label []  fired 0.00  gun-audio 0.00
+  teenagers_from_outerspace@2641           label ['horror', 'weapons']  fired 0.00  gun-audio 0.00
+  mr_robinson_crusoe@3753                  label ['weapons']  fired 0.00  gun-audio 0.00
+  Kilimanjaro@4311                         label ['accidents']  fired 0.00  gun-audio 0.73
+  BloodontheSun@11                         label []  fired 0.00  gun-audio 0.00
+  TheOver-the-HillGangRidesAgain@4088      label ['violence', 'weapons']  fired 0.03  gun-audio 0.09
+  TheFlyingDeuces@1339                     label []  fired 0.01  gun-audio 0.04
+  GonewiththeWest@154                      label []  fired 0.00  gun-audio 0.00
+  GonewiththeWest@2081                     label ['weapons']  fired 0.02  gun-audio 0.00
+  teenagers_from_outerspace@3879           label ['weapons']  fired 0.00  gun-audio 0.00
+  GonewiththeWest@3344                     label []  fired 0.00  gun-audio 0.00
+  EndoftheWorld@2948                       label []  fired 0.00  gun-audio 0.00
+  BloodontheSun@0                          label []  fired 0.00  gun-audio 0.00
+  TheFlyingDeuces@4067                     label []  fired 0.00  gun-audio 0.00
+  angel_and_the_badman@2666                label []  fired 0.00  gun-audio 0.01
+  BloodontheSun@74                         label []  fired 0.00  gun-audio 0.00
+  Kilimanjaro@6315                         label ['weapons']  fired 0.00  gun-audio 0.00
+  teenagers_from_outerspace@3243           label ['weapons']  fired 0.00  gun-audio 0.00
+  teenagers_from_outerspace@3385           label ['weapons']  fired 0.00  gun-audio 0.00
+  teenagers_from_outerspace@2548           label ['weapons']  fired 0.00  gun-audio 0.00
+  mr_robinson_crusoe@161                   label ['weapons']  fired 0.00  gun-audio 0.00
+  Minesweeper_1943@1332                    label ['weapons']  fired 0.00  gun-audio 0.00
+
+## phase5e_e5.py
+labelled violence (scene, 4B, 8B):
+   ('CaptainKidd_@4537', 0.0, 0.01)
+   ('GonewiththeWest@741', 0.0, 0.06)
+   ('CaptainKidd_@4074', 0.01, 0.0)
+   ('teenagers_from_outerspace@1932', 0.0, 0.0)
+   ('GonewiththeWest@3547', 0.82, 0.39)
+   ('ThePhantomCreeps@1462', 0.0, 0.0)
+   ('teenagers_from_outerspace@2529', 0.0, 0.0)
+   ('ThePhantomCreeps@4134', 0.0, 0.05)
+   ('GonewiththeWest@375', 1.0, 1.0)
+   ('TheOver-the-HillGangRidesAgain@4088', 0.35, 0.97)
+   ('GonewiththeWest@686', 0.0, 0.0)
+  @0.3: caught 4B 3/11 (false 2), 8B 3/11 (false 13) of 461 non-violent
+  @0.5: caught 4B 2/11 (false 2), 8B 2/11 (false 9) of 461 non-violent
+  @0.7: caught 4B 2/11 (false 2), 8B 2/11 (false 6) of 461 non-violent
+  @0.9: caught 4B 1/11 (false 2), 8B 2/11 (false 3) of 461 non-violent
+E1 best
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 53% F1 0.61 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 71% caught  2% F1 0.04 | str wrong 58% caught 11% F1 0.17
+E1 + 8B violence on every scene @0.5
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 31% caught 55% F1 0.61 | str wrong 26% caught 53% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 95% caught  2% F1 0.03 | str wrong 80% caught 11% F1 0.14
+   raw caught/labelled (flagged): violence 3/11 (14), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + 8B violence on every scene @0.7
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 29% caught 55% F1 0.62 | str wrong 26% caught 53% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 95% caught  2% F1 0.03 | str wrong 80% caught 11% F1 0.14
+   raw caught/labelled (flagged): violence 3/11 (12), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)
+E1 + 8B violence on every scene @0.9
+   dev  len wrong 34% caught 93% F1 0.77 | sta wrong 28% caught 54% F1 0.62 | str wrong 25% caught 52% F1 0.62
+   t5d  len wrong 100% caught  0% F1 0.00 | sta wrong 95% caught  2% F1 0.03 | str wrong 80% caught 11% F1 0.14
+   raw caught/labelled (flagged): violence 3/11 (9), weapons 18/28 (33), accidents 22/29 (40), death 7/10 (22), horror 7/14 (9), alcohol 7/10 (18), smoking 6/11 (6), sexual 3/3 (15), drugs 0/0 (0)

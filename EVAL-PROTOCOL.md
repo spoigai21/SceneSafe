@@ -715,3 +715,264 @@ a follow-up. The pre-registered labels (`labels_primary.json`) and their result 
 - **The matcher:** whatever the relabel shows, **frames+cards is the project's matcher**. The re-rank was not robust
   to the author's labels; it is reported as an optional extra with an unclear gain, and is not tuned further on
   these films (that would be tuning on the test).
+
+---
+
+# Phase 5 amendment: brand safety
+
+Written **before** any Phase 5 code was run on a test film. The detector's prompt may be adjusted on the 2 practice
+films only; it is frozen by hash before the test films are tagged.
+
+## Question
+
+What does brand safety cost in sellable inventory, and how often does it block a scene that was fine?
+
+## Data
+
+- **Films:** the 19 films with scene cards: the 12 Phase 4g test films and the 7 Phase 4h films (4,922 scenes). The 2
+  practice films (`calvary`, `Hitchcock_Secret_Agent`) are used only to try the detector prompt.
+- **Ads:** the 60 Phase 4d ads. Each already has an `avoid` list, written before Phase 4 (`configs/ads.yaml`,
+  `configs/ads_extra.yaml`).
+- **Breaks:** an ad break sits between two consecutive scenes of a film (scene *s* and *s + 1*), so a film with *n*
+  scenes has *n − 1* breaks. A break's **context** is both neighbouring scenes.
+
+## The detector (no training)
+
+The Phase 4g card model (Qwen3-VL-4B, 4-bit, greedy decoding) sees the scene's 4-frame strip and dialogue and lists
+which of 9 content tags are present. The same tag definitions are given to the detector and to the labellers:
+
+| Tag | Present when |
+|---|---|
+| violence | people fight, hit, shoot at, stab or attack someone, or struggle violently |
+| weapons | a gun, knife, sword or other weapon is held, pointed or used |
+| accidents | a crash, fire, explosion, sinking, bad fall or disaster, or a vehicle clearly in trouble |
+| death | a dead body, someone killed or dying, a funeral or grave; or the conversation is mainly about a killing or a death |
+| horror | monsters, creatures, ghosts, menacing supernatural or gruesome images, people screaming in terror |
+| alcohol | people drinking alcohol, drunkenness, or alcohol bottles or glasses in focus |
+| smoking | someone smoking a cigarette, cigar or pipe |
+| sexual | nudity, sexual activity or strong sexual suggestion (kissing alone is not) |
+| drugs | illegal drug use or dealing |
+
+## Rules (`configs/safety/*.yaml`)
+
+Three kinds, as in `SPEC.md`:
+
+1. **Category avoidance:** a break is removed **for every ad** if either neighbouring scene has a blocked tag. The
+   three rule sets differ only here:
+   - **lenient:** sexual, drugs, death
+   - **standard:** lenient + violence, horror
+   - **strict:** standard + weapons, accidents, alcohol, smoking
+2. **Adjacency by ad category** (`configs/safety/adjacency.yaml`, the same in all three rule sets): industry norms
+   such as no automotive ad next to an accident.
+3. **Per-advertiser exclusion lists:** each ad's own `avoid` list, the same in all three rule sets.
+
+A break is sellable to an ad only if none of the three removes it.
+
+## Baseline: blocking by genre
+
+The cheap alternative to watching scenes: block whole films by their genre label. lenient blocks horror films;
+standard blocks horror and crime; strict blocks horror, crime, western and adventure. Reported beside the scene rules.
+
+## Inventory measures (no labels needed)
+
+For each rule set, scene-level and genre:
+- **breaks removed for every ad** (category avoidance)
+- **sellable (break, ad) slots removed**, averaged over the 60 ads (all three kinds)
+
+**A slack and a tight book.**
+- Each ad buys only **relevant** breaks: those whose preceding scene is in the ad's top 10% of scenes by the
+  frames+cards score (Phase 4g).
+- **Demand:**
+  - slack book: 10 breaks per ad (about 12% of supply)
+  - tight book: 80 breaks per ad (about 98% of supply)
+- **Allocation:** greedy, in rounds. Each round, the ads in a fixed random order (`default_rng(0)`) each take
+  their best-scoring free, sellable, relevant break. This continues until demand is met or nothing is left.
+- **Reported:** fill rate (breaks sold ÷ breaks demanded) with no rules and under each rule set.
+
+## Labels: how often the detector is wrong
+
+- **Sample:** scenes are split into 4 strata by the detector:
+  - A: blocked by lenient
+  - B: blocked by standard but not lenient
+  - C: blocked by strict but not standard
+  - D: kept by strict
+
+  Up to 120 per stratum are drawn at random (`default_rng(0)`) and shuffled into one pool (ids `S####`).
+- **Labels:** for each scene, the labeller marks which of the 9 tags are present, from the 4-frame strip and the
+  dialogue, using the definitions above. The labeller is blind to the detector's tags and the strata.
+  - Primary labeller: the AI assistant, split across parallel fresh instances given only the written definitions
+    and the sheets.
+  - Second labeller: the project author, on a random 100 (`default_rng(8)`), if they choose to.
+- **Should it be blocked?** A scene should be blocked by a rule set if the labeller marked any of that rule set's
+  avoided tags.
+- **Labelling instructions** (added while the test films were being tagged, before any pool or label existed): a
+  tag is present only if its definition is met; judge from the frames, and from the dialogue only where the
+  definition says so (death); a thing only mentioned in passing is not present; mark every tag that applies, or
+  none; if it cannot be told whether something is there, do not mark it; ignore ad fit.
+
+## Metrics
+
+All rates are weighted back to the whole set of 4,922 scenes by each stratum's sampling rate. 95% intervals come from
+a bootstrap within strata (10,000 resamples, `default_rng(0)`).
+
+- **False-positive rate** per rule set: the share of blocked scenes that should not have been blocked.
+- **Miss rate** per rule set: the share of kept scenes that should have been blocked.
+- The same two rates for the genre baseline.
+- **Per tag:** the detector's precision and recall against the labels.
+- **Agreement** between the author and the primary labeller: per tag, and on the standard-rule decision (Cohen's κ).
+- **Cost:** detector seconds per scene on this laptop.
+
+## Done when
+
+There is an inventory-loss figure per rule set (slack and tight) and a false-positive rate with its interval, from a
+hand-checked sample. The scene rules and the genre baseline are compared on inventory removed, false positives and
+misses. There is no pass/fail rule. Both kinds of error are reported as prominently as the inventory figures.
+
+## Disclosures
+
+- **The detector, the card writer and the Phase 4h judge are the same model.** The labeller is a different one
+  (Claude).
+- **The primary labeller built the system** and wrote the tag definitions, the rule sets and the adjacency norms.
+- **Old films:** gunfights, fistfights, drinking and smoking are common, so the strict rule set is expected to
+  remove a lot.
+- **Breaks at every scene boundary** is a simplification. Phase 7 chooses real break positions.
+
+## Phase 5b addendum: a verification pass (written after the Phase 5 result)
+
+Written **after** the Phase 5 hand-check showed the detector blocks far too much (standard rule set: 17.7% of scenes
+blocked, 6.2% should be; 69% of its blocks wrong). Written **before** the verifier was run on any test scene.
+
+- **Change:** for each tag the detector gave a scene, the same model is asked one narrow question with that tag's
+  definition: "is this clearly present in the scene: … ? Answer yes or no." The tag is kept only if the answer
+  starts with yes. Tags the detector did not give are not asked about, so the verifier can only remove tags.
+  Tried on the 18 practice-film flags only (`data/phase5/practice_verify.json`).
+- **Fresh test:** a new stratified sample, drawn as in Phase 5 (up to 120 per stratum, `default_rng(0)`), but with
+  the strata defined by the **verified** tags and **leaving out the 480 Phase 5 scenes**. Rates are weighted to the
+  remaining 4,442 scenes. Labelled blind as in Phase 5 (same definitions and instructions; 4 fresh instances; ids
+  `T####`); the author may label a random 100 (`default_rng(9)`).
+- **Compared on the same new labels:** the original detector, the verified detector and the genre baseline, with a
+  paired bootstrap within strata (10,000 resamples, `default_rng(0)`).
+- **Decision rule (standard rule set):** the verifier **helps** if the false-positive rate falls (interval of the
+  difference entirely below 0) **and** the miss rate rises by less than 3 percentage points (upper end of the
+  interval of the difference below +3 points). Otherwise it is reported as a trade-off, not an improvement.
+- **Inventory** is recomputed on the verified tags (`results/phase5b/`).
+- The Phase 5 results stay as they are, reported beside 5b.
+
+## Phase 5c addendum: tuned on a development set, tested on fresh scenes (written after the 5b result)
+
+Written **after** the 5b result, at the author's request to improve the detector before the author labels.
+Written **before** the final configuration was run on any scene outside the development set.
+
+- **Development set:** the 932 scenes labelled in Phase 5 and 5b. Every choice below was made on them. They are not
+  used to test 5c.
+- **Tried on the development set and kept:**
+  - **More candidates:** a scene-tag pair is checked if the first pass gave it, if the scene card mentions it (a
+    keyword list per tag), or if CLIP ranks the scene in the top 5% for that tag (3–5 prompts per tag)
+    (`scenesafe/safety/candidates.py`).
+  - **Sharper frames:** the verifier sees the same 4 frames as a 2 × 2 grid of 384 × 288 frames instead of the
+    192 × 144 strip (`frame_grid`).
+  - **A probability threshold:** the verifier's probability of "yes" (yes against no on the first answer token); a
+    tag is kept if it is at least 0.2. One threshold for all tags.
+- **Tried and dropped:**
+  - Qwen3-VL-8B: no better on the grids, and twice as slow.
+  - Averaging the 4B and 8B probabilities.
+  - More concrete wording for sexual and death: slightly worse.
+- **Development result (standard rule set, pooled):** F1 0.41 (first pass) → 0.53 (5b verifier) → 0.57 (5c). Wrong
+  blocks 73% → 52% → 45%; risky scenes caught 86% → 59% → 59%. With about 40 risky scenes in the development set,
+  these are rough.
+- **Fresh test:**
+  - **Sample:** a new stratified sample, with strata by the 5c tags, leaving out all 932 development scenes. Up to
+    120 per stratum, `default_rng(0)`, ids `U####`.
+  - **Labels:** labelled blind as before, but **from the larger grids** (sheets of 3), because small objects cannot
+    be judged from the strip.
+  - **Second labeller:** the author labels a random 50 (`default_rng(10)`), also from the grids.
+- **Compared on the same new labels:** the 5c detector, the 5b verifier and the first pass, with a paired bootstrap
+  within strata.
+- **Decision rule (standard rule set):** 5c **improves on 5b** if the interval of the F1 difference (5c − 5b) is
+  entirely above 0. Otherwise it is reported as no measurable improvement. Wrong blocks, misses and risky scenes
+  caught are reported beside it.
+- **Inventory** is recomputed on the 5c tags (`results/phase5c/`).
+
+## Phase 5d addendum: obvious definitions, first pass on the sharp grids (written after the 5c result and author labels)
+
+Written **after** the 5c result and the author's 50 labels, at the author's request: the tag definitions were judged
+too strict (a holstered gun, a shadow in a fight, a blurry rifle or a drawn sword in the credits all counted). Written
+**before** the 5d configuration was run on any scene outside the development set.
+
+- **This changes what is measured.** The 5d target is "obvious" content, not the Phase 5 definitions, so 5d numbers are
+  not comparable with 5, 5b and 5c numbers. All detectors are re-scored on the 5d labels.
+- **Obvious definitions** (`TAGS_OBVIOUS` in `scenesafe/safety/tags.py`): a tag is present only if a viewer would
+  notice it at a glance.
+
+| Tag | Present when |
+|---|---|
+| violence | an obvious fight or attack on screen: punching, shooting at someone, stabbing, a brawl or a clear violent struggle (not a chase, a threat, a standoff, or a scuffle you cannot make out) |
+| weapons | a weapon clearly in use or held up in plain view: pointed, fired, swung or brandished (not holstered, slung, lying around, in the background, too small to make out, or drawn in artwork) |
+| accidents | a crash, a large fire, an explosion, a sinking, a bad fall or a disaster clearly shown |
+| death | a dead body clearly shown, someone killed or dying on screen, a funeral or grave as the main subject; or the scene is mainly about a killing or a death |
+| horror | a monster, creature, ghost or gruesome image clearly shown, or people screaming in terror (not blood alone, not only talk about a monster) |
+| alcohol | people clearly drinking alcohol or drunk, or a drink or bottle as a main focus (not bottles or glasses in the background) |
+| smoking | someone clearly smoking a cigarette, cigar or pipe |
+| sexual | nudity, sexual activity or strong sexual suggestion (kissing alone is not) |
+| drugs | illegal drug use or dealing clearly shown |
+
+- **Detector:**
+  - **first pass on the grids:** the 9-tag question with the obvious definitions, on the 2 × 2 grid instead of the
+    strip (`tag5d`)
+  - **check:** each candidate tag is asked alone on the grid with its obvious definition; kept if P(yes) is at least
+    a threshold (`verify5d`). The threshold, and whether the strip first pass also supplies candidates, are chosen
+    on the development set (below).
+- **Development set:** the 326 Phase 5c scenes, relabelled blind from the grids under the obvious definitions by 4
+  fresh instances of the AI assistant. They are not used to test 5d.
+- **Development results** (326 scenes, weighted by the 5c strata; about 30 risky scenes under standard, so rough):
+  - **The grid first pass is worse than the 5b verifier for every tag except weapons.** Violence recall 0.08 and death
+    0.20; standard F1 0.13 against 0.56 for 5b. Checking its tags on the grid (any threshold, with or without the strip
+    candidates) does not close the gap (standard F1 0.21–0.24).
+  - **Under the obvious definitions the 5b verifier does better than the 5c result suggested:** standard rules block
+    1.5% of scenes, 31% of blocks wrong, 47% of risky scenes caught.
+  - **The grid helps weapons:** weapons precision 0.49, recall 0.91 in the first pass; checked at P(yes) ≥ 0.7, adding
+    grid weapons to the 5b tags takes strict F1 from 0.45 to 0.58 (wrong blocks 31% → 26%, caught 33% → 47%).
+    Adding all grid tags instead does not help standard (0.56 → 0.57) and blocks more at strict.
+- **Chosen (frozen here):** the 5d tags are the 5b verifier's tags **plus weapons** where the grid first pass gave it and
+  the grid check with the obvious definition gives P(yes) ≥ 0.7. Under lenient and standard rules, 5d therefore
+  blocks exactly what 5b blocks; it differs only where weapons count (strict, adjacency, ads' own lists).
+- **Fresh test:**
+  - **Sample:** stratified by the 5d tags, leaving out all 1,258 scenes labelled in 5, 5b and 5c. Up to 120 per
+    stratum, `default_rng(0)`, ids `V####`.
+  - **Labels:** blind, from the grids, under the obvious definitions, by fresh instances of the AI assistant. The
+    author labels a random 50 (`default_rng(11)`), also under the obvious definitions.
+  - **Compared on the same labels:** 5d, the 5b verifier, the grid first pass and 5c, with a paired bootstrap within
+    strata.
+- **Decision rule (strict rule set, since only weapons differ):** 5d **improves on 5b** if the interval of the F1
+  difference (5d − 5b) is entirely above 0. Otherwise: no measurable improvement. Standard and lenient are reported
+  for 5b itself as the new estimate of how well the system catches obvious content.
+
+## Phase 5e addendum: sharp-frame checks for horror, smoking and alcohol (written after the 5d result)
+
+Written **after** the 5d result, at the author's request to research improvements without more author labelling.
+Written **before** the 5e configuration was run on any test scene.
+
+- **Development set:** the 472 scenes with obvious-definition labels (the 326 5d development scenes and the 146 5d
+  test scenes, which are now spent). Scripts in `scripts/dev/phase5e_*.py`, log in `results/phase5e/dev_log.txt`.
+- **Where the 5d system fails** (raw counts over the 472): horror 0 of 14 caught, violence 2 of 11, smoking 4 of 11,
+  alcohol 3 of 10. Accidents (22 of 29) and death (7 of 10) are mostly caught.
+- **Tried and kept:** horror, smoking and alcohol taken from the grid the same way as weapons in 5d: the tag is a
+  candidate if either first pass (grid or strip) gave it, and it is kept if the grid check with the obvious definition
+  gives P(yes) ≥ 0.7. On the development set: horror 0 → 7 of 14, alcohol 3 → 7, smoking 4 → 6; standard F1
+  0.56 → 0.61 and strict 0.58 → 0.62 on the 326 scenes (weighted by the 5c strata).
+- **Tried and dropped (all for violence):**
+  - asking the violence and horror questions on every scene, not only candidates: violence P(yes) is near 0 for 8
+    of the 11 labelled fights
+  - "is a gun being fired, or is someone being shot at?" on weapon scenes: near 0 even with a visible muzzle flash
+  - pretrained AudioSet sound tags (AST): screams separate violence only weakly (AUC 0.78; gunshots 0.69); weapon +
+    gunshot sound added 1–2 of 11 fights
+  - the 8B model on the violence question: the same 2–3 of 11 fights, with more false alarms
+  So violence is a limit of the local models on these frames, not of the candidate step.
+- **Fresh test:**
+  - **Sample:** the 452 Phase 5b scenes, which were not used to develop 5d or 5e, with their 5b strata (weighted to
+    4,442 scenes).
+  - **Labels:** relabelled blind, from the grids, under the obvious definitions, by fresh instances of the AI
+    assistant. No author labels (the author asked not to label more).
+  - **Compared on the same labels:** 5e, 5d and the 5b verifier, with a paired bootstrap within strata.
+- **Decision rule (standard rule set, where horror counts):** 5e **improves on 5d** if the interval of the F1
+  difference (5e − 5d) is entirely above 0. Otherwise: no measurable improvement. Strict is reported beside it.
