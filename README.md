@@ -3,7 +3,7 @@
 Finds the film scenes that suit an ad, and keeps brands away from the scenes that don't. It was built and measured on
 one laptop, with every number traced to a results file and every test's rules fixed before it ran.
 
-**Results site:** open `site/index.html`, or serve it with `python -m http.server -d site`.
+**Results site: https://spoigai21.github.io/SceneSafe/** (the same page is in `site/`).
 
 ## Honest limits (read these first)
 
