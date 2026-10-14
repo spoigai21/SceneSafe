@@ -1,0 +1,17 @@
+# Phase 7 simulation parameters (EVAL-PROTOCOL.md, "Phase 7 amendment"). Frozen by hash before the run.
+contexts:                 # ad category -> context group
+  travel_outdoors: [travel, outdoors, sports, automotive, logistics]
+  home_family: [home, kids, pets, food_drink, retail]
+  style: [fashion, beauty]
+  media_tech: [entertainment, media, gaming, telecom, electronics]
+  money_health: [finance, business, health]
+  nightlife: [alcohol, events]
+relevant_share: 0.10      # a break is relevant to an ad if the scene before it is in the ad's top 10%
+rule_set_shares: {lenient: 0.25, standard: 0.50, strict: 0.25}
+always_strict: [kids]
+base_value: [0.5, 1.5]
+premium: 2.0
+premium_sensitivity: [1.0, 1.5, 3.0]
+budget_breaks: [20, 80]
+tight_multiplier: 3
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

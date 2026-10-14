@@ -268,6 +268,53 @@ Phase 5 sample (5b).
 | 5e test, 5d: blocks / wrong blocks / caught / F1, strict | 10.5% / 50% [42, 58] / 87% [66, 100] / 0.63 [0.54, 0.72] | — | same |
 | 5e test, strict F1 5b − 5d; weapons recall 5b / 5d | −0.07 [−0.18, 0.00]; 0.46 / 0.89 | — | same |
 
+## Phase 6
+
+Cost. Timings on the laptop, 3 runs each (median and range), load average 1.3–4.6 on 10 cores; model loading and one
+warm-up call excluded. Prices: `configs/prices.yaml`, AWS us-east-1 on-demand list prices looked up 2026-10-13.
+Workload from the 19 Phase 5 films. "Per 1,000" means per 1,000 hours of video.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| Workload per video-hour | 191.8 scenes; 79.7 strip safety checks; 7.8 grid weapons checks (19 films, 25.7 video-hours) | (not hardware-dependent) | `results/phase6/counts_cpu-laptop_seed0.json` |
+| Frame search: decode 1 fps + CLIP ViT-B/32 fp16 | 10.0 s/video-hour (9.8–10.3), 3 films, 4.0 h | cpu-laptop decode + gpu-apple-m5 model | `results/phase6/video_gpu-apple-m5_seed0.json` |
+| Whisper large-v3-turbo (mlx-whisper) | 84.9 s per audio-hour (81.2–91.0) | gpu-apple-m5 | same |
+| Audio decode | 3.2 s/video-hour (3.2–3.4) | cpu-laptop | same |
+| Frame search: decode 1 fps + CLIP fp32 | 38.6 s/video-hour (37.4–40.9) | cpu-laptop | `results/phase6/video_cpu-laptop_seed0.json` |
+| Whisper large-v3-turbo (mlx-whisper, CPU device) | 838 s per audio-hour (830–841) | cpu-laptop | same |
+| Scene description (Qwen3-VL-4B 4-bit, mlx-vlm) | 1.52 s per scene (1.52–1.54), 60 scenes | gpu-apple-m5 | `results/phase6/scenes_gpu-apple-m5_seed0.json` |
+| Safety strip pass / per-tag check | 0.37 s per scene (0.36–0.37) / 0.25 s per check (0.25–0.26) | gpu-apple-m5 | same |
+| Safety grid pass / grid weapons check (P(yes)) | 0.77 s per scene (0.76–0.78) / 0.58 s per check (0.58–0.59) | gpu-apple-m5 | same |
+| Strip / grid image (4 frames) | 0.078 / 0.088 s per scene | cpu-laptop | same |
+| Whole pipeline (search + transcript + descriptions + 5d safety), stages in sequence | 665.8 s/video-hour (656.2–678.2: every stage at its fastest / slowest run) | one M5 laptop: cpu-laptop + gpu-apple-m5 | `results/phase6/cost_laptop_seed0.json` |
+| Share of the whole pipeline: descriptions / safety (both passes) / Whisper / images / frame search | 44% / 36% / 13% / 5% / 1.5% | same | same |
+| **Whole pipeline per 1,000 video-hours** | **185 machine-hours; $227** at mac-m4.metal $1.23/h (assumes M4 runs as fast as the M5; not measured) | same | same |
+| Frame search only per 1,000 | 2.8 machine-hours, $3.4 (mac-m4.metal) | cpu-laptop decode + gpu-apple-m5 model | same |
+| Frame search only per 1,000 | 10.7 machine-hours, $7.7 at c7i.4xlarge $0.714/h (assumes laptop-CPU speed; not measured) | cpu-laptop | same |
+| Transcript (audio decode + Whisper) per 1,000 | 234 machine-hours, $167 (c7i.4xlarge) | cpu-laptop | same |
+| Naive Phase 1 baseline (every frame decoded + CLIP fp32), derived from the Phase 1 and 2 rows | 403.0 s/video-hour, 112 machine-hours, $138 per 1,000 (mac-m4.metal) | cpu-laptop decode + gpu-apple-m5 model | same |
+| Naive Phase 1 baseline, derived | 881.5 s/video-hour, 245 machine-hours, $175 per 1,000 (c7i.4xlarge) | cpu-laptop | same |
+| Whole pipeline ÷ naive baseline | 1.65× | one M5 laptop | same |
+| Scene descriptions on the CPU | not measured (mlx-vlm fails on the CPU device, BUGS.md #9) | cpu-laptop | — |
+| NVIDIA | not measured; L4 price recorded only (g6.xlarge $0.805/h) | gpu-nvidia-l4 | `configs/prices.yaml` |
+
+## Phase 7
+
+Rules: Phase 7 amendment in `EVAL-PROTOCOL.md` and `configs/phase7.yaml`, frozen by hash (`results/phase7/rules_hash.txt`).
+A seeded simulation on measured signals (5d tags, Phase 4g matcher): values, budgets and the premium are assumptions.
+Median and range over seeds 0–9.
+
+| Figure | Value | Lane | Source (seed 0) |
+|---|---|---|---|
+| Breaks by safety class: clean / mild / sensitive / restricted | 77.5% / 10.7% / 4.7% / 7.1% of 4,903 | (not hardware-dependent) | `results/phase7/inventory_cpu-laptop_seed0.json` |
+| Restricted share and fill | 350 breaks (7.1%); 0% sold in both books | — | same |
+| Segmented ÷ flat revenue, premium 2, slack book | 1.13 (1.08–1.26); higher in 10 of 10 seeds; breaks sold 1.07×; advertiser value 1.26× | — | same |
+| Segmented ÷ flat revenue, premium 2, tight book | 1.06 (0.98–1.18); higher in 7 of 10 seeds; breaks sold 0.75×; advertiser value 1.00× | — | same |
+| Segmented ÷ flat revenue, no premium (safety only): slack / tight | 1.09 (1.02–1.16), 10/10 / 0.86 (0.75–0.90), 0/10 | — | same |
+| Segmented ÷ flat revenue, premium 1.5: slack / tight | 1.11 (1.07–1.19), 10/10 / 0.96 (0.86–1.00), 0/10 | — | same |
+| Segmented ÷ flat revenue, premium 3: slack / tight | 1.20 (1.13–1.36), 10/10 / 1.28 (1.15–1.36), 10/10 | — | same |
+| Pre-registered verdict | segmentation does not "help" (needs ≥ 9 of 10 seeds in both books; tight book 7 of 10) | — | same |
+
 The derived per-hour figures and the predictions are in `PREDICTION.md`. They are predictions,
 not measurements. The 1,000-hour search projection (about 95 ms per query, 7.4 GB) in
 `results/phase3/SUMMARY.md` is a linear extrapolation, not a measurement.

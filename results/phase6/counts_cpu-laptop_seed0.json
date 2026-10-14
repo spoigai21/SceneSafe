@@ -1,0 +1,27 @@
+{
+  "phase": 6,
+  "name": "counts",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-14T00:37:32+00:00",
+  "git_commit": "3f40861e8cc0b041ba3a77d95ddc8e67ff63102a-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "source": "19 Phase 5 films, data/phase5"
+  },
+  "films": 19,
+  "video_hours": 25.656388888888888,
+  "scenes": 4922,
+  "scenes_per_hour": 191.84305403678962,
+  "strip_checks": 2045,
+  "strip_checks_per_hour": 79.70724207745526,
+  "grid_checks": 201,
+  "grid_checks_per_hour": 7.834305945021275,
+  "scenes_with_speech": 2636
+}

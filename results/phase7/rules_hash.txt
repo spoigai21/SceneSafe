@@ -1,0 +1,5 @@
+2026-10-14T01:37:12Z  Phase 7 amendment frozen before any Phase 7 number was computed (not yet committed)
+3c6ef4e8d73f862f9197b1a93813102661cc5ea1c5bda98f749df01cb1a0c2cf  EVAL-PROTOCOL.md
+4be13b031e37927d3e252c0b240e1d485c15f34b3bf0a25d27a49fccff98342a  configs/phase7.yaml
+112e6ec04f65ebb2960ea0ad21f181b8b6a9156bdd5750cdbc36a9ba4cebb5c2  scripts/run_phase7.py
+475f93393b55b6a9e4f7c8d8b7c8b453bf70e90babf2fd30f2dfbf8a2e1d1d1b  scenesafe/safety/rules.py

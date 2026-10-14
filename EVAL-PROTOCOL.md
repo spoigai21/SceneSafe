@@ -976,3 +976,62 @@ Written **before** the 5e configuration was run on any test scene.
   - **Compared on the same labels:** 5e, 5d and the 5b verifier, with a paired bootstrap within strata.
 - **Decision rule (standard rule set, where horror counts):** 5e **improves on 5d** if the interval of the F1
   difference (5e − 5d) is entirely above 0. Otherwise: no measurable improvement. Strict is reported beside it.
+
+---
+
+# Phase 7 amendment: scene signals become priced inventory
+
+Written before any Phase 7 number was computed. The parameters live in `configs/phase7.yaml`; both files are frozen by
+hash in `results/phase7/rules_hash.txt`. Phase 7 has no labels: it is a seeded simulation over measured scene signals.
+
+- **Inventory:** the 4,903 ad breaks of the 19 Phase 5 films (one between each pair of consecutive scenes). A break is
+  judged by both neighbouring scenes.
+- **Safety signal:** the final brand-safety tags, 5d (`data/phase5/tags_5d.json`). Each break gets a **safety class** from
+  the union of its two neighbours' tags:
+  - **clean:** no tag
+  - **mild:** only tags that just the strict rule set blocks (weapons, accidents, alcohol, smoking)
+  - **sensitive:** a tag that standard blocks but lenient does not (violence, horror)
+  - **restricted:** a tag every rule set blocks (sexual, drugs, death). This is the bucket that is "safe for almost no
+    advertiser": every simulated advertiser uses at least the lenient rules.
+- **Context signal:** the frames+cards matcher from Phase 4g, the same scores as the Phase 5 inventory. A break is
+  **relevant** to an ad if the scene before it is in that ad's top 10%. Ad categories are grouped into 6 contexts
+  (`configs/phase7.yaml`). A break's **context** is the group with the most ads it is relevant to (ties broken by the
+  summed score), or **general** if it is relevant to none.
+- **Segments:** safety class × context (4 × 7 = 28).
+- **Simulated demand** (seeded; seeds 0–9; seed 0 is shown, and the median and range over the 10 seeds are reported):
+  - **Advertisers:** the 60 ads.
+  - **Safety rule set:** kids ads are always strict; the others are drawn from lenient 25%, standard 50%, strict 25%.
+    Every advertiser also has its category's adjacency norms and its own avoid list (the Phase 5 rules).
+  - **Base value per break:** drawn uniform in [0.5, 1.5] value units.
+  - **Context premium m:** a break relevant to the ad is worth m × base; an allowed but irrelevant break is worth
+    1 × base; a break the ad's rules forbid is worth 0. The main run uses m = 2. Sensitivity runs use m = 1 (no
+    premium: any segmentation gain then comes from safety alone), 1.5 and 3.
+  - **Budget in breaks:** drawn uniform in 20–80 per advertiser (a slack book, total below supply), and the same × 3
+    (a tight book, total above supply).
+- **Valuation per segment (the ordering):** for each segment, the eligible demand (advertisers whose rules allow the
+  segment's safety class) and the matched demand (eligible advertisers whose context group is the segment's).
+  Segments are ordered by the mean value per break to eligible advertisers. This is a defensible ordering, not a
+  price.
+- **Two books on the same demand:**
+  - **Flat pool:** one undifferentiated pool, one price. A buyer cannot choose breaks, so it values the pool at its
+    average value per break across all breaks. It buys its whole budget if that average is at least the price.
+    Breaks are shared out at random. The price is the one that maximises revenue, searched over every buyer's
+    average value.
+  - **Segmented book:** each segment has its own posted price, and buyers value a segment at their average value per
+    break inside it. Prices are set segment by segment, from the most valuable segment down: each takes the
+    revenue-maximising price given the budgets still unspent. Each buyer then spends its budget on its
+    highest-surplus segments first.
+  - Both are posted prices, not an auction or an allocator (SPEC: scope limit).
+- **Measures:**
+  - **Fill rate per segment:** breaks sold ÷ breaks in the segment.
+  - **Yield:** revenue of the segmented book ÷ revenue of the flat pool, and value delivered to advertisers in each.
+  - **Restricted share:** breaks in the restricted class ÷ all breaks, and its fill rate.
+- **Reading the result:**
+  - **Segmentation helps** if segmented revenue exceeds flat revenue in at least 9 of the 10 seeds at m = 2, in both
+    books.
+  - **Segmentation only shrinks the pool** if it sells fewer breaks without raising revenue.
+  - The m = 1 run shows how much of any gain comes from safety alone.
+- **Disclosures:**
+  - All values, budgets and the premium are assumptions, chosen before the run. Only the scene signals are measured.
+  - The safety tags are the 5d detector's, with the error rates measured in Phase 5e. A break's class is only as
+    right as its tags.

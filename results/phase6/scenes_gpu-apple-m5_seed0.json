@@ -1,0 +1,203 @@
+{
+  "phase": 6,
+  "name": "scenes",
+  "lane": "gpu-apple-m5",
+  "seed": 0,
+  "timestamp": "2026-10-14T00:56:14+00:00",
+  "git_commit": "3f40861e8cc0b041ba3a77d95ddc8e67ff63102a-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "runs": 3,
+    "n_scenes": 60,
+    "strip_checks_per_scene": [
+      "violence",
+      "weapons"
+    ],
+    "vlm": "mlx-community/Qwen3-VL-4B-Instruct-4bit (mlx-vlm, M5 GPU), greedy",
+    "text_model": "sentence-transformers/all-mpnet-base-v2 (MPS)",
+    "images": "PyAV decode on the CPU, 4 frames per scene; strip 4 x 192x144, grid 2 x 2 x 384x288",
+    "card_text_embedding": "all 4,922 cards per run, includes the child process start and model load",
+    "excluded": "VLM loading and one warm-up call of each kind"
+  },
+  "scenes": [
+    "BloodontheSun@111",
+    "BloodontheSun@492",
+    "BloodontheSun@990",
+    "BloodontheSun@2049",
+    "BloodontheSun@2787",
+    "BloodontheSun@3761",
+    "BloodontheSun@4805",
+    "CaptainKidd_@246",
+    "CaptainKidd_@3597",
+    "CaptainKidd_@4452",
+    "CaptainKidd_@5319",
+    "CarnivalofSouls@2421",
+    "EndoftheWorld@1075",
+    "EndoftheWorld@1136",
+    "GonewiththeWest@784",
+    "GonewiththeWest@1388",
+    "GonewiththeWest@2061",
+    "GonewiththeWest@3707",
+    "GonewiththeWest@4219",
+    "Kilimanjaro@1079",
+    "Kilimanjaro@1585",
+    "Kilimanjaro@2326",
+    "Kilimanjaro@3520",
+    "Kilimanjaro@4775",
+    "Minesweeper_1943@1984",
+    "Minesweeper_1943@3782",
+    "Phantom_Planet@793",
+    "Phantom_Planet@1246",
+    "Phantom_Planet@2586",
+    "Phantom_Planet@3705",
+    "Phantom_Planet@4659",
+    "TheFlyingDeuces@24",
+    "TheOver-the-HillGangRidesAgain@395",
+    "TheOver-the-HillGangRidesAgain@1286",
+    "TheOver-the-HillGangRidesAgain@2761",
+    "TheOver-the-HillGangRidesAgain@3045",
+    "TheOver-the-HillGangRidesAgain@3955",
+    "TheOver-the-HillGangRidesAgain@4016",
+    "TheOver-the-HillGangRidesAgain@4401",
+    "ThePhantomCreeps@1064",
+    "ThePhantomCreeps@1289",
+    "ThePhantomCreeps@2656",
+    "amazing_adventure@858",
+    "amazing_adventure@1028",
+    "angel_and_the_badman@3715",
+    "angel_and_the_badman@4048",
+    "heartbeat@3304",
+    "heartbeat@3360",
+    "heartbeat@3932",
+    "mr_robinson_crusoe@1165",
+    "mr_robinson_crusoe@1331",
+    "mr_robinson_crusoe@2945",
+    "mr_robinson_crusoe@3716",
+    "teenagers_from_outerspace@611",
+    "teenagers_from_outerspace@1907",
+    "teenagers_from_outerspace@2851",
+    "teenagers_from_outerspace@3382",
+    "teenagers_from_outerspace@4261",
+    "teenagers_from_outerspace@4938",
+    "teenagers_from_outerspace@4977"
+  ],
+  "load_avg_per_run": [
+    [
+      3.28125,
+      3.64404296875,
+      3.2763671875
+    ],
+    [
+      1.978515625,
+      2.57373046875,
+      2.8779296875
+    ],
+    [
+      1.2509765625,
+      1.93798828125,
+      2.5185546875
+    ]
+  ],
+  "s_per_scene": {
+    "strip_image": {
+      "median": 0.07832278124988079,
+      "min": 0.07605616944977858,
+      "max": 0.0800500854170726,
+      "runs": [
+        0.07605616944977858,
+        0.0800500854170726,
+        0.07832278124988079
+      ]
+    },
+    "grid_image": {
+      "median": 0.08778384583323108,
+      "min": 0.08086270486625532,
+      "max": 0.08947175276698545,
+      "runs": [
+        0.08778384583323108,
+        0.08086270486625532,
+        0.08947175276698545
+      ]
+    },
+    "card": {
+      "median": 1.5235963972168975,
+      "min": 1.5146836618165254,
+      "max": 1.5352412284672028,
+      "runs": [
+        1.5146836618165254,
+        1.5235963972168975,
+        1.5352412284672028
+      ]
+    },
+    "strip_tags": {
+      "median": 0.3675856590338905,
+      "min": 0.36227795901650095,
+      "max": 0.3693976680495931,
+      "runs": [
+        0.36227795901650095,
+        0.3675856590338905,
+        0.3693976680495931
+      ]
+    },
+    "grid_tags": {
+      "median": 0.7675104097162451,
+      "min": 0.7616683041667177,
+      "max": 0.7763422409664297,
+      "runs": [
+        0.7763422409664297,
+        0.7675104097162451,
+        0.7616683041667177
+      ]
+    },
+    "card_text_embedding": {
+      "median": 0.005152019919129467,
+      "min": 0.005055180042053996,
+      "max": 0.005432938515836954,
+      "runs": [
+        0.005432938515836954,
+        0.005152019919129467,
+        0.005055180042053996
+      ]
+    }
+  },
+  "s_per_check": {
+    "strip_check": {
+      "median": 0.25394153090019245,
+      "min": 0.2526356020835616,
+      "max": 0.26300318819169966,
+      "runs": [
+        0.2526356020835616,
+        0.25394153090019245,
+        0.26300318819169966
+      ]
+    },
+    "grid_check": {
+      "median": 0.5807866354172195,
+      "min": 0.5771763465163531,
+      "max": 0.5846168097166811,
+      "runs": [
+        0.5771763465163531,
+        0.5807866354172195,
+        0.5846168097166811
+      ]
+    }
+  },
+  "s_per_video_hour": {
+    "scene_detection": {
+      "median": 0.03300690048919348,
+      "min": 0.013140062050788815,
+      "max": 0.0367130923647552,
+      "runs": [
+        0.013140062050788815,
+        0.0367130923647552,
+        0.03300690048919348
+      ]
+    }
+  }
+}

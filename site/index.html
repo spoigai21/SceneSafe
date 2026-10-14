@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SceneSafe Results</title>
+<meta name="description" content="SceneSafe finds the film scenes that suit an ad and keeps brands away from unsafe ones. Every result, wins and losses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<nav class="nav" id="nav" aria-label="Sections">
+  <a href="#results">Results</a>
+  <a href="#changes">What worked</a>
+  <a href="#safety">Brand safety</a>
+  <a href="#speed">Speed</a>
+  <a href="#cost">Cost</a>
+  <a href="#testing">How we tested</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="reveal">Scene<span class="grad">Safe</span></h1>
+      <p class="intro reveal">Finds the film scenes that suit an ad, and keeps brands away from the scenes that don't.</p>
+    </div>
+    <div class="reel-wrap" aria-hidden="true">
+      <div class="film" id="film">
+        <div class="track" id="track"><div class="fr"><div class="pic" style="background-image:url(img/match_horses.jpg);background-size:400% 100%;background-position:0.00% 0"></div><span class="chip">Fits: western ad</span></div><div class="fr"><div class="pic" style="background-image:url(img/match_dance.jpg);background-size:400% 100%;background-position:33.33% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_car.jpg);background-size:400% 100%;background-position:66.67% 0"></div><span class="chip">Fits: car ad</span></div><div class="fr"><div class="pic" style="background-image:url(img/match_bird.jpg);background-size:400% 100%;background-position:0.00% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_meal.jpg);background-size:400% 100%;background-position:33.33% 0"></div><span class="chip">Fits: food ad</span></div><div class="fr"><div class="pic" style="background-image:url(img/safety_weapons.jpg);background-size:200% 200%;background-position:0 0"></div><span class="chip warn">Weapons — blocked under strict</span></div><div class="fr"><div class="pic" style="background-image:url(img/match_horses.jpg);background-size:400% 100%;background-position:100.00% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_car.jpg);background-size:400% 100%;background-position:0.00% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_horses.jpg);background-size:400% 100%;background-position:0.00% 0"></div><span class="chip">Fits: western ad</span></div><div class="fr"><div class="pic" style="background-image:url(img/match_dance.jpg);background-size:400% 100%;background-position:33.33% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_car.jpg);background-size:400% 100%;background-position:66.67% 0"></div><span class="chip">Fits: car ad</span></div><div class="fr"><div class="pic" style="background-image:url(img/match_bird.jpg);background-size:400% 100%;background-position:0.00% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_meal.jpg);background-size:400% 100%;background-position:33.33% 0"></div><span class="chip">Fits: food ad</span></div><div class="fr"><div class="pic" style="background-image:url(img/safety_weapons.jpg);background-size:200% 200%;background-position:0 0"></div><span class="chip warn">Weapons — blocked under strict</span></div><div class="fr"><div class="pic" style="background-image:url(img/match_horses.jpg);background-size:400% 100%;background-position:100.00% 0"></div></div><div class="fr"><div class="pic" style="background-image:url(img/match_car.jpg);background-size:400% 100%;background-position:0.00% 0"></div></div></div>
+        <div class="scan"></div>
+      </div>
+    </div>
+    <div class="headline-stats reveal">
+      <div class="hs"><div class="v"><span class="num">48%</span> → <span class="grad num"><span data-count="69">69</span>%</span></div><div class="l">of top picks fit the ad, after adding scene descriptions</div></div>
+      <div class="hs"><div class="v"><span class="grad num"><span data-count="8">8</span> of 9</span></div><div class="l">weapons scenes caught (before: 0 of 9)</div></div>
+      <div class="hs"><div class="v"><span class="grad num"><span data-count="8.5" data-dec="1">8.5</span> min</span></div><div class="l">to index 49.9 hours of video</div></div>
+      <div class="hs"><div class="v"><span class="grad num" data-count="35">35</span></div><div class="l">public-domain films</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= WORDS STAGE ================= -->
+<div class="stage words-stage" data-stage="words">
+  <div class="pin">
+    <div class="lit" id="lit"><span><b>01</b>Find the frames.</span><span><b>02</b>Describe each scene.</span><span><b>03</b>Flag the risky ones.</span></div>
+    <div class="lit-cap" id="litCap">
+      <span>One frame per second, made searchable.</span>
+      <span>An AI model writes what each scene shows.</span>
+      <span>Checked for 9 kinds of risky content.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ================= RESULTS ================= -->
+<section id="results">
+  <div class="stage bar-stage" data-stage="bar">
+    <div class="pin">
+      <div class="meter" id="meter">
+        <p class="q">Scene descriptions made the picks better</p>
+        <p class="q2">Share of an ad's top 10 scenes that actually suit it · 12 test films · 60 ads</p>
+        <div class="mrow m-before" id="mBefore">
+          <div class="mhead"><span class="mlabel"><b>Before</b> — frames only</span><span class="mval" title="exactly 0.482"><span class="pct">48%</span></span></div>
+          <div class="mtrack"><div class="mfill"></div></div>
+          <div class="slots" aria-label="about 4.8 of the top 10 picks suit the ad"></div>
+        </div>
+        <div class="badge" id="mBadge"><span class="pts">+21 percentage points</span><small>Clear win: the likely range stays above zero.</small></div>
+        <div class="mrow m-after" id="mAfter">
+          <div class="mhead"><span class="mlabel"><b>After</b> — frames + scene descriptions</span><span class="mval" title="exactly 0.692"><span class="pct grad in">69%</span></span></div>
+          <div class="mtrack"><div class="mfill"></div><div class="marker" style="left:48.2%"><span>before</span></div></div>
+          <div class="slots" aria-label="about 6.9 of the top 10 picks suit the ad"></div>
+        </div>
+        <div class="after" id="meterAfter"><b>42 of 60 ads got better</b> · 14 the same · 4 worse</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="confirm reveal">Judged by an AI assistant, spot-checked by the author.</p>
+    <p class="headline-line reveal">Held up on 7 fresh films: <span class="num grad">50% → 70%</span></p>
+  </div>
+
+  <!-- ================= LAPTOP STAGE ================= -->
+  <div class="stage laptop-stage" data-stage="laptop">
+    <div class="pin">
+      <div class="lap-wrap">
+        <div class="lap-head reveal"><h2>The system on real scenes</h2><p>What it produced for four scenes from public-domain films. The three matches were labelled as showing exactly what the ad asked for.</p></div>
+        <div class="laptop" id="laptop">
+          <div class="lid" id="lid">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="appwin">
+                <div class="titlebar"><i></i><i></i><i></i><span>SceneSafe — Scene Viewer</span></div>
+                <div class="menu"><b>SceneSafe</b><span>File</span><span>Edit</span><span>View</span><span>Match</span><span>Safety</span></div>
+                <div class="view">
+                  <div class="shot">
+                    <img class="on" src="img/match_horses.jpg" alt="Riders on horses crossing a rocky desert">
+                    <img src="img/match_meal.jpg" alt="People seated around a dinner table">
+                    <img src="img/match_car.jpg" alt="A car on a winding mountain road">
+                    <img src="img/safety_weapons.jpg" alt="A woman points a pistol in a rocky desert">
+                  </div>
+                  <div class="panel">
+                    <div class="card-ex on"><h5>Matched ad</h5><div class="adb">"cowboys riding horses"</div>
+                      <span class="chip fit">literal fit</span><span class="chip ok">safety: no tags</span>
+                      <div class="d"><span>place:</span> desert landscape with rocky terrain<br><span>activity:</span> group of riders on horses moving across desert</div></div>
+                    <div class="card-ex"><h5>Matched ad</h5><div class="adb">"people enjoying a meal at a table"</div>
+                      <span class="chip fit">literal fit</span><span class="chip ok">safety: no tags</span>
+                      <div class="d"><span>place:</span> dining room with large table<br><span>visible:</span> people seated, plates, napkins, glasses</div></div>
+                    <div class="card-ex"><h5>Matched ad</h5><div class="adb">"a car driving on an open road"</div>
+                      <span class="chip fit">literal fit</span><span class="chip ok">safety: no tags</span>
+                      <div class="d"><span>place:</span> mountain road with guardrail<br><span>activity:</span> car driving along winding road</div></div>
+                    <div class="card-ex"><h5>Safety check</h5><div class="adb">Weapon in plain view</div>
+                      <span class="chip warn">weapons</span>
+                      <div class="d">Flagged by the sharp-frame weapons check.<br>Blocked under strict rules; standard and lenient rules don't block weapons on their own.</div></div>
+                  </div>
+                </div>
+                <div class="timeline"><div class="ticks-tl"></div><div class="scene-span" id="span"></div><div class="playhead" id="playhead"></div></div>
+                <div class="status"><span id="stLeft">Gone with the West (1975) · 56:57</span><span id="stRight">scene 1 of 4</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="base"></div>
+        </div>
+        <div class="lap-steps" id="lapSteps"><i class="on"></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= WHAT WORKED ================= -->
+<section class="topic" id="changes"><div class="wrap">
+  <p class="kicker grad reveal">What worked</p>
+  <h2 class="big words">What improved it, and what didn't</h2>
+  <p class="intro reveal">Changes are in percentage points (pts) of top picks that fit the ad.</p>
+  <div class="bento">
+    <div class="tile s2 win reveal"><span class="tag">Clear win</span><p class="t">Scene descriptions</p><div class="fig"><span class="to">+21</span><small> pts</small></div></div>
+    <div class="tile s2 win reveal"><span class="tag">Clear win</span><p class="t">Searching seconds, then grouping into scenes<small>Best moments found, out of 10.</small></p><div class="fig"><span class="to">9.3</span><small> of 10</small></div></div>
+    <div class="tile s2 win reveal"><span class="tag">Small win</span><p class="t">Re-ranking the shortlist</p><div class="fig"><span class="to">+3.5</span><small> pts</small></div></div>
+    <div class="tile s2 loss reveal"><span class="tag">Clear loss</span><p class="t">Dialogue search<small>Fewer picks showing exactly what the ad asked for.</small></p><div class="fig">−13<small> pts</small></div></div>
+    <div class="tile s2 loss reveal"><span class="tag">Clear loss</span><p class="t">Searching by the ad's theme<small>Fewer picks showing exactly what the ad asked for.</small></p><div class="fig">−7<small> pts</small></div></div>
+    <div class="tile s2 flat reveal"><span class="tag">No clear change</span><p class="t">A newer image model</p><div class="fig">+1.5<small> pts</small></div></div>
+  </div>
+  <details class="more reveal">
+    <summary>See every comparison</summary>
+    <p class="small" style="margin:12px 0 4px">Dot: average change across ads. Bar: range of likely values (95% interval). A bar crossing 0 means no clear change. Axis: change in percentage points.</p>
+    <div class="forest" data-min="-20" data-max="40">
+      <div class="f-scale"><div></div><div class="ticks"><span>−20</span><span>−10</span><span>0</span><span>+10</span><span>+20</span><span>+30</span><span>+40</span></div><div></div></div>
+      <div class="f-row win" data-pt="21.0" data-lo="15.5" data-hi="26.8"><div class="name">Scene descriptions<small>12 test films</small></div><div class="f-axis"></div><div class="v"><b>+21.0</b> [+15.5, +26.8]</div></div>
+      <div class="f-row win" data-pt="19.7" data-lo="14.2" data-hi="25.3"><div class="name">Scene descriptions, again<small>7 fresh films</small></div><div class="f-axis"></div><div class="v"><b>+19.7</b> [+14.2, +25.3]</div></div>
+      <div class="f-row win" data-pt="3.5" data-lo="0.8" data-hi="6.2"><div class="name">Re-ranking the shortlist</div><div class="f-axis"></div><div class="v"><b>+3.5</b> [+0.8, +6.2]</div></div>
+      <div class="f-row flat" data-pt="2.5" data-lo="-4.5" data-hi="9.5"><div class="name">A newer image model<small>20 ads</small></div><div class="f-axis"></div><div class="v"><b>+2.5</b> [−4.5, +9.5]</div></div>
+      <div class="f-row flat" data-pt="1.5" data-lo="-1.3" data-hi="4.5"><div class="name">A newer image model<small>60 ads, fresh films</small></div><div class="f-axis"></div><div class="v"><b>+1.5</b> [−1.3, +4.5]</div></div>
+      <div class="f-row flat" data-pt="1.0" data-lo="-5.5" data-hi="8.5"><div class="name">General search tweaks<small>several phrasings, dark-frame filter, one cut-off</small></div><div class="f-axis"></div><div class="v"><b>+1.0</b> [−5.5, +8.5]</div></div>
+      <div class="f-row flat" data-pt="1.8" data-lo="-4.0" data-hi="7.5"><div class="name">Theme search<small>picks that suit the theme</small></div><div class="f-axis"></div><div class="v"><b>+1.8</b> [−4.0, +7.5]</div></div>
+      <div class="f-row loss" data-pt="-6.8" data-lo="-11.3" data-hi="-2.8"><div class="name">Theme search<small>picks that show the ad literally</small></div><div class="f-axis"></div><div class="v"><b>−6.8</b> [−11.3, −2.8]</div></div>
+      <div class="f-row flat" data-pt="-1.7" data-lo="-8.7" data-hi="5.2"><div class="name">Adding dialogue<small>picks that suit the theme</small></div><div class="f-axis"></div><div class="v"><b>−1.7</b> [−8.7, +5.2]</div></div>
+      <div class="f-row loss" data-pt="-13.0" data-lo="-18.0" data-hi="-8.3"><div class="name">Adding dialogue<small>picks that show the ad literally</small></div><div class="f-axis"></div><div class="v"><b>−13.0</b> [−18.0, −8.3]</div></div>
+    </div>
+    <p class="small" style="margin:10px 0 0">Horizontal axis: change in percentage points.</p>
+    <div class="legend"><span><i style="background:var(--win)"></i>clear win</span><span><i style="background:var(--loss)"></i>clear loss</span><span><i style="background:var(--flat)"></i>no clear change</span></div>
+  </details>
+</div></section>
+
+<!-- ================= BRAND SAFETY ================= -->
+<section class="topic" id="safety"><div class="wrap">
+  <p class="kicker grad reveal">Brand safety</p>
+  <h2 class="big words">Keeping brands safe</h2>
+  <p class="intro reveal">At standard settings it blocks 6% of scenes and catches 71% of risky ones; 64% of what it blocks was actually fine.</p>
+  <div class="bento">
+    <div class="tile s3 img win reveal">
+      <div class="bg"><img src="img/safety_weapons.jpg" alt="Four frames: a woman points a pistol in a rocky desert" data-zoom></div>
+      <div class="over"><div class="brief">Clear win<b>Weapons scenes caught: 8 of 9</b></div><div class="desc">Before: 0 of 9.</div></div>
+    </div>
+    <div class="tile s3 loss reveal">
+      <span class="tag">Still failing</span>
+      <p class="t">Violence scenes caught<small>No model on the laptop could see fights reliably.</small></p>
+      <div class="fig">2<small> of 11</small></div>
+    </div>
+  </div>
+  <p class="headline-line reveal" style="margin-top:22px">With the safety checks on (standard rules), a busy ad schedule stays <span class="num grad">76%</span> full, against 86% with no rules.</p>
+  <details class="more reveal">
+    <summary>Details</summary>
+    <p class="small" style="margin:12px 0 0">The final system, tested on 452 fresh scenes, labelled by an AI assistant that didn't see the system's answers.</p>
+    <div class="tbl-wrap"><table class="tbl">
+        <tr><th>rules</th><th>scenes blocked</th><th>blocks that were wrong</th><th>risky scenes caught</th></tr>
+        <tr><td>lenient</td><td class="n" title="3.5%">4%</td><td class="n">83%</td><td class="n">95%</td></tr>
+        <tr class="hl"><td>standard</td><td class="n" title="5.6%">6%</td><td class="n">64%</td><td class="n">71%</td></tr>
+        <tr><td>strict</td><td class="n" title="10.5%">11%</td><td class="n">50%</td><td class="n">87%</td></tr>
+      </table></div>
+      <ul class="small" style="margin:14px 0 0;padding-left:18px">
+        <li><b style="color:var(--text);font-weight:500">Scenes blocked:</b> share of all scenes the rules block.</li>
+        <li><b style="color:var(--text);font-weight:500">Blocks that were wrong:</b> of the blocked scenes, the share that were actually fine.</li>
+        <li><b style="color:var(--text);font-weight:500">Risky scenes caught:</b> of the scenes that should be blocked, the share that were.</li>
+      </ul>
+    <ul class="small" style="margin:16px 0 0;padding-left:18px">
+      <li>Asking one yes/no question per content type: 26 pts fewer wrong blocks, but 9 pts fewer risky scenes caught.</li>
+      <li>Checking weapons on larger frames: 89% of weapons scenes caught on the larger test.</li>
+      <li>Larger-frame checks for horror, smoking and alcohol, and sharper frames generally: no gain on fresh scenes.</li>
+      <li>Blocking whole genres instead: 94% of its blocks were scenes that were fine.</li>
+      <li>The ad-space figure was measured with the safety version before the final weapons check.</li>
+    </ul>
+  </details>
+
+  <div class="sub" id="market">
+    <h3 class="sub-title words">Does knowing the scene make ad space worth more?</h3>
+    <p class="intro reveal">Only sometimes. In a simulated market, selling ad breaks by scene (safety × topic) earned more than one flat-priced pool when demand was light, but not reliably when demand was heavy.</p>
+    <div class="bento">
+      <div class="tile s3 win reveal"><span class="tag">Light demand</span><p class="t">More revenue than one flat-priced pool<small>Higher in 10 of 10 simulations.</small></p><div class="fig"><span class="to">+13</span><small>%</small></div></div>
+      <div class="tile s3 loss reveal"><span class="tag">Heavy demand</span><p class="t">Fewer breaks sold<small>Revenue came out ahead in only 7 of 10 simulations.</small></p><div class="fig">−25<small>%</small></div></div>
+    </div>
+    <p class="headline-line reveal" style="margin-top:22px">7% of breaks sit next to scenes no advertiser here would accept, and never sell.</p>
+    <p class="small reveal" style="margin-top:10px">Simulation: advertiser values and budgets are assumptions; the scene signals are measured. With no premium for a relevant scene, heavy demand loses (0.86× revenue).</p>
+  </div>
+</div></section>
+
+<!-- ================= SPEED ================= -->
+<section class="topic" id="speed"><div class="wrap">
+  <p class="kicker grad reveal">Speed</p>
+  <h2 class="big words">How fast it runs</h2>
+  <div class="bento">
+    <div class="tile s3 win reveal">
+      <p class="t">49.9 hours of video indexed<small>One M5 laptop: CPU decoding (cpu-laptop) with the GPU running the model (gpu-apple-m5).</small></p>
+      <div class="fig"><span class="to"><span data-count="8.5" data-dec="1">8.5</span></span><small> minutes</small></div>
+    </div>
+    <div class="tile s3 loss reveal"><span class="tag">Slower</span>
+      <p class="t">The laptop's hardware video decoder<small>Seconds per hour of video (hwdec-apple-m5). The CPU took 11.6 (cpu-laptop).</small></p>
+      <div class="fig">61<small> s</small></div>
+    </div>
+  </div>
+  <details class="more reveal">
+    <summary>More detail</summary>
+    <div class="bars" data-max="1000">
+      <div class="bar-row"><div class="name">PyTorch half precision<small>gpu-apple-m5</small></div><div class="bar-track"><div class="bar-fill" data-v="987"></div></div><div class="val">987 fps</div></div>
+      <div class="bar-row"><div class="name">PyTorch full precision<small>gpu-apple-m5</small></div><div class="bar-track"><div class="bar-fill dim" data-v="307"></div></div><div class="val">307 fps</div></div>
+      <div class="bar-row"><div class="name">Core ML full precision<small>gpu-apple-m5</small></div><div class="bar-track"><div class="bar-fill dim" data-v="261"></div></div><div class="val">261 fps</div></div>
+      <div class="bar-row"><div class="name">Core ML full precision<small>ane-apple-m5</small></div><div class="bar-track"><div class="bar-fill dim" data-v="154"></div></div><div class="val">154 fps</div></div>
+      <div class="bar-row"><div class="name">PyTorch full precision<small>cpu-laptop</small></div><div class="bar-track"><div class="bar-fill dim" data-v="130"></div></div><div class="val">130 fps</div></div>
+      <div class="bar-row"><div class="name">ONNX Runtime full precision<small>cpu-laptop</small></div><div class="bar-track"><div class="bar-fill dim" data-v="125"></div></div><div class="val">125 fps</div></div>
+      <div class="bar-row"><div class="name">ONNX 8-bit, dynamic<small>cpu-laptop · lost accuracy</small></div><div class="bar-track"><div class="bar-fill loss" data-v="130"></div></div><div class="val">130 fps</div></div>
+      <div class="bar-row"><div class="name">ONNX 8-bit, static<small>cpu-laptop · kept 22% of the right results; rejected</small></div><div class="bar-track"><div class="bar-fill loss" data-v="105"></div></div><div class="val">105 fps</div></div>
+    </div>
+    <p class="small">The image model, frames per second (fps). Searching 179,545 frames on cpu-laptop takes 4.7 ms per search exactly, or 0.25 ms per search with an approximate index that finds 92% of the same top 10.</p>
+  </details>
+</div></section>
+
+<!-- ================= COST ================= -->
+<section class="topic" id="cost"><div class="wrap">
+  <p class="kicker grad reveal">Cost</p>
+  <h2 class="big words">Cost of running this on 1,000 hours of video</h2>
+  <!-- COST-NUMBERS -->
+  <div class="bento">
+    <div class="tile s6 short win reveal">
+      <p class="t">$227 and 185 machine-hours per 1,000 hours of video<small>The whole pipeline on one M5-class Mac, priced at a cloud Mac's on-demand rate ($1.23 per hour, AWS, 13 Oct 2026). Assumes the cloud M4 runs as fast as our M5; not measured.</small></p>
+      <div class="fig"><span class="to">$<span data-count="227">227</span></span><small> per 1,000 hours of video</small></div>
+    </div>
+    <div class="tile s6 short reveal">
+      <p class="t">Where the time goes<small>Seconds of machine time per hour of video, one M5 laptop.</small></p>
+      <div class="stack" aria-hidden="true">
+        <i style="--w:43.9%;--c:var(--red)"></i><i style="--w:36.4%;--c:var(--coral)"></i><i style="--w:12.8%;--c:var(--rose)"></i><i style="--w:4.8%;--c:#7A6F70"></i><i style="--w:1.5%;--c:#B8B2B2"></i><i style="--w:0.6%;--c:#4A4446"></i>
+      </div>
+      <div class="bars" data-max="300">
+        <div class="bar-row"><div class="name">Scene descriptions<small>gpu-apple-m5 · 44%</small></div><div class="bar-track"><div class="bar-fill" data-v="292.3"></div></div><div class="val">292 s</div></div>
+        <div class="bar-row"><div class="name">Brand safety<small>gpu-apple-m5 · 36%</small></div><div class="bar-track"><div class="bar-fill" data-v="242.6"></div></div><div class="val">243 s</div></div>
+        <div class="bar-row"><div class="name">Transcripts<small>gpu-apple-m5 · 13%</small></div><div class="bar-track"><div class="bar-fill" data-v="84.9"></div></div><div class="val">85 s</div></div>
+        <div class="bar-row"><div class="name">Frame images<small>cpu-laptop · 5%</small></div><div class="bar-track"><div class="bar-fill dim" data-v="31.9"></div></div><div class="val">32 s</div></div>
+        <div class="bar-row"><div class="name">Frame search<small>cpu-laptop decode + gpu-apple-m5 · 1.5%</small></div><div class="bar-track"><div class="bar-fill dim" data-v="10.0"></div></div><div class="val">10 s</div></div>
+        <div class="bar-row"><div class="name">Other</div><div class="bar-track"><div class="bar-fill dim" data-v="4.2"></div></div><div class="val">4 s</div></div>
+      </div>
+      <p class="foot" style="font-size:16px;color:var(--soft)">The AI models that made matching and safety better are 93% of the cost. Frame search alone costs about $3 per 1,000 hours.</p>
+    </div>
+  </div>
+  <p class="headline-line loss-line reveal" style="margin-top:22px">Costs 1.65× the naive approach; no NVIDIA or CPU-only total was measured.</p>
+</div></section>
+
+<!-- ================= HOW WE TESTED ================= -->
+<section class="topic" id="testing"><div class="wrap">
+  <p class="kicker grad reveal">How we tested</p>
+  <h2 class="big words">How it was tested</h2>
+  <div class="bento">
+    <div class="tile s2 short reveal"><p class="t">Rules fixed before each test</p></div>
+    <div class="tile s2 short reveal"><p class="t">Test films never used for tuning</p></div>
+    <div class="tile s2 short reveal"><p class="t">Losses reported like wins</p></div>
+  </div>
+  <details class="sources reveal">
+    <summary>Where each number comes from (exact values)</summary>
+    <ul>
+      <li><b>Top picks that fit</b> (thematic precision@10, experiment 4g): frames 0.482 → frames + descriptions 0.692; difference +0.210 [+0.155, +0.268]; 42 ads better, 14 same, 4 worse. With the author's labels: +0.213.</li>
+      <li><b>7 fresh films</b> (4h): 0.498 → 0.695; +0.197 [+0.142, +0.253]; 45 / 8 / 7. Re-ranking +0.035 [+0.008, +0.062]; author's labels +0.022 [−0.003, +0.047].</li>
+      <li><b>Search vs genre</b> (4): 0.440 vs 0.075 (random 0.020). <b>Newer image model</b>: 4c +0.025 [−0.045, +0.095]; 4d +0.015 [−0.013, +0.045]. <b>General tweaks</b> (4b): +0.010 [−0.055, +0.085]. <b>Theme search</b> (4e): literal −0.068 [−0.113, −0.028]. <b>Dialogue</b> (4f): literal −0.130 [−0.180, −0.083].</li>
+      <li><b>Scene units</b> (3): best moments found 9.26 vs 5.68 (single seconds) and 2.89 (10-second chunks).</li>
+      <li><b>Final safety system</b> (5e test, 452 scenes weighted to 4,442): blocked 3.5% / 5.6% / 10.5%; wrong blocks 83% [76, 89] / 64% [57, 70] / 50% [42, 58]; risky caught 95% [83, 100] / 71% [44, 99] / 87% [66, 100]. Weapons recall 0.46 → 0.89. Violence caught 2 of 11 (4B and 8B models).</li>
+      <li><b>Safety changes</b>: one question per tag (5b) wrong blocks −25.8 pts [−32.5, −17.7], caught −9 pts [−16, −4]; weapons check (5d) 0 of 9 → 8 of 9 weapons scenes; horror/smoking/alcohol checks (5e) standard F1 −0.04 [−0.12, 0.00]; sharper frames (5c) standard F1 −0.13 [−0.46, +0.20]; genre blocking 94% wrong blocks.</li>
+      <li><b>Ad space</b> (<code>results/phase5b/inventory_cpu-laptop_seed0.json</code>): measured with the safety version before the final weapons check (5b). Tight-book fill: no rules 85.9%, lenient 77.6%, standard 75.6%, strict 68.1%; first detector 61.0%; strict genre 33.8%; relevant slots removed 14.0 / 15.0 / 22.7%. Final system (5d), strict only: 67.5%.</li>
+      <li><b>Ad market simulation</b> (Phase 7, <code>results/phase7/</code>; median and range over seeds 0–9; values, budgets and premium are assumptions): breaks by safety class clean 77.5% / mild 10.7% / sensitive 4.7% / restricted 7.1% of 4,903; restricted 350 breaks, 0% sold. Segmented ÷ flat revenue, premium 2: light demand (slack book) 1.13 (1.08–1.26), 10 of 10 seeds, breaks sold 1.07×, advertiser value 1.26×; heavy demand (tight book) 1.06 (0.98–1.18), 7 of 10, breaks sold 0.75×, advertiser value 1.00×. No premium: 1.09 (1.02–1.16) / 0.86 (0.75–0.90). Premium 1.5: 1.11 / 0.96. Premium 3: 1.20 / 1.28. Pre-registered verdict: does not "help" (needs 9 of 10 seeds in both books).</li>
+      <li><b>Speed</b> (2, 1, 3): library 8.5 min, 10.2 s per video-hour; fp16 987 fps; hardware decoder 61.0 vs 11.6 s per video-hour; static int8 recall@10 0.215; search 4.72 ms exact, 0.251 ms approximate (recall 0.915).</li>
+      <li><b>Cost</b> (Phase 6, <code>results/phase6/</code>): whole pipeline 665.8 s per video-hour (656.2–678.2), 185 machine-hours and $227 per 1,000 video-hours at mac-m4.metal $1.23/h (assumes M4 = M5 speed; not measured). Stages: descriptions 292.3 s, safety 151.8 + 90.8 s, Whisper 84.9 s, images 31.9 s, frame search 10.0 s (9.8–10.3), audio decode 3.2 s, text embedding 1.0 s. Frame search only: 2.8 machine-hours, $3.4. Naive baseline: 403.0 s per video-hour, 112 machine-hours, $138; ratio 1.65×. CPU: frame search 38.6 s per video-hour; Whisper 838 s per audio-hour (cpu-laptop); scene descriptions not measured on CPU. NVIDIA not measured. Workload: 191.8 scenes per video-hour (19 films, 25.7 h).</li>
+      <li>Every figure is traced to its results file in <code>NUMBERS.md</code>.</li>
+    </ul>
+  </details>
+  <footer><div class="bar"></div>SceneSafe · films from the Internet Archive's public-domain collection.</footer>
+</div></section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

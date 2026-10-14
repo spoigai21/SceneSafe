@@ -1,0 +1,82 @@
+{
+  "phase": 6,
+  "name": "video",
+  "lane": "cpu-laptop",
+  "seed": 0,
+  "timestamp": "2026-10-14T01:26:36+00:00",
+  "git_commit": "3f40861e8cc0b041ba3a77d95ddc8e67ff63102a-dirty",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpu_count": 10,
+    "cpu": "Apple M5",
+    "ram_gb": 16.0
+  },
+  "config": {
+    "runs": 3,
+    "sampling": "uniform 1 fps",
+    "decode": "PyAV/ffmpeg on the CPU, in a background thread",
+    "clip": "ViT-B/32 fp32, PyTorch CPU, batch 128",
+    "whisper": "mlx-community/whisper-large-v3-turbo (mlx-whisper, CPU device)",
+    "whisper_window_s": [
+      1200.0,
+      600.0
+    ],
+    "excluded": "model loading and one warm-up call"
+  },
+  "films": [
+    "TheFlyingDeuces",
+    "TheOver-the-HillGangRidesAgain",
+    "angel_and_the_badman"
+  ],
+  "video_hours": 4.022779739583333,
+  "frames_embedded": 14484,
+  "whisper_words": 3186,
+  "decode_clip_s_per_video_hour": {
+    "median": 38.60111163009886,
+    "min": 37.43592213144245,
+    "max": 40.866657846158574,
+    "runs": [
+      37.43592213144245,
+      38.60111163009886,
+      40.866657846158574
+    ]
+  },
+  "audio_decode_s_per_video_hour": {
+    "median": 3.1111625485770933,
+    "min": 3.049863465618782,
+    "max": 3.1273202915406313,
+    "runs": [
+      3.1111625485770933,
+      3.049863465618782,
+      3.1273202915406313
+    ]
+  },
+  "whisper_s_per_audio_hour": {
+    "median": 838.2243379999418,
+    "min": 829.6060710840393,
+    "max": 840.5718839999754,
+    "runs": [
+      840.5718839999754,
+      829.6060710840393,
+      838.2243379999418
+    ]
+  },
+  "load_avg_per_run": [
+    [
+      3.29541015625,
+      2.41357421875,
+      2.53955078125
+    ],
+    [
+      2.55126953125,
+      3.4052734375,
+      3.15869140625
+    ],
+    [
+      3.2587890625,
+      3.65283203125,
+      3.67822265625
+    ]
+  ]
+}

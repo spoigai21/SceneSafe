@@ -1,0 +1,36 @@
+# Phase 6 cloud prices. On-demand, Linux/macOS list price, AWS us-east-1 (N. Virginia), looked up 2026-10-13.
+# One provider for every lane so the figures compare. Prices change; re-check before reusing.
+
+apple_m4_cloud:
+  instance: mac-m4.metal (Apple M4, 10 CPU cores = 4 performance + 6 efficiency, 10 GPU cores, 24 GB)
+  usd_per_hour: 1.23
+  note: >-
+    Priced for the laptop lane (M5, 10 CPU cores, 10 GPU cores, 16 GB). Assumes the M4 runs the pipeline as fast as
+    the M5; not measured. Billed per second with a 24-hour minimum allocation.
+  sources:
+    - https://aws.amazon.com/ec2/instance-types/mac/
+    - https://instances.vantage.sh/aws/ec2/mac-m4.metal
+
+cpu_cloud:
+  instance: c7i.4xlarge (16 vCPU Intel Xeon Sapphire Rapids, 32 GB)
+  usd_per_hour: 0.714
+  note: >-
+    Priced for the cpu-laptop lane. Assumes it matches the laptop CPU's throughput; not measured.
+  sources:
+    - https://instances.vantage.sh/aws/ec2/c7i.4xlarge
+
+nvidia_l4:
+  instance: g6.xlarge (1 x NVIDIA L4 24 GB, 4 vCPU, 16 GB)
+  usd_per_hour: 0.805
+  note: Price only. No NVIDIA lane has been measured, so no cost is computed from it.
+  sources:
+    - https://instances.vantage.sh/aws/ec2/g6.xlarge
+
+nvidia_a10_lambda:
+  instance: Lambda Cloud 1x A10 (NVIDIA A10 24 GB, 30 vCPU, 226 GiB RAM, 1.3 TiB SSD)
+  usd_per_hour: 1.29
+  note: >-
+    The NVIDIA lane (gpu-nvidia-a10), to be rented on Lambda Cloud. On-demand, plus applicable sales tax;
+    looked up 2026-10-13. Used for the NVIDIA cost figures once gpu/run_gpu.py has been run.
+  sources:
+    - https://lambda.ai/service/gpu-cloud/pricing
